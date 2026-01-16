@@ -57,7 +57,7 @@ When working with branches, you must be able to create, switch, and merge branch
 
 All functions can be seen in the following VSCode Menu
 
-![Pulling Example](creating-branch.png)
+![Pulling Example](creating-branchs.png)
 
 ### Creating Branches
 
