@@ -36,7 +36,7 @@ git add .
 
 Once your changes have been staged, you then need to commit those changes. This will make your work visible to everyone working in your branch, allowing them to pull your changes.
 
-You must provide a sufficient message on what changes you have made. 
+You must provide a sufficient message on what changes you have made. This makes errors much easier to catch.
 
 VSCode will automatically stage all changes if none are specified. 
 
@@ -65,9 +65,9 @@ git push <remote> <branch>
 
 ## Working with Main
 
-While working on the main branch is discouraged, you may do so when initializing the project, or when making small or last minute changes. All other work should be done on a branch.
+While working on the main branch is discouraged, you may do so when initializing the project, or when making small or last minute changes. All other work should be done on a branch unless you have explicit permission to do so.
 
-To see what branch you are on, look for this in VSCode: 
+To see what branch you are on, look for this in VSCode on the bottom right: 
 
 ![Pulling Example](view-branch.png)
 
