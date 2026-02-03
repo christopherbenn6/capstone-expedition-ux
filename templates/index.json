@@ -11,6 +11,17 @@
   "sections": {
     "main": {
       "type": "hello-world",
+  "blocks": {
+        "text_Test001": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Repo test Change</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Test001"
+      ],
       "settings": {}
     }
   },
