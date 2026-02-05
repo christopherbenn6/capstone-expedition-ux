@@ -15,7 +15,7 @@
         "text_Test001": {
           "type": "text",
           "settings": {
-            "text": "<p>Repo test Change</p><p></p>"
+            "text": "<p>Repo test Change</p>"
           }
         }
       },
