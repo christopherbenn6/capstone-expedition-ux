@@ -6,6 +6,13 @@
   <div class="welcome-content">
     <div>
       <h1>Hello, World!</h1>
+      {% for block in section.blocks %}
+  {% if block.type == 'text' %}
+    <div class="tagline" {{ block.shopify_attributes }}>
+      {{ block.settings.text }}
+    </div>
+  {% endif %}
+{% endfor %}
 
       <p class="welcome-description">
         The Skeleton theme is a minimal, carefully structured Shopify theme designed to help you quickly get started.
@@ -134,6 +141,21 @@
 {
   "name": "Hello World",
   "settings": [],
+  "blocks":[
+    {
+      "type": "text",
+      "name": "Tagline",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Fantasy meets Reality!</p>"
+        }
+      ]
+      
+    }
+  ],
   "presets": [
     {
       "name": "Hello World Template",

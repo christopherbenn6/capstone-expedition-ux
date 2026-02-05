@@ -11,9 +11,18 @@
   "sections": {
     "main": {
       "type": "hello-world",
-      "settings": {
-        
-      }
+      "blocks": {
+        "text_KYw4LQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fantasy meets Reality!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_KYw4LQ"
+      ],
+      "settings": {}
     }
   },
   "order": [
