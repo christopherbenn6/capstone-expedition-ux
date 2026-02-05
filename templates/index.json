@@ -12,15 +12,15 @@
     "main": {
       "type": "hello-world",
       "blocks": {
-        "text_Test001": {
+        "text_KYw4LQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Repo test Change</p>"
+            "text": "<p>Fantasy meets Reality!</p>"
           }
         }
       },
       "block_order": [
-        "text_Test001"
+        "text_KYw4LQ"
       ],
       "settings": {}
     }
