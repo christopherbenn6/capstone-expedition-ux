@@ -44,11 +44,17 @@
     gap: 1rem;
   }
   header button.header__icon {
+    width: 2rem;
+    height: 2rem;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   align-items: center;
+}
+
+  @media screen and (max-width: 749px) {
+  header .header__menu { display: none; }
 }
 {% endstylesheet %}
 
