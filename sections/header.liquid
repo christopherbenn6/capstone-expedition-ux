@@ -1,11 +1,7 @@
 <header>
-  <h2 class="header__title">
-    {% for block in section.blocks %}
-      {% if block.type == 'logo_heading' %}
-        {%  content_for 'block', type: 'logo-heading', id: '{{block.id}}' %}
-      {% endif %}
-      {% endfor %}
-  </h2>
+ <div class="header__title">
+  {% content_for 'blocks' %}
+</div>
 
   <div class="header__menu">
     {% for link in section.settings.menu.links %}
