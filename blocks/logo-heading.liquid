@@ -3,10 +3,11 @@
 {% enddoc %}
 
 <div class="logo-heading">
+    <a class="logo-heading" href="{{  routes.root_url }}" style="color:{{block.settings.text_colour}}" {{ block.shopify_attributes }}>
     {% if block.settings.logo_image %}
     <img style="max-width:{{ block.settings.logo_size }}" src="{{ block.settings.logo_image | image_url: width: 300 }}" alt="{{block.settings.alt_text}}" width="{{ block.settings.logo_size }}" height="{{ block.settings.logo_size }}" {{ block.shopify_attributes }}>
     {% endif %}
-    <{{ block.settings.size }}><a href="#" style="color:{{block.settings.text_colour}}" {{ block.shopify_attributes }}> {{ block.settings.logo_text }} </a> </{{ block.settings.size }}>
+    <{{ block.settings.size }}> {{ block.settings.logo_text }} </{{ block.settings.size }}> </a> 
 </div>
 
 {% stylesheet %}
