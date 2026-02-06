@@ -13,6 +13,23 @@
   "sections": {
     "header": {
       "type": "header",
+      "blocks": {
+        "logo_heading_bYNr6i": {
+          "type": "logo-heading",
+          "name": "Logo Heading",
+          "settings": {
+            "logo_text": "NEXWAVE",
+            "size": "h1",
+            "text_colour": "#000000",
+            "alt_text": "",
+            "logo_size": 36
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "logo_heading_bYNr6i"
+      ],
       "settings": {
         "menu": "main-menu-1"
       }
