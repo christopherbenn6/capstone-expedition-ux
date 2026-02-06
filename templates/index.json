@@ -26,24 +26,6 @@
     },
     "custom_section_3AHyyi": {
       "type": "custom-section",
-      "blocks": {
-        "logo_heading_qw3KdM": {
-          "type": "logo-heading",
-          "name": "Logo Heading",
-          "settings": {
-            "logo_text": "Heading",
-            "size": "h1",
-            "text_colour": "#000000",
-            "logo_image": "shopify://shop_images/black_square.png",
-            "alt_text": "",
-            "logo_size": 36
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "logo_heading_qw3KdM"
-      ],
       "name": "t:general.custom_section",
       "settings": {}
     }
