@@ -3,11 +3,20 @@
 {% enddoc %}
 
     {% if block.settings.image %}
-    <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{block.settings.alt_text}}" width="{{ block.settings.image_width }}" height="{{ block.settings.image_width }}" {{ block.shopify_attributes }}>
+        <img 
+            class="image"
+            style="{% if block.settings.width == 'custom' %} width: {{block.settings.image_width}}%; {% else %} width: {{block.settings.width}}{% endif %};" 
+            src="{{ block.settings.image | image_url: width: 3840 }}" 
+            alt="{{block.settings.alt_text}}" 
+            width="{{ block.settings.image_width }}" 
+            height="auto"
+            {{ block.shopify_attributes }}>
     {% endif %}
 
 {% stylesheet  %}  
-
+    .image {
+        height: 100%;
+    }
 {% endstylesheet %}
 
 {% schema  %}
@@ -29,7 +38,7 @@
                     "label": "Fit Content"
                 },
                 {
-                    "value": "fill",
+                    "value": "100%",
                     "label": "Fill"
                 },
                 {
@@ -37,7 +46,7 @@
                     "label": "Custom"
                 }
             ],
-            "default": "fill"
+            "default": "100%"
         },
         {
             "type": "range",
