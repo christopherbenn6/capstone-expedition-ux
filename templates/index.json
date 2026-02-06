@@ -27,19 +27,33 @@
     "custom_section_3AHyyi": {
       "type": "custom-section",
       "blocks": {
+        "logo_heading_rrdLXd": {
+          "type": "logo-heading",
+          "name": "Logo Heading",
+          "settings": {
+            "logo_text": "Text",
+            "size": "h1",
+            "text_colour": "#000000",
+            "logo_image": "shopify://shop_images/black_square.png",
+            "alt_text": "",
+            "logo_size": 79
+          },
+          "blocks": {}
+        },
         "image_y8Ep6B": {
           "type": "image",
           "name": "Image",
           "settings": {
             "image": "shopify://shop_images/black_square.png",
-            "image_width": 200,
-            "image_height": 460,
-            "alt_text": ""
+            "width": "custom",
+            "image_width": 15,
+            "alt_text": "Black Square"
           },
           "blocks": {}
         }
       },
       "block_order": [
+        "logo_heading_rrdLXd",
         "image_y8Ep6B"
       ],
       "name": "t:general.custom_section",
