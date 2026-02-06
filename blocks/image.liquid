@@ -2,7 +2,7 @@
     Outputs an image
 {% enddoc %}
 
-    {% if block.settings.logo_image %}
+    {% if block.settings.image %}
     <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{block.settings.alt_text}}" width="{{ block.settings.image_width }}" height="{{ block.settings.image_height }}" {{ block.shopify_attributes }}>
     {% endif %}
 
