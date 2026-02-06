@@ -23,9 +23,29 @@
         "text_KYw4LQ"
       ],
       "settings": {}
+    },
+    "custom_section_3AHyyi": {
+      "type": "custom-section",
+      "blocks": {
+        "logo_heading_qw3KdM": {
+          "type": "logo-heading",
+          "name": "Logo Heading",
+          "settings": {
+            "logo_text": "fewwgfieiewfbefiw",
+            "size": "h1"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "logo_heading_qw3KdM"
+      ],
+      "name": "t:general.custom_section",
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_section_3AHyyi"
   ]
 }
