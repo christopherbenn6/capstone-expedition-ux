@@ -3,7 +3,7 @@
 {% enddoc %}
 
     {% if block.settings.image %}
-    <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{block.settings.alt_text}}" width="{{ block.settings.image_width }}" height="{{ block.settings.image_height }}" {{ block.shopify_attributes }}>
+    <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{block.settings.alt_text}}" width="{{ block.settings.image_width }}" height="{{ block.settings.image_width }}" {{ block.shopify_attributes }}>
     {% endif %}
 
 {% stylesheet  %}  
@@ -20,22 +20,35 @@
             "label": "Image"
         },
         {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "options": [
+                {
+                    "value": "fit-content",
+                    "label": "Fit Content"
+                },
+                {
+                    "value": "fill",
+                    "label": "Fill"
+                },
+                {
+                    "value": "custom",
+                    "label": "Custom"
+                }
+            ],
+            "default": "fill"
+        },
+        {
             "type": "range",
             "id": "image_width",
             "label": "Image Width",
             "min": 0,
-            "max": 2000,
-            "step": 20,
-            "default": 200 
-        },
-        {
-            "type": "range",
-            "id": "image_height",
-            "label": "Image Height",
-            "min": 0,
-            "max": 2000,
-            "step": 20,
-            "default": 200  
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "default": 100,
+            "visible_if": "{{ block.settings.width == 'custom' }}"
         },
         {
             "type": "text",
