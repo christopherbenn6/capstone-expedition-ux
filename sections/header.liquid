@@ -1,6 +1,10 @@
 <header>
   <h2 class="header__title">
-    {{ shop.name | link_to: routes.root_url }}
+    {% for block in section.blocks %}
+      {% if block.type == 'logo_heading' %}
+        {%  content_for 'block', type: 'logo-heading', id: '{{block.id}}' %}
+      {% endif %}
+      {% endfor %}
   </h2>
 
   <div class="header__menu">
@@ -77,6 +81,11 @@ header .header__icons {
       "type": "link_list",
       "id": "menu",
       "label": "t:labels.menu"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header"
     }
   ]
 }
