@@ -3,17 +3,17 @@
 {% enddoc %}
 
 <div class="logo-heading">
-    <img src="{{block.settings.logo_image}}" alt="{{block.settings.alt_text}}">
-    <{{ block.settings.size }}><a href="#" {{ block.shopify_attributes }}> {{ block.settings.logo_text }} </a> </{{ block.settings.size }}>
+    <img src="{{block.settings.logo_image}}" alt="{{block.settings.alt_text}}" width="32" height="32">
+    <{{ block.settings.size }}><a href="#" style="color:{{block.settings.text_colour}}" {{ block.shopify_attributes }}> {{ block.settings.logo_text }} </a> </{{ block.settings.size }}>
 </div>
 
 {% stylesheet %}
-  .logo-heading {
-    display: flex;
-  }
-  .logo-heading {
-    color: {{block.settings.text_colour}}
-  }
+    .logo-heading {
+        display: flex;
+    }
+    .logo {
+        max-width: 2rem;
+    }
 {% endstylesheet %}
 
 {% schema %}
