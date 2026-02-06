@@ -2,8 +2,8 @@
   Outputs a Logo with a heading
 {% enddoc %}
 
-<div class="logo-heading">
-<h1><a href="#" {{ block.shopify_attributes }}> {{ block.settings.text }} </a> </h1>
+<div class="logo-heading" {{ block.shopify_attributes }}>
+<h1 {{ block.shopify_attributes }}><a href="#" {{ block.shopify_attributes }}> {{ block.settings.text }} </a> </h1>
 </div>
 
 {% stylesheet %}
