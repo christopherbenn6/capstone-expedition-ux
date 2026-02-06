@@ -2,31 +2,39 @@
   Outputs a Logo with a heading
 {% enddoc %}
 
-<h1>
-
-</h1>
+<div class="logo-heading">
+<{{ block.settings.size }}><a href="#"> {{ block.settings.text }} </a> </{{ block.settings.size }}>
+</div>
 
 {% stylesheet %}
-  
+  .logo-heading {
+    display: flex;
+  }
 {% endstylesheet %}
 
 {% schema %}
 {
     "name": "Logo Heading",
-    "tag": null,
     "settings": [
         {
             "type": "text",
-            "id": "custom_button_text",
+            "id": "logo_text",
             "label": "Text",
             "default": "Text"
         },
         {
             "type": "select",
-            "id": "font",
-            "label": "Font",
+            "id": "size",
+            "label": "Size",
             "options": [
-                
+                {
+                    "value": "h1",
+                    "label": "Heading 1"
+                },
+                {
+                    "value": "h2",
+                    "label": "Heading 2"
+                }
             ]
         }
     ]
