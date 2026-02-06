@@ -1,0 +1,47 @@
+{% doc %}
+    Outputs an image
+{% enddoc %}
+
+    {% if block.settings.logo_image %}
+    <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{block.settings.alt_text}}" width="{{ block.settings.image_width }}" height="{{ block.settings.image_height }}" {{ block.shopify_attributes }}>
+    {% endif %}
+
+{% stylesheet  %}  
+
+{% endstylesheet %}
+
+{% schema  %}
+{
+    "name": "Image",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "range",
+            "id": "image_width",
+            "label": "Image Width",
+            "min": 0,
+            "max": 2000,
+            "step": 20,
+            "default": 200 
+        },
+        {
+            "type": "range",
+            "id": "image_height",
+            "label": "Image Height",
+            "min": 0,
+            "max": 2000,
+            "step": 20,
+            "default": 200  
+        },
+        {
+            "type": "text",
+            "id": "alt_text",
+            "label": "Image Alternative Text"
+        }
+    ]
+}
+{% endschema %}
