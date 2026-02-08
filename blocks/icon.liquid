@@ -2,27 +2,17 @@
   Outputs a icon. Options for size, image, clickable or not and open in new tab or not
 {% enddoc %}
 
-{% capture icon %}
-  {% render 'icon-or-image',
-    icon: block.settings.,
-    image_upload: block_settings.image_upload,
-    width: block_settings.width,
-    class_name: icon_block_class,
-    attributes: block.shopify_attributes
-  %}
-{% endcapture %}
-
 {% if block.settings.icon_url != blank %}
     <a href="{{ block.settings.icon_url }}"
     {% if block.settings.open_in_new_tab == true %}
         target="_blank"
     {% endif %}
     >
-    {{ icon }}
+    {% render 'icon', icon: block.settings.icon_image, width: block.settings.width %}
     </a>
 {% else %}
 
-    {{ icon }}
+    {% comment %} Image / SVG here {% endcomment %}
 
 {% endif %}
 
