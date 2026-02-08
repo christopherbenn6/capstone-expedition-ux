@@ -1,33 +1,25 @@
 <footer>
-   <div class="footer_inner"> 
+   <div class="footer__inner"> 
   {% content_for 'blocks' %}
 </div>
+  
+  <div class="footer__links">
+    {% for link in section.settings.menu.links %}
+      {{ link.title | link_to: link.url }}
+    {% endfor %}
+  </div>
   <div class="footer__copyright">
     &copy;
     {{ 'now' | date: '%Y' }}
     {{ shop.name | link_to: routes.root_url }}, {{ powered_by_link }}
   </div>
 
-  <div class="footer__links">
-    {% for link in section.settings.menu.links %}
-      {{ link.title | link_to: link.url }}
-    {% endfor %}
-  </div>
-
-  <div class="footer__payment">
-    {% if section.settings.show_payment_icons %}
-      {% for type in shop.enabled_payment_types %}
-        {{ type | payment_type_svg_tag }}
-      {% endfor %}
-    {% endif %}
-  </div>
 </footer>
 
 {% stylesheet %}
-  footer_inner {
+  footer__inner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
     margin-top: 2rem;
     padding: 2rem 1rem;
@@ -39,6 +31,7 @@
   footer .footer__links,
   footer .footer__payment {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
   }
 {% endstylesheet %}
