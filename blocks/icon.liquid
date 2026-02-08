@@ -12,12 +12,16 @@
         src="{{ block.settings.icon_image | image_url }}"
         width="{{ block.settings.width }}"
         height="{{ block.settings.width }}"
-        alt="{{ icon.alt | escape }}"
-        loading="lazy"
+        alt="{{ block.settings.alt_icon_text }}"
     >
     </a>
 {% else %}
-    {% render 'icon', icon: block.settings.icon_image, width: block.settings.width %}
+        <img
+        src="{{ block.settings.icon_image | image_url }}"
+        width="{{ block.settings.width }}"
+        height="{{ block.settings.width }}"
+        alt="{{ block.settings.alt_icon_text }}"
+    >
 {% endif %}
 
 {% stylesheet %}
