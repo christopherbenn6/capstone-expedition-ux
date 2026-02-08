@@ -27,6 +27,19 @@
     "custom_section_3AHyyi": {
       "type": "custom-section",
       "blocks": {
+        "icon_GwWmcB": {
+          "type": "icon",
+          "name": "Icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/black_square.png",
+            "width": 42,
+            "url_options": false,
+            "icon_url": "",
+            "open_in_new_tab": true,
+            "alt_icon_text": "Text content for alt text"
+          },
+          "blocks": {}
+        },
         "logo_heading_rrdLXd": {
           "type": "logo-heading",
           "name": "Logo Heading",
@@ -53,6 +66,7 @@
         }
       },
       "block_order": [
+        "icon_GwWmcB",
         "logo_heading_rrdLXd",
         "image_y8Ep6B"
       ],
