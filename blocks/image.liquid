@@ -5,11 +5,10 @@
     {% if block.settings.image %}
         <img 
             class="image"
-            style="{% if block.settings.width == 'custom' %} width: {{block.settings.image_width}}%; {% else %} width: {{block.settings.width}}{% endif %};" 
+            style="{% if block.settings.width == 'custom' %} width: {{block.settings.image_width}}%; {% else %} width: {{block.settings.width}};" 
             src="{{ block.settings.image | image_url: width: 3840 }}" 
             alt="{{block.settings.alt_text}}" 
             width="{{ block.settings.image_width }}" 
-            height="auto"
             {{ block.shopify_attributes }}>
     {% endif %}
 
@@ -46,7 +45,7 @@
                     "label": "Custom"
                 }
             ],
-            "default": "100%"
+            "default": "fill"
         },
         {
             "type": "range",
