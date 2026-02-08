@@ -1,10 +1,10 @@
 {% doc %}
-  Outputs a logo. Options for size, image, clickable or not and open in new tab or not
+  Outputs a icon. Options for size, image, clickable or not and open in new tab or not
 {% enddoc %}
 
 {% capture icon %}
   {% render 'icon-or-image',
-    icon: block_settings.icon,
+    icon: block.settings.,
     image_upload: block_settings.image_upload,
     width: block_settings.width,
     class_name: icon_block_class,
@@ -12,8 +12,8 @@
   %}
 {% endcapture %}
 
-{% if block.settings.logo_url != blank %}
-    <a href="{{ block.settings.logo_url }}"
+{% if block.settings.icon_url != blank %}
+    <a href="{{ block.settings.icon_url }}"
     {% if block.settings.open_in_new_tab == true %}
         target="_blank"
     {% endif %}
@@ -23,7 +23,7 @@
 {% else %}
 
     {{ icon }}
-    
+
 {% endif %}
 
 {% stylesheet %}
@@ -32,12 +32,12 @@
 
 {% schema %}
 {
-    "name": "Logo",
+    "name": "Icon",
     "settings": [
         {
             "type": "image_picker",
-            "id": "logo_image",
-            "label": "Logo Image"
+            "id": "icon_image",
+            "label": "icon Image"
         },
         {
             "type": "range",
@@ -57,7 +57,7 @@
         },
         {
             "type": "url",
-            "id": "logo_url",
+            "id": "icon_url",
             "label": "Link",
             "visible_if": "{{ block.settings.url_options == true }}"
         },
@@ -65,7 +65,7 @@
             "type": "checkbox",
             "id": "open_in_new_tab",
             "label": "Open in New Tab",
-            "visible_if": "{{ block.settings.logo_url != blank }}",
+            "visible_if": "{{ block.settings.icon_url != blank }}",
             "default": true
         }
     ]
