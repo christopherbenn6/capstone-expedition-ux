@@ -3,7 +3,11 @@
 {% enddoc %}
 
 {% if block.settings.logo_url != blank %}
-    <a href="{{ block.settings.logo_url }}">
+    <a href="{{ block.settings.logo_url }}"
+    {% if block.settings.open_in_new_tab == true %}
+        target="_blank"
+    {% endif %}
+    >
 
 
     </a>
@@ -43,6 +47,13 @@
             "id": "logo_url",
             "label": "Link",
             "visible_if": "{{ block.settings.url_options == true }}"
+        },
+        {
+            "type": "checkbox",
+            "id": "open_in_new_tab",
+            "label": "Open in New Tab",
+            "visible_if": "{{ block.settings.logo_url != blank }}",
+            "default": true
         }
     ]
 }
