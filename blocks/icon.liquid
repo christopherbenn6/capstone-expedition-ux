@@ -2,7 +2,12 @@
   Outputs a logo. Options for size, image, clickable or not and open in new tab or not
 {% enddoc %}
 
+{% if block.settings.logo_url != blank %}
+    <a href="{{ block.settings.logo_url }}">
 
+
+    </a>
+{% endif %}
 
 {% stylesheet %}
   
