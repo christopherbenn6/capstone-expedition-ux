@@ -1,4 +1,7 @@
 <footer>
+   <div class="footer_inner"> 
+  {% content_for 'blocks' %}
+</div>
   <div class="footer__copyright">
     &copy;
     {{ 'now' | date: '%Y' }}
@@ -21,10 +24,13 @@
 </footer>
 
 {% stylesheet %}
-  footer {
+  footer_inner {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
     margin-top: 2rem;
+    padding: 2rem 1rem;
   }
   footer a {
     text-decoration: none;
@@ -44,13 +50,13 @@
     {
       "type": "link_list",
       "id": "menu",
-      "label": "t:labels.menu"
-    },
+      "label": "Footer Menu"
+    }
+  ],
+  "blocks": [
     {
-      "type": "checkbox",
-      "id": "show_payment_icons",
-      "label": "t:labels.show_payment_icons",
-      "default": true
+      "type": "logo_heading",
+      "name": "Logo + Title"
     }
   ]
 }
