@@ -2,15 +2,28 @@
   Outputs a logo. Options for size, image, clickable or not and open in new tab or not
 {% enddoc %}
 
+{% capture icon %}
+  {% render 'icon-or-image',
+    icon: block_settings.icon,
+    image_upload: block_settings.image_upload,
+    width: block_settings.width,
+    class_name: icon_block_class,
+    attributes: block.shopify_attributes
+  %}
+{% endcapture %}
+
 {% if block.settings.logo_url != blank %}
     <a href="{{ block.settings.logo_url }}"
     {% if block.settings.open_in_new_tab == true %}
         target="_blank"
     {% endif %}
     >
-
-
+    {{ icon }}
     </a>
+{% else %}
+
+    {{ icon }}
+    
 {% endif %}
 
 {% stylesheet %}
