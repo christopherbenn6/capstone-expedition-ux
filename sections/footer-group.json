@@ -13,6 +13,15 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "logo_heading_8rEYaR": {
+          "type": "logo-heading",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "logo_heading_8rEYaR"
+      ],
       "settings": {
         "menu": "footer"
       }
