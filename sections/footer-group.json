@@ -14,13 +14,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "logo_heading_8rEYaR": {
+        "logo_heading": {
           "type": "logo-heading",
           "settings": {}
         }
       },
       "block_order": [
-        "logo_heading_8rEYaR"
+        "logo_heading"
       ],
       "settings": {
         "menu": "footer"
