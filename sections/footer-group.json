@@ -41,7 +41,7 @@
           "name": "Icon",
           "settings": {
             "icon_image": "shopify://shop_images/facebook.png",
-            "width": 15,
+            "width": 24,
             "url_options": false,
             "icon_url": "",
             "open_in_new_tab": true,
@@ -54,7 +54,7 @@
           "name": "Icon",
           "settings": {
             "icon_image": "shopify://shop_images/instagram.png",
-            "width": 18,
+            "width": 24,
             "url_options": false,
             "icon_url": "",
             "open_in_new_tab": true,
