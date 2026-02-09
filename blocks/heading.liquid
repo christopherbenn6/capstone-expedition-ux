@@ -1,12 +1,17 @@
 {% doc %}
-    Renders a heading with options for text content, text colour, font weight, optional link and heading number
+    Renders a heading with options for text content, text colour, font weight, optional link, font size and heading number
 {% enddoc %}
+
+{% assign font_size = block.settings.font_size %}%}
 
 {% if block.settings.heading_url != blank%} 
 
 <a 
     href="{{ block.settings.heading_url }}"  
-    style="color: {{ block.settings.heading_color }};"   
+    style="
+        color: {{ block.settings.heading_color }};
+        font-size: {{ font_size }}
+    "   
     {% if block.settings.open_in_new_tab == true %}
         target="_blank"
     {% endif %}>
@@ -67,6 +72,12 @@
                 "id": "heading_text",
                 "label": "Text",
                 "default": "Heading"
+            },
+            {
+                "type": "number",
+                "id": "font_size",
+                "label": "Font Size",
+                "default": "32"
             },
             {
                 "type": "select",
