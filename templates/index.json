@@ -27,6 +27,20 @@
     "custom_section_3AHyyi": {
       "type": "custom-section",
       "blocks": {
+        "heading_QEyYDc": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Games",
+            "heading_size": "h1",
+            "heading_color": "#000000",
+            "heading_font_weight": "fw-700",
+            "url_options": true,
+            "heading_url": "shopify://pages/games",
+            "open_in_new_tab": true
+          },
+          "blocks": {}
+        },
         "icon_GwWmcB": {
           "type": "icon",
           "name": "Icon",
@@ -66,6 +80,7 @@
         }
       },
       "block_order": [
+        "heading_QEyYDc",
         "icon_GwWmcB",
         "logo_heading_rrdLXd",
         "image_y8Ep6B"
