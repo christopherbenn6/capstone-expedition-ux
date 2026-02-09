@@ -48,7 +48,7 @@
           "settings": {
             "icon_image": "shopify://shop_images/profile.png",
             "width": 100,
-            "url_options": true,
+            "url_options": false,
             "icon_url": "https://nexwavevideogames.com/",
             "open_in_new_tab": true,
             "alt_icon_text": "Text content for alt text"
