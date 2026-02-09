@@ -25,10 +25,21 @@
             "logo_size": 36
           },
           "blocks": {}
+        },
+        "text_UPDbcd": {
+          "type": "text",
+          "name": "t:general.text",
+          "settings": {
+            "text": "Follow Us:",
+            "text_style": "text--subtitle",
+            "alignment": "left"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "logo_heading_8rEYaR"
+        "logo_heading_8rEYaR",
+        "text_UPDbcd"
       ],
       "settings": {
         "menu": "footer"
