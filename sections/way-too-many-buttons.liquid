@@ -1,0 +1,61 @@
+<div>
+  <h2>Buttons:</h2>
+  <div class="buttons">
+    {% for block in section.blocks %}
+        <a href="{{ block.settings.custom_button_url }}" class="button-custom" 
+        style="background-color: {{ block.settings.custom_button_colour }}"
+        {{ block.shopify_attributes }} >
+            {{ block.settings.custom_button_text }}
+        </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% stylesheet %}
+  .buttons {
+    display: flex;
+    width: 100%;
+  }
+  .button-custom {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Way Too Many Buttons",
+  "settings": [],
+  "blocks": [
+    {
+        "type": "custom-button",
+        "name": "Custom Button",
+        "settings": [
+            {
+                "type": "text",
+                "id": "custom_button_text",
+                "label": "Text",
+                "default": "Text"
+            },
+            {
+                "type": "color",
+                "id": "custom_button_colour",
+                "label": "Colour",
+                "default": "#000000"
+            },
+            {
+                "type": "url",
+                "id": "custom_button_url",
+                "label": "Link"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "Way Too Many Buttons"
+    }
+  ]
+}
+{% endschema %}

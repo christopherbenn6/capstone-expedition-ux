@@ -13,7 +13,27 @@
   "sections": {
     "header": {
       "type": "header",
-      "settings": {}
+      "blocks": {
+        "logo_heading": {
+          "type": "logo-heading",
+          "name": "Logo Heading",
+          "settings": {
+            "logo_text": "NEXWAVE",
+            "size": "h1",
+            "text_colour": "#000000",
+            "logo_image": "shopify://shop_images/black_square.png",
+            "alt_text": "",
+            "logo_size": 36
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "logo_heading"
+      ],
+      "settings": {
+        "menu": "main-menu-1"
+      }
     }
   },
   "order": [
