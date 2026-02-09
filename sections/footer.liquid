@@ -3,21 +3,21 @@
     {% comment %}
       this renders brand and sub-heading
     {% endcomment %}
-<div class="footer__brand">
-  {% for block in section.blocks %}
-    {% if block.type != 'icon' %}
-      {% render block %}
-    {% endif %}
-  {% endfor %}
-</div>
+    <div class="footer__brand">
+      {% for block in section.blocks %}
+        {% if block.type != 'icon' %}
+          {% render block %}
+        {% endif %}
+      {% endfor %}
+    </div>
 
-<div class="footer__social-icons">
-  {% for block in section.blocks %}
-    {% if block.type == 'icon' %}
-      {% render block %}
-    {% endif %}
-  {% endfor %}
-</div>
+    <div class="footer__social-icons">
+      {% for block in section.blocks %}
+        {% if block.type == 'icon' %}
+          {% render block %}
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 
   <div class="footer__links">
