@@ -1,76 +1,49 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
+  "name": "t:sections.footer.name",
   "type": "footer",
-  "name": "t:general.footer",
   "sections": {
     "footer": {
       "type": "footer",
       "blocks": {
-        "logo_heading_8rEYaR": {
-          "type": "logo-heading",
+        "footer-0": {
+          "type": "link_list",
           "settings": {
-            "logo_text": "NEXWAVE",
-            "size": "h2",
-            "text_colour": "#000000",
-            "logo_image": "shopify://shop_images/black_square.png",
-            "alt_text": "",
-            "logo_size": 36
-          },
-          "blocks": {}
+            "heading": "Quick links",
+            "menu": "footer"
+          }
         },
-        "text_UPDbcd": {
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Info",
+            "menu": "footer"
+          }
+        },
+        "footer-2": {
           "type": "text",
-          "name": "t:general.text",
           "settings": {
-            "text": "Follow Us:",
-            "text_style": "text--subtitle",
-            "alignment": "left"
-          },
-          "blocks": {}
-        },
-        "icon_jByXQm": {
-          "type": "icon",
-          "name": "Icon",
-          "settings": {
-            "icon_image": "shopify://shop_images/facebook.png",
-            "width": 24,
-            "url_options": false,
-            "icon_url": "",
-            "open_in_new_tab": true,
-            "alt_icon_text": "Icon"
-          },
-          "blocks": {}
-        },
-        "icon_XxXDtr": {
-          "type": "icon",
-          "name": "Icon",
-          "settings": {
-            "icon_image": "shopify://shop_images/instagram.png",
-            "width": 24,
-            "url_options": false,
-            "icon_url": "",
-            "open_in_new_tab": true,
-            "alt_icon_text": "Icon"
-          },
-          "blocks": {}
+            "heading": "Our mission",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
         }
       },
       "block_order": [
-        "logo_heading_8rEYaR",
-        "text_UPDbcd",
-        "icon_jByXQm",
-        "icon_XxXDtr"
+        "footer-0",
+        "footer-1",
+        "footer-2"
       ],
       "settings": {
-        "menu": "footer"
+        "color_scheme": "scheme-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 48,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },

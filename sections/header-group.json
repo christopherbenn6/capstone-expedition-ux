@@ -1,42 +1,44 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
+  "name": "t:sections.header.name",
   "type": "header",
-  "name": "t:general.header",
   "sections": {
-    "header": {
-      "type": "header",
+    "announcement-bar": {
+      "type": "announcement-bar",
       "blocks": {
-        "logo_heading": {
-          "type": "logo-heading",
-          "name": "Logo Heading",
+        "announcement-bar-0": {
+          "type": "announcement",
           "settings": {
-            "logo_text": "NEXWAVE",
-            "size": "h1",
-            "text_colour": "#000000",
-            "logo_image": "shopify://shop_images/black_square.png",
-            "alt_text": "",
-            "logo_size": 36
-          },
-          "blocks": {}
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "color_scheme": "scheme-1",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "logo_heading"
-      ],
+        "announcement-bar-0"
+      ]
+    },
+    "header": {
+      "type": "header",
       "settings": {
-        "menu": "main-menu-1"
+        "color_scheme": "scheme-1",
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
   "order": [
+    "announcement-bar",
     "header"
   ]
 }
