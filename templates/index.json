@@ -32,6 +32,7 @@
           "name": "Heading",
           "settings": {
             "heading_text": "Games",
+            "font_size": 32,
             "heading_size": "h1",
             "heading_color": "#000000",
             "heading_font_weight": "fw-700",
