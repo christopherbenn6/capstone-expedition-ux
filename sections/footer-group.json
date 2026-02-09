@@ -13,9 +13,64 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "logo_heading_8rEYaR": {
+          "type": "logo-heading",
+          "settings": {
+            "logo_text": "NEXWAVE",
+            "size": "h2",
+            "text_colour": "#000000",
+            "logo_image": "shopify://shop_images/black_square.png",
+            "alt_text": "",
+            "logo_size": 36
+          },
+          "blocks": {}
+        },
+        "text_UPDbcd": {
+          "type": "text",
+          "name": "t:general.text",
+          "settings": {
+            "text": "Follow Us:",
+            "text_style": "text--subtitle",
+            "alignment": "left"
+          },
+          "blocks": {}
+        },
+        "icon_jByXQm": {
+          "type": "icon",
+          "name": "Icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/facebook.png",
+            "width": 24,
+            "url_options": false,
+            "icon_url": "",
+            "open_in_new_tab": true,
+            "alt_icon_text": "Icon"
+          },
+          "blocks": {}
+        },
+        "icon_XxXDtr": {
+          "type": "icon",
+          "name": "Icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/instagram.png",
+            "width": 24,
+            "url_options": false,
+            "icon_url": "",
+            "open_in_new_tab": true,
+            "alt_icon_text": "Icon"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "logo_heading_8rEYaR",
+        "text_UPDbcd",
+        "icon_jByXQm",
+        "icon_XxXDtr"
+      ],
       "settings": {
-        "menu": "",
-        "show_payment_icons": true
+        "menu": "footer"
       }
     }
   },

@@ -27,6 +27,34 @@
     "custom_section_3AHyyi": {
       "type": "custom-section",
       "blocks": {
+        "heading_QEyYDc": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Games",
+            "font_size": 32,
+            "heading_size": "h1",
+            "heading_color": "#000000",
+            "heading_font_weight": "fw-700",
+            "url_options": true,
+            "heading_url": "shopify://pages/games",
+            "open_in_new_tab": true
+          },
+          "blocks": {}
+        },
+        "icon_GwWmcB": {
+          "type": "icon",
+          "name": "Icon",
+          "settings": {
+            "icon_image": "shopify://shop_images/profile.png",
+            "width": 100,
+            "url_options": false,
+            "icon_url": "https://nexwavevideogames.com/",
+            "open_in_new_tab": true,
+            "alt_icon_text": "Text content for alt text"
+          },
+          "blocks": {}
+        },
         "logo_heading_rrdLXd": {
           "type": "logo-heading",
           "name": "Logo Heading",
@@ -36,7 +64,7 @@
             "text_colour": "#000000",
             "logo_image": "shopify://shop_images/black_square.png",
             "alt_text": "",
-            "logo_size": 79
+            "logo_size": 36
           },
           "blocks": {}
         },
@@ -53,6 +81,8 @@
         }
       },
       "block_order": [
+        "heading_QEyYDc",
+        "icon_GwWmcB",
         "logo_heading_rrdLXd",
         "image_y8Ep6B"
       ],
