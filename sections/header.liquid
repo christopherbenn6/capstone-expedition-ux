@@ -1,7 +1,7 @@
 <header>
-  <h2 class="header__title">
-    {{ shop.name | link_to: routes.root_url }}
-  </h2>
+ <div class="header__title">
+  {% content_for 'blocks' %}
+</div>
 
   <div class="header__menu">
     {% for link in section.settings.menu.links %}
@@ -77,6 +77,14 @@ header .header__icons {
       "type": "link_list",
       "id": "menu",
       "label": "t:labels.menu"
+    }
+  ],
+ "blocks": [
+    { "type": "@theme" }
+  ],
+  "presets": [
+    {
+      "name": "Header"
     }
   ]
 }
