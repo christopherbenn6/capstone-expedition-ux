@@ -82,6 +82,37 @@
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
 
+    /* Nexwave: inline search bar for desktop */
+  .nx-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 32px;
+  }
+
+  .nx-search__input {
+    border: 0;
+    padding: 0 10px;
+    width: 220px;
+    height: 32px;
+    outline: none;
+  }
+
+  .nx-search__btn {
+    border: 0;
+    border-left: 1px solid #999;
+    background: transparent;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+  }
+
+
+
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -232,7 +263,19 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+      <form class="nx-search" action="{{ routes.search_url }}" method="get" role="search">
+  <input
+    class="nx-search__input"
+    type="search"
+    name="q"
+    placeholder="Search"
+    aria-label="Search"
+  >
+  <button class="nx-search__btn" type="submit" aria-label="Search">
+    <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
+  </button>
+</form>
+
 
       {%- if shop.customer_accounts_enabled -%}
         <a
