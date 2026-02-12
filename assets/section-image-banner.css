@@ -449,8 +449,9 @@
   display: inline-flex;
   flex-wrap: wrap;
   gap: 1rem;
-  max-width: 45rem;
+  max-width: 15rem;
   word-break: break-word;
+  min-width: 100%;
 }
 
 @media screen and (max-width: 749px) {
@@ -497,4 +498,24 @@
   }
 }
 
-.arrow-button {}
+.arrow-button {
+  border-top: 1px solid white;
+  width: 40rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem !important;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin-top: 10rem;
+}
+
+.arrow-button svg {
+  max-width: 24px
+}
+
+@media screen and (max-width: 400px) {
+  .arrow-button {
+    width: 100%;
+  }
+}
