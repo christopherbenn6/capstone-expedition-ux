@@ -289,6 +289,9 @@
       <a href="{{ routes.search_url }}" class="header__icon header__icon--search link focus-inset" aria-label="Search">
         <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
       </a>
+      {% if section.settings.menu != blank %}
+        {% render 'header-drawer' %}
+        {% endif %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a
