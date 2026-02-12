@@ -498,11 +498,12 @@
 }
 
 .arrow-button {
-  border-top: 4px solid white;
+  border-top: 1px solid white;
   width: 100%;
   color: white;
   text-decoration: none;
   font-size: 1.5rem !important;
+  display: flex;
 }
 
 .banner__buttons{
