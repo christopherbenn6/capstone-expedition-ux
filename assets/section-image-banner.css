@@ -500,7 +500,7 @@
 
 .arrow-button {
   border-top: 1px solid white;
-  max-width: 30rem;
+  width: 100%;
   color: white;
   text-decoration: none;
   font-size: 1.5rem !important;
