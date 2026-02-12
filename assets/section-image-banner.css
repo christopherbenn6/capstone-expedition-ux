@@ -515,7 +515,7 @@
 }
 
 @media screen and (max-width > 400px) {
-  .arrow-button{
+  .arrow-button {
     width: 20rem;
   }
 }
