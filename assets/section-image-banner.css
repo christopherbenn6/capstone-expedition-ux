@@ -508,6 +508,11 @@
   padding-top: 1rem;
 }
 
+.arrow-button svg {
+  max-width: 24px
+}
+
+
 .banner__buttons{
   min-width: 100%;
 }
