@@ -497,4 +497,6 @@
   }
 }
 
-.arrow-button {}
+.arrow-button {
+  border-top: 4px solid black;
+}
