@@ -451,6 +451,7 @@
   gap: 1rem;
   max-width: 30rem;
   word-break: break-word;
+  min-width: 100%;
 }
 
 @media screen and (max-width: 749px) {
@@ -511,9 +512,4 @@
 
 .arrow-button svg {
   max-width: 24px
-}
-
-
-.banner__buttons{
-  min-width: 100%;
 }
