@@ -77,33 +77,36 @@
 </style>
 
 {%- style -%}
-    .header {
-      padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
-    }
+  .header {
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+  }
 
+  .section-header {
+    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+
+
+
+
+
+
+  @media screen and (min-width: 750px) {
     .section-header {
-      position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-      margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
     }
+  }
 
- 
-
-
-
-
-
-    @media screen and (min-width: 750px) {
-      .section-header {
-        margin-bottom: {{ section.settings.margin_bottom }}px;
-      }
+  @media screen and (min-width: 990px) {
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-
-    @media screen and (min-width: 990px) {
-      .header {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-    }
+  }
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
@@ -253,16 +256,13 @@
         {%- endif -%}
       </div>
 
-
       {% comment %} search icon and rendering hamburger icon {% endcomment %}
       <a href="{{ routes.search_url }}" class="header__icon header__icon--search link focus-inset" aria-label="Search">
         <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
       </a>
       {% if section.settings.menu != blank %}
         {% render 'header-drawer' %}
-        {% endif %}
-
-
+      {% endif %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a
@@ -300,22 +300,24 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      {% comment %} <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {% if cart == empty %}
-          <span class="svg-wrapper">{{ 'icon-cart-empty.svg' | inline_asset_content }}</span>
-        {% else %}
-          <span class="svg-wrapper">{{ 'icon-cart.svg' | inline_asset_content }}</span>
-        {% endif %}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        {%- if cart != empty -%}
-          <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%}
-      </a> {% endcomment %}
+      {% comment %}
+        <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+          {% if cart == empty %}
+            <span class="svg-wrapper">{{ 'icon-cart-empty.svg' | inline_asset_content }}</span>
+          {% else %}
+            <span class="svg-wrapper">{{ 'icon-cart.svg' | inline_asset_content }}</span>
+          {% endif %}
+          <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+          {%- if cart != empty -%}
+            <div class="cart-count-bubble">
+              {%- if cart.item_count < 100 -%}
+                <span aria-hidden="true">{{ cart.item_count }}</span>
+              {%- endif -%}
+              <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+            </div>
+          {%- endif -%}
+        </a>
+      {% endcomment %}
     </div>
   </header>
 </{{ header_tag }}>
