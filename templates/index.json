@@ -47,7 +47,7 @@
         "image_overlay_opacity": 40,
         "image_height": "medium",
         "image_behavior": "ambient",
-        "desktop_content_position": "top-left",
+        "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
         "color_scheme": "scheme-3",
