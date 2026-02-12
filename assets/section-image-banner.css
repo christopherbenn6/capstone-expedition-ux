@@ -513,3 +513,9 @@
 .arrow-button svg {
   max-width: 24px
 }
+
+@media screen and (max-width: 400px) {
+  .arrow-button{
+    width: 10rem;
+  }
+}
