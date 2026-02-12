@@ -3603,7 +3603,3 @@ details-disclosure>details {
     transform: translateX(100%) scaleX(0);
   }
 }
-
-.sk-ww-facebook-profile {
-  background-color: red;
-}
