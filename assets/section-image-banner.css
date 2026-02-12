@@ -499,7 +499,7 @@
 
 .arrow-button {
   border-top: 4px solid black;
-  max-width: 100%;
+  width: 100%;
   color: white;
   text-decoration: none;
 }
