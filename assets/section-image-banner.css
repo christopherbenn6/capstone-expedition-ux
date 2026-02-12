@@ -505,7 +505,7 @@
   font-size: 1.5rem !important;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .banner__buttons{
