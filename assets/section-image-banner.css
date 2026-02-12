@@ -504,6 +504,7 @@
   text-decoration: none;
   font-size: 1.5rem !important;
   display: flex;
+  padding: 1rem;
 }
 
 .banner__buttons{
