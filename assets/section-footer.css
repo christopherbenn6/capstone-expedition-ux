@@ -523,3 +523,21 @@
   width: 100%;
   margin-top: 0.5rem;
 }
+
+/* this is for desktop footer column */
+@media screen and (min-width: 750px) {
+  .footer__blocks-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:flex-start;
+    gap:4rem;
+  }
+
+  .footer__blocks-wrapper .footer-block.grid__item {
+    width: 100%;
+    margin:0;
+    padding:0;
+  }
+
+
+}
