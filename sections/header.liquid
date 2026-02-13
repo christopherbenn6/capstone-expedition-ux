@@ -118,6 +118,9 @@
     display: grid;
     place-items: center;
   }
+  .nx-search-icon {
+    display:flex;
+  }
 
     @media screen and (min-width: 750px) {
       .section-header {
@@ -140,6 +143,9 @@
     }
     .nx-search {
        display: flex; /*this shows search box only on desktop */
+      }
+      nx-search-icon  {
+        display:none;
       }
     }
 {%- endstyle -%}
@@ -292,6 +298,12 @@
       </div>
 
       {% comment %} search icon and rendering hamburger icon {% endcomment %}
+      {% comment %} for mobile {% endcomment %}
+
+      <a href="{{ routes.search_url }}" class="header__icon nx-search-icon link focus-inset" aria-label="Search">
+        <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
+      </a>
+      {% comment %} for desktop {% endcomment %}
       <form class="nx-search" action="{{ routes.search_url }}" method="get" role="search">
         <input
           class="nx-search__input"
