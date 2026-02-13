@@ -506,3 +506,20 @@
     }
   }
 }
+
+
+/* --- This is our custom stylings --- */
+
+/* Logo & Sitetitle side by side */
+.footer-block__brand-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Social icons go to next line */
+.footer-block__brand-info .footer__list-social {
+  width: 100%;
+  margin-top: 0.5rem;
+}
