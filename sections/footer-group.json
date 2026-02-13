@@ -14,6 +14,26 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "image_HJQHFE": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "alignment": "center"
+          }
+        },
+        "brand_information_zqNghz": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "text_U4wUF8": {
+          "type": "text",
+          "settings": {
+            "heading": "Follow Us:",
+            "subtext": ""
+          }
+        },
         "footer-0": {
           "type": "link_list",
           "settings": {
@@ -23,6 +43,9 @@
         }
       },
       "block_order": [
+        "image_HJQHFE",
+        "brand_information_zqNghz",
+        "text_U4wUF8",
         "footer-0"
       ],
       "settings": {
