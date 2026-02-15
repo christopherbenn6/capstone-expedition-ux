@@ -1,55 +1,61 @@
-{% doc %}
-    Renders store hours, with options to change hours, and styling.
-{% enddoc %}
-
 {% comment %} Div Background Styling {% endcomment %} 
 {% if section.settings.show_background_color %} 
     {% style %}  
         .hours-background {
-            background-color: {{ section.settings.background_color }}
-            border-radius: {{ section.settings.border_radius }}
+            background-color: {{ section.settings.background_color }};
+            border-radius: {{ section.settings.border_radius }}%;
         }
     {% endstyle %} 
 {% endif %}
-<div class="hours-background">
-    {% if section.settings.show_hours_heading %}
-        <h2>{{ section.settings.hours_heading }}</h2>
-    {% endif %}
-    {% if section.settings.show_hours_content %}
-        <h2>{{ section.settings.hours_content }}</h2>
-    {% endif %}
-    <table>
-        <tbody>
-            <tr>
-                <td>Monday</td>
-                <td>{{ section.settings.monday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>{{ section.settings.tuesday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>{{ section.settings.wednesday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>{{ section.settings.thursday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>{{ section.settings.friday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>{{ section.settings.saturday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>{{ section.settings.sunday_hours }}</td>
-            </tr>
-        </tbody>
-    </table>
+
+{% style %}
+    .hours-background {
+        padding: {{ section.settings.padding }}px;
+        margin: {{ section.settings.margin }}px;
+    }
+{% endstyle %}
+
+<div class="page-width grid">
+    <div class="hours-background {{ section.settings.page_width }}">
+        {% if section.settings.show_hours_heading %}
+            <h2>{{ section.settings.hours_heading }}</h2>
+        {% endif %}
+        {% if section.settings.show_hours_content %}
+            <p>{{ section.settings.hours_content }}</p>
+        {% endif %}
+        <table>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>{{ section.settings.monday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>{{ section.settings.tuesday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>{{ section.settings.wednesday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>{{ section.settings.thursday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>{{ section.settings.friday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>{{ section.settings.saturday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>{{ section.settings.sunday_hours }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 
@@ -72,7 +78,7 @@
             "type": "text",
             "id": "hours_heading",
             "label": "Heading",
-            "visible_if": "show_hours_heading"
+            "visible_if": "{{ section.settings.show_hours_heading == true}}"
         },
         {
             "type": "checkbox",
@@ -84,7 +90,7 @@
             "type": "text",
             "id": "hours_content",
             "label": "Content",
-            "visible_if": "show_hours_content"
+            "visible_if": "{{ section.settings.show_hours_content == true }}"
         },
         {
             "type": "text",
@@ -138,14 +144,55 @@
             "type": "color",
             "id": "background_color",
             "label": "Background Colour",
-            "visible_if": "show_background_color"
+            "visible_if": "{{section.settings.show_background_color}}"
         },
         {
             "type": "range",
             "id": "border_radius",
             "label": "Border Radius",
-            "visible_if": "show_background_color",
-            "default": 0
+            "visible_if": "{{section.settings.show_background_color}}",
+            "default": 0,
+            "min": 0,
+            "max": 100,
+            "unit": "%"
+        },
+        {
+            "type": "range",
+            "id": "padding",
+            "label": "Padding",
+            "default": 32,
+            "min": 0,
+            "max": 200,
+            "step": 2
+        },
+        {
+            "type": "range",
+            "id": "margin",
+            "label": "Margin",
+            "default": 32,
+            "min": 0,
+            "max": 200,
+            "step": 2
+        },
+        {
+            "type": "select",
+            "id": "page_width",
+            "label": "Page Width",
+            "options": [
+                {
+                    "label": "Small",
+                    "value": "grid__item--span-4"
+                },
+                {
+                    "label": "Medium",
+                    "value": "grid__item--span-6"
+                },
+                {
+                    "label": "Large",
+                    "value": "grid__item"
+                }
+            ],
+            "default": "grid__item"
         }
     ],
     "presets": [
