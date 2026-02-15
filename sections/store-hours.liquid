@@ -15,45 +15,47 @@
     }
 {% endstyle %}
 
-<div class="hours-background page-width">
-    {% if section.settings.show_hours_heading %}
-        <h2>{{ section.settings.hours_heading }}</h2>
-    {% endif %}
-    {% if section.settings.show_hours_content %}
-        <p>{{ section.settings.hours_content }}</p>
-    {% endif %}
-    <table>
-        <tbody>
-            <tr>
-                <td>Monday</td>
-                <td>{{ section.settings.monday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>{{ section.settings.tuesday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>{{ section.settings.wednesday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>{{ section.settings.thursday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>{{ section.settings.friday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>{{ section.settings.saturday_hours }}</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>{{ section.settings.sunday_hours }}</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="page-width">
+    <div class="hours-background">
+        {% if section.settings.show_hours_heading %}
+            <h2>{{ section.settings.hours_heading }}</h2>
+        {% endif %}
+        {% if section.settings.show_hours_content %}
+            <p>{{ section.settings.hours_content }}</p>
+        {% endif %}
+        <table>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>{{ section.settings.monday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>{{ section.settings.tuesday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>{{ section.settings.wednesday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>{{ section.settings.thursday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>{{ section.settings.friday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>{{ section.settings.saturday_hours }}</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>{{ section.settings.sunday_hours }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 
