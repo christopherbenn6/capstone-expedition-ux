@@ -7,6 +7,14 @@
         }
     {% endstyle %} 
 {% endif %}
+
+{% style %}
+    .hours-background {
+        padding: {{ section.settings.padding }}px
+        margin: {{ section.settings.margin }}px
+    }
+{% endstyle %}
+
 <div class="hours-background">
     {% if section.settings.show_hours_heading %}
         <h2>{{ section.settings.hours_heading }}</h2>
