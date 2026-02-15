@@ -16,7 +16,7 @@
 {% endstyle %}
 
 <div class="page-width">
-    <div class="hours-background {{ section.settings.page_width }}">
+    <div class="hours-background grid__item {{ section.settings.page_width }}">
         {% if section.settings.show_hours_heading %}
             <h2>{{ section.settings.hours_heading }}</h2>
         {% endif %}
@@ -188,7 +188,7 @@
                     "value": "grid__item--span-6"
                 },
                 {
-                    "label": "Small",
+                    "label": "Large",
                     "value": "grid__item"
                 }
             ],
