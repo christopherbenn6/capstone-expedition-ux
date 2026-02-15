@@ -16,7 +16,7 @@
 {% endstyle %}
 
 <div class="page-width">
-    <div class="hours-background">
+    <div class="hours-background {{ section.settings.page_width }}">
         {% if section.settings.show_hours_heading %}
             <h2>{{ section.settings.hours_heading }}</h2>
         {% endif %}
@@ -176,7 +176,7 @@
         },
         {
             "type": "select",
-            "id": "width",
+            "id": "page_width",
             "label": "Page Width",
             "options": [
                 {
