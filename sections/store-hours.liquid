@@ -2,16 +2,16 @@
 {% if section.settings.show_background_color %} 
     {% style %}  
         .hours-background {
-            background-color: {{ section.settings.background_color }}
-            border-radius: {{ section.settings.border_radius }}%
+            background-color: {{ section.settings.background_color }};
+            border-radius: {{ section.settings.border_radius }}%;
         }
     {% endstyle %} 
 {% endif %}
 
 {% style %}
     .hours-background {
-        padding: {{ section.settings.padding }}px
-        margin: {{ section.settings.margin }}px
+        padding: {{ section.settings.padding }}px;
+        margin: {{ section.settings.margin }}px;
     }
 {% endstyle %}
 
