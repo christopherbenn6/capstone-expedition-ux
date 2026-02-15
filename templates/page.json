@@ -1,14 +1,111 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 68,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_M96Hez": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JzJKkG": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_ThDtWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nexwave Video Games is a retro gaming store that began in the late 1990s from a passion for collecting and selling games. It grew from flea market sales into an established business in 2001.<br/><br/>Nexwave Video Games is a retro gaming store that began in the late 1990s from a passion for collecting and selling games. It grew from flea market sales into an established business in 2001.<br/><br/>Nexwave Video Games is a retro gaming store that began in the late 1990s from a passion for collecting and selling games. It grew from flea market sales into an established business in 2001.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JzJKkG",
+        "text_ThDtWL"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/black_square.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_UUCV7z": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FE6x8e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our History",
+            "heading_size": "h1"
+          }
+        },
+        "text_WBcrqW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nexwave Video Games is a retro gaming store that began in the late 1990s from a passion for collecting and selling games. It grew from flea market sales into an established business in 2001.<br/><br/>Nexwave Video Games is a retro gaming store that began in the late 1990s from a passion for collecting and selling games. It grew from flea market sales into an established business in 2001.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_Hk4Xj6": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FE6x8e",
+        "text_WBcrqW",
+        "button_Hk4Xj6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_M96Hez",
+    "image_with_text_UUCV7z"
   ]
 }

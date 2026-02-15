@@ -506,3 +506,62 @@
     }
   }
 }
+
+
+/* --- This is our custom stylings --- */
+
+/* Logo & Sitetitle side by side */
+.footer-block__brand-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Social icons go to next line */
+.footer-block__brand-info .footer__list-social {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* icons placement */
+/* mobile */
+@media screen and (max-width: 749px) {
+  .footer-block__brand-info .footer__list-social {
+    order: 3;
+    margin-top: 0.5rem;
+  }
+}
+/* desktop */
+@media screen and (min-width: 750px) {
+  .footer__blocks-wrapper {
+    display:flex;
+    justify-content:space-between;
+    align-content: flex-start;
+    gap:3rem;    
+  }
+
+  /* logo and title*/
+  .footer-block__brand-info {
+    max-width:250px;
+  }
+
+  /* menu block */
+  .footer-block--menu {
+    flex:1;
+    text-align: center;
+  }
+
+  /* social icons block */
+  .footer-block--follow-us {
+    text-align:right;
+    max-width:250px;
+  }
+
+  .footer-block--follow-us .footer__list-social {
+    justify-content: flex-end
+  } 
+}
+
+
+

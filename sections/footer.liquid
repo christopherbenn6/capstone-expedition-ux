@@ -68,7 +68,7 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if block.type == 'follow_us' %} footer-block--follow-us{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -80,6 +80,17 @@
                 {%- endif -%}
 
                 {%- case block.type -%}
+                  {%- when 'follow_us' -%}
+                    <div class="footer-follow-us">
+                      {%- if block.settings.heading != blank -%}
+                        <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
+                      {%- endif -%}
+
+                      {%- if block.settings.show_social and has_social_icons -%}
+                        {%- render 'social-icons', class: 'footer__list-social' -%}
+                      {%- endif -%}
+                    </div>
+
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
@@ -301,8 +312,9 @@
       <div class="footer__copyright caption">
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+          .
         </small>
-        <small class="copyright__content">{{ powered_by_link }}</small>
+        <small class="copyright__content">All rights reserved</small>
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
@@ -321,7 +333,6 @@
   </div>
 </footer>
 
-<<<<<<< HEAD
 {% stylesheet %}
   .footer__inner {
     display: flex;
@@ -348,12 +359,8 @@
     padding: 1rem;
     align-items: center;
   }
-
-
 {% endstylesheet %}
 
-=======
->>>>>>> main
 {% schema %}
 {
   "name": "t:sections.footer.name",
