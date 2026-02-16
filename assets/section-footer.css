@@ -548,8 +548,7 @@
 
   /* menu block */
   .footer-block--menu {
-    flex:1;
-    text-align: center;
+    display:flex;
   }
 
   /* social icons block */
