@@ -579,7 +579,7 @@ grid-column: 1/-1;
     padding: 0;
   }
       .footer-block__details-content>:first-child .list-menu__item--link  {
-        padding-top:unset;
+        padding-top:unset !important;
       }
   /* social icons block */
   /* .footer-block--follow-us {
