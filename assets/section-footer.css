@@ -588,7 +588,7 @@ grid-column: 1/-1;
     
   }
   .footer-follow-us .footer__list-social {
-    gap:1rem;
+    gap:2rem;
 
   }
 }
