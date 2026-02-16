@@ -588,6 +588,10 @@
   /* .footer-block--follow-us .footer__list-social {
     justify-content: flex-end;
   }  */
+
+  .footer-block grid__item footer-block--menu {
+    order: 2;
+  }
 }
 
 
