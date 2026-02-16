@@ -548,8 +548,8 @@
 
   /* brand-info */
     .footer__blocks-wrapper {
-    /* display: grid !important; */
-    grid-template-columns: 220px 1fr 220px;
+    display: grid !important;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: start;
     column-gap: 4rem;
   }
