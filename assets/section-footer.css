@@ -584,6 +584,7 @@ grid-column: 1/-1;
   /* social icons block */
    .footer-block--follow-us{
      grid-column: 3;
+     grid-row:2;
     justify-self: end;
     text-align: right;
   } 
