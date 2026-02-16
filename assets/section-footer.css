@@ -549,8 +549,8 @@
   /* brand-info */
     .footer__blocks-wrapper {
     display: grid !important;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 2fr auto;
     align-items: start;
     column-gap: 2rem;
     row-gap:2.5rem;
