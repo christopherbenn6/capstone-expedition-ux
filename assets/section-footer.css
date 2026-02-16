@@ -547,9 +547,14 @@
 @media screen and (min-width: 750px) {
    .footer__blocks-wrapper {
     display: grid !important;
-    grid-template-columns: 320px 1fr 220px;
+    grid-template-columns: 220px 1fr 220px;
     align-items: start;
     column-gap: 4rem;
+  }
+
+   .footer__blocks-wrapper > .footer-block.grid__item {
+    width: auto !important;
+    max-width: none !important;
   }
 
   /* brand-info */
