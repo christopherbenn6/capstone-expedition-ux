@@ -551,9 +551,9 @@
     display: grid !important;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto 1fr auto;
-    align-items: center;
-    column-gap: 2rem;
-    row-gap:2.5rem;
+    align-items: start;
+    /* column-gap: 2rem;
+    row-gap:2.5rem; */
   }
 
   .footer-block__brand-info {
