@@ -558,7 +558,7 @@
     width: auto !important;
     max-width: none !important;
   }
-  .footer__blocks-wrapper > .footer-block.grid__item:not(.footer-block--menu):not(.footer-block--follow-us) {
+  .footer__blocks-wrapper grid grid--1-col {
     grid-template-columns:1;
   }
   /* menu block */
