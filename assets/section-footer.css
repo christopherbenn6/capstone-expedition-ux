@@ -529,6 +529,7 @@
 .footer-follow-us .footer__list-social {
   justify-content: flex-start;
   margin: 0;
+  gap:1rem;
 }
 
 /* icons placement */
@@ -588,7 +589,7 @@ grid-column: 1/-1;
   }
   .footer__list-social .list-social__link {
     display:flex;
-    
+
   }
 }
 
