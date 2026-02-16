@@ -548,7 +548,7 @@
 
   /* brand-info */
     .footer__blocks-wrapper {
-    display: grid !important;
+    /* display: grid !important; */
     grid-template-columns: repeat(3, auto);
     /* grid-template-rows: auto 1fr auto; */
     align-items: start;
