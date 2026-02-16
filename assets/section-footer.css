@@ -576,7 +576,7 @@ grid-column: 1/-1;
   .footer-block--menu .footer-block__details-content {
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    /* justify-content: center; */
     gap: 2rem;
     margin: 0;
     padding: 0;
