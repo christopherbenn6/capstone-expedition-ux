@@ -532,6 +532,8 @@
 }
 .footer-follow-us .list-social__link {
  padding:unset;
+ display:flex;
+ gap:1rem;
 }
 
 
