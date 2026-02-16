@@ -589,7 +589,12 @@
     justify-content: flex-end;
   }  */
 
-  
+  .list-social__link {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    
+  }
 }
 
 
