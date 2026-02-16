@@ -545,7 +545,9 @@
 }
 /* desktop */
 @media screen and (min-width: 750px) {
-   .footer__blocks-wrapper {
+
+  /* brand-info */
+    .footer__blocks-wrapper {
     display: grid !important;
     grid-template-columns: 220px 1fr 220px;
     align-items: start;
@@ -557,6 +559,8 @@
     max-width: none !important;
   }
 
+
+  /* menu block */
   .footer-block--menu .footer-block__details-content {
      display: flex;
     flex-wrap: wrap;
@@ -565,21 +569,6 @@
     margin: 0;
     padding: 0;
   }
-
-  /* brand-info */
-  .footer-block__brand-info {
-    max-width:200px;
-  }
-  
-
-  /* menu block */
-  .footer-block--menu {
-    display:flex;
-    flex:1;
-    justify-content:center;
-    text-align:center;
-  }
-
   /* social icons block */
   .footer-block--follow-us {
     display:flex;
@@ -587,7 +576,7 @@
     text-align:right;
   }
 
-   .footer-block--follow-us .footer-follow-us {
+   .footer-block--follow-us{
     align-items: flex-end;
     text-align: right;
   }
