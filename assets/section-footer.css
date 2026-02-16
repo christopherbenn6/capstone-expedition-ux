@@ -561,7 +561,7 @@ grid-column: 1/-1;
   }
 
   .footer-follow-us {
-    grid-column: 1/-1;
+    grid-column:1 / span 8;
   }
                   
 
