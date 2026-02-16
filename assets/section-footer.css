@@ -572,7 +572,7 @@
   /* social icons block */
   .footer-block--follow-us {
     display:flex;
-    justify-content:flex-end;
+    
     text-align:right;
   }
 
