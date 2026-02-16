@@ -20,11 +20,11 @@
             "show_social": false
           }
         },
-        "text_k4ci6r": {
-          "type": "text",
+        "follow_us_NGFVwB": {
+          "type": "follow_us",
           "settings": {
             "heading": "Follow us:",
-            "subtext": ""
+            "show_social": true
           }
         },
         "footer-0": {
@@ -37,7 +37,7 @@
       },
       "block_order": [
         "brand_information_zqNghz",
-        "text_k4ci6r",
+        "follow_us_NGFVwB",
         "footer-0"
       ],
       "settings": {
