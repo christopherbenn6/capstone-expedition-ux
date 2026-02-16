@@ -538,8 +538,9 @@
    justify-content:flex-start;
   }
   .footer-follow-us .list-social__link {
-   padding-right:1rem;
-   
+   padding:unset;
+   display:flex;
+   gap:1rem;
   }
 }
 /* desktop */
