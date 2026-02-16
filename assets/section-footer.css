@@ -525,12 +525,6 @@
   display:none;
 }
 
-/* .footer-follow-us {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-} */
-
 .footer-follow-us .footer__list-social {
   justify-content: flex-start;
   margin: 0;
