@@ -75,10 +75,11 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
-                {%- endif -%}
-
+                {%- unless block.type == 'follow_us' -%}
+                  {%- if block.settings.heading != blank -%}
+                    <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  {%- endif -%}
+                {%- endunless -%}
                 {%- case block.type -%}
                   {%- when 'follow_us' -%}
                     <div class="footer-follow-us">
