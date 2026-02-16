@@ -582,22 +582,11 @@ grid-column: 1/-1;
   }
   
   /* social icons block */
-  /* .footer-block--follow-us {
-    grid-template-columns:3;
-    justify-self:flex-end;
-    text-align:right;
-  }*/
-
    .footer-block--follow-us{
      grid-column: 3;
     justify-self: end;
     text-align: right;
   } 
-
-  /* .footer-block--follow-us .footer__list-social {
-    justify-content: flex-end;
-  }  */
-
   .list-social__link {
     align-items: center;
     display: flex;
