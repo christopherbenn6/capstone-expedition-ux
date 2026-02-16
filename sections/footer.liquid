@@ -68,12 +68,13 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if block.type == 'follow_us' %} footer-block--follow-us{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {{ block.shopify_attributes }}
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}
+                class="
+                  footer-block grid__item
+                  {% if block.type == 'brand_information' %} footer-block--brand{% endif %}
+                  {% if block.type == 'link_list' %} footer-block--menu{% endif %}
+                  {% if block.type == 'follow_us' %} footer-block--follow-us{% endif %}
+                  {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
+                "
               >
                 {%- unless block.type == 'follow_us' -%}
                   {%- if block.settings.heading != blank -%}
