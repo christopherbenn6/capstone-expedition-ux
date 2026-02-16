@@ -549,7 +549,7 @@
   /* brand-info */
     .footer__blocks-wrapper {
     display: grid !important;
-    
+    grid-template-columns: repeat(12, 1fr);
     align-items: start;
     column-gap: 2rem;
     row-gap:2.5rem;
@@ -557,6 +557,10 @@
 
   .footer-block grid__item .footer-block--brand {
 grid-column: 1/-1;
+  }
+
+  .footer-follow-us {
+    grid-column: 1/-1;
   }
                   
 
