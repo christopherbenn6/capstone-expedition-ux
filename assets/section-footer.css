@@ -559,16 +559,11 @@
 grid-column: 1/-1;
   }
 
- 
-                  
-
    .footer__blocks-wrapper > .footer-block.grid__item {
     width: auto !important;
     max-width: none !important;
   }
-  .footer__blocks-wrapper grid grid--1-col {
-    grid-template-columns:1;
-  }
+  
   /* menu block */
   .footer-block--menu {
     grid-template-columns:3;
