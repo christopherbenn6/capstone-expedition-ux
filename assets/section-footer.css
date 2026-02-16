@@ -572,7 +572,7 @@ grid-column: 1/-1;
   }
   /* menu block */
   .footer-block--menu {
-    grid-template-columns:2;
+    grid-template-columns:3;
   }
   .footer-block--menu .footer-block__details-content {
     display: flex;
