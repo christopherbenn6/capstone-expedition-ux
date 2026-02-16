@@ -587,7 +587,13 @@ grid-column: 1/-1;
      grid-row:2;
     text-align: left;
   } 
- 
+  .footer__list-social {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    padding:0 !important;
+    
+  }
 }
 
 
