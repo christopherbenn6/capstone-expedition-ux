@@ -587,7 +587,7 @@ grid-column: 1/-1;
      grid-row:2;
     text-align: left;
   } 
-  .footer__list-social {
+  .list-social__link {
     align-items: center;
     display: flex;
     gap: 1rem;
