@@ -549,7 +549,7 @@
   /* brand-info */
     .footer__blocks-wrapper {
     display: grid !important;
-    
+    grid-template-columns: 220px 1fr 220px;
     align-items: start;
     column-gap: 4rem;
   }
