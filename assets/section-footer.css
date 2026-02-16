@@ -549,7 +549,7 @@
   /* menu block */
   .footer-block--menu {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
   }
 
   /* social icons block */
