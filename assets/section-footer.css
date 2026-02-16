@@ -586,8 +586,8 @@ grid-column: 1/-1;
    .footer-block--follow-us{
      grid-column: 3;
      grid-row:2;
-    justify-self: end;
-    text-align: right;
+   
+    text-align: left;
   } 
   .list-social__link {
     align-items: center;
