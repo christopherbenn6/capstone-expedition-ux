@@ -530,6 +530,11 @@
   justify-content: flex-start;
   margin: 0; 
 }
+.footer-follow-us .list-social__link {
+ display:flex;
+   gap:1rem;
+}
+
 
 /* icons placement */
 /* mobile */
@@ -539,8 +544,7 @@
   }
   .footer-follow-us .list-social__link {
    padding:unset;
-   display:flex;
-   gap:1rem;
+  
   }
 }
 /* desktop */
