@@ -556,11 +556,7 @@
     align-content: flex-start;
     gap:3rem;    
   }
-
-  /* logo and title*/
-  .footer-block__brand-info {
-    max-width:250px;
-  }
+  
 
   /* menu block */
   .footer-block--menu {
