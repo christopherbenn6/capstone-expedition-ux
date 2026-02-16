@@ -558,9 +558,13 @@
     width: auto !important;
     max-width: none !important;
   }
-
-
+  .footer__blocks-wrapper > .footer-block.grid__item:not(.footer-block--menu):not(.footer-block--follow-us) {
+    grid-template-columns:1;
+  }
   /* menu block */
+  .footer-block--menu {
+    grid-template-columns:3;
+  }
   .footer-block--menu .footer-block__details-content {
     display: flex;
     
@@ -570,16 +574,16 @@
     padding: 0;
   }
   /* social icons block */
-  .footer-block--follow-us {
-    display:flex;
-    justify-content:center;
+  /* .footer-block--follow-us {
+    grid-template-columns:3;
+    justify-self:flex-end;
     text-align:right;
   }
 
    .footer-block--follow-us{
     align-items: flex-end;
     text-align: right;
-  }
+  } */
 
   .footer-block--follow-us .footer__list-social {
     justify-content: flex-end;
