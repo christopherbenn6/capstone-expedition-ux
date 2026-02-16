@@ -528,8 +528,20 @@
 /* mobile */
 @media screen and (max-width: 749px) {
   .footer-block__brand-info .footer__list-social {
+   display:flex;
+   flex-direction:column;
+  }
+
+  .footer-block__brand-info {
+    order: 1;
+  }
+
+  .footer-block--follow-us {
+    order: 2;
+  }
+
+  .footer-block--menu {
     order: 3;
-    margin-top: 0.5rem;
   }
 }
 /* desktop */
