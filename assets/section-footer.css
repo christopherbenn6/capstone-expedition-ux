@@ -593,6 +593,7 @@
     align-items: center;
     display: flex;
     gap: 1rem;
+    padding:unset;
     
   }
 }
