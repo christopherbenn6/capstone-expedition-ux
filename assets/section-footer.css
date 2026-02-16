@@ -578,9 +578,7 @@ grid-column: 1/-1;
     margin: 0;
     padding: 0;
   }
-      .footer-block__details-content>:first-child .list-menu__item--link  {
-        padding-top:unset !important;
-      }
+  
   /* social icons block */
   /* .footer-block--follow-us {
     grid-template-columns:3;
