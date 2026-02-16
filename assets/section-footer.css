@@ -549,6 +549,7 @@
   /* menu block */
   .footer-block--menu {
     display:flex;
+    flex-direction:column;
   }
 
   /* social icons block */
