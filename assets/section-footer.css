@@ -556,7 +556,7 @@
     row-gap:2.5rem; */
   }
 
-   .footer-block__brand-info {
+   .footer-block__brand {
 grid-column: 1/-1;
   }
 
