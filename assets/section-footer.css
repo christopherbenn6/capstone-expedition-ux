@@ -542,9 +542,10 @@
   .footer-block__brand-info .footer__list-social {
    justify-content:flex-start;
   }
-  .footer-follow-us .list-social__link {
-   padding:unset;
-  
+    .footer-follow-us .footer__list-social {
+    gap:2rem;
+    padding:unset;
+
   }
 }
 /* desktop */
