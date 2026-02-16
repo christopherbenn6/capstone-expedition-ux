@@ -571,8 +571,12 @@ grid-column: 1/-1;
     grid-column:2;
   }
   .footer-block--menu .footer-block__details-content {
-   grid-column:2;
-  
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
   }
   /* social icons block */
   /* .footer-block--follow-us {
