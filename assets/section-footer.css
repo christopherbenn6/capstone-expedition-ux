@@ -535,11 +535,11 @@
 
 /* icons placement */
 /* mobile */
-/* @media screen and (max-width: 749px) {
+@media screen and (max-width: 749px) {
   .footer-block__brand-info .footer__list-social {
    justify-content:flex-start;
   }
-} */
+}
 /* desktop */
 @media screen and (min-width: 750px) {
 
