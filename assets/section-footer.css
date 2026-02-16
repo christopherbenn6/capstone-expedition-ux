@@ -539,6 +539,7 @@
   }
   .footer-follow-us .list-social__link {
    padding:unset;
+   gap:1rem
   }
 }
 /* desktop */
