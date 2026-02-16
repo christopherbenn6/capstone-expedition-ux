@@ -560,11 +560,7 @@
 grid-column: 1/-1;
   }
 
-  .footer-follow-us {
-    
-    grid-column: 1 / span 2;
-
-  }
+ 
                   
 
    .footer__blocks-wrapper > .footer-block.grid__item {
