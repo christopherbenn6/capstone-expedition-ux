@@ -589,8 +589,8 @@
     justify-content: flex-end;
   }  */
 
-  .footer-block grid__item footer-block--menu {
-    order: 2;
+  .footer-block.grid__item:second-child {
+    order:3;
   }
 }
 
