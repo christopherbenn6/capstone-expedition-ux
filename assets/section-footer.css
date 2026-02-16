@@ -526,7 +526,7 @@
 }
 
 
-.footer-follow-us .list-social__link {
+.footer-follow-us .footer__list-social {
   justify-content: flex-start;
   margin: 0;
   padding:0
