@@ -549,11 +549,16 @@
   /* brand-info */
     .footer__blocks-wrapper {
     display: grid !important;
-    grid-column: 1/-1;
+    
     align-items: start;
     column-gap: 2rem;
     row-gap:2.5rem;
   }
+
+  .footer-block grid__item.footer-block--brand {
+grid-column: 1/-1;
+  }
+                  
 
    .footer__blocks-wrapper > .footer-block.grid__item {
     width: auto !important;
