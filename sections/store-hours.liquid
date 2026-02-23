@@ -13,17 +13,23 @@
         padding: {{ section.settings.padding }}px;
         margin: {{ section.settings.margin }}px;
     }
+
     .hours-table {
         max-width: 100%;
     }
+
     .about-page-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .about-page-grid {
+
+    }
 {% endstyle %}
 
 <div class="page-width about-page-grid">
-    <div class="hours-background">
+    <section class="hours-background">
         {% if section.settings.show_hours_heading %}
             <h2>{{ section.settings.hours_heading }}</h2>
         {% endif %}
@@ -62,23 +68,21 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-      <div class="map-background">
-    <h2>Map</h2>
-    <p>
-      Located in downtown Edmonton with easy access to public transit and nearby parking. Use the map for quick
-      directions to our store.
-    </p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.2874571240977!2d-113.50208182370365!3d53.57048615792967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023a6accd07ff%3A0x73960089c48325ff!2sNexWave%20Video%20Games!5e0!3m2!1sen!2sca!4v1771879778573!5m2!1sen!2sca"
-      width="600"
-      height="450"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
+    </section>
+    <section class="map-background">
+        <h2>Map</h2>
+        <p>Located in downtown Edmonton with easy access to public transit and nearby parking. Use the map for quick
+        directions to our store.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.2874571240977!2d-113.50208182370365!3d53.57048615792967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023a6accd07ff%3A0x73960089c48325ff!2sNexWave%20Video%20Games!5e0!3m2!1sen!2sca!4v1771879778573!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </section>
 </div>
 
 
