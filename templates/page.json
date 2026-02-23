@@ -119,11 +119,10 @@
         "saturday_hours": "Closed",
         "sunday_hours": "Closed",
         "show_background_color": true,
-        "background_color": "#eeeeee",
+        "background_color": "#f3f3f3",
         "border_radius": 2,
         "padding": 50,
-        "margin": 0,
-        "page_width": "grid__item"
+        "margin": 0
       }
     }
   },
