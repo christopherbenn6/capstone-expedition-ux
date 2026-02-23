@@ -41,6 +41,19 @@
     .maps-embed {
         max-width: 100%;
     }
+
+    .address-background {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .left-address {
+        grid-columns: 1 / 6;
+    }
+
+    .right-address {
+        grid-columns: 6 / -1;
+    }
 {% endstyle %}
 
 <div class="page-width about-page-grid">
@@ -100,8 +113,12 @@
         ></iframe>
     </section>
     <section class="address-background">
-        <h2>Address</h2>
-        <p> {{ section.settings.address_text }}</p>
+        <div class="left-address">
+            <h2>Address</h2>
+            <p> {{ section.settings.address_text }}</p>   
+        </div>
+        <div class="right-address">tehasvugajh</div>
+        
     </section>
 </div>
 
