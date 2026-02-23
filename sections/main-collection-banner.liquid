@@ -22,6 +22,19 @@
       {%- endif -%}
     </div>
 
+    <form class="nx-search" action="{{ routes.search_url }}" method="get" role="search">
+        <input
+          class="nx-search__input"
+          type="search"
+          name="q"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="nx-search__btn" type="submit" aria-label="Search">
+          <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
+        </button>
+      </form>
+
     {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media gradient">
         <img
