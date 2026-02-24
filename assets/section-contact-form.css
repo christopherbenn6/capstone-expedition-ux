@@ -45,10 +45,7 @@
   gap: 6px;
 }
 
-.contact .contact__label {
-  display: block;
-  margin: 0;
-}
+
 
 .contact .field__input,
 .contact .text-area {
