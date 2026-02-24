@@ -98,7 +98,4 @@
   margin-top: 1rem;
 }
 
-/* to hide the default page title from sections/main-page.liquid */
-.template-page .main-page-title {
-  display: none;
-}
+
