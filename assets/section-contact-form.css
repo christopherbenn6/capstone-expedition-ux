@@ -41,6 +41,7 @@
 /* custom css */
 .contact .field {
   margin-bottom:16px;
+  margin-top:16px;
 }
 
 .contact-field__label {
@@ -50,6 +51,7 @@
 .contact .contact-field__input {
   width: 100%;
   padding: 12px;
+  
   box-sizing: border-box;
   border-radius:5px;
   
