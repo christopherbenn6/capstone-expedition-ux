@@ -3603,8 +3603,3 @@ details-disclosure>details {
     transform: translateX(100%) scaleX(0);
   }
 }
-
-/* to hide the default page title from sections/main-page.liquid */
-/* .main-page-title.page-title.h0 {
-  display: none !important;
-} */
