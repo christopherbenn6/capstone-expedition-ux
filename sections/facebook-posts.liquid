@@ -2,10 +2,14 @@
 
 <script>
     async function getPosts() {
-        console.log(`https://graph.facebook.com/v25.0/966738369864702/posts?fields=id,message,created_time,permalink_url&limit=1&access_token={{ key }}`)
-        {% comment %} return fetch(`https://graph.facebook.com/v19.0/{page-id}/posts?fields=id,message,created_time,permalink_url&limit=1&access_token={{ key }}`) {% endcomment %}
-    }
-    getPosts();
+        let url = `https://graph.facebook.com/v25.0/966738369864702/posts?fields=id,message,created_time,permalink_url&limit=1&access_token={{ key }}`;
+        return fetch(url) 
+        .then((res) => {
+            return res.json();
+        })
+    }   
+    let posts = await getPosts();
+    console.log(posts);
 </script>
 
 {% schema %}
