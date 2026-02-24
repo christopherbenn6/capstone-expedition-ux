@@ -541,7 +541,7 @@
   "settings": {
     "description": {
       "label": "Description",
-      "default": "We’d love to hear from you. Fill out the form below and we'll get back to you as soon as possible."
+      "default": "We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible."
     }
   }
 }
