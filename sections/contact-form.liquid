@@ -23,6 +23,15 @@
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
+
+    {% comment %} adding custom description condition {% endcomment %}
+     {%- if section.settings.description != blank -%}
+      <div class="contact-custom-description">
+        {{  section.settings.description }}
+      </div>
+    {% endif %}
+
+
     {%- liquid
       assign contact_form_class = 'isolate'
       if settings.animations_reveal_on_scroll
