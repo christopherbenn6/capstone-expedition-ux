@@ -40,8 +40,9 @@
 
 /* custom css */
 .contact .field {
-  display: block;
-  margin-bottom:16px;
+  display: flex;
+ flex-direction: column;
+  gap: 6px;
 }
 
 .contact .contact__label {
