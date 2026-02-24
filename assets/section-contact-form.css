@@ -50,5 +50,7 @@
 .contact .field__input {
   width: 100%;
   padding: 12px;
+  box-sizing: border-box;
+  border-radius:5px;
   
 }
