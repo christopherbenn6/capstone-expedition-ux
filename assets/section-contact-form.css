@@ -37,3 +37,14 @@
     grid-column-gap: 2rem;
   }
 }
+
+/* custom css */
+.contact .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact .field__input {
+  padding-top: 12px;
+}
