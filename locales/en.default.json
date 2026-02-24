@@ -264,9 +264,9 @@
         "name": "Name",
         "email": "Email",
         "phone": "Phone number",
-        "comment": "Comment",
+        "comment": "Ex. I have these 3 games... etc.",
         "send": "Submit",
-        "post_success": "Ex. I have these 3 games... etc.",
+        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
       }
     },
