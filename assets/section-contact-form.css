@@ -44,12 +44,7 @@
   margin-bottom:16px;
 }
 
-.contact .field__label {
-  position: static;
-  display: block;
-  margin-bottom: 6px;
-  transform: none;
-}
+
 
 .contact .field__input,
 .contact .text-area {
