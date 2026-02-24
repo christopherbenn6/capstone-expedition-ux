@@ -25,12 +25,11 @@
     {%- endif -%}
 
     {% comment %} adding custom description condition {% endcomment %}
-     {%- if section.settings.description != blank -%}
+    {%- if section.settings.description != blank -%}
       <div class="contact-custom-description">
-        {{  section.settings.description }}
+        {{ section.settings.description }}
       </div>
     {% endif %}
-
 
     {%- liquid
       assign contact_form_class = 'isolate'
@@ -38,7 +37,7 @@
         assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
       endif
     -%}
-    
+
     {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
@@ -63,16 +62,17 @@
       {%- endif -%}
       <div class="contact__fields">
         <div class="field">
+          <label class="contact__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
           <input
-            class="field__input"
+            class="contact__input"
             autocomplete="name"
             type="text"
             id="ContactForm-name"
             name="contact[{{ 'templates.contact.form.name' | t }}]"
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-            placeholder="{{ 'templates.contact.form.name' | t }}"
+            placeholder="Ex. Jihn Smith"
           >
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          {% comment %} <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label> {% endcomment %}
         </div>
         <div class="field field--with-error">
           <input
