@@ -3605,6 +3605,6 @@ details-disclosure>details {
 }
 
 /* to hide the default page title from sections/main-page.liquid */
-.main-page-title.page-title.h0 {
+/* .main-page-title.page-title.h0 {
   display: none !important;
-}
+} */
