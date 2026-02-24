@@ -40,11 +40,18 @@
 
 /* custom css */
 .contact .field {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 6px;
+  display: block;
+  margin-bottom:16px;
 }
 
-.contact .field__input {
+.contact .field__label {
+  position: static;
+  display: block;
+  margin-bottom: 6px;
+  transform: none;
+}
+
+.contact .field__input,
+.contact .text-area {
   padding-top: 12px;
 }
