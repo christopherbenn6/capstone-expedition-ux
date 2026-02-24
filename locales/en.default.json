@@ -266,7 +266,7 @@
         "phone": "Phone number",
         "comment": "Comment",
         "send": "Submit",
-        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "post_success": "Ex. I have these 3 games... etc.",
         "error_heading": "Please adjust the following:"
       }
     },
@@ -283,7 +283,6 @@
       "announcement": "Announcement",
       "announcement_bar": "Announcement bar"
     },
-
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
@@ -538,11 +537,11 @@
     }
   },
   "contact-form": {
-  "settings": {
-    "description": {
-      "label": "Description",
-      "default": "We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible."
+    "settings": {
+      "description": {
+        "label": "Description",
+        "default": "We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible."
+      }
     }
   }
-}
 }
