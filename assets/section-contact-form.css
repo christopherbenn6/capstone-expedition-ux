@@ -44,9 +44,7 @@
   flex-direction: column-reverse;
   gap: 6px;
 }
-.contact .field__label {
-  position: static;
-}
+
 .contact .field__input {
   padding-top: 12px;
 }
