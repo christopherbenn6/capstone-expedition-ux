@@ -136,7 +136,7 @@
           id="ContactForm-body"
           class="text-area contact-field__input"
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
-          placeholder="Ex. I have these 3 games... etc."
+          {% comment %} placeholder="Ex. I have these 3 games... etc." {% endcomment %}
         >
           {{- form.body -}}
         </textarea>
