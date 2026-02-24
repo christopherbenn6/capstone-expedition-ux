@@ -144,6 +144,19 @@
           {{- 'templates.contact.form.comment' | t -}}
         </label> {% endcomment %}
       </div>
+      <div class="contact__field">
+        <label for="ContactForm-body" class="contact-field__label"> Attachments: </label>
+        <input
+            autocomplete="email"
+            type="file"
+            id="ContactForm-attachments"
+            class="contact-field__input"
+            name="contact[attachments]"
+          >
+        {% comment %} <label class="form__label field__label" for="ContactForm-body">
+          {{- 'templates.contact.form.comment' | t -}}
+        </label> {% endcomment %}
+      </div>
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
