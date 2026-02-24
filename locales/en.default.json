@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -527,5 +536,13 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "contact-form": {
+  "settings": {
+    "description": {
+      "label": "Description",
+      "default": "We’d love to hear from you. Fill out the form below and we'll get back to you as soon as possible."
+    }
   }
+}
 }
