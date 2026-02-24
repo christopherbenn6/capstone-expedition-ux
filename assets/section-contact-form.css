@@ -40,14 +40,15 @@
 
 /* custom css */
 .contact .field {
-  display: flex;
- flex-direction: column;
-  gap: 6px;
+  margin-bottom:16px;
 }
 
+.contact-field__label {
+  display:block;
+}
 
-
-.contact .field__input,
-.contact .text-area {
-  padding-top: 12px;
+.contact .field__input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
 }
