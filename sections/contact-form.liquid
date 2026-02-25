@@ -140,21 +140,34 @@
         >
           {{- form.body -}}
         </textarea>
-        {% comment %} <label class="form__label field__label" for="ContactForm-body">
-          {{- 'templates.contact.form.comment' | t -}}
-        </label> {% endcomment %}
+        {% comment %}
+          <label class="form__label field__label" for="ContactForm-body">
+            {{- 'templates.contact.form.comment' | t -}}
+          </label>
+        {% endcomment %}
       </div>
       <div class="contact__field">
         <label for="ContactForm-body" class="contact-field__label"> Attachments: </label>
-        <input
+
+        <div class="contact-upload">
+          <div class="contact-upload__icon" aria-hidden="true">
+            {{ 'icon-drag-drop.svg' | inline_asset_content }}
+          </div>
+          <input
             type="file"
             id="ContactForm-attachments"
             class="contact-field__input"
             name="contact[attachments]"
           >
-        {% comment %} <label class="form__label field__label" for="ContactForm-body">
-          {{- 'templates.contact.form.comment' | t -}}
-        </label> {% endcomment %}
+
+          <label for="ContactForm-attachments" class="contact-upload__button"> Select Files </label>
+
+          {% comment %}
+            <label class="form__label field__label" for="ContactForm-body">
+              {{- 'templates.contact.form.comment' | t -}}
+            </label>
+          {% endcomment %}
+        </div>
       </div>
       <div class="contact__button">
         <button type="submit" class="button">
