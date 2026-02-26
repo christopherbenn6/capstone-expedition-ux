@@ -149,6 +149,13 @@
     "facebook_latest_home_M7Lbak": {
       "type": "facebook-latest-home",
       "blocks": {
+        "heading_NnGUma": {
+          "type": "heading",
+          "settings": {
+            "heading": "Latest Posts",
+            "heading_size": "h0"
+          }
+        },
         "button_Keg3N8": {
           "type": "button",
           "settings": {
@@ -159,6 +166,7 @@
         }
       },
       "block_order": [
+        "heading_NnGUma",
         "button_Keg3N8"
       ],
       "name": "3 Facebook Posts",
