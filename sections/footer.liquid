@@ -2,7 +2,7 @@
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
-{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
+
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -68,17 +68,19 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if block.type == 'follow_us' %} footer-block--follow-us{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {{ block.shopify_attributes }}
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}
+                class="
+                  footer-block grid__item
+                  {% if block.type == 'brand_information' %} footer-block--brand{% endif %}
+                  {% if block.type == 'link_list' %} footer-block--menu{% endif %}
+                  {% if block.type == 'follow_us' %} footer-block--follow-us{% endif %}
+                  {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
+                "
               >
-                {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
-                {%- endif -%}
-
+                {%- unless block.type == 'follow_us' -%}
+                  {%- if block.settings.heading != blank -%}
+                    <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  {%- endif -%}
+                {%- endunless -%}
                 {%- case block.type -%}
                   {%- when 'follow_us' -%}
                     <div class="footer-follow-us">
@@ -401,6 +403,15 @@
           "label": "t:sections.footer.blocks.brand_information.settings.show_social.label",
           "info": "t:sections.footer.blocks.brand_information.settings.show_social.info"
         }
+      ]
+    },
+
+    {
+      "type": "follow_us",
+      "name": "Follow us",
+      "settings": [
+        { "type": "inline_richtext", "id": "heading", "default": "Follow us:", "label": "Heading" },
+        { "type": "checkbox", "id": "show_social", "default": true, "label": "Show social icons" }
       ]
     },
     {

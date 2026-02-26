@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "facebook_posts_6aeLgN": {
+      "type": "facebook-posts",
+      "name": "Facebook Posts",
+      "settings": {}
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -148,6 +153,7 @@
     }
   },
   "order": [
+    "facebook_posts_6aeLgN",
     "image_banner",
     "image_with_text_zBhVXb",
     "rich_text_pcyJVY"

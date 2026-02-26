@@ -22,7 +22,7 @@
         "heading_JzJKkG": {
           "type": "heading",
           "settings": {
-            "heading": "",
+            "heading": "About",
             "heading_size": "h1"
           }
         },
@@ -104,6 +104,7 @@
     },
     "store_hours_nj3GiW": {
       "type": "store-hours",
+      "custom_css": [],
       "name": "Store Hours",
       "settings": {
         "show_hours_heading": true,
@@ -118,16 +119,22 @@
         "saturday_hours": "Closed",
         "sunday_hours": "Closed",
         "show_background_color": true,
-        "background_color": "#f5f5f5",
+        "background_color": "#f3f3f3",
         "border_radius": 2,
-        "padding": 32,
+        "padding": 50,
         "margin": 0,
-        "page_width": "grid__item"
+        "address_text": "Our store is conveniently located in downtown Edmonton, making it easy to visit by car or public transit."
       }
+    },
+    "facebook_posts_8aCydf": {
+      "type": "facebook-posts",
+      "name": "Facebook Posts",
+      "settings": {}
     }
   },
   "order": [
     "main",
+    "facebook_posts_8aCydf",
     "image_with_text_M96Hez",
     "image_with_text_UUCV7z",
     "store_hours_nj3GiW"

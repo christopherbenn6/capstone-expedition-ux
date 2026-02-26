@@ -223,8 +223,9 @@
                 preload: true
             }}
           </div>
+          <span class="h2 header__site-title">{{ shop.name }}</span>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <span class="h2 header__site-title">{{ shop.name }}</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -266,8 +267,9 @@
                 preload: true
             }}
           </div>
+          <span class="h2 header__site-title">{{ shop.name }}</span>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <span class="h2 header__site-title">{{ shop.name }}</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -312,6 +314,7 @@
           class="nx-search__input"
           type="search"
           name="q"
+          value="{{ search.terms | escape }}"
           placeholder="Search"
           aria-label="Search"
         >
