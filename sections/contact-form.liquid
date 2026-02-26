@@ -153,12 +153,12 @@
           <div class="contact-upload__icon" aria-hidden="true">
             {{ 'icon-drag-drop.svg' | inline_asset_content }}
           </div>
-          <input
+          {% comment %} <input
             type="file"
             id="ContactForm-attachments"
             class="contact-field__input"
             name="contact[attachments]"
-          >   
+          >    {% endcomment %}
 
           <label for="ContactForm-attachments" class="contact-upload__button"> Select Files </label>
 
