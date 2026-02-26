@@ -451,34 +451,7 @@
           </span>
 
           {% comment %} adding sort by block {% endcomment %}
-          {%- if enable_sorting -%}
-            <form method="get" class="mobile-sort-inline medium-hide large-up-hide">
-              <div class="select">
-                <select
-                  name="sort_by"
-                  class="select__select"
-                  onchange="this.form.submit()"
-                >
-                  {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
-                  {%- for option in results.sort_options -%}
-                    <option
-                      value="{{ option.value | escape }}"
-                      {% if option.value == sort_by %}
-                        selected
-                      {% endif %}
-                    >
-                      {{ option.name | escape }}
-                    </option>
-                  {%- endfor -%}
-                </select>
-              </div>
-
-              {%- if results.terms -%}
-                <input type="hidden" name="q" value="{{ results.terms | escape }}">
-                <input name="options[prefix]" type="hidden" value="last">
-              {%- endif -%}
-            </form>
-          {%- endif -%}
+          
           <span class="mobile-facets__open-label button-label medium-hide large-up-hide">
             {%- if enable_filtering and enable_sorting -%}
               {{ 'products.facets.filter_and_sort' | t }}
