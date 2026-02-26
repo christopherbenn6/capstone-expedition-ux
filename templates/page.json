@@ -126,18 +126,12 @@
         "margin": 0,
         "address_text": "Our store is conveniently located in downtown Edmonton, making it easy to visit by car or public transit."
       }
-    },
-    "facebook_latest_page_MVeUPd": {
-      "type": "facebook-latest-page",
-      "name": "12 Facebook Posts",
-      "settings": {}
     }
   },
   "order": [
     "main",
     "image_with_text_M96Hez",
     "image_with_text_UUCV7z",
-    "store_hours_nj3GiW",
-    "facebook_latest_page_MVeUPd"
+    "store_hours_nj3GiW"
   ]
 }
