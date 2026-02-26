@@ -797,53 +797,42 @@
 {% comment %} adding the new sortby block here {% endcomment %}
 
 {%- if enable_sorting -%}
-  <details class="mobile-sort-by medium-hide large-up-hide">
-    <summary class="mobile-sort-by__button focus-offset">
-      <span class="svg-wrapper">
-        {{- 'icon-sort.svg' | inline_asset_content -}}
-      </span>
-      <span>Sort By</span>
-    </summary>
+  <div
+    class="mobile-facets__details js-filter mobile-sort-inline medium-hide large-up-hide"
+    data-index="mobile-sort-inline"
+  >
+    <div class="mobile-facets__summary">
+      <div class="mobile-facets__sort">
+        <label for="SortBy-mobile-inline">{{ 'products.facets.sort_by_label' | t }}</label>
 
-    <div class="mobile-sort-by__panel">
-      <facet-filters-form>
-        <form id="FacetSortFormMobile" class="mobile-sort-by__form">
-          {%- if results.terms -%}
-            <input type="hidden" name="q" value="{{ results.terms | escape }}">
-            <input name="options[prefix]" type="hidden" value="last">
-          {%- endif -%}
+        <div class="select">
+          {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
 
-          {% if results.current_vendor or results.current_type %}
-            <input type="hidden" name="q" value="{{ results.current_vendor }}{{ results.current_type }}">
-          {% endif %}
+          <select
+            name="sort_by"
+            class="select__select"
+            id="SortBy-mobile-inline"
+            aria-describedby="a11y-refresh-page-message"
+          >
+            {%- for option in results.sort_options -%}
+              <option
+                value="{{ option.value | escape }}"
+                {% if option.value == sort_by %}
+                  selected="selected"
+                {% endif %}
+              >
+                {{ option.name | escape }}
+              </option>
+            {%- endfor -%}
+          </select>
 
-          <div class="select">
-            {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
-            <select
-              name="sort_by"
-              class="select__select"
-              id="SortBy-mobile-inline"
-              aria-describedby="a11y-refresh-page-message"
-            >
-              {%- for option in results.sort_options -%}
-                <option
-                  value="{{ option.value | escape }}"
-                  {% if option.value == sort_by %}
-                    selected="selected"
-                  {% endif %}
-                >
-                  {{ option.name | escape }}
-                </option>
-              {%- endfor -%}
-            </select>
-            <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
-            </span>
-          </div>
-        </form>
-      </facet-filters-form>
+          <span class="svg-wrapper">
+            {{- 'icon-caret.svg' | inline_asset_content -}}
+          </span>
+        </div>
+      </div>
     </div>
-  </details>
+  </div>
 {%- endif -%}
 
   <div class="active-facets active-facets-mobile medium-hide large-up-hide">
