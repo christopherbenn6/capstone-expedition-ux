@@ -9,11 +9,6 @@
  */
 {
   "sections": {
-    "facebook_posts_6aeLgN": {
-      "type": "facebook-posts",
-      "name": "Facebook Posts",
-      "settings": {}
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -153,12 +148,24 @@
     },
     "facebook_latest_home_M7Lbak": {
       "type": "facebook-latest-home",
+      "blocks": {
+        "button_Keg3N8": {
+          "type": "button",
+          "settings": {
+            "button_label": "View More",
+            "button_link": "shopify://pages/latest-posts",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "button_Keg3N8"
+      ],
       "name": "3 Facebook Posts",
       "settings": {}
     }
   },
   "order": [
-    "facebook_posts_6aeLgN",
     "image_banner",
     "image_with_text_zBhVXb",
     "rich_text_pcyJVY",
