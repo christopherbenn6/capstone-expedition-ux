@@ -1316,9 +1316,4 @@ input.mobile-facets__checkbox {
     visibility: visible !important;
   }
 
-  .mobile-facets__open .svg-wrapper,
-  .mobile-sort-inline img.icon-sort-img {
-    display: block;
-  }
-
 }
