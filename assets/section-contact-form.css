@@ -40,3 +40,6 @@
 
 /* custom css */
 
+.contact-field__input {
+  display:none;
+}
