@@ -1285,9 +1285,13 @@ input.mobile-facets__checkbox {
 
   .mobile-facets__open-wrapper,
   .mobile-sort-inline .mobile-facets__summary {
-    border: 1px solid rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
     background: #d9d9d9;
     padding: 12px 10px !important;  
+    justify-content: center;
+    min-height: 50px;    
   }
 
   .mobile-facets__open,
