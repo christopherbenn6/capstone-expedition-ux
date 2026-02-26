@@ -151,9 +151,9 @@
         "padding_bottom": 52
       }
     },
-    "facebook_posts_8EXUc7": {
-      "type": "facebook-posts",
-      "name": "Facebook Posts",
+    "facebook_latest_home_M7Lbak": {
+      "type": "facebook-latest-home",
+      "name": "3 Facebook Posts",
       "settings": {}
     }
   },
@@ -162,6 +162,6 @@
     "image_banner",
     "image_with_text_zBhVXb",
     "rich_text_pcyJVY",
-    "facebook_posts_8EXUc7"
+    "facebook_latest_home_M7Lbak"
   ]
 }
