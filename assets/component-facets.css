@@ -1259,3 +1259,34 @@ input.mobile-facets__checkbox {
 
 
 /* custom css */
+/* Mobile:making All Filters and Sort By side-by-side testing */
+@media screen and (max-width: 749px) {
+
+
+  .mobile-facets__wrapper,
+  .mobile-sort-inline {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+ 
+  .mobile-facets__wrapper { 
+    padding-right: 6px; 
+  }
+  .mobile-sort-inline { 
+    padding-left: 6px; 
+  }
+
+ 
+  .mobile-facets__open-wrapper,
+  .mobile-sort-inline .mobile-facets__summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    border: 1px solid #777;
+    background: #d9d9d9;
+  }
+}
