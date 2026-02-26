@@ -1,10 +1,10 @@
-<div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd page-width"></div>
 {%- for block in section.blocks -%}
     {% case block.type %}
         {%- when 'button' -%}
             {%- if block.settings.button_label != blank -%}
-            <h2>Latest Posts</h2>
             <div class="page-width">
+                <h2>Latest Posts</h2>
+                <div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd"></div>
                 <a
                     {% if block.settings.button_link == blank %}
                     role="link" aria-disabled="true"
@@ -24,6 +24,12 @@
 {% schema %} 
 {
     "name": "3 Facebook Posts",
+    "settings": [
+        {
+            "type": "header",
+            "content": "t:sections.image-with-text.settings.header.content"
+        }, 
+    ],
     "blocks": [
         {
             "type": "button",
