@@ -20,7 +20,7 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": "Contact US",
+        "heading": "Contact Us",
         "description": "<p>If you are planning to sell your collection, be sure to message us and we can give you our best offer!</p>",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
