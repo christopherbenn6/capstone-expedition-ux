@@ -166,9 +166,11 @@
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
             {%- endif -%}
 
+            {% comment %} using shopify filter to clean the product description for using it in the product card. {% endcomment %}
+
             {%- if card_product.description != blank -%}
               <p class="card__description">
-                {{ card_product.description | strip_html | truncate: 80 }}
+                {{ card_product.description | strip_html | truncate: 60 }}
               </p>
             {%- endif -%}
 
