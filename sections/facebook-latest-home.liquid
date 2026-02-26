@@ -1,8 +1,36 @@
 <div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd page-width"></div>
 
+
 {% schema %} 
 {
     "name": "3 Facebook Posts",
+    "blocks": [
+        {
+            "type": "button",
+            "name": "t:sections.image-with-text.blocks.button.name",
+            "limit": 1,
+            "settings": [
+                {
+                "type": "text",
+                "id": "button_label",
+                "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+                "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+                "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+                },
+                {
+                "type": "url",
+                "id": "button_link",
+                "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+                },
+                {
+                "type": "checkbox",
+                "id": "button_style_secondary",
+                "default": false,
+                "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+                }
+            ]
+        }
+    ],
     "presets": [
         {
             "name": "3 Facebook Posts"
