@@ -80,11 +80,12 @@
       {%- endif -%}
     </div>
 
-    <form class="nx-search-form" action="{{ routes.search_url }}" method="get" role="search">
+    <form class="nx-search-form" action="{{ collection.url }}" method="get" role="search">
         <input
           class="nx-search-form__input"
           type="search"
           name="q"
+          value="{{ search.terms | escape }}"
           placeholder="Search"
           aria-label="Search"
         >
