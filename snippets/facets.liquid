@@ -798,12 +798,19 @@
 
 {%- if enable_sorting -%}
   <div
+    id="Details-Mobile-SortBy-{{ section.id }}"
     class="mobile-facets__details js-filter mobile-sort-inline medium-hide large-up-hide"
-    data-index="mobile-sort-inline"
   >
     <div class="mobile-facets__summary">
       <div class="mobile-facets__sort">
-        <label for="SortBy-mobile-inline">{{ 'products.facets.sort_by_label' | t }}</label>
+
+        <span class="svg-wrapper">
+          {{- 'icon-sort.svg' | inline_asset_content -}}
+        </span>
+
+        <label for="SortBy-mobile-inline">
+          {{ 'products.facets.sort_by_label' | t }}
+        </label>
 
         <div class="select">
           {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
@@ -830,6 +837,7 @@
             {{- 'icon-caret.svg' | inline_asset_content -}}
           </span>
         </div>
+
       </div>
     </div>
   </div>
