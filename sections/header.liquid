@@ -77,52 +77,6 @@
 </style>
 
 {%- style -%}
-      .header {
-        padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
-      }
-
-      .section-header {
-        position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-        margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
-      }
-
-
-    .header__icons {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-    }
-
-    .nx-search {
-      display: none;
-      align-items: center;
-      border: 1px solid #999;
-      border-radius: 4px;
-      overflow: hidden;
-      height: 32px;
-    }
-
-    .nx-search__input {
-      border: 0;
-      padding: 0 10px;
-      width: 220px;
-      height: 32px;
-      outline: none;
-    }
-
-    .nx-search__btn {
-      border: 0;
-      border-left: 1px solid #999;
-      background: transparent;
-      width: 40px;
-      height: 32px;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
-    }
-    .nx-search-icon {
-      display:flex;
-    }
 
       @media screen and (min-width: 750px) {
         .section-header {
@@ -130,27 +84,7 @@
         }
       }
 
-      @media screen and (min-width: 990px) {
-        .header {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          padding-top: {{ section.settings.padding_top }}px;
-          padding-bottom: {{ section.settings.padding_bottom }}px;
-        }
-        .header__icons {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-left: auto;
-      }
-      .nx-search {
-         display: flex; /*this shows search box only on desktop */
-        }
-      .header__icons .nx-search-icon {
-    display: none !important;
-  }
-      }
+    
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
