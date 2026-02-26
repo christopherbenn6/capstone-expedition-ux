@@ -447,20 +447,30 @@
       <summary class="mobile-facets__open-wrapper focus-offset">
         <span class="mobile-facets__open{% if filter_type == 'drawer' and enable_filtering == false %} medium-hide large-up-hide{% endif %}">
           <span class="svg-wrapper">
-            {{- 'icon-filter.svg' | inline_asset_content -}}
+            {{- 'icon-all-filter.svg' | inline_asset_content -}}
           </span>
+
+          {% comment %} changing to only filter block {% endcomment %}
+
+          {% comment%} this existing block
+            <span class="mobile-facets__open-label button-label medium-hide large-up-hide">
+              {%- if enable_filtering and enable_sorting -%}
+                {{ 'products.facets.filter_and_sort' | t }}
+              {%- elsif enable_filtering -%}
+                {{ 'products.facets.filter_button' | t }}
+              {%- elsif enable_sorting -%}
+                {{ 'products.facets.sort_button' | t }}
+              {%- endif -%}
+            </span>
+          {% endcomment %}
+
+         {% comment %} added this new block only for filter {% endcomment %}
           <span class="mobile-facets__open-label button-label medium-hide large-up-hide">
-            {%- if enable_filtering and enable_sorting -%}
-              {{ 'products.facets.filter_and_sort' | t }}
-            {%- elsif enable_filtering -%}
-              {{ 'products.facets.filter_button' | t }}
-            {%- elsif enable_sorting -%}
-              {{ 'products.facets.sort_button' | t }}
-            {%- endif -%}
+            {{ 'products.facets.filter_and_sort' | t }}
           </span>
           <span class="mobile-facets__open-label button-label small-hide">
             {%- if enable_filtering -%}
-              {{ 'products.facets.filter_button' | t }}
+              {{ 'products.facets.filter_and_sort' | t }}
             {%- endif -%}
           </span>
         </span>
@@ -716,7 +726,9 @@
                 {%- endfor -%}
               {%- endif -%}
 
-              {%- if enable_sorting -%}
+              {% comment %} commenting the below block to hide the soryby drawer for not having it twice. instead added a sortby block right after All filters {% endcomment %}
+
+              {% comment %} {%- if enable_sorting -%}
                 <div
                   id="Details-Mobile-SortBy-{{ section.id }}"
                   class="mobile-facets__details js-filter{% if filter_type == 'drawer' %} medium-hide large-up-hide{% endif %}"
@@ -750,7 +762,7 @@
                     </div>
                   </div>
                 </div>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
 
               <div class="mobile-facets__footer">
                 <facet-remove class="mobile-facets__clear-wrapper">
@@ -781,6 +793,55 @@
       </facet-filters-form>
     </details>
   </menu-drawer>
+
+{% comment %} adding the new sortby block here {% endcomment %}
+
+{%- if enable_sorting -%}
+  <div
+    id="Details-Mobile-SortBy-{{ section.id }}"
+    class="mobile-facets__details js-filter mobile-sort-inline medium-hide large-up-hide"
+  >
+    <div class="mobile-facets__summary">
+      <div class="mobile-facets__sort">
+
+        <span class="svg-wrapper">
+          {{- 'icon-sort.svg' | inline_asset_content -}}
+        </span>
+
+        <label for="SortBy-mobile-inline">
+          {{ 'products.facets.sort_by_label' | t }}
+        </label>
+
+        <div class="select">
+          {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+
+          <select
+            name="sort_by"
+            class="select__select"
+            id="SortBy-mobile-inline"
+            aria-describedby="a11y-refresh-page-message"
+          >
+            {%- for option in results.sort_options -%}
+              <option
+                value="{{ option.value | escape }}"
+                {% if option.value == sort_by %}
+                  selected="selected"
+                {% endif %}
+              >
+                {{ option.name | escape }}
+              </option>
+            {%- endfor -%}
+          </select>
+
+          <span class="svg-wrapper">
+            {{- 'icon-caret.svg' | inline_asset_content -}}
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{%- endif -%}
 
   <div class="active-facets active-facets-mobile medium-hide large-up-hide">
     {%- for filter in results.filters -%}
