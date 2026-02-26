@@ -199,7 +199,7 @@
       "clear": "Clear",
       "clear_all": "Remove all",
       "from": "From",
-      "filter_and_sort": "Filter and sort",
+      "filter_and_sort": "All Filters",
       "filter_by_label": "Filter:",
       "filter_button": "Filter",
       "filters_selected": {
@@ -264,7 +264,7 @@
         "name": "Name",
         "email": "Email",
         "phone": "Phone number",
-        "comment": "Ex. I have these 3 games... etc.",
+        "comment": "Comment",
         "send": "Submit",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
