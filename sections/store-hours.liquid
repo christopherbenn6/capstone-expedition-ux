@@ -1,204 +1,225 @@
-{% comment %} Div Background Styling {% endcomment %} 
-{% if section.settings.show_background_color %} 
-    {% style %}  
-        .hours-background {
-            background-color: {{ section.settings.background_color }};
-            border-radius: {{ section.settings.border_radius }}%;
-        }
-    {% endstyle %} 
+{% comment %} Div Background Styling {% endcomment %}
+{% if section.settings.show_background_color %}
+  {% style %}
+    .hours-background {
+        background-color: {{ section.settings.background_color }};
+        border-radius: {{ section.settings.border_radius }}%;
+    }
+  {% endstyle %}
 {% endif %}
 
 {% style %}
-    .hours-background {
-        padding: {{ section.settings.padding }}px;
-        margin: {{ section.settings.margin }}px;
-    }
+  .hours-background {
+      padding: {{ section.settings.padding }}px;
+      margin: {{ section.settings.margin }}px;
+  }
+  .hours-table {
+    max-width: 100%;
+  }
+  .about-page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 {% endstyle %}
 
-<div class="page-width grid">
-    <div class="hours-background {{ section.settings.page_width }}">
-        {% if section.settings.show_hours_heading %}
-            <h2>{{ section.settings.hours_heading }}</h2>
-        {% endif %}
-        {% if section.settings.show_hours_content %}
-            <p>{{ section.settings.hours_content }}</p>
-        {% endif %}
-        <table>
-            <tbody>
-                <tr>
-                    <td>Monday</td>
-                    <td>{{ section.settings.monday_hours }}</td>
-                </tr>
-                <tr>
-                    <td>Tuesday</td>
-                    <td>{{ section.settings.tuesday_hours }}</td>
-                </tr>
-                <tr>
-                    <td>Wednesday</td>
-                    <td>{{ section.settings.wednesday_hours }}</td>
-                </tr>
-                <tr>
-                    <td>Thursday</td>
-                    <td>{{ section.settings.thursday_hours }}</td>
-                </tr>
-                <tr>
-                    <td>Friday</td>
-                    <td>{{ section.settings.friday_hours }}</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>{{ section.settings.saturday_hours }}</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>{{ section.settings.sunday_hours }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="page-width about-page-grid">
+  <div class="hours-background {{ section.settings.page_width }}">
+    {% if section.settings.show_hours_heading %}
+      <h2>{{ section.settings.hours_heading }}</h2>
+    {% endif %}
+    {% if section.settings.show_hours_content %}
+      <p>{{ section.settings.hours_content }}</p>
+    {% endif %}
+    <table class="hours-table">
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>{{ section.settings.monday_hours }}</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>{{ section.settings.tuesday_hours }}</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>{{ section.settings.wednesday_hours }}</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>{{ section.settings.thursday_hours }}</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>{{ section.settings.friday_hours }}</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>{{ section.settings.saturday_hours }}</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>{{ section.settings.sunday_hours }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="map-background">
+    <h2>Map</h2>
+    <p>
+      Located in downtown Edmonton with easy access to public transit and nearby parking. Use the map for quick
+      directions to our store.
+    </p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.2874571240977!2d-113.50208182370365!3d53.57048615792967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023a6accd07ff%3A0x73960089c48325ff!2sNexWave%20Video%20Games!5e0!3m2!1sen!2sca!4v1771879778573!5m2!1sen!2sca"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
 </div>
-
-
 
 {% schema %}
 {
-    "name": "Store Hours",
-    "tag":  "section",
-    "disabled_on": {
-        "groups": ["header", "footer"]
+  "name": "Store Hours",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_hours_heading",
+      "label": "Show Heading",
+      "default": true
     },
-    "settings": [
+    {
+      "type": "text",
+      "id": "hours_heading",
+      "label": "Heading",
+      "visible_if": "{{ section.settings.show_hours_heading == true}}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_hours_content",
+      "label": "Show Content",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "hours_content",
+      "label": "Content",
+      "visible_if": "{{ section.settings.show_hours_content == true }}"
+    },
+    {
+      "type": "text",
+      "id": "monday_hours",
+      "label": "Monday",
+      "default": "Closed"
+    },
+    {
+      "type": "text",
+      "id": "tuesday_hours",
+      "label": "Tuesday",
+      "default": "Closed"
+    },
+    {
+      "type": "text",
+      "id": "wednesday_hours",
+      "label": "Wednesday",
+      "default": "Closed"
+    },
+    {
+      "type": "text",
+      "id": "thursday_hours",
+      "label": "Thursday",
+      "default": "Closed"
+    },
+    {
+      "type": "text",
+      "id": "friday_hours",
+      "label": "Friday",
+      "default": "Closed"
+    },
+    {
+      "type": "text",
+      "id": "saturday_hours",
+      "label": "Saturday",
+      "default": "Closed"
+    },
+    {
+      "type": "text",
+      "id": "sunday_hours",
+      "label": "Sunday",
+      "default": "Closed"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background_color",
+      "label": "Add Background Colour",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Colour",
+      "visible_if": "{{section.settings.show_background_color}}"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border Radius",
+      "visible_if": "{{section.settings.show_background_color}}",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "default": 32,
+      "min": 0,
+      "max": 200,
+      "step": 2
+    },
+    {
+      "type": "range",
+      "id": "margin",
+      "label": "Margin",
+      "default": 32,
+      "min": 0,
+      "max": 200,
+      "step": 2
+    },
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page Width",
+      "options": [
         {
-            "type": "checkbox",
-            "id": "show_hours_heading",
-            "label": "Show Heading",
-            "default": true
+          "label": "Small",
+          "value": "grid__item--span-4"
         },
         {
-            "type": "text",
-            "id": "hours_heading",
-            "label": "Heading",
-            "visible_if": "{{ section.settings.show_hours_heading == true}}"
+          "label": "Medium",
+          "value": "grid__item--span-6"
         },
         {
-            "type": "checkbox",
-            "id": "show_hours_content",
-            "label": "Show Content",
-            "default": true
-        },
-        {
-            "type": "text",
-            "id": "hours_content",
-            "label": "Content",
-            "visible_if": "{{ section.settings.show_hours_content == true }}"
-        },
-        {
-            "type": "text",
-            "id": "monday_hours",
-            "label": "Monday",
-            "default": "Closed"
-        },
-        {
-            "type": "text",
-            "id": "tuesday_hours",
-            "label": "Tuesday",
-            "default": "Closed"
-        },
-        {
-            "type": "text",
-            "id": "wednesday_hours",
-            "label": "Wednesday",
-            "default": "Closed"
-        },
-        {
-            "type": "text",
-            "id": "thursday_hours",
-            "label": "Thursday",
-            "default": "Closed"
-        },
-        {
-            "type": "text",
-            "id": "friday_hours",
-            "label": "Friday",
-            "default": "Closed"
-        },
-        {
-            "type": "text",
-            "id": "saturday_hours",
-            "label": "Saturday",
-            "default": "Closed"
-        },
-        {
-            "type": "text",
-            "id": "sunday_hours",
-            "label": "Sunday",
-            "default": "Closed"
-        },
-        {
-            "type": "checkbox",
-            "id": "show_background_color",
-            "label": "Add Background Colour",
-            "default": true
-        },
-        {
-            "type": "color",
-            "id": "background_color",
-            "label": "Background Colour",
-            "visible_if": "{{section.settings.show_background_color}}"
-        },
-        {
-            "type": "range",
-            "id": "border_radius",
-            "label": "Border Radius",
-            "visible_if": "{{section.settings.show_background_color}}",
-            "default": 0,
-            "min": 0,
-            "max": 100,
-            "unit": "%"
-        },
-        {
-            "type": "range",
-            "id": "padding",
-            "label": "Padding",
-            "default": 32,
-            "min": 0,
-            "max": 200,
-            "step": 2
-        },
-        {
-            "type": "range",
-            "id": "margin",
-            "label": "Margin",
-            "default": 32,
-            "min": 0,
-            "max": 200,
-            "step": 2
-        },
-        {
-            "type": "select",
-            "id": "page_width",
-            "label": "Page Width",
-            "options": [
-                {
-                    "label": "Small",
-                    "value": "grid__item--span-4"
-                },
-                {
-                    "label": "Medium",
-                    "value": "grid__item--span-6"
-                },
-                {
-                    "label": "Large",
-                    "value": "grid__item"
-                }
-            ],
-            "default": "grid__item"
+          "label": "Large",
+          "value": "grid__item"
         }
-    ],
-    "presets": [
-        {
-            "name": "Store Hours"
-        }
-    ]
+      ],
+      "default": "grid__item"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store Hours"
+    }
+  ]
 }
 {% endschema %}
