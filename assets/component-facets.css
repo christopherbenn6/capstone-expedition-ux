@@ -1306,4 +1306,10 @@ input.mobile-facets__checkbox {
     display: none;
   }
 
+   .mobile-sort-inline .mobile-facets__sort .svg-wrapper {
+    width: 2rem !important;
+    height: 2rem !important;
+    visibility: visible !important;
+  }
+
 }
