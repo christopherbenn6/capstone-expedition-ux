@@ -150,12 +150,18 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "facebook_posts_8EXUc7": {
+      "type": "facebook-posts",
+      "name": "Facebook Posts",
+      "settings": {}
     }
   },
   "order": [
     "facebook_posts_6aeLgN",
     "image_banner",
     "image_with_text_zBhVXb",
-    "rich_text_pcyJVY"
+    "rich_text_pcyJVY",
+    "facebook_posts_8EXUc7"
   ]
 }
