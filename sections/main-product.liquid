@@ -198,7 +198,6 @@
                   </div>
 
                   {% comment %} message me button goes here {% endcomment %}
-                   
                 {%- endif -%}
               {%- when 'sku' -%}
                 <p
@@ -935,6 +934,23 @@
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1
+    },
+    {
+      "type": "message_button",
+      "name": "Message Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Button text",
+          "default": "Message Me When Stock is Available"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button link"
+        }
+      ]
     },
     {
       "type": "share",
