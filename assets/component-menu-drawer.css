@@ -250,7 +250,7 @@ details[open].menu-opening > .menu-drawer__submenu {
       border-radius: 4px;
       overflow: hidden;
       height: 32px;
-      margin:1rem !important;
+      margin:2rem !important;
     }
 
     .nx-search-form__input {
