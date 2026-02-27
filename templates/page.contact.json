@@ -19,6 +19,7 @@
     },
     "form": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "Contact Us",
         "description": "<p>If you are planning to sell your collection, be sure to message us and we can give you our best offer!</p>",
@@ -30,7 +31,6 @@
     },
     "custom_liquid_DwEYzJ": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"globo-formbuilder\" data-id=\"MTM0NjA0\"></div>",
