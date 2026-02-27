@@ -392,6 +392,14 @@
   -%}
 {%- endif -%}
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const searchForm = document.querySelector('.search-modal__form');
+    if (!searchForm) return;
+    console.log('test');
+  }
+</script>
+
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
