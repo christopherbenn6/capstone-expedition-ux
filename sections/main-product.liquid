@@ -197,6 +197,13 @@
                     {{ product.description }}
                   </div>
                 {%- endif -%}
+                 {% comment %} message me button goes here {% endcomment %}
+              {%- when 'message_button' -%}
+                {%- if block.settings.link != blank -%}
+                  <a href="{{ block.settings.link }}" class="button button--full-width product__message-btn">
+                    {{ block.settings.label }}
+                  </a>
+                {%- endif -%}
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -932,6 +939,23 @@
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1
+    },
+     {
+      "type": "message_button",
+      "name": "Message Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Button text",
+          "default": "Message Me When Stock is Available"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button link"
+        }
+      ]
     },
     {
       "type": "share",
