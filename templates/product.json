@@ -60,6 +60,13 @@
           "type": "description",
           "settings": {}
         },
+        "message_button_c7gzye": {
+          "type": "message_button",
+          "settings": {
+            "label": "Message Me When Stock is Available",
+            "link": ""
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -117,6 +124,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "message_button_c7gzye",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
