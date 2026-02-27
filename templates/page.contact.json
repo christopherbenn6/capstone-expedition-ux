@@ -19,6 +19,7 @@
     },
     "form": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "Contact Us",
         "description": "<p>If you are planning to sell your collection, be sure to message us and we can give you our best offer!</p>",
@@ -27,10 +28,28 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1772223152e673c378": {
+      "type": "apps",
+      "blocks": {
+        "powerful_form_builder_app_block_hfLa6P": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"MTM0NzYy\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_hfLa6P"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "1772223152e673c378"
   ]
 }
