@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 68,
         "padding_bottom": 0
@@ -50,8 +49,8 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
+        "section_color_scheme": "",
+        "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -126,12 +125,18 @@
         "margin": 0,
         "address_text": "Our store is conveniently located in downtown Edmonton, making it easy to visit by car or public transit."
       }
+    },
+    "facebook_latest_page_MVeUPd": {
+      "type": "facebook-latest-page",
+      "name": "12 Facebook Posts",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "image_with_text_M96Hez",
     "image_with_text_UUCV7z",
-    "store_hours_nj3GiW"
+    "store_hours_nj3GiW",
+    "facebook_latest_page_MVeUPd"
   ]
 }

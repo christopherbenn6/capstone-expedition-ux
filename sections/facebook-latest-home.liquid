@@ -1,0 +1,107 @@
+{%- for block in section.blocks -%}
+<div class="page-width">
+    {% case block.type %}
+        {%- when 'heading' -%}
+                  <h2
+                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.heading }}
+                  </h2>
+                  <div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd"></div>
+        {%- when 'button' -%}
+            {%- if block.settings.button_label != blank -%}
+                <a
+                    {% if block.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                    {% else %}
+                    href="{{ block.settings.button_link }}"
+                    {% endif %}
+                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                    {{ block.shopify_attributes }}
+                >
+                    {{ block.settings.button_label | escape }}
+                </a>
+            {%- endif -%}
+    {%- endcase -%}
+</div>
+{%- endfor -%}
+
+{% schema %} 
+{
+    "name": "3 Facebook Posts",
+    "blocks": [
+        {
+            "type": "button",
+            "name": "t:sections.image-with-text.blocks.button.name",
+            "limit": 1,
+            "settings": [
+                {
+                "type": "text",
+                "id": "button_label",
+                "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+                "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+                "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+                },
+                {
+                "type": "url",
+                "id": "button_link",
+                "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+                },
+                {
+                "type": "checkbox",
+                "id": "button_style_secondary",
+                "default": false,
+                "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+                }
+            ]
+        },
+        {
+      "type": "heading",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "t:sections.image-with-text.blocks.heading.settings.heading.default",
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+            },
+            {
+              "value": "hxxl",
+              "label": "t:sections.all.heading_size.options__5.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
+    ],
+    "presets": [
+        {
+            "name": "3 Facebook Posts"
+        }
+    ]
+}
+{% endschema %} 

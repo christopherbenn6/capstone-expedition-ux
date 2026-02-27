@@ -593,3 +593,6 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+/* .product-grid {
+  gap:0.375rem !important;
+} */
