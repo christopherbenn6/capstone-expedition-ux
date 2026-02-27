@@ -394,10 +394,36 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const searchForm = document.querySelector('.search-modal__form');
-    if (!searchForm) return;
-    console.log('test');
-  }
+  const searchForm = document.querySelector('.search-modal__form');
+  if (!searchForm) return;
+
+  searchForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const queryInput = this.querySelector('input[name="q"]');
+    const query = queryInput.value.trim();
+    if (!query) return;
+
+    // Shopify predictive search API
+    const searchUrl = `/search/suggest.json?q=${encodeURIComponent(query)}&resources[type]=product&resources[limit]=1`;
+
+    try {
+      const res = await fetch(searchUrl);
+      const data = await res.json();
+
+      const products = data.resources.results.products;
+      if (products.length > 0) {
+        // redirect to the first product page
+        window.location.href = products[0].url;
+      } else {
+        // fallback to normal search page
+        this.submit();
+      }
+    } catch (err) {
+      // fallback if API fails
+      this.submit();
+    }
+  });
+});
 </script>
 
 {% javascript %}
