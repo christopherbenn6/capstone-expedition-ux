@@ -64,7 +64,7 @@
           "type": "message_button",
           "settings": {
             "label": "Message Me When Stock is Available",
-            "link": ""
+            "link": "shopify://pages/contact"
           }
         },
         "collapsible-row-0": {
