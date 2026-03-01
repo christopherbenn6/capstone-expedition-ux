@@ -38,9 +38,9 @@
               class="pagination__item pagination__item--prev link motion-reduce"
               aria-label="{{ 'general.pagination.previous' | t }}"
             >
-              <span class="svg-wrapper pagination__icon">
-                  {{- 'icon-caret.svg' | inline_asset_content -}}
-                </span>
+              <span class="pagination__icon" aria-hidden="true">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
               <span class="pagination__text">Previous</span>
             </a>
           </li>
@@ -95,10 +95,10 @@
               class="pagination__item pagination__item--next link motion-reduce"
               aria-label="{{ 'general.pagination.next' | t }}"
             >
-              <span class="pagination__text pagination__icon">Next</span>
-              <span class="svg-wrapper">
-                  {{- 'icon-caret.svg' | inline_asset_content -}}
-                </span>
+              <span class="pagination__text">Next</span>
+              <span class="pagination__icon" aria-hidden="true">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
             </a>
           </li>
         {%- endif -%}
