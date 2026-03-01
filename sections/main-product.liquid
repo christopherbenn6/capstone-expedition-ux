@@ -197,7 +197,8 @@
                     {{ product.description }}
                   </div>
                 {%- endif -%}
-                
+
+                {% comment %} message me button goes here {% endcomment %}
               {%- when 'message_button' -%}
                 {%- if block.settings.link != blank -%}
                   <a href="{{ block.settings.link }}" class="button button--full-width product__message-btn">
@@ -940,7 +941,8 @@
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1
     },
-     {
+   
+    {
       "type": "message_button",
       "name": "Message Button",
       "settings": [
