@@ -86,7 +86,3 @@ a.pagination__item:hover::after {
 
 
 
-.pagination__item--prev .pagination__icon {
-  transform: rotate(180deg);
-  display: inline-flex;
-}
