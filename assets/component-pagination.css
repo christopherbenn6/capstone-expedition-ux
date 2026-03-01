@@ -80,3 +80,16 @@ a.pagination__item:hover::after {
 .pagination__item-arrow:hover::after {
   display: none;
 }
+
+
+/* custom css */
+
+.pagination__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pagination__item--prev .pagination__icon {
+  transform: rotate(180deg);
+}
