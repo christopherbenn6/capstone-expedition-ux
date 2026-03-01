@@ -84,12 +84,9 @@ a.pagination__item:hover::after {
 
 /* custom css */
 
-.pagination__item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
+
 
 .pagination__item--prev .pagination__icon {
   transform: rotate(180deg);
+  display: inline-flex;
 }
