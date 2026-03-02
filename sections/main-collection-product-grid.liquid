@@ -155,7 +155,6 @@
               {% assign skip_card_product_styles = false %}
 
               {%- for product in collection.products -%}
-<script>console.log('{{request.origin}}');</script>
                 {% comment %} The Search query for q= {% endcomment %}
                 {% assign search_query = request.params.q | downcase %}
                 {% assign product_title = product.title | downcase %}
@@ -165,6 +164,7 @@
                   
                   or product_title contains search_query 
                   or product_description contains search_query %}
+                  <script>console.log('{{search_query}}'+'{{product_title}}'+'{{product_description}}');</script>
                   
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
