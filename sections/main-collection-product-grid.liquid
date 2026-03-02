@@ -155,13 +155,14 @@
               {% assign skip_card_product_styles = false %}
 
               {%- for product in collection.products -%}
-
+<script>console.log('{{request.origin}}');</script>
                 {% comment %} The Search query for q= {% endcomment %}
                 {% assign search_query = request.params.q | downcase %}
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
 
                 {% if search_query == blank 
+                  
                   or product_title contains search_query 
                   or product_description contains search_query %}
                   
