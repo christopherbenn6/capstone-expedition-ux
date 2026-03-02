@@ -156,7 +156,7 @@
 
               {%- for product in collection.products -%}
                 {% comment %} The Search query for q= {% endcomment %}
-                {% assign search_query = request.params.q %}
+                {% assign search_query = request.query_string | downcase %}
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
 
