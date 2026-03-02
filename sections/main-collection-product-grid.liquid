@@ -167,7 +167,8 @@
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
 
-                {% if product_title contains search_query 
+                {% if search_query == blank 
+                  or product_title contains search_query 
                   or product_description contains search_query %}
                   <script>console.log('{{search_query}}'+'00000000{{product_title}}'+'0000000{{product_description}}');</script>
                   
