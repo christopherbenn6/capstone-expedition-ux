@@ -156,7 +156,7 @@
 
               {%- for product in collection.products -%}
                 {% comment %} The Search query for q= {% endcomment %}
-                {% assign search_query = page_url | downcase %}
+                {% assign search_query = content_for_query_string | split: '"pageurl":"' | last | split: '"' | first | split: request.host | last | replace: '\/', '/' | replace: '%20', ' ' | replace: '\u0026', '&' %}
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
 
