@@ -156,7 +156,15 @@
 
               {%- for product in collection.products -%}
                 {% comment %} The Search query for q= {% endcomment %}
-                {% assign search_query = request.params.q | downcase %}
+                
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+
+{% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
+{%- assign search_query = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
 
