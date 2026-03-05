@@ -39,7 +39,7 @@
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
 
   {% comment %} Set up filtered products into an array befoe pagination {% endcomment %}
-  {% assign filtered_products = [] %}
+  {% assign filtered_products = "" | split: "," %}
   {%- for product in collection.products -%}  
     {% assign search_query = '' %}
 
@@ -54,7 +54,7 @@
       or product_title contains search_query 
       or product_description contains search_query %}
       
-      {% assign filtered_products = filtered_products | push: product  %}
+      {% assign filtered_products = filtered_products | concat: product %}
 
     {% endif %}
 
