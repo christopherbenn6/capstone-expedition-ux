@@ -61,7 +61,7 @@
     endfor
 
   %}
-  <p>Products {{ products.size }}</p>
+  <p>Products {{ products.size }} Search Query: {{ search_query }}</p>
   
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
