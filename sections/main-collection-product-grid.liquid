@@ -158,9 +158,9 @@
                 {%- assign search_query = canonical_url | split: 'q=' | last | split: '&' | first -%}
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
+                <p>{{ search_query }}</p>
 
-                {% if search_query == "" 
-                  or search_query == null
+                {% if search_query == blank 
                   or product_title contains search_query 
                   or product_description contains search_query %}
                   
