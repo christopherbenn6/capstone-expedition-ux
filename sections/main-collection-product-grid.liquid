@@ -162,7 +162,6 @@
                 {% endif %}
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
-                <p>{{ search_query }}</p>
 
                 {% if search_query == blank 
                   or product_title contains search_query 
