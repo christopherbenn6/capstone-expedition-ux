@@ -45,6 +45,7 @@
 
     {% if canonical_url contains 'q=' %}
       {% assign search_query = canonical_url | split: 'q=' | last | split: '&' | first %}
+      {% assign search_query = search_query | downcase %}
     {% endif %}
     {% assign product_title = product.title | downcase %}
     {% assign product_description = product.description | strip_html | downcase %} 
@@ -53,7 +54,7 @@
       or product_title contains search_query 
       or product_description contains search_query %}
       
-      {% assign filtered_products = filtered_products | concat: product %}
+      {% assign filtered_products = filtered_products | push: product  %}
 
     {% endif %}
 
