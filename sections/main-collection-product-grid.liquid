@@ -44,6 +44,7 @@
     assign per_page = 12
     assign total_pages = products.size | divided_by: per_page
 
+    assign filtered_products = "" | split: ", " 
     for product in products  
       assign search_query = '' 
 
@@ -56,12 +57,12 @@
       
       if search_query == blank or product_title contains search_query or product_description contains search_query
         
-        assign products = products | concat: product 
+        assign filtered_products = filtered_products | concat: product 
       endif
     endfor
 
   %}
-  <p>Products {{ products.size }} Search Query: {{ search_query }}</p>
+  <p>Products {{ filtered_products.size }} Search Query: {{ search_query }}</p>
   
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
