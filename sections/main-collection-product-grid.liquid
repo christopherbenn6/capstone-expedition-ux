@@ -159,7 +159,8 @@
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
 
-                {% if search_query == blank 
+                {% if search_query == "" 
+                  or search_query == null
                   or product_title contains search_query 
                   or product_description contains search_query %}
                   
