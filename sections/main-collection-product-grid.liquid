@@ -38,28 +38,6 @@
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
 
-  {% comment %} Set up filtered products into an array befoe pagination {% endcomment %}
-  {% assign filtered_products = "" | split: "," %}
-  {%- for product in collection.products -%}  
-    {% assign search_query = '' %}
-
-    {% if canonical_url contains 'q=' %}
-      {% assign search_query = canonical_url | split: 'q=' | last | split: '&' | first %}
-      {% assign search_query = search_query | downcase %}
-    {% endif %}
-    {% assign product_title = product.title | downcase %}
-    {% assign product_description = product.description | strip_html | downcase %} 
-    
-    {% if search_query == blank 
-      or product_title contains search_query 
-      or product_description contains search_query %}
-      
-      {% assign filtered_products = filtered_products | concat: product %}
-
-    {% endif %}
-
-  {% endfor %}
-
   <p>Filtered Products: {{ filtered_products }}</p>
   {% liquid 
 
@@ -67,7 +45,27 @@
     assign per_page = 12
     assign total_pages = products.size | divided_by: per_page
 
+    {% comment %} Set up filtered products into an array befoe pagination {% endcomment %}
+    for product in products  
+      assign search_query = '' 
+
+      if canonical_url contains 'q=' 
+        assign search_query = canonical_url | split: 'q=' | last | split: '&' | first 
+        assign search_query = search_query | downcase
+      end
+      assign product_title = product.title | downcase 
+      assign product_description = product.description | strip_html | downcase
+      
+      if search_query == blank 
+        or product_title contains search_query 
+        or product_description contains search_query
+        
+        assign products = products | concat: product 
+      end
+    end
+
   %}
+  <p>Products {{ products }}</p>
   
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
