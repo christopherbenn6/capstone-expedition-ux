@@ -20,7 +20,21 @@
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
-            <ul class="menu-drawer__menu has-submenu list-menu" role="list">
+            {% comment %} search form goes here {% endcomment %}
+             <form class="nx-search-form" action="{{ collection.url }}" method="get" role="search">
+        <input
+          class="nx-search-form__input"
+          type="search"
+          name="q"
+          value="{{ search.terms | escape }}"
+          placeholder="Search"
+          aria-label="Search"
+        >
+        <button class="nx-search-form__btn" type="submit" aria-label="Search">
+          <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
+        </button>
+      </form>
+            <ul class="menu-drawer__menu has-submenu list-menu">
               {%- for link in section.settings.menu.links -%}
                 <li>
                   {%- if link.links != blank -%}
@@ -49,7 +63,7 @@
                             </span>
                             {{ link.title | escape }}
                           </button>
-                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                          <ul class="menu-drawer__menu list-menu" tabindex="-1">
                             {%- for childlink in link.links -%}
                               <li>
                                 {%- if childlink.links == blank -%}
@@ -92,7 +106,6 @@
                                       </button>
                                       <ul
                                         class="menu-drawer__menu list-menu"
-                                        role="list"
                                         tabindex="-1"
                                       >
                                         {%- for grandchildlink in childlink.links -%}
@@ -135,7 +148,8 @@
               {%- endfor -%}
             </ul>
           </nav>
-          <div class="menu-drawer__utility-links">
+          {% comment %}commenting out this block.
+            <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -195,7 +209,7 @@
                 {%- endif -%}
               </div>
             {%- endif -%}
-            <ul class="list list-social list-unstyled" role="list">
+            <ul class="list list-social list-unstyled">
               {%- if settings.social_twitter_link != blank -%}
                 <li class="list-social__item">
                   <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
@@ -287,7 +301,7 @@
                 </li>
               {%- endif -%}
             </ul>
-          </div>
+          </div> {% endcomment %}
         </div>
       </div>
     </div>

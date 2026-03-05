@@ -30,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Browse Our Games",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://collections/games",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -149,6 +149,13 @@
     "facebook_latest_home_M7Lbak": {
       "type": "facebook-latest-home",
       "blocks": {
+        "heading_NnGUma": {
+          "type": "heading",
+          "settings": {
+            "heading": "Latest Posts",
+            "heading_size": "h1"
+          }
+        },
         "button_Keg3N8": {
           "type": "button",
           "settings": {
@@ -159,6 +166,7 @@
         }
       },
       "block_order": [
+        "heading_NnGUma",
         "button_Keg3N8"
       ],
       "name": "3 Facebook Posts",

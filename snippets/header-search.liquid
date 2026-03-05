@@ -40,7 +40,8 @@
         {%- else -%}
           <search-form class="search-modal__form">
         {%- endif -%}
-        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+        <form action="{{ routes.all_products_collection_url }}" method="get" role="search" class="search search-modal__form">
+          <p>search here</p>
           <div class="field">
             <input
               class="search__input field__input"
@@ -88,6 +89,12 @@
             <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
           {%- endif -%}
         </form>
+
+        <script>
+          let 
+        </script>
+
+
         {%- if settings.predictive_search_enabled -%}
           </predictive-search>
         {%- else -%}
