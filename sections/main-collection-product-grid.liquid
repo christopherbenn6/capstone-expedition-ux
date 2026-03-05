@@ -56,8 +56,8 @@
       assign product_description = product.description | strip_html | downcase
       
       if search_query == blank or product_title contains search_query or product_description contains search_query
-        
-        assign filtered_products = filtered_products | concat: product 
+        assign product_array = product | reverse | reverse
+        assign filtered_products = filtered_products | concat: product_array 
       endif
     endfor
 
