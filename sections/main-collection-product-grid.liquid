@@ -54,7 +54,7 @@
       or product_title contains search_query 
       or product_description contains search_query %}
       
-      {% assign filtered_products = filtered_products | push: product  %}
+      {% assign filtered_products = filtered_products | concat: product %}
 
     {% endif %}
 
