@@ -60,9 +60,11 @@
         assign filtered_products = filtered_products | concat: product_array 
       endif
     endfor
-
+    for product in filtered_products
+      assign product_title = product.title
+      endfor
   %}
-  <p>Products {{ filtered_products }} Search Query: {{ search_query }}</p>
+  <p>Products {{ product_title }} Search Query: {{ search_query }}</p>
   
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
