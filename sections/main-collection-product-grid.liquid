@@ -155,7 +155,11 @@
               {% assign skip_card_product_styles = false %}
 
               {%- for product in collection.products -%}  
-                {%- assign search_query = canonical_url | split: 'q=' | last | split: '&' | first -%}
+                {% assign search_query = '' %}
+
+                {% if canonical_url contains 'q=' %}
+                  {% assign search_query = canonical_url | split: 'q=' | last | split: '&' | first %}
+                {% endif %}
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
                 <p>{{ search_query }}</p>
