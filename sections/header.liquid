@@ -309,7 +309,7 @@
         <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
       </a>
       {% comment %} for desktop {% endcomment %}
-      <form class="nx-search" action="{{ routes.all_products_collection_url }}" method="get" role="search">
+      <form class="nx-search" action="{{ routes.all_products_collection['games'].url }}" method="get" role="search">
         <input
           class="nx-search__input"
           type="search"
