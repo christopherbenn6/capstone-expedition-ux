@@ -155,7 +155,6 @@
               {% assign skip_card_product_styles = false %}
 
               {%- for product in collection.products -%}  
-                const search_query = new URLSearchParams(window.location.search).get('search');
                 {%- assign search_query = url | split:'?' | last -%}
                 {% assign product_title = product.title | downcase %}
                 {% assign product_description = product.description | strip_html | downcase %}  
