@@ -44,24 +44,21 @@
     assign per_page = 12
     assign total_pages = products.size | divided_by: per_page
 
-    {% comment %} Set up filtered products into an array befoe pagination {% endcomment %}
     for product in products  
       assign search_query = '' 
 
       if canonical_url contains 'q=' 
         assign search_query = canonical_url | split: 'q=' | last | split: '&' | first 
         assign search_query = search_query | downcase
-      end
+      endif
       assign product_title = product.title | downcase 
       assign product_description = product.description | strip_html | downcase
       
-      if search_query == blank 
-        or product_title contains search_query 
-        or product_description contains search_query
+      if search_query == blank or product_title contains search_query or product_description contains search_query
         
         assign products = products | concat: product 
-      end
-    end
+      endif
+    endfor
 
   %}
   <p>Products {{ products }}</p>
