@@ -220,7 +220,7 @@
             endif
             
             if search_query != empty
-              assign current_page_number = canonical_url | split: 'q=' | last | split: '&page=' | last | split: '&'| first
+              assign current_page_number = canonical_url | split: 'q=' | last | split: 'page=' | last | split: '&'| first
             endif
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
