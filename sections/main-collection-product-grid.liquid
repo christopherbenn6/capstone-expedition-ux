@@ -58,7 +58,7 @@
       endif
     endfor
   %}  
-  
+
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
@@ -233,7 +233,7 @@
           <div class="games-pagination">
             <a href="{{ canonical_url }}">Previous</a>
             <a href="{{ next_url }}">Next</a>
-            <p>page=page={{ current_page_number | plus: 1 }}</p>
+            <p>Url: {{ canonical_url }}</p>
           </div>
         </div>
       {%- endif -%}
