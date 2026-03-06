@@ -251,7 +251,9 @@
                 endunless
               endfor
               assign filters_query = clean_query
+              assign filters_query = '&' | append: filters_query
             endif
+            
 
 
 
