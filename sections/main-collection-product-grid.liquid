@@ -222,7 +222,6 @@
             if search_query != empty
               assign current_page_number = search_query | split: '&page=' | last | split: '&'| first
             endif
-            assign current_page_number = 1
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
 
