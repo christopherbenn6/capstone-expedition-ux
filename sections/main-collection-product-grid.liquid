@@ -265,7 +265,7 @@
               assign page_query = pageUrl | append: '?page=' | append: next_page
             endif
 
-            assign next_url = base_url
+            assign next_url = base_url | append: page_query
           %}
 
           <div class="games-pagination">
