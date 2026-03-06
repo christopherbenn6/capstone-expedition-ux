@@ -239,8 +239,11 @@
             endif
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
-            assign next_url = canonical_url | replace: 'page={{ current_page_number }}', 'page={{ current_page_number | plus: 1 }}'
-
+            if pageUrl contains 'page=' 
+              assign next_url = pageUrl | replace: 'page={{ current_page_number }}', 'page={{ current_page_number | plus: 1 }}'
+            else  
+              assign next_url = pageUrl | append: 'page={{ current_page_number | plus: 1 }}'
+            endif
           %}
 
           <div class="games-pagination">
