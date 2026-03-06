@@ -210,7 +210,7 @@
           {%- endif -%} {% endcomment %}
            {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
             {%- assign pageUrl = contentForQuerystring
-              | split: '"nexwavevideogames.com/collections/games":"'
+              | split: '"pageurl":"'
               | last
               | split: '"'
               | first
@@ -241,7 +241,7 @@
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
             if pageUrl contains 'page=' 
-              assign next_url = pageUrl | replace: 'page={{ current_page_number }}', 'page={{ next_page }}'
+              assign next_url = pageUrl | split: 'nexwavevideogames.com/collections/' | last | replace: 'page={{ current_page_number }}', 'page={{ next_page }}'
             elsif pageUrl contains '?'
               assign next_url = pageUrl | append: '&page={{ current_page_number | plus: 1 }}'
             else
