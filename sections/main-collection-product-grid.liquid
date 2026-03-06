@@ -256,16 +256,10 @@
             assign current_page_query = 'page=' | append: current_page_number
             assign next_page_query = 'page=' | append: next_page
 
+            assign search_term = search_query | split: 'q=' | last | split: '&' | first
+            assign search_term = 'q=' | append: search_term
             
-            if search_query contains 'page=' 
-              assign page_query = pageUrl | append: current_page_query
-            elsif pageUrl contains '?'
-              assign page_query = '&page=' | append: next_page
-            else
-              assign page_query = '?page=' | append: next_page
-            endif
-
-            assign next_url = base_url | append: '?page=' | append: next_page | append: '&'
+            assign next_url = base_url | append: '?page=' | append: next_page | append: '&' | append: search_term
           %}
 
           <div class="games-pagination">
