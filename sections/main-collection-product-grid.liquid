@@ -231,6 +231,7 @@
               assign total_pages = total_pages | plus: 1
             endif
             
+            assign search_query = pageUrl | split: '?' | last
             assign current_page_number = 1
             if search_query != empty
               assign current_page_number = canonical_url | split: 'page=' | last | split: '&' | first              
