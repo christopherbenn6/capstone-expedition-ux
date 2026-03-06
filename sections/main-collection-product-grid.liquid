@@ -258,14 +258,14 @@
 
             
             if search_query contains 'page=' 
-              assign page_query = pageUrl | replace: current_page_query, next_page_query
+              assign page_query = pageUrl | append: current_page_query
             elsif pageUrl contains '?'
-              assign page_query = pageUrl | append: '&page=' | append: next_page
+              assign page_query = '&page=' | append: next_page
             else
-              assign page_query = pageUrl | append: '?page=' | append: next_page
+              assign page_query = '?page=' | append: next_page
             endif
 
-            assign next_url = base_url | append: page_query
+            assign next_url = base_url | append: '?page=' | append: next_page | append: '&'
           %}
 
           <div class="games-pagination">
