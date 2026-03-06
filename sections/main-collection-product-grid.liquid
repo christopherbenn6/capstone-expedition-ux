@@ -82,7 +82,7 @@
     if pageUrl contains 'page='
       assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first
     endif
-    assign offset = section.products_per_page | times: current_page_number
+    assign offset = section.settings.products_per_page | times: current_page_number
 
     assign next_page = current_page_number | plus: 1
 
@@ -114,7 +114,7 @@
     assign next_url = base_url | append: '?' | append: query_params
   %}
 
-  <p>{{section.products_per_page}}</p>
+  <p>{{section.settings.products_per_page}}</p>
 
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -232,7 +232,7 @@
           >
             {% assign skip_card_product_styles = false %}
 
-            {%- for product in filtered_products offset: offset limit: section.products_per_page -%}  
+            {%- for product in filtered_products offset: offset limit: section.settings.products_per_page -%}  
               {% assign lazy_load = false %}
               {%- if forloop.index > 2 -%}
                 {%- assign lazy_load = true -%}
