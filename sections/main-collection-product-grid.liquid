@@ -213,22 +213,22 @@
 
             assign products = collection.products
             assign per_page = 12
+            assign total_pages_no_round = products.size | divided_by: per_page
             assign total_pages = products.size | divided_by: per_page | round
-            if total_pages < products.size | divided_by: per_page
+            if total_pages < total_pages_no_round
               assign total_pages = total_pages | plus: 1
             endif
 
             assign current_page_number = 1
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
-            assign product
 
           %}
 
           <div class="games-pagination">
             <a href="{{ canonical_url }}">Previous</a>
             <a href="{{ canonical_url }}">Next</a>
-            <p></p>
+            <p>Total No round: {{ total_pages_no_round }}</p>
             <p>Page Number: {{ current_page_number }}</p>
             <p>Total Pages: {{ total_pages }}</p>
             <p>Start: {{ product_start }}</p>
