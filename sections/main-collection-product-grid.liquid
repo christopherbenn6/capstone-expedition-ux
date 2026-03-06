@@ -248,7 +248,7 @@
                   assign clean_query = clean_query | append: '&' | append: part
                 endif
               endfor
-              assign filters_query = clean_query
+              assign filters_query = '&' | append: clean_query 
             endif
 
 
