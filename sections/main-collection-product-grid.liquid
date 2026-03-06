@@ -241,7 +241,7 @@
             assign parts = search_query | split: '&'
             assign clean_query = ''
             for part in parts
-              unless part contains 'page='
+              unless part contains 'page=' or part contains 'section_id='
                 if clean_query == ''
                   assign clean_query = part
                 else
