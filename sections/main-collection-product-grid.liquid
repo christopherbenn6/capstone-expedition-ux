@@ -256,8 +256,12 @@
             assign current_page_query = 'page=' | append: current_page_number
             assign next_page_query = '?page=' | append: next_page
 
-            assign search_term = search_query | split: '&q=' | last | split: '&' | first
-            
+            if search_query contains 'q='
+              assign search_term = search_query | split: '&q=' | last | split: '&' | first
+              assign search_term = '&' | append: search_term
+            else
+              assign search_term = ""
+            endif
             assign next_url = base_url | append: next_page_query | append: '&' | append: search_term
           %}
 
