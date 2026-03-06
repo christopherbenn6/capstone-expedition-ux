@@ -19,6 +19,7 @@
     },
     "form": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "Contact Us",
         "description": "<p>If you are planning to sell your collection, be sure to message us and we can give you our best offer!</p>",
@@ -27,10 +28,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_liquid_DwEYzJ": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"globo-formbuilder\" data-id=\"MTM0NjA0\"></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "custom_liquid_DwEYzJ"
   ]
 }
