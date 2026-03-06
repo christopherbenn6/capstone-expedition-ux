@@ -212,7 +212,7 @@
           {% liquid
 
             assign products = collection.products
-            assign per_page = 13
+            assign per_page = 300
             assign total_pages_no_round = products.size | times: 1.0 | divided_by: per_page
             assign total_pages = products.size | divided_by: per_page | round
             if total_pages < total_pages_no_round
