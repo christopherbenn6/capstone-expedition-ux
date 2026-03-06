@@ -210,7 +210,7 @@
           {%- endif -%} {% endcomment %}
            {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
             {%- assign pageUrl = contentForQuerystring
-              | split: '"nexwavevideogames.com/collections":"'
+              | split: '"nexwavevideogames.com/collections/games":"'
               | last
               | split: '"'
               | first
