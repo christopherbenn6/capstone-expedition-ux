@@ -234,7 +234,7 @@
             if query contains 'page='
               assign next_query = query | replace: 'page=' | append: current_page_number | plus: 1
             else
-              assign next_query = query | append: '&page=' | append: current_page_number | plus: 1
+              assign next_query = query | append: '&page={{ current_page_number | plus: 1 }}'
             endif
 
             assign next_url = base_url | append: '?' | append: next_query
