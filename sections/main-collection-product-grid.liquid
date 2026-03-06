@@ -234,7 +234,7 @@
             <a href="{{ canonical_url }}">Previous</a>
             <a href="{{ canonical_url }}">Next</a>
             <p>Total No round: {{ total_pages_no_round }}</p>
-            <p>Page Number: {{ canonical_url }}</p>
+            <p>Page Number: {{ request.query_string }}</p>
             <p>Total Pages: {{ total_pages }}</p>
             <p>Test: {{ 20 | divided_by: 7 }}</p>
             <p>Start: {{ product_start }}</p>
