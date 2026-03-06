@@ -73,6 +73,7 @@
     | replace: '\u0026', '&'
   -%}
 
+  {% comment %} Sets Pagination Links, and Variables {% endcomment %}
   {% liquid
   assign per_page = 4
   assign total_pages = products.size | plus: per_page | minus: 1 | divided_by: per_page
