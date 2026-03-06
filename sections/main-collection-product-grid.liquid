@@ -221,7 +221,7 @@
             
             if search_query != empty
               assign current_page_number = search_query | split: 'current_page=' | last | split: '&'| first
-              if current_page_number < 0
+              if current_page_number == search_query
                 assign current_page_number = 1
               endif
             endif
