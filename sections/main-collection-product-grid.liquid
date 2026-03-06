@@ -254,12 +254,12 @@
             assign next_page = current_page_number | plus: 1
 
             assign current_page_query = 'page=' | append: current_page_number
-            assign next_page_query = 'page=' | append: next_page
+            assign next_page_query = '?page=' | append: next_page
 
             assign search_term = search_query | split: '&q=' | last | split: '&' | first
             assign search_term = 'q=' | append: search_term
             
-            assign next_url = base_url | append: '?page=' | append: next_page | append: '&' | append: search_term
+            assign next_url = base_url | append: next_page_query | append: '&' | append: search_term
           %}
 
           <div class="games-pagination">
