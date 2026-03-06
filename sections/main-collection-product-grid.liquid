@@ -258,7 +258,7 @@
               assign query_params = 'page=' | append: next_page
             endif
 
-            assign next_url = base_url | append: '?' | append: query_params
+            assign next_url = 'https://' | append: base_url | append: '?' | append: query_params
           %}
 
           <div class="games-pagination">
