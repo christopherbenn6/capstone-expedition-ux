@@ -259,7 +259,7 @@
             assign search_term = search_query | split: '&q=' | last | split: '&' | first
             assign search_term = 'q=' | append: search_term
             
-            assign next_url = base_url | append: next_page_query | append: '&' | append: search_term
+            assign next_url = base_url | append: next_page_query | append: '&' 
           %}
 
           <div class="games-pagination">
