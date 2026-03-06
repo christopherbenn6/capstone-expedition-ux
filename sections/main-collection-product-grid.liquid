@@ -227,7 +227,17 @@
             endif
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
-            assign next_url = canonical_url | replace: 'page={{ current_page_number }}', 'page={{ current_page_number | plus: 1 }}'
+
+            assign base_url = canonical_url | split: '?' | first
+            assign query = canonical_url | split: '?' | last
+
+            if query contains 'page='
+              assign next_query = query | replace: 'page=' | append: current_page_number | plus: 1
+            else
+              assign next_query = query | append: '&page=' | append: current_page_number | plus: 1
+            endif
+
+            assign next_url = base_url | append: '?' | append: next_query
 
           %}
 
