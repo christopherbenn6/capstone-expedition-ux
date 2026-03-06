@@ -243,9 +243,9 @@
             if pageUrl contains 'page=' 
               assign next_url = pageUrl | split: 'nexwavevideogames.com/collections/' | last | replace: 'page={{ current_page_number }}', 'page={{ next_page }}'
             elsif pageUrl contains '?'
-              assign next_url = pageUrl | append: '&page={{ current_page_number | plus: 1 }}'
+              assign next_url = pageUrl | split: 'nexwavevideogames.com/collections/' | last | append: '&page={{ current_page_number | plus: 1 }}'
             else
-              assign next_url = pageUrl | append: '?page={{ current_page_number | plus: 1 }}'
+              assign next_url = pageUrl | split: 'nexwavevideogames.com/collections/' | last | append: '?page={{ current_page_number | plus: 1 }}'
             endif
           %}
 
