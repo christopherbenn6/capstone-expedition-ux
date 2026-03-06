@@ -241,8 +241,10 @@
             assign product_end = product_start | plus: per_page
             if pageUrl contains 'page=' 
               assign next_url = pageUrl | replace: 'page={{ current_page_number }}', 'page={{ current_page_number | plus: 1 }}'
-            else  
-              assign next_url = pageUrl | append: 'page={{ current_page_number | plus: 1 }}'
+            elsif pageUrl contains '?'
+              assign next_url = pageUrl | append: '&page={{ current_page_number | plus: 1 }}'
+            else
+              assign next_url = pageUrl | append: '?page={{ current_page_number | plus: 1 }}'
             endif
           %}
 
