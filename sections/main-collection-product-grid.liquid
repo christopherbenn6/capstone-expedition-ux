@@ -37,6 +37,60 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+    {% comment %} Gets Full Page URL {% endcomment %}
+  {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring
+    | split: '"pageurl":"'
+    | last
+    | split: '"'
+    | first
+    | split: '.myshopify.com'
+    | last
+    | replace: '\/', '/'
+    | replace: '%20', ' '
+    | replace: '\u0026', '&'
+  -%}
+
+  {% comment %} Sets Pagination Links, and Variables {% endcomment %}
+  {% liquid
+    assign per_page = 2
+    assign total_pages = products.size | plus: per_page | minus: 1 | divided_by: per_page
+
+    # Current page
+    assign current_page_number = 1
+    if pageUrl contains 'page='
+      assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first
+    endif
+
+    assign next_page = current_page_number | plus: 1
+
+    # Base URL and query
+    assign base_url = pageUrl | split: '?' | first
+    assign search_query = pageUrl | split: '?' | last
+
+    # Remove q= and page= from query
+    assign parts = search_query | split: '&'
+    assign clean_query = ''
+    for part in parts
+      unless part contains 'page=' or part contains 'section_id='
+        if clean_query == ''
+          assign clean_query = part
+        else
+          assign clean_query = clean_query | append: '&' | append: part
+        endif
+      endunless
+    endfor
+
+    # Build next URL
+    assign query_params = clean_query
+    if query_params != ''
+      assign query_params = query_params | append: '&page=' | append: next_page
+    else
+      assign query_params = 'page=' | append: next_page
+    endif
+
+    assign next_url = 'https://' | append: base_url | append: '?' | append: query_params
+  %}
 
   {% liquid 
 
@@ -58,61 +112,6 @@
       endif
     endfor
   %}  
-
-  {% comment %} Gets Full Page URL {% endcomment %}
-  {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
-  {%- assign pageUrl = contentForQuerystring
-    | split: '"pageurl":"'
-    | last
-    | split: '"'
-    | first
-    | split: '.myshopify.com'
-    | last
-    | replace: '\/', '/'
-    | replace: '%20', ' '
-    | replace: '\u0026', '&'
-  -%}
-
-  {% comment %} Sets Pagination Links, and Variables {% endcomment %}
-  {% liquid
-  assign per_page = 4
-  assign total_pages = products.size | plus: per_page | minus: 1 | divided_by: per_page
-
-  # Current page
-  assign current_page_number = 1
-  if pageUrl contains 'page='
-    assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first
-  endif
-
-  assign next_page = current_page_number | plus: 1
-
-  # Base URL and query
-  assign base_url = pageUrl | split: '?' | first
-  assign search_query = pageUrl | split: '?' | last
-
-  # Remove q= and page= from query
-  assign parts = search_query | split: '&'
-  assign clean_query = ''
-  for part in parts
-    unless part contains 'page=' or part contains 'section_id='
-      if clean_query == ''
-        assign clean_query = part
-      else
-        assign clean_query = clean_query | append: '&' | append: part
-      endif
-    endunless
-  endfor
-
-  # Build next URL
-  assign query_params = clean_query
-  if query_params != ''
-    assign query_params = query_params | append: '&page=' | append: next_page
-  else
-    assign query_params = 'page=' | append: next_page
-  endif
-
-  assign next_url = 'https://' | append: base_url | append: '?' | append: query_params
-%}
 
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
