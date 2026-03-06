@@ -220,7 +220,7 @@
             endif
             
             if search_query != empty
-              assign current_page_number = canonical_url | split: 'q=' | split: 'current_page=' | last | split: '&'| first
+              assign current_page_number = canonical_url | split: 'q=' | split: 'current_page=' | last | split: '&'| last
               if current_page_number == search_query
                 assign current_page_number = 1
               endif
