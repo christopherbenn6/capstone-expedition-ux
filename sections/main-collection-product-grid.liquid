@@ -106,14 +106,23 @@
     endfor
 
     # Build next URL
-    assign query_params = clean_query
-    if query_params != ''
-      assign query_params = query_params | append: '&page=' | append: next_page
+    assign next_query_params = clean_query
+    if next_query_params != ''
+      assign next_query_params = next_query_params | append: '&page=' | append: next_page
     else
-      assign query_params = 'page=' | append: next_page
+      assign next_query_params = 'page=' | append: next_page
     endif
 
-    assign next_url = base_url | append: '?' | append: query_params
+    # Build previous URL
+    assign prev_query_params = clean_query
+    if prev_query_params != ''
+      assign prev_query_params = prev_query_params | append: '&page=' | append: prev_page
+    else
+      assign prev_query_params = 'page=' | append: prev_page
+    endif
+
+    assign next_url = base_url | append: '?' | append: next_query_params
+    assign prev_url = base_url | append: '?' | append: prev_query_params
   %}
 
   <p>{{section.settings.products_per_page}}</p>
@@ -265,7 +274,7 @@
           </ul>
           {% comment %} Pagination {% endcomment %}
           <div class="games-pagination">
-            <a href="{{ canonical_url }}">Previous</a>
+            <a href="https://{{ prev_url }}">Previous</a>
             <a href="https://{{ next_url }}">Next</a>
           </div>
         </div>
