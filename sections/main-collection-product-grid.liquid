@@ -111,7 +111,7 @@
       assign query_params = 'page=' | append: next_page
     endif
 
-    assign next_url = 'https://' | append: base_url | append: '?' | append: query_params
+    assign next_url = base_url | append: '?' | append: query_params
   %}
 
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -261,7 +261,7 @@
           {% comment %} Pagination {% endcomment %}
           <div class="games-pagination">
             <a href="{{ canonical_url }}">Previous</a>
-            <a href="{{ next_url }}">Next</a>
+            <a href="https://{{ next_url }}">Next</a>
           </div>
         </div>
       {%- endif -%}
