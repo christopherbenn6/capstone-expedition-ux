@@ -237,7 +237,7 @@
 
             assign filters_query = search_query
             if filters_query contains 'q='
-              assign filters_query = filters_query | split: 'q=' | last | split: "&" | last
+              assign filters_query = filters_query | split: 'q=' | last | split: "&" | first
             elsif filters_query contains 'page='
               assign filters_query = filters_query | split: 'page=' | last | split: "&" | last
             endif
