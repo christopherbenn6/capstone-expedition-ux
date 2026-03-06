@@ -232,7 +232,18 @@
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
             
+            assign base_url = pageUrl | split: '?' | first
             assign search_query = pageUrl | split: '?' | last
+
+            assign filters_query = search_query
+            if filters_query contains 'q='
+              assign filters_query = filters_query | split: 'q=' | last | split: "&" | last
+            elsif filters_query contains 'page='
+              assign filters_query = filters_query | split: 'page=' | last | split: "&" | last
+            endif
+
+
+
             assign current_page_number = 1
             if search_query != empty
               assign current_page_number = canonical_url | split: 'page=' | last | split: '&' | first              
@@ -246,13 +257,15 @@
             assign next_page_query = 'page=' | append: next_page
 
             
-            if pageUrl contains 'page=' 
+            if search_query contains 'page=' 
               assign page_query = pageUrl | replace: current_page_query, next_page_query
             elsif pageUrl contains '?'
               assign page_query = pageUrl | append: '&page=' | append: next_page
             else
               assign page_query = pageUrl | append: '?page=' | append: next_page
             endif
+
+            assign next_url = base_url
           %}
 
           <div class="games-pagination">
