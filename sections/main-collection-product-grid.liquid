@@ -234,6 +234,7 @@
           <div class="games-pagination">
             <a href="{{ canonical_url }}">Previous</a>
             <a href="{{ next_url }}">Next</a>
+            <p>{{ current_page_number | plus: 1 }}</p>
           </div>
         </div>
       {%- endif -%}
