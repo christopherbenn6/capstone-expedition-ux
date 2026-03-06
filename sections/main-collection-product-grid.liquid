@@ -85,7 +85,7 @@
 
     assign next_page = current_page_number | plus: 1
     assign prev_page = current_page_number | minus: 1
-    assign offset = section.settings.products_per_page | times: current_page_number
+    assign offset = section.settings.products_per_page | times: prev_page
 
 
     # Base URL and query
