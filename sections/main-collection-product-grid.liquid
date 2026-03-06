@@ -114,6 +114,8 @@
     assign next_url = base_url | append: '?' | append: query_params
   %}
 
+  <p>section.products_per_page</p>
+
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
