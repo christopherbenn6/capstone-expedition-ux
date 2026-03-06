@@ -57,9 +57,76 @@
         assign filtered_products = filtered_products | concat: product_array 
       endif
     endfor
+  %}  
+
+  {% comment %} Gets Full Page URL {% endcomment %}
+  {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring
+    | split: '"pageurl":"'
+    | last
+    | split: '"'
+    | first
+    | split: '.myshopify.com'
+    | last
+    | replace: '\/', '/'
+    | replace: '%20', ' '
+    | replace: '\u0026', '&'
+  -%}
+
+  {% comment %} Sets Pagination Links, and Variables {% endcomment %}
+  {% liquid
+    assign total_pages = products.size | plus: per_page | minus: 1 | divided_by: per_page
+
+    # Current page
+    assign current_page_number = 1
+    if pageUrl contains 'page='
+      assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first
+    endif
+
+    assign next_page = current_page_number | plus: 1
+    assign prev_page = current_page_number | minus: 1
+    assign offset = section.settings.products_per_page | times: prev_page
+
+
+    # Base URL and query
+    assign base_url = pageUrl | split: '?' | first
+    assign search_query = pageUrl | split: '?' | last
+
+    # Remove q= and page= from query
+    assign parts = search_query | split: '&'
+    assign clean_query = ''
+    for part in parts
+      unless part contains 'page=' or part contains 'section_id='
+        if clean_query == ''
+          assign clean_query = part
+        else
+          assign clean_query = clean_query | append: '&' | append: part
+        endif
+      endunless
+    endfor
+
+    # Build next URL
+    assign next_query_params = clean_query
+    if next_query_params != ''
+      assign next_query_params = next_query_params | append: '&page=' | append: next_page
+    else
+      assign next_query_params = 'page=' | append: next_page
+    endif
+
+    # Build previous URL
+    assign prev_query_params = clean_query
+    if prev_query_params != ''
+      assign prev_query_params = prev_query_params | append: '&page=' | append: prev_page
+    else
+      assign prev_query_params = 'page=' | append: prev_page
+    endif
+
+    assign next_url = base_url | append: '?' | append: next_query_params
+    assign prev_url = base_url | append: '?' | append: prev_query_params
   %}
-  <p>Products {{ product_title }} Search Query: {{ search_query }}</p>
-  
+
+  <p>{{section.settings.products_per_page}}</p>
+
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
@@ -134,7 +201,7 @@
           enable_filtering: section.settings.enable_filtering,
           enable_sorting: section.settings.enable_sorting,
           filter_type: section.settings.filter_type,
-          paginate: paginate
+          pagination: paginate
         %}
       </aside>
     {%- endif -%}
@@ -176,7 +243,7 @@
           >
             {% assign skip_card_product_styles = false %}
 
-            {%- for product in filtered_products -%}  
+            {%- for product in filtered_products offset: offset limit: section.settings.products_per_page -%}  
               {% assign lazy_load = false %}
               {%- if forloop.index > 2 -%}
                 {%- assign lazy_load = true -%}
@@ -205,35 +272,10 @@
 
             {%- endfor -%}
           </ul>
-
-          {% comment %} {%- if paginate.pages > 1 -%}
-            {% render 'pagination', paginate: paginate, anchor: '' %}
-          {%- endif -%} {% endcomment %}
-          {% liquid
-
-            assign products = collection.products
-            assign per_page = 12
-            assign total_pages = products.size | divided_by: per_page | round
-            if total_pages < products.size | divided_by: per_page
-              assign total_pages = total_pages | plus: 1
-            endif
-
-            assign current_page_number = 1
-            assign product_start = current_page_number | minus: 1 | times: per_page
-            assign product_end = product_start | plus: per_page
-            assign product
-
-          %}
-
+          {% comment %} Pagination {% endcomment %}
           <div class="games-pagination">
-            <a href="{{ canonical_url }}">Previous</a>
-            <a href="{{ canonical_url }}">Next</a>
-            <p></p>
-            <p>Page Number: {{ current_page_number }}</p>
-            <p>Total Pages: {{ total_pages }}</p>
-            <p>Start: {{ product_start }}</p>
-            <p>End: {{ product_end }}</p>
-            <p></p>
+            <a href="https://{{ prev_url }}">Previous</a>
+            <a href="https://{{ next_url }}">Next</a>
           </div>
         </div>
       {%- endif -%}
@@ -252,9 +294,9 @@
     {
       "type": "range",
       "id": "products_per_page",
-      "min": 8,
+      "min": 2,
       "max": 36,
-      "step": 4,
+      "step": 2,
       "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
     },
