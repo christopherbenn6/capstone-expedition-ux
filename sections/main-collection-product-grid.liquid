@@ -231,13 +231,14 @@
               assign total_pages = total_pages | plus: 1
             endif
             
+            assign current_page_number = 1
             if search_query != empty
               assign current_page_number = canonical_url | split: 'page=' | last | split: '&' | first              
               if current_page_number == canonical_url
                 assign current_page_number = 1
               endif
-              assign next_page = current_page_number | plus: 1
             endif
+            assign next_page = current_page_number | plus: 1
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
 
