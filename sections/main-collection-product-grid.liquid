@@ -214,7 +214,7 @@
             assign products = collection.products
             assign per_page = 12
             assign total_pages_no_round = products.size | divided_by: per_page | times: 1.0
-            assign total_pages = products.size | divided_by: per_page | round
+            assign total_pages = products.size | divided_by: per_page | times: 1.0 | round
             if total_pages < total_pages_no_round
               assign total_pages = total_pages | plus: 1
             endif
