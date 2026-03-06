@@ -239,16 +239,18 @@
             if filters_query contains 'q='
               assign filters_query = filters_query | split: 'q=' | last | split: "&" | last
             elsif filters_query contains 'page='
-              assign parts = filters_query | split: 'page=' | last | split: "&" | last
+              assign parts = search_query | split: '&'
               assign clean_query = ''
               for part in parts
-                if clean_query == ''
-                  assign clean_query = part
-                else
-                  assign clean_query = clean_query | append: '&' | append: part
-                endif
+                unless part contains 'q=' or part contains 'page='
+                  if clean_query == ''
+                    assign clean_query = part
+                  else
+                    assign clean_query = clean_query | append: '&' | append: part
+                  endif
+                endunless
               endfor
-              assign filters_query = '&' | append: clean_query 
+              assign filters_query = clean_query
             endif
 
 
