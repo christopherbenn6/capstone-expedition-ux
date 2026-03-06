@@ -82,9 +82,11 @@
     if pageUrl contains 'page='
       assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first
     endif
-    assign offset = section.settings.products_per_page | times: current_page_number
 
     assign next_page = current_page_number | plus: 1
+    assign prev_page = current_page_number | minus: 1
+    assign offset = section.settings.products_per_page | times: current_page_number
+
 
     # Base URL and query
     assign base_url = pageUrl | split: '?' | first
