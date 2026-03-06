@@ -222,6 +222,7 @@
             if search_query != empty
               assign current_page_number = canonical_url | split: 'q=' | last | split: 'page=' | last | split: '&' | first              
               if current_page_number == search_query
+                assign current_page_number = 1
               endif
             endif
             assign product_start = current_page_number | minus: 1 | times: per_page
@@ -233,7 +234,7 @@
             <a href="{{ canonical_url }}">Previous</a>
             <a href="{{ canonical_url }}">Next</a>
             <p>Total No round: {{ total_pages_no_round }}</p>
-            <p>Page Number: {{ current_page_number }}</p>
+            <p>Page Number: {{ canonical_url | split: 'q=' }}</p>
             <p>Total Pages: {{ total_pages }}</p>
             <p>Test: {{ 20 | divided_by: 7 }}</p>
             <p>Start: {{ product_start }}</p>
