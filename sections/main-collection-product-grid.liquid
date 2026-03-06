@@ -240,12 +240,15 @@
             endif
             assign product_start = current_page_number | minus: 1 | times: per_page
             assign product_end = product_start | plus: per_page
+
+            assign current_page_query = 'page=' | append: current_page_number
+            assign next_page_query = 'page=' | append: next_page
             if pageUrl contains 'page=' 
-              assign next_url = pageUrl | replace: 'page={{ current_page_number }}', 'page={{ next_page }}'
+              assign next_url = pageUrl | replace: current_page_query, next_page_query
             elsif pageUrl contains '?'
-              assign next_url = pageUrl | append: '&page={{ current_page_number | plus: 1 }}'
+              assign next_url = pageUrl | append: '&page=' | append: next_page
             else
-              assign next_url = pageUrl | append: '?page={{ current_page_number | plus: 1 }}'
+              assign next_url = pageUrl | append: '?page=' | append: next_page
             endif
           %}
 
