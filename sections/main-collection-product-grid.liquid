@@ -223,13 +223,14 @@
 
           {% liquid
 
-            assign products = collection.products
             assign per_page = 4
             assign total_pages_no_round = products.size | times: 1.0 | divided_by: per_page
             assign total_pages = products.size | divided_by: per_page | round
             if total_pages < total_pages_no_round
               assign total_pages = total_pages | plus: 1
             endif
+            assign product_start = current_page_number | minus: 1 | times: per_page
+            assign product_end = product_start | plus: per_page
             
             assign search_query = pageUrl | split: '?' | last
             assign current_page_number = 1
@@ -240,17 +241,17 @@
               endif
             endif
             assign next_page = current_page_number | plus: 1
-            assign product_start = current_page_number | minus: 1 | times: per_page
-            assign product_end = product_start | plus: per_page
 
             assign current_page_query = 'page=' | append: current_page_number
             assign next_page_query = 'page=' | append: next_page
+
+            
             if pageUrl contains 'page=' 
-              assign next_url = pageUrl | replace: current_page_query, next_page_query
+              assign page_query = pageUrl | replace: current_page_query, next_page_query
             elsif pageUrl contains '?'
-              assign next_url = pageUrl | append: '&page=' | append: next_page
+              assign page_query = pageUrl | append: '&page=' | append: next_page
             else
-              assign next_url = pageUrl | append: '?page=' | append: next_page
+              assign page_query = pageUrl | append: '?page=' | append: next_page
             endif
           %}
 
