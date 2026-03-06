@@ -233,7 +233,7 @@
           <div class="games-pagination">
             <a href="{{ canonical_url }}">Previous</a>
             <a href="{{ next_url }}">Next</a>
-            <p>Url: {{ canonical_url }}</p>
+            <p>Url: {{ request.host }}</p>
           </div>
         </div>
       {%- endif -%}
