@@ -262,7 +262,7 @@
             else
               assign search_term = ""
             endif
-            assign next_url = base_url | append: next_page_query | append: search_term
+            assign next_url = base_url | append: next_page_query | append: search_term | append: filters_query
           %}
 
           <div class="games-pagination">
