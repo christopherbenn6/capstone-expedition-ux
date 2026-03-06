@@ -41,9 +41,6 @@
   {% liquid 
 
     assign products = collection.products
-    assign per_page = 12
-    assign total_pages = products.size | divided_by: per_page
-
     assign filtered_products = "" | split: ", " 
     for product in products  
       assign search_query = '' 
@@ -60,9 +57,6 @@
         assign filtered_products = filtered_products | concat: product_array 
       endif
     endfor
-    for product in filtered_products
-      assign product_title = product.title
-      endfor
   %}
   <p>Products {{ product_title }} Search Query: {{ search_query }}</p>
   
@@ -152,7 +146,7 @@
         data-cascade
       {% endif %}
     >
-      {%- if collection.products.size == 0 -%}
+      {%- if filtered_products.size == 0 -%}
         <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
           <div class="loading-overlay gradient"></div>
           <div class="title-wrapper center">
@@ -182,51 +176,65 @@
           >
             {% assign skip_card_product_styles = false %}
 
-            {%- for product in collection.products -%}  
-              {% assign search_query = '' %}
+            {%- for product in filtered_products -%}  
+              {% assign lazy_load = false %}
+              {%- if forloop.index > 2 -%}
+                {%- assign lazy_load = true -%}
+              {%- endif -%}
+              <li
+                class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                {% render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: section.settings.image_ratio,
+                  image_shape: section.settings.image_shape,
+                  show_secondary_image: section.settings.show_secondary_image,
+                  show_vendor: section.settings.show_vendor,
+                  show_rating: section.settings.show_rating,
+                  lazy_load: lazy_load,
+                  skip_styles: skip_card_product_styles,
+                  quick_add: section.settings.quick_add,
+                  section_id: section.id
+                %}
+              </li>
+              {%- assign skip_card_product_styles = true -%}
 
-              {% if canonical_url contains 'q=' %}
-                {% assign search_query = canonical_url | split: 'q=' | last | split: '&' | first %}
-              {% endif %}
-              {% assign product_title = product.title | downcase %}
-              {% assign product_description = product.description | strip_html | downcase %}  
-
-              {% if search_query == blank 
-                or product_title contains search_query 
-                or product_description contains search_query %}
-                
-                {% assign lazy_load = false %}
-                {%- if forloop.index > 2 -%}
-                  {%- assign lazy_load = true -%}
-                {%- endif -%}
-                <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                  {% if settings.animations_reveal_on_scroll %}
-                    data-cascade
-                    style="--animation-order: {{ forloop.index }};"
-                  {% endif %}
-                >
-                  {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    image_shape: section.settings.image_shape,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    lazy_load: lazy_load,
-                    skip_styles: skip_card_product_styles,
-                    quick_add: section.settings.quick_add,
-                    section_id: section.id
-                  %}
-                </li>
-                {%- assign skip_card_product_styles = true -%}
-              {% endif %}
             {%- endfor -%}
           </ul>
 
-          {%- if paginate.pages > 1 -%}
+          {% comment %} {%- if paginate.pages > 1 -%}
             {% render 'pagination', paginate: paginate, anchor: '' %}
-          {%- endif -%}
+          {%- endif -%} {% endcomment %}
+          {% liquid
+
+            assign products = collection.products
+            assign per_page = 12
+            assign total_pages = products.size | divided_by: per_page | round
+            if total_pages < products.size | divided_by: per_page
+              assign total_pages = total_pages | plus: 1
+            endif
+
+            assign current_page_number = 1
+            assign product_start = current_page_number | minus: 1 | times: per_page
+            assign product_end = product_start | plus: per_page
+            assign product
+
+          %}
+
+          <div class="games-pagination">
+            <a href="{{ canonical_url }}">Previous</a>
+            <a href="{{ canonical_url }}">Next</a>
+            <p></p>
+            <p>Page Number: {{ current_page_number }}</p>
+            <p>Total Pages: {{ total_pages }}</p>
+            <p>Start: {{ product_start }}</p>
+            <p>End: {{ product_end }}</p>
+            <p></p>
+          </div>
         </div>
       {%- endif -%}
     </div>
