@@ -91,6 +91,9 @@
     # Base URL and query
     assign base_url = pageUrl | split: '?' | first
     assign search_query = pageUrl | split: '?' | last
+    if search_query == base_url  
+      assign search_query = ""
+    endif
 
     # Remove q= and page= from query
     assign parts = search_query | split: '&'
