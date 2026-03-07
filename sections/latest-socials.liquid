@@ -1,0 +1,37 @@
+
+<h2>{{ section.blocks.heading }}</h2>
+
+{% schema %}
+{
+    "name": "Social Media",
+    "blocks": [
+        {
+            "type": "@app"
+        },
+        {
+            "type": "latest_socials_heading",
+            "name": "Heading",
+            "settings": [
+                {
+                    "type": "inline_richtext",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Find More on Our Socials"
+                }
+            ]
+        },
+        {
+            "type": "social-image",
+            "name": "Social Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "social-image",
+                    "label": "Social Image",
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
