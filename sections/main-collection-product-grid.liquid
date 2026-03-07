@@ -298,7 +298,7 @@
             {% endif %}
             {% if show_next_button %}
               <a style="
-                color:pagination_text_color;
+                color:{{section.settings.pagination_text_color}};
                 padding:1rem;" 
               href="https://{{ next_url }}">Next</a>
             {% endif %}
