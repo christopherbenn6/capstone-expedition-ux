@@ -302,16 +302,19 @@
             {% if show_prev_button %}
               <a style="
                 color:{{section.settings.pagination_text_color}};
+                text-decoration:none;
                 padding:1rem;"
               href="https://{{ url_empty_page_number }}1">1</a>
               <a style="
                 color:{{section.settings.pagination_text_color}};
+                text-decoration:none;
                 padding:1rem;" 
               href="https://{{ prev_url }}">Previous</a>
             {% endif %}
             {% if show_next_button %}
               <a style="
                 color:{{section.settings.pagination_text_color}};
+                text-decoration:none;
                 padding:1rem;" 
               href="https://{{ next_url }}">Next</a>
             {% endif %}
