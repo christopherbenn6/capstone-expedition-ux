@@ -291,10 +291,16 @@
             margin:1rem auto;
           ">
             {% if show_prev_button %}
-              <a href="https://{{ prev_url }}">Previous</a>
+              <a style="
+                color:pagination_text_color;
+                padding:1rem;" 
+              href="https://{{ prev_url }}">Previous</a>
             {% endif %}
             {% if show_next_button %}
-              <a href="https://{{ next_url }}">Next</a>
+              <a style="
+                color:pagination_text_color;
+                padding:1rem;" 
+              href="https://{{ next_url }}">Next</a>
             {% endif %}
           </div>
         </div>
@@ -521,6 +527,12 @@
       "id": "pagination_color",
       "label": "Pagination Button Colour",
       "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "pagination_text_color",
+      "label": "Pagination Text Colour",
+      "default": "#fff"
     },
     {
       "type": "range",
