@@ -75,12 +75,12 @@
 
   {% comment %} Sets Pagination Links, and Variables {% endcomment %}
   {% liquid
-    assign total_pages = products.size | plus: per_page | minus: 1 | divided_by: per_page
+    assign total_pages = filtered_products.size | plus: section.settings.products_per_page | minus: 1 | divided_by: section.settings.products_per_page
 
     # Current page
-    assign current_page_number = 1
+    assign current_page_number = 1 | plus: 0
     if pageUrl contains 'page='
-      assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first
+      assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first | plus: 0
     endif
 
     assign next_page = current_page_number | plus: 1
@@ -123,6 +123,17 @@
 
     assign next_url = base_url | append: '?' | append: next_query_params
     assign prev_url = base_url | append: '?' | append: prev_query_params
+
+    assign show_next_button =  true
+    assign show_prev_button =  true
+
+    if current_page_number >= total_pages
+      assign show_next_button = false
+    endif
+
+    if current_page_number <= 1
+      assign show_prev_button = false
+    endif
   %}
 
   <p>{{section.settings.products_per_page}}</p>
@@ -274,8 +285,13 @@
           </ul>
           {% comment %} Pagination {% endcomment %}
           <div class="games-pagination">
-            <a href="https://{{ prev_url }}">Previous</a>
-            <a href="https://{{ next_url }}">Next</a>
+            {% if show_prev_button %}
+              <a href="https://{{ prev_url }}">Previous</a>
+            {% endif %}
+            {% if show_next_button %}
+              <a href="https://{{ next_url }}">Next</a>
+            {% endif %}
+            <p>{{current_page_number }}</p>
           </div>
         </div>
       {%- endif -%}
