@@ -282,7 +282,13 @@
             {%- endfor -%}
           </ul>
           {% comment %} Pagination {% endcomment %}
-          <div class="games-pagination">
+          <div class="games-pagination"
+          style="
+            border-radius:{{ section.settings.pagination_border_radius }};
+            background-color:{{ section.settings.pagination_color }};
+            text-align:center;
+            max-width:400px
+          ">
             {% if show_prev_button %}
               <a href="https://{{ prev_url }}">Previous</a>
             {% endif %}
