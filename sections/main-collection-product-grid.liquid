@@ -121,6 +121,13 @@
       assign prev_query_params = 'page=' | append: prev_page
     endif
 
+    assign url_empty_page_number = clean_query
+    if url_empty_page_number != ''
+      assign url_empty_page_number = url_empty_page_number | append: '&page='
+    else
+      assign url_empty_page_number = 'page='
+    endif
+
     assign next_url = base_url | append: '?' | append: next_query_params
     assign prev_url = base_url | append: '?' | append: prev_query_params
 
