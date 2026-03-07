@@ -288,7 +288,7 @@
             {% if show_prev_button %}
               <a href="https://{{ prev_url }}">Previous</a>
             {% endif %}
-            {% if show_next_button %}
+            {% if current_page_number < total_pages and next_url != blank %}
               <a href="https://{{ next_url }}">Next</a>
             {% endif %}
             <p>{{current_page_number }}</p>
