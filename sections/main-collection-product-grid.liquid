@@ -300,7 +300,10 @@
             margin:1rem auto;
           ">
             {% if show_prev_button %}
-              <a href="https://{{ url_empty_page_number }}1">1</a>
+              <a style="
+                color:{{section.settings.pagination_text_color}};
+                padding:1rem;"
+              href="https://{{ url_empty_page_number }}1">1</a>
               <a style="
                 color:{{section.settings.pagination_text_color}};
                 padding:1rem;" 
