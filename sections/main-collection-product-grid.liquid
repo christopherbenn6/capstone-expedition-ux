@@ -75,7 +75,7 @@
 
   {% comment %} Sets Pagination Links, and Variables {% endcomment %}
   {% liquid
-    assign total_pages = products.size | plus: per_page | minus: 1 | divided_by: per_page
+    assign total_pages = filtered_products.size | plus: section.settings.products_per_page | minus: 1 | divided_by: section.settings.products_per_page
 
     # Current page
     assign current_page_number = 1
@@ -290,6 +290,7 @@
             {% endif %}
             {% if show_next_button %}
               <a href="https://{{ next_url }}">Next</a>
+              <p>{{  }}</p>
             {% endif %}
           </div>
         </div>
