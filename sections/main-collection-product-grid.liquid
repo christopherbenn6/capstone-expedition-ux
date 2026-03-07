@@ -78,9 +78,9 @@
     assign total_pages = filtered_products.size | plus: section.settings.products_per_page | minus: 1 | divided_by: section.settings.products_per_page
 
     # Current page
-    assign current_page_number = 1
+    assign current_page_number = 1 | plus: 0
     if pageUrl contains 'page='
-      assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first
+      assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first | plus: 0
     endif
 
     assign next_page = current_page_number | plus: 1
