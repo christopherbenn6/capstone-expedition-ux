@@ -121,12 +121,14 @@
       assign prev_query_params = 'page=' | append: prev_page
     endif
 
+    # Build empty page URL ex.https://nexwavevideogames.com/collections/games?sort_by=title-ascending&page=
     assign url_empty_page_number = clean_query
     if url_empty_page_number != ''
       assign url_empty_page_number = url_empty_page_number | append: '&page='
     else
       assign url_empty_page_number = 'page='
     endif
+    assign url_empty_page_number = base_url | append: '?' | append: url_empty_page_number
 
     assign next_url = base_url | append: '?' | append: next_query_params
     assign prev_url = base_url | append: '?' | append: prev_query_params
@@ -298,6 +300,7 @@
             margin:1rem auto;
           ">
             {% if show_prev_button %}
+              <a href="{{ url_empty_page_number }}1">1</a>
               <a style="
                 color:{{section.settings.pagination_text_color}};
                 padding:1rem;" 
