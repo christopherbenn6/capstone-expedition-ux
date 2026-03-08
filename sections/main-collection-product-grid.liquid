@@ -309,12 +309,9 @@
                 text-decoration:none;
                 padding:1rem;" 
               href="https://{{ prev_url }}">&larr; Previous</a>
-              <a style="
-                color:{{section.settings.pagination_text_color}};
-                text-decoration:none;
-                padding:1rem;"
-              href="https://{{ url_empty_page_number }}1">1</a>
             {% endif %}
+            {% assign total_pages_minus_one = total_pages | minus: 1 %}
+            {% assign page_numbers = "1, 2, " | append: next_page | append: ", " | append: current_page_number | append: ", " | append: prev_page | append: ", " | append: total_pages_minus_one | append: ", " | append: total_pages | split: ", "  %}
             {% if show_next_button %}
               <a style="
                 color:{{section.settings.pagination_text_color}};
@@ -322,6 +319,7 @@
                 padding:1rem;" 
               href="https://{{ next_url }}">Next &rarr;</a>
             {% endif %}
+            <p>{{ page_numbers }}</p>
           </div>
         </div>
       {%- endif -%}
