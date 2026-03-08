@@ -323,6 +323,10 @@
                 {% assign unique_numbers = unique_numbers | concat: temp %}
               {% endunless %}
             {% endfor %}
+            {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
+            {% for number in unique_numbers %}
+              {% comment %} Put Link Here {% endcomment %}
+            {% endfor %}
             {% if show_next_button %}
               <a style="
                 color:{{section.settings.pagination_text_color}};
