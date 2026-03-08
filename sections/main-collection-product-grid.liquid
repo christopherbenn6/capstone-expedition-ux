@@ -317,7 +317,8 @@
             {% for page_number in all_page_numbers %}
               {% assign page_number_as_number = page_number | plus: 0 %}
               {% unless unique_numbers contains page_number
-                  or page_number_as_number <= 0 %}
+                  or page_number_as_number <= 0 
+                  or page_number_as_number > total_pages %}
                 {% assign temp = page_number | reverse | reverse %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
                 <p></p>
