@@ -91,6 +91,9 @@
     # Base URL and query
     assign base_url = pageUrl | split: '?' | first
     assign search_query = pageUrl | split: '?' | last
+    if search_query == base_url  
+      assign search_query = ""
+    endif
 
     # Remove q= and page= from query
     assign parts = search_query | split: '&'
@@ -120,6 +123,15 @@
     else
       assign prev_query_params = 'page=' | append: prev_page
     endif
+
+    # Build empty page URL ex.https://nexwavevideogames.com/collections/games?sort_by=title-ascending&page=
+    assign url_empty_page_number = clean_query
+    if url_empty_page_number != ''
+      assign url_empty_page_number = url_empty_page_number | append: '&page='
+    else
+      assign url_empty_page_number = 'page='
+    endif
+    assign url_empty_page_number = base_url | append: '?' | append: url_empty_page_number
 
     assign next_url = base_url | append: '?' | append: next_query_params
     assign prev_url = base_url | append: '?' | append: prev_query_params
@@ -282,14 +294,47 @@
             {%- endfor -%}
           </ul>
           {% comment %} Pagination {% endcomment %}
-          <div class="games-pagination">
+          <div class="games-pagination"
+          style="
+            border-radius:{{ section.settings.pagination_border_radius }};
+            background-color:{{ section.settings.pagination_color }};
+            text-align:center;
+            max-width:400px;
+            padding:1rem;
+            margin:1rem auto;
+          ">
             {% if show_prev_button %}
-              <a href="https://{{ prev_url }}">Previous</a>
+              <a style="
+                color:{{section.settings.pagination_text_color}};
+                text-decoration:none;
+                padding:1rem;" 
+              href="https://{{ prev_url }}">&larr; Previous</a>
             {% endif %}
+            {% assign total_pages_minus_one = total_pages | minus: 1 %}
+            {% comment %} Make an array of each page number (with overlap) {% endcomment %}
+            {% assign all_page_numbers = "1, 2, " | append: next_page | append: ", " | append: current_page_number | append: ", " | append: prev_page | append: ", " | append: total_pages_minus_one | append: ", " | append: total_pages | split: ", "  %}
+            {% assign unique_numbers = "" | split: ", " %}
+            {% for page_number in all_page_numbers %}
+              {% assign page_number_as_number = page_number | plus: 0 %}
+              {% unless unique_numbers contains page_number
+                  or page_number_as_number <= 0 
+                  or page_number_as_number > total_pages %}
+                {% assign temp = page_number | reverse | reverse %}
+                {% assign unique_numbers = unique_numbers | concat: temp %}
+              {% endunless %}
+            {% endfor %}
+            {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
+            {% for number in unique_numbers %}
+              {% comment %} Put Link Here {% endcomment %}
+            {% endfor %}
             {% if show_next_button %}
-              <a href="https://{{ next_url }}">Next</a>
+              <a style="
+                color:{{section.settings.pagination_text_color}};
+                text-decoration:none;
+                padding:1rem;" 
+              href="https://{{ next_url }}">Next &rarr;</a>
             {% endif %}
-            <p>{{current_page_number }}</p>
+            <p>{{ unique_numbers }}</p>
           </div>
         </div>
       {%- endif -%}
@@ -308,9 +353,9 @@
     {
       "type": "range",
       "id": "products_per_page",
-      "min": 2,
+      "min": 1,
       "max": 36,
-      "step": 2,
+      "step": 1,
       "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
     },
@@ -509,6 +554,27 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "color",
+      "id": "pagination_color",
+      "label": "Pagination Button Colour",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "pagination_text_color",
+      "label": "Pagination Text Colour",
+      "default": "#fff"
+    },
+    {
+      "type": "range",
+      "id": "pagination_border_radius",
+      "label": "Pagination Border Radius (%)",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "default": 0
     }
   ]
 }
