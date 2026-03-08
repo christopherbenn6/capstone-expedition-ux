@@ -321,9 +321,8 @@
                   or page_number_as_number > total_pages %}
                 {% assign temp = page_number | reverse | reverse %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
-                <p></p>
               {% endunless %}
-            {%endfor %}
+            {% endfor %}
             {% if show_next_button %}
               <a style="
                 color:{{section.settings.pagination_text_color}};
