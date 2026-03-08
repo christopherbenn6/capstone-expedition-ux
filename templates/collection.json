@@ -20,7 +20,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 4,
+        "products_per_page": 1,
         "columns_desktop": 4,
         "columns_mobile": "2",
         "color_scheme": "",
@@ -34,7 +34,10 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "pagination_color": "#000000",
+        "pagination_text_color": "#ffffff",
+        "pagination_border_radius": 0
       }
     }
   },
