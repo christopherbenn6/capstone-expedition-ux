@@ -1,9 +1,28 @@
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <a href="{{ routes.root_url }}">Home</a>
 
-  {% comment %} About Page {% endcomment %}
- 
+  {% if template contains 'collection' and collection %}
+    <span> / </span>
+    <span>{{ collection.title }}</span>
+
+  {% elsif template contains 'product' and product %}
+    <span> / </span>
+    <a href="/collections/games">Games</a>
+    <span> / </span>
+    <span>{{ product.title }}</span>
+
+  {% elsif template contains 'blog' and blog %}
+    <span> / </span>
+    <span>{{ blog.title }}</span>
+
+  {% elsif template contains 'article' and article and blog %}
+    <span> / </span>
+    <a href="{{ blog.url }}">{{ blog.title }}</a>
+    <span> / </span>
+    <span>{{ article.title }}</span>
+
+  {% elsif template contains 'page' and page %}
     <span> / </span>
     <span>{{ page.title }}</span>
-  
+  {% endif %}
 </nav>
