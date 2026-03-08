@@ -1,28 +1,40 @@
 <nav class="breadcrumbs" aria-label="Breadcrumb">
-  <a href="{{ routes.root_url }}">Home</a>
+  <ol class="breadcrumbs__list">
+    <li class="breadcrumbs__item">
+      <a href="{{ routes.root_url }}" class="breadcrumbs__link">Home</a>
+    </li>
 
-  {% if template contains 'collection' and collection %}
-    <span> / </span>
-    <span>{{ collection.title }}</span>
+    {% if template contains 'collection' and collection %}
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link" aria-current="page">{{ collection.title }}</span>
+      </li>
 
-  {% elsif template contains 'product' and product %}
-    <span> / </span>
-    <a href="{{ routes.collections_url }}/games">Games</a>
-    <span> / </span>
-    <span>{{ product.title }}</span>
+    {% elsif template contains 'product' and product %}
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="{{ routes.collections_url }}/games">Games</a>
+      </li>
 
-  {% elsif template contains 'blog' and blog %}
-    <span> / </span>
-    <span>{{ blog.title }}</span>
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link" aria-current="page">{{ product.title }}</span>
+      </li>
 
-  {% elsif template contains 'article' and article and blog %}
-    <span> / </span>
-    <a href="{{ blog.url }}">{{ blog.title }}</a>
-    <span> / </span>
-    <span>{{ article.title }}</span>
+    {% elsif template contains 'blog' and blog %}
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link" aria-current="page">{{ blog.title }}</span>
+      </li>
 
-  {% elsif template contains 'page' and page %}
-    <span> / </span>
-    <span>{{ page.title }}</span>
-  {% endif %}
+    {% elsif template contains 'article' and article and blog %}
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="{{ blog.url }}">{{ blog.title }}</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link" aria-current="page">{{ article.title }}</span>
+      </li>
+
+    {% elsif template contains 'page' and page %}
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link" aria-current="page">{{ page.title }}</span>
+      </li>
+    {% endif %}
+  </ol>
 </nav>
