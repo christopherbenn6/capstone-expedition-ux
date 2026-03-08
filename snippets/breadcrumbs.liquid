@@ -2,8 +2,8 @@
   <a href="{{ routes.root_url }}">Home</a>
 
   {% comment %} About Page {% endcomment %}
-  {% if template contains 'page.about' %}
+  {% if page.title == "About" %}
     <span> / </span>
-    <span>About</span>
+    <span>{{ page.title }}</span>
   {% endif %}
 </nav>
