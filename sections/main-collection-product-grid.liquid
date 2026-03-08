@@ -41,9 +41,6 @@
   {% liquid 
 
     assign products = collection.products
-    assign per_page = 12
-    assign total_pages = products.size | divided_by: per_page
-
     assign filtered_products = "" | split: ", " 
     for product in products  
       assign search_query = '' 
@@ -60,12 +57,97 @@
         assign filtered_products = filtered_products | concat: product_array 
       endif
     endfor
-    for product in filtered_products
-      assign product_title = product.title
-      endfor
+  %}  
+
+  {% comment %} Gets Full Page URL {% endcomment %}
+  {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring
+    | split: '"pageurl":"'
+    | last
+    | split: '"'
+    | first
+    | split: '.myshopify.com'
+    | last
+    | replace: '\/', '/'
+    | replace: '%20', ' '
+    | replace: '\u0026', '&'
+  -%}
+
+  {% comment %} Sets Pagination Links, and Variables {% endcomment %}
+  {% liquid
+    assign total_pages = filtered_products.size | plus: section.settings.products_per_page | minus: 1 | divided_by: section.settings.products_per_page
+
+    # Current page
+    assign current_page_number = 1 | plus: 0
+    if pageUrl contains 'page='
+      assign current_page_number = pageUrl | split: 'page=' | last | split: '&' | first | plus: 0
+    endif
+
+    assign next_page = current_page_number | plus: 1
+    assign prev_page = current_page_number | minus: 1
+    assign offset = section.settings.products_per_page | times: prev_page
+
+
+    # Base URL and query
+    assign base_url = pageUrl | split: '?' | first
+    assign search_query = pageUrl | split: '?' | last
+    if search_query == base_url  
+      assign search_query = ""
+    endif
+
+    # Remove q= and page= from query
+    assign parts = search_query | split: '&'
+    assign clean_query = ''
+    for part in parts
+      unless part contains 'page=' or part contains 'section_id='
+        if clean_query == ''
+          assign clean_query = part
+        else
+          assign clean_query = clean_query | append: '&' | append: part
+        endif
+      endunless
+    endfor
+
+    # Build next URL
+    assign next_query_params = clean_query
+    if next_query_params != ''
+      assign next_query_params = next_query_params | append: '&page=' | append: next_page
+    else
+      assign next_query_params = 'page=' | append: next_page
+    endif
+
+    # Build previous URL
+    assign prev_query_params = clean_query
+    if prev_query_params != ''
+      assign prev_query_params = prev_query_params | append: '&page=' | append: prev_page
+    else
+      assign prev_query_params = 'page=' | append: prev_page
+    endif
+
+    # Build empty page URL ex.https://nexwavevideogames.com/collections/games?sort_by=title-ascending&page=
+    assign url_empty_page_number = clean_query
+    if url_empty_page_number != ''
+      assign url_empty_page_number = url_empty_page_number | append: '&page='
+    else
+      assign url_empty_page_number = 'page='
+    endif
+    assign url_empty_page_number = base_url | append: '?' | append: url_empty_page_number
+
+    assign next_url = base_url | append: '?' | append: next_query_params
+    assign prev_url = base_url | append: '?' | append: prev_query_params
+
+    assign show_next_button =  true
+    assign show_prev_button =  true
+
+    if current_page_number >= total_pages
+      assign show_next_button = false
+    endif
+
+    if current_page_number <= 1
+      assign show_prev_button = false
+    endif
   %}
-  <p>Products {{ product_title }} Search Query: {{ search_query }}</p>
-  
+
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
@@ -140,7 +222,7 @@
           enable_filtering: section.settings.enable_filtering,
           enable_sorting: section.settings.enable_sorting,
           filter_type: section.settings.filter_type,
-          paginate: paginate
+          pagination: paginate
         %}
       </aside>
     {%- endif -%}
@@ -152,7 +234,7 @@
         data-cascade
       {% endif %}
     >
-      {%- if collection.products.size == 0 -%}
+      {%- if filtered_products.size == 0 -%}
         <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
           <div class="loading-overlay gradient"></div>
           <div class="title-wrapper center">
@@ -182,51 +264,78 @@
           >
             {% assign skip_card_product_styles = false %}
 
-            {%- for product in collection.products -%}  
-              {% assign search_query = '' %}
+            {%- for product in filtered_products offset: offset limit: section.settings.products_per_page -%}  
+              {% assign lazy_load = false %}
+              {%- if forloop.index > 2 -%}
+                {%- assign lazy_load = true -%}
+              {%- endif -%}
+              <li
+                class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                {% render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: section.settings.image_ratio,
+                  image_shape: section.settings.image_shape,
+                  show_secondary_image: section.settings.show_secondary_image,
+                  show_vendor: section.settings.show_vendor,
+                  show_rating: section.settings.show_rating,
+                  lazy_load: lazy_load,
+                  skip_styles: skip_card_product_styles,
+                  quick_add: section.settings.quick_add,
+                  section_id: section.id
+                %}
+              </li>
+              {%- assign skip_card_product_styles = true -%}
 
-              {% if canonical_url contains 'q=' %}
-                {% assign search_query = canonical_url | split: 'q=' | last | split: '&' | first %}
-              {% endif %}
-              {% assign product_title = product.title | downcase %}
-              {% assign product_description = product.description | strip_html | downcase %}  
-
-              {% if search_query == blank 
-                or product_title contains search_query 
-                or product_description contains search_query %}
-                
-                {% assign lazy_load = false %}
-                {%- if forloop.index > 2 -%}
-                  {%- assign lazy_load = true -%}
-                {%- endif -%}
-                <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                  {% if settings.animations_reveal_on_scroll %}
-                    data-cascade
-                    style="--animation-order: {{ forloop.index }};"
-                  {% endif %}
-                >
-                  {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    image_shape: section.settings.image_shape,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    lazy_load: lazy_load,
-                    skip_styles: skip_card_product_styles,
-                    quick_add: section.settings.quick_add,
-                    section_id: section.id
-                  %}
-                </li>
-                {%- assign skip_card_product_styles = true -%}
-              {% endif %}
             {%- endfor -%}
           </ul>
-
-          {%- if paginate.pages > 1 -%}
-            {% render 'pagination', paginate: paginate, anchor: '' %}
-          {%- endif -%}
+          {% comment %} Pagination {% endcomment %}
+          <div class="games-pagination"
+          style="
+            border-radius:{{ section.settings.pagination_border_radius }};
+            background-color:{{ section.settings.pagination_color }};
+            text-align:center;
+            max-width:400px;
+            padding:1rem;
+            margin:1rem auto;
+          ">
+            {% if show_prev_button %}
+              <a style="
+                color:{{section.settings.pagination_text_color}};
+                text-decoration:none;
+                padding:1rem;" 
+              href="https://{{ prev_url }}">&larr; Previous</a>
+            {% endif %}
+            {% assign total_pages_minus_one = total_pages | minus: 1 %}
+            {% comment %} Make an array of each page number (with overlap) {% endcomment %}
+            {% assign all_page_numbers = "1, 2, " | append: next_page | append: ", " | append: current_page_number | append: ", " | append: prev_page | append: ", " | append: total_pages_minus_one | append: ", " | append: total_pages | split: ", "  %}
+            {% assign unique_numbers = "" | split: ", " %}
+            {% for page_number in all_page_numbers %}
+              {% assign page_number_as_number = page_number | plus: 0 %}
+              {% unless unique_numbers contains page_number
+                  or page_number_as_number <= 0 
+                  or page_number_as_number > total_pages %}
+                {% assign temp = page_number | reverse | reverse %}
+                {% assign unique_numbers = unique_numbers | concat: temp %}
+              {% endunless %}
+            {% endfor %}
+            {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
+            {% for number in unique_numbers %}
+              {% comment %} Put Link Here {% endcomment %}
+            {% endfor %}
+            {% if show_next_button %}
+              <a style="
+                color:{{section.settings.pagination_text_color}};
+                text-decoration:none;
+                padding:1rem;" 
+              href="https://{{ next_url }}">Next &rarr;</a>
+            {% endif %}
+            <p>{{ unique_numbers }}</p>
+          </div>
         </div>
       {%- endif -%}
     </div>
@@ -244,9 +353,9 @@
     {
       "type": "range",
       "id": "products_per_page",
-      "min": 8,
+      "min": 1,
       "max": 36,
-      "step": 4,
+      "step": 1,
       "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
     },
@@ -445,6 +554,27 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "color",
+      "id": "pagination_color",
+      "label": "Pagination Button Colour",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "pagination_text_color",
+      "label": "Pagination Text Colour",
+      "default": "#fff"
+    },
+    {
+      "type": "range",
+      "id": "pagination_border_radius",
+      "label": "Pagination Border Radius (%)",
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "default": 0
     }
   ]
 }

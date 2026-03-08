@@ -20,10 +20,27 @@
       "type": "facebook-latest-page",
       "name": "12 Facebook Posts",
       "settings": {}
+    },
+    "latest_socials_cdTyJq": {
+      "type": "latest-socials",
+      "blocks": {
+        "latest_socials_heading_k48yHg": {
+          "type": "latest_socials_heading",
+          "settings": {
+            "heading": "Find More on Our Socials"
+          }
+        }
+      },
+      "block_order": [
+        "latest_socials_heading_k48yHg"
+      ],
+      "name": "Social Media Icon Links",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "facebook_latest_page_MVeUPd"
+    "facebook_latest_page_MVeUPd",
+    "latest_socials_cdTyJq"
   ]
 }
