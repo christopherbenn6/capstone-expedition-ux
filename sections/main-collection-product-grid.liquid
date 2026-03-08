@@ -311,7 +311,15 @@
               href="https://{{ prev_url }}">&larr; Previous</a>
             {% endif %}
             {% assign total_pages_minus_one = total_pages | minus: 1 %}
-            {% assign page_numbers = "1, 2, " | append: next_page | append: ", " | append: current_page_number | append: ", " | append: prev_page | append: ", " | append: total_pages_minus_one | append: ", " | append: total_pages | split: ", "  %}
+            {% comment %} Make an array of each page number (with overlap) {% endcomment %}
+            {% assign all_page_numbers = "1, 2, " | append: next_page | append: ", " | append: current_page_number | append: ", " | append: prev_page | append: ", " | append: total_pages_minus_one | append: ", " | append: total_pages | split: ", "  %}
+            {% assign unique_numbers = "" | split: ", " %}
+            {% for page_number in all_page_numbers %}
+              {% unless unique_numbers contains all_page_numbers %}
+                {% assign page_number = page_number | reverse | reverse %}
+                {% assign unique_numbers = unique_numbers | concat: page_number %}
+              {% endunless %}
+            {%endfor %}
             {% if show_next_button %}
               <a style="
                 color:{{section.settings.pagination_text_color}};
@@ -319,7 +327,7 @@
                 padding:1rem;" 
               href="https://{{ next_url }}">Next &rarr;</a>
             {% endif %}
-            <p>{{ page_numbers }}</p>
+            <p>{{ unique_numbers }}</p>
           </div>
         </div>
       {%- endif -%}
