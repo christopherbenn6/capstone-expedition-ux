@@ -14,7 +14,7 @@
       "blocks": {
         "vendor": {
           "type": "text",
-          "disabled": true,
+          // "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
