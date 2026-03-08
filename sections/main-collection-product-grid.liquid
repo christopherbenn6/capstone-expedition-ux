@@ -318,6 +318,7 @@
               {% unless unique_numbers contains all_page_numbers %}
                 {% assign temp = page_number | reverse | reverse %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
+                <p>{{page_number }}</p>
               {% endunless %}
             {%endfor %}
             {% if show_next_button %}
