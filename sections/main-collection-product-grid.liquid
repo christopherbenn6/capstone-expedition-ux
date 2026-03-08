@@ -315,7 +315,8 @@
             {% assign all_page_numbers = "1, 2, " | append: next_page | append: ", " | append: current_page_number | append: ", " | append: prev_page | append: ", " | append: total_pages_minus_one | append: ", " | append: total_pages | split: ", "  %}
             {% assign unique_numbers = "" | split: ", " %}
             {% for page_number in all_page_numbers %}
-              {% unless unique_numbers contains page_number %}
+              {% unless unique_numbers contains page_number
+                  or page_number <= 0 %}
                 {% assign temp = page_number | reverse | reverse %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
                 <p></p>
