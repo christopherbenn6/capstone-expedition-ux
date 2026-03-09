@@ -103,8 +103,10 @@
 }
 
 @media (max-width: 600px) {
-  .hide-mobile {
+  .ellipsis + a,
+  .ellipsis + a + a {
     display: none;
   }
 }
+
 
