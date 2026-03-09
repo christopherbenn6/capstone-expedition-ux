@@ -309,7 +309,7 @@
                 padding: 0.5rem 1rem;
                 border-right: 1px solid white;
                 margin: 0;" 
-              href="https://{{ prev_url }}">&larr; <span>Previous</span></a>
+              href="https://{{ prev_url }}">&larr; <span class="hidden-600">Previous</span></a>
             {% endif %}
             {% assign total_pages_minus_one = total_pages | minus: 1 %}
             {% comment %} Make an array of each page number (with overlap) {% endcomment %}
@@ -353,7 +353,7 @@
                 text-decoration:none;
                 padding: 0.5rem 1rem;
                 margin: 0;" 
-              href="https://{{ next_url }}"><span>Next</span> &rarr;</a>
+              href="https://{{ next_url }}"><span clas s="hidden-600">Next</span> &rarr;</a>
             {% endif %}
           </div>
         </div>
