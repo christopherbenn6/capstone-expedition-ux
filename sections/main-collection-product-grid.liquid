@@ -326,7 +326,11 @@
             {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
             {% for number in unique_numbers %}
               {% comment %} Put Link Here {% endcomment %}
-               <a href="https://{{ url_empty_page_number }}{{ number }}">{{ number }}</a>
+               <a style="
+                color:{{section.settings.pagination_text_color}};
+                text-decoration:none;
+                padding:1rem;"  
+                href="https://{{ url_empty_page_number }}{{ number }}">{{ number }}</a>
             {% endfor %}
             {% if show_next_button %}
               <a style="
