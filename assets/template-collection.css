@@ -102,8 +102,9 @@
   margin-top: 1rem;
 }
 
-/* a:has(+ .pagination-gap) {
-  background-color: red;
-} */
-
+@media (max-width: 600px) {
+  .hide-mobile {
+    display: none;
+  }
+}
 
