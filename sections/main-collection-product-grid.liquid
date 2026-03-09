@@ -313,7 +313,9 @@
             {% endif %}
             {% assign total_pages_minus_one = total_pages | minus: 1 %}
             {% comment %} Make an array of each page number (with overlap) {% endcomment %}
-            {% assign all_page_numbers = "1, " | append: next_page | append: ", " | append: current_page_number | append: ", " | append: prev_page | append: ", " | append: total_pages | split: ", "  %}
+            {% assign all_page_numbers = "1, " 
+              | append: current_page_number | append: ", "  
+              | append: total_pages | split: ", "  %}
             {% assign unique_numbers = "" | split: ", " %}
             {% for page_number in all_page_numbers %}
               {% assign page_number_as_number = page_number | plus: 0 %}
