@@ -103,8 +103,8 @@
 }
 
 @media (max-width: 600px) {
-  .ellipsis + a,
-  .ellipsis + a + a {
+  .pagination-gap + a,
+  .pagination-gap + a + a {
     display: none;
   }
 }
