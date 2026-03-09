@@ -102,4 +102,8 @@
   margin-top: 1rem;
 }
 
+a + .pagination-gap  {
+  background-color: red;
+}
+
 
