@@ -3,6 +3,10 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+  .hidden-600 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 989px) {
