@@ -338,6 +338,7 @@
                     padding:1rem;"  
                     href="https://{{ url_empty_page_number }}{{ number }}">{{ number }}</a>
                 {% endif %}
+                {% assign last_number = number %}
             {% endfor %}
             {% if show_next_button %}
               <a style="
