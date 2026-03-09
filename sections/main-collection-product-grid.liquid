@@ -331,13 +331,12 @@
                {% assign difference = number | minus: last_number %}
                 {% if difference > 1 %}
                   <a>...</a>
-                {% else %}
-                  <a style="
-                    color:{{section.settings.pagination_text_color}};
-                    text-decoration:none;
-                    padding:1rem;"  
-                    href="https://{{ url_empty_page_number }}{{ number }}">{{ number }}</a>
                 {% endif %}
+                <a style="
+                  color:{{section.settings.pagination_text_color}};
+                  text-decoration:none;
+                  padding:1rem;"  
+                  href="https://{{ url_empty_page_number }}{{ number }}">{{ number }}</a>
                 {% assign last_number = number %}
             {% endfor %}
             {% if show_next_button %}
