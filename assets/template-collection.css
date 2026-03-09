@@ -102,7 +102,7 @@
   margin-top: 1rem;
 }
 
-a + .pagination-gap  {
+.pagination-gap + a  {
   background-color: red;
 }
 
