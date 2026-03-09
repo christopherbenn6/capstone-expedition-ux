@@ -325,13 +325,19 @@
               {% endunless %}
             {% endfor %}
             {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
+             {% assign last_number = 1 %}
             {% for number in unique_numbers %}
               {% comment %} Put Link Here {% endcomment %}
-               <a style="
-                color:{{section.settings.pagination_text_color}};
-                text-decoration:none;
-                padding:1rem;"  
-                href="https://{{ url_empty_page_number }}{{ number }}">{{ number }}</a>
+               {% assign difference = number | minus: last_number %}
+                {% if difference > 1 %}
+                  <p>...</p>
+                {% else %}
+                  <a style="
+                    color:{{section.settings.pagination_text_color}};
+                    text-decoration:none;
+                    padding:1rem;"  
+                    href="https://{{ url_empty_page_number }}{{ number }}">{{ number }}</a>
+                {% endif %}
             {% endfor %}
             {% if show_next_button %}
               <a style="
