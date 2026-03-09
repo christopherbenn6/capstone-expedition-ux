@@ -103,8 +103,8 @@
 }
 
 @media (max-width: 600px) {
-  .pagination-gap:first-of-type + a,
-  .pagination-gap:first-of-type + a + a {
+  .pagination-gap + a,
+  .pagination-gap + a + a {
     display: none;
   }
 }
