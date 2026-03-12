@@ -111,10 +111,8 @@
 
 @media (max-width:600px){
 
-.games-pagination:has(.pagination-gap + a + .pagination-gap) 
-.pagination-gap + a,
-.games-pagination:has(.pagination-gap + a + .pagination-gap) 
-.pagination-gap + a + a {
+.games-pagination:has(.pagination-gap + a + .pagination-gap) .pagination-gap + a,
+.games-pagination:has(.pagination-gap + a + .pagination-gap) .pagination-gap + a + a {
   display:none;
 }
 
