@@ -103,8 +103,8 @@
 }
 
 @media (max-width:600px){
-.games-pagination .pagination-gap + a:not(:last-of-type),
-.games-pagination .pagination-gap + a + a + a{
+.games-pagination .pagination-gap:first-of-type + a:not(:last-of-type),
+.games-pagination .pagination-gap:first-of-type + a + a + a{
   display:none !important;
 }
 
