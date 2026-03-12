@@ -324,7 +324,7 @@
               {% unless unique_numbers contains page_number
                   or page_number_as_number <= 0 
                   or page_number_as_number > total_pages %}
-                {% assign temp = page_number | reverse | reverse %}
+                {% assign temp = page_number | reverse | reverse | plus: 0 %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
                 {% assign unique_numbers = unique_numbers | sort %}
               {% endunless %}
