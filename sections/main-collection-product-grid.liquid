@@ -331,6 +331,7 @@
             {% endfor %}
             {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
             {% assign last_number = 1 %}
+            <p>{{ unique_numbers }}</p>
             {% for number in unique_numbers %}
               {% comment %} Put Link Here {% endcomment %}
                {% assign difference = number | minus: last_number %}
