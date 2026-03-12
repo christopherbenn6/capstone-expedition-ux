@@ -327,7 +327,7 @@
                 {% assign temp = page_number | reverse | reverse %}
                 {% assign temp = temp | prepend: 000 | slice: -3, 3 %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
-                {% assign unique_numbers = unique_numbers | sort %}
+                {% assign unique_numbers = unique_numbers | sort_natural %}
               {% endunless %}
             {% endfor %}
             {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
