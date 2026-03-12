@@ -336,12 +336,12 @@
               {% comment %} Put Link Here {% endcomment %}
                {% assign difference = number | minus: last_number %}
                 {% if difference > 1 %}
-                    <a {% unless has_one_gap %} class="pagination-gap" {% endunless %} style="
+                    <span {% unless has_one_gap %} class="pagination-gap" {% endunless %} style="
                     color:{{section.settings.pagination_text_color}};
                     text-decoration:none;
                     padding: 0.5rem 1rem;
                     border-right: 1px solid white;
-                    margin: 0;">...</a>
+                    margin: 0;">...</span>
                   {% assign has_one_gap = true %}
                 {% endif %}
                 <a style="
