@@ -335,7 +335,6 @@
             {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
             {% assign last_number = 1 %}
             {% for number in unique_numbers %}
-              {% assign number = number | plus: 0 %}
               {% comment %} Put Link Here {% endcomment %}
                {% assign difference = number | minus: last_number %}
                 {% if difference > 1 %}
@@ -352,7 +351,7 @@
                   padding: 0.5rem 1rem;
                   border-right: 1px solid white;
                   margin: 0;"  
-                  href="https://{{ url_empty_page_number }}{{ number }}">{{ number }}</a>
+                  href="https://{{ url_empty_page_number }}{{ number | plus: 0 }}">{{ number | plus: 0 }}</a>
                 {% assign last_number = number %}
             {% endfor %}
             {% if show_next_button %}
