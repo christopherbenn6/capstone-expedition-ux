@@ -313,11 +313,11 @@
             {% endif %}
             {% assign total_pages_minus_one = total_pages | minus: 1 %}
             {% comment %} Make an array of each page number (with overlap) {% endcomment %}
-            {% assign all_page_numbers = "1, " 
-              | append: next_page | append: ", " 
-              | append: current_page_number | append: ", " 
-              | append: prev_page | append: ", " 
-              | append: total_pages | split: ", "  %}
+            {% assign all_page_numbers = "1," 
+              | append: next_page | append: "," 
+              | append: current_page_number | append: "," 
+              | append: prev_page | append: "," 
+              | append: total_pages | split: ","  %}
             {% assign unique_numbers = "" | split: ", " %}
             {% for page_number in all_page_numbers %}
               {% assign page_number_as_number = page_number | plus: 0 %}
@@ -326,7 +326,7 @@
                   or page_number_as_number > total_pages %}
                 {% assign temp = page_number | reverse | reverse %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
-                {% assign unique_numbers = unique_numbers | sort_natural %}
+                {% assign unique_numbers = unique_numbers | sort %}
               {% endunless %}
             {% endfor %}
             {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
