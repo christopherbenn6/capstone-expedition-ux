@@ -103,9 +103,6 @@
 }
 
 @media (max-width:600px){
-  .games-pagination {
-    display: none !important;
-  }
 .games-pagination:has(.pagination-gap + a + a + a + .pagination-gap) .pagination-gap + a,
 .games-pagination:has(.pagination-gap + a + a + a + .pagination-gap) .pagination-gap + a + a {
   display:none !important;
