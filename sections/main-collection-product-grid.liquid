@@ -318,18 +318,20 @@
               | append: current_page_number | append: "," 
               | append: prev_page | append: "," 
               | append: total_pages | split: ","  %}
+
             {% assign unique_numbers = "" | split: "," %}
             {% for page_number in all_page_numbers %}
               {% assign page_number_as_number = page_number | plus: 0 %}
               {% unless unique_numbers contains page_number
                   or page_number_as_number <= 0 
                   or page_number_as_number > total_pages %}
-                {% assign page_number = page_number | plus: 0 %}
-                {% assign temp = page_number | split: "," %}
-                {% assign unique_numbers = unique_numbers | concat: temp %}
+                {% capture padded %}{{ page_number | prepend: "00000" | slice: -5, 5 }}{% endcapture %}
+    {% assign temp = padded | split: "," %}
+    {% assign unique_numbers = unique_numbers | concat: temp %}
                 {% assign unique_numbers = unique_numbers | sort %}
               {% endunless %}
             {% endfor %}
+
             {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
             {% assign last_number = 1 %}
             {% for number in unique_numbers %}
