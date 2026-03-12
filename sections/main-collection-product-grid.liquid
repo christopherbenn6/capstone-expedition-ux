@@ -34,6 +34,17 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  @media (max-width:600px){
+  .games-pagination {
+    display: none !important;
+  }
+.games-pagination:has(.pagination-gap + a + a + a + .pagination-gap) .pagination-gap + a,
+.games-pagination:has(.pagination-gap + a + a + a + .pagination-gap) .pagination-gap + a + a {
+  display:none !important;
+}
+
+}
+
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
