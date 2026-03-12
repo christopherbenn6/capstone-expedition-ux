@@ -318,7 +318,7 @@
               | append: current_page_number | append: "," 
               | append: prev_page | append: "," 
               | append: total_pages | split: ","  %}
-            {% assign unique_numbers = "" | split: ", " %}
+            {% assign unique_numbers = "" | split: "," %}
             {% for page_number in all_page_numbers %}
               {% assign page_number_as_number = page_number | plus: 0 %}
               {% unless unique_numbers contains page_number
