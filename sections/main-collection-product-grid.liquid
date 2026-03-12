@@ -322,10 +322,10 @@
             {% assign unique_numbers = "" | split: "," %}
             {% for page_number in all_page_numbers %}
               {% assign page_number_as_number = page_number | plus: 0 %}
-              {% unless unique_numbers contains page_number_as_number
+              {% capture padded %}{{ page_number | prepend: "00000" | slice: -5, 5 }}{% endcapture %}
+              {% unless unique_numbers contains padded
                   or page_number_as_number <= 0 
                   or page_number_as_number > total_pages %}
-                {% capture padded %}{{ page_number | prepend: "00000" | slice: -5, 5 }}{% endcapture %}
                 {% assign temp = padded | split: "," %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
                 {% assign unique_numbers = unique_numbers | sort %}
