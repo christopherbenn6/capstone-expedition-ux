@@ -1,5 +1,5 @@
 {%- for block in section.blocks -%}
-<div class="page-width">
+<section class="page-width">
     {% case block.type %}
         {%- when 'heading' -%}
                   <h2
@@ -25,7 +25,7 @@
                 </a>
             {%- endif -%}
     {%- endcase -%}
-</div>
+</section>
 {%- endfor -%}
 
 {% schema %} 
