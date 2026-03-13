@@ -122,15 +122,15 @@
         "button_Keg3N8": {
           "type": "button",
           "settings": {
-            "button_label": "View More",
+            "button_label": "View More Posts",
             "button_link": "shopify://pages/latest-posts",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "text_content_BhWgKM",
         "heading_NnGUma",
+        "text_content_BhWgKM",
         "button_Keg3N8"
       ],
       "name": "3 Facebook Posts",
