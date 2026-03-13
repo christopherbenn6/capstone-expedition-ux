@@ -1,5 +1,5 @@
+<section class="page-width"></section>
 {%- for block in section.blocks -%}
-  <section class="page-width">
   {% case block.type %}
     {%- when 'heading' -%}
       <h2 class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
@@ -10,7 +10,6 @@
       <p>{{ block.settings.text_content }}</p>
     {%- when 'button' -%}
       {%- if block.settings.button_label != blank -%}
-        <div class="page-width">
         <a
           {% if block.settings.button_link == blank %}
           role="link"
@@ -24,7 +23,7 @@
         </a>
       {%- endif -%}
   {%- endcase -%}
-</section>{%- endfor -%}{% schema %}
+{%- endfor -%}</section>{% schema %}
 {
   "name": "3 Facebook Posts",
   "max_blocks": 50,
