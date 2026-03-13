@@ -9,8 +9,8 @@
                     {{ block.settings.heading }}
                   </h2>
                   <div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd"></div>
-        {% when  'text-content' %}
-          <p>{{}}</p>
+        {% when  'text_content' %}
+          <p>{{ block.settings.text_content }}</p>
         {%- when 'button' -%}
             {%- if block.settings.button_label != blank -%}
             <div class="page-width">
@@ -60,12 +60,12 @@
           ]
         },
         {
-          "type": "text-content",
+          "type": "text_content",
           "name": "Text Box",
           "settings": [
             {
               "type": "text",
-              "id": "text-content",
+              "id": "text_content",
               "label": "Text Content",
             }
           ]
