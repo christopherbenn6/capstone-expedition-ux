@@ -1,83 +1,41 @@
 {%- for block in section.blocks -%}
-<section class="page-width">
-    {% case block.type %}
-        {%- when 'heading' -%}
-                  <h2
-                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
-                    {{ block.shopify_attributes }}
-                  >
-                    {{ block.settings.heading }}
-                  </h2>
-                  <div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd"></div>
-        {%- when 'button' -%}
-            {%- if block.settings.button_label != blank -%}
-            <div class="page-width">
-                <a
-                    {% if block.settings.button_link == blank %}
-                    role="link" aria-disabled="true"
-                    {% else %}
-                    href="{{ block.settings.button_link }}"
-                    {% endif %}
-                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                    {{ block.shopify_attributes }}
-                >
-                    {{ block.settings.button_label | escape }}
-                </a>
-            {%- endif -%}
-    {%- endcase -%}
-</section>
-{%- endfor -%}
-
-{% schema %} 
+  <section class="page-width">
+  {% case block.type %}
+    {%- when 'heading' -%}
+      <h2 class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+        {{ block.settings.heading }}
+      </h2>
+      <div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd"></div>
+    {%- when 'button' -%}
+      {%- if block.settings.button_label != blank -%}
+        <div class="page-width">
+        <a
+          {% if block.settings.button_link == blank %}
+          role="link"
+          aria-disabled="true"
+          {% else %}
+          href="{{ block.settings.button_link }}"
+          {% endif %}
+          class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+          {{ block.shopify_attributes }}>
+          {{ block.settings.button_label | escape }}
+        </a>
+      {%- endif -%}
+  {%- endcase -%}
+</section>{%- endfor -%}{% schema %}
 {
-    "name": "3 Facebook Posts",
-    "max_blocks": 50,
-    "blocks": [
-        {
-            "type": "button",
-            "name": "t:sections.image-with-text.blocks.button.name",
-            "settings": [
-                {
-                "type": "text",
-                "id": "button_label",
-                "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
-                "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
-                "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
-                },
-                {
-                "type": "url",
-                "id": "button_link",
-                "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
-                },
-                {
-                "type": "checkbox",
-                "id": "button_style_secondary",
-                "default": false,
-                "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
-                }
-            ]
-        },
-        {
-          "type": "text_content",
-          "name": "Text Box",
-          "settings": [
-            {
-              "type": "text",
-              "id": "text_content",
-              "label": "Text Content"
-            }
-          ]
-        },
-        {
+  "name": "3 Facebook Posts",
+  "max_blocks": 50,
+  "blocks": [
+    {
       "type": "heading",
-      "name": "t:sections.image-with-text.blocks.heading.name",
-      "limit": 1,
+      "name": "Heading",
       "settings": [
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "t:sections.image-with-text.blocks.heading.settings.heading.default",
-          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+          "default": "Heading",
+          "label": "Heading"
         },
         {
           "type": "select",
@@ -85,33 +43,68 @@
           "options": [
             {
               "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
+              "label": "Small"
             },
             {
               "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
+              "label": "Medium"
             },
             {
               "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
+              "label": "Large"
             },
             {
               "value": "hxl",
-              "label": "t:sections.all.heading_size.options__4.label"
+              "label": "XL"
             },
             {
               "value": "hxxl",
-              "label": "t:sections.all.heading_size.options__5.label"
+              "label": "XXL"
             }
           ],
           "default": "h1",
-          "label": "t:sections.all.heading_size.label"
+          "label": "Heading Size"
         }
-      ],
-    "presets": [
+      ]
+    },
+    {
+      "type": "text_content",
+      "name": "Text Box",
+      "settings": [
         {
-            "name": "3 Facebook Posts"
+          "type": "text",
+          "id": "text_content",
+          "label": "Text Content"
         }
-    ]
-}
-{% endschema %} 
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Click Here"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "Secondary Style"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "3 Facebook Posts"
+    }
+  ]
+}{% endschema %}
