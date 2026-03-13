@@ -11,10 +11,10 @@
   "sections": {
     "main": {
       "type": "main-page",
-      // "disabled": true,
       "settings": {
         "padding_top": 68,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "enable_page_heading": true
       }
     },
     "image_with_text_M96Hez": {
@@ -23,7 +23,7 @@
         "heading_JzJKkG": {
           "type": "heading",
           "settings": {
-            "heading": "About",
+            "heading": "About Us",
             "heading_size": "h1"
           }
         },
