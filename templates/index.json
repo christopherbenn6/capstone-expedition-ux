@@ -106,6 +106,12 @@
     "facebook_latest_home_M7Lbak": {
       "type": "facebook-latest-home",
       "blocks": {
+        "text_content_BhWgKM": {
+          "type": "text_content",
+          "settings": {
+            "text_content": "We post all of our new additions to the store on our socials!"
+          }
+        },
         "heading_NnGUma": {
           "type": "heading",
           "settings": {
@@ -123,6 +129,7 @@
         }
       },
       "block_order": [
+        "text_content_BhWgKM",
         "heading_NnGUma",
         "button_Keg3N8"
       ],
