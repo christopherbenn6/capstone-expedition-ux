@@ -1,111 +1,114 @@
-<section class="page-width"></section>
-{%- for block in section.blocks -%}
-  {% case block.type %}
-    {%- when 'heading' -%}
-      <h2 class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-        {{ block.settings.heading }}
-      </h2>
-      <div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd"></div>
-    {% when 'text_content' %}
-      <p>{{ block.settings.text_content }}</p>
-    {%- when 'button' -%}
-      {%- if block.settings.button_label != blank -%}
-        <a
-          {% if block.settings.button_link == blank %}
-          role="link"
-          aria-disabled="true"
-          {% else %}
-          href="{{ block.settings.button_link }}"
-          {% endif %}
-          class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-          {{ block.shopify_attributes }}>
-          {{ block.settings.button_label | escape }}
-        </a>
-      {%- endif -%}
-  {%- endcase -%}
-{%- endfor -%}</section>{% schema %}
-{
-  "name": "3 Facebook Posts",
-  "max_blocks": 50,
-  "blocks": [
-    {
-      "type": "heading",
-      "name": "Heading",
-      "settings": [
-        {
-          "type": "inline_richtext",
-          "id": "heading",
-          "default": "Heading",
-          "label": "Heading"
-        },
-        {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "h2",
-              "label": "Small"
-            },
-            {
-              "value": "h1",
-              "label": "Medium"
-            },
-            {
-              "value": "h0",
-              "label": "Large"
-            },
-            {
-              "value": "hxl",
-              "label": "XL"
-            },
-            {
-              "value": "hxxl",
-              "label": "XXL"
-            }
-          ],
-          "default": "h1",
-          "label": "Heading Size"
-        }
-      ]
-    },
-    {
-      "type": "text_content",
-      "name": "Text Box",
-      "settings": [
-        {
-          "type": "text",
-          "id": "text_content",
-          "label": "Text Content"
-        }
-      ]
-    },
-    {
-      "type": "button",
-      "name": "Button",
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label",
-          "label": "Button Label",
-          "default": "Click Here"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "Button Link"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_style_secondary",
-          "default": false,
-          "label": "Secondary Style"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "3 Facebook Posts"
-    }
-  ]
-}{% endschema %}
+<section class="page-width">
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {%- when 'heading' -%}
+        <h2 class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+          {{ block.settings.heading }}
+        </h2>
+        <div class="elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd"></div>
+      {% when 'text_content' %}
+        <p>{{ block.settings.text_content }}</p>
+      {%- when 'button' -%}
+        {%- if block.settings.button_label != blank -%}
+          <a
+            {% if block.settings.button_link == blank %}
+            role="link"
+            aria-disabled="true"
+            {% else %}
+            href="{{ block.settings.button_link }}"
+            {% endif %}
+            class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+            {{ block.shopify_attributes }}>
+            {{ block.settings.button_label | escape }}
+          </a>
+        {%- endif -%}
+    {%- endcase -%}
+  {%- endfor -%}
+</section>
+{% schema %}
+  {
+    "name": "3 Facebook Posts",
+    "max_blocks": 50,
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "Heading",
+        "settings": [
+          {
+            "type": "inline_richtext",
+            "id": "heading",
+            "default": "Heading",
+            "label": "Heading"
+          },
+          {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "Small"
+              },
+              {
+                "value": "h1",
+                "label": "Medium"
+              },
+              {
+                "value": "h0",
+                "label": "Large"
+              },
+              {
+                "value": "hxl",
+                "label": "XL"
+              },
+              {
+                "value": "hxxl",
+                "label": "XXL"
+              }
+            ],
+            "default": "h1",
+            "label": "Heading Size"
+          }
+        ]
+      },
+      {
+        "type": "text_content",
+        "name": "Text Box",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_content",
+            "label": "Text Content"
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "name": "Button",
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Click Here"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_secondary",
+            "default": false,
+            "label": "Secondary Style"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "3 Facebook Posts"
+      }
+    ]
+  }
+{% endschema %}

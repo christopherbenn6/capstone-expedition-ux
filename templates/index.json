@@ -106,17 +106,17 @@
     "facebook_latest_home_M7Lbak": {
       "type": "facebook-latest-home",
       "blocks": {
-        "text_content_BhWgKM": {
-          "type": "text_content",
-          "settings": {
-            "text_content": "We post all of our new additions to the store on our socials!"
-          }
-        },
         "heading_NnGUma": {
           "type": "heading",
           "settings": {
             "heading": "Latest Posts",
             "heading_size": "h1"
+          }
+        },
+        "text_content_BhWgKM": {
+          "type": "text_content",
+          "settings": {
+            "text_content": "We post all of our new additions to the store on our socials!"
           }
         },
         "button_Keg3N8": {
