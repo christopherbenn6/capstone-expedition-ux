@@ -450,12 +450,6 @@
   word-break: break-word;
 }
 
-/* Hover, active, and focus states */
-.facets__label:hover,
-.facets__label.active,
-.facets__label:has(:focus-visible) {
-  color: rgba(var(--color-foreground), 1);
-}
 
 /* Disabled state */
 .facets-layout .facets__label.disabled {
