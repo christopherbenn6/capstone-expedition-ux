@@ -43,6 +43,10 @@
   color: white !important !important;
 }
 
+h2 {
+  color: yellow;
+}
+
 @media screen and (min-width: 990px) {
   .facet-filters {
     padding-left: 3rem;
