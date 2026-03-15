@@ -74,7 +74,7 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
-  {% render 'breadcrumbs' %}
+    {% render 'breadcrumbs' %}
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
@@ -83,10 +83,10 @@
         <section
           id="ProductInfo-{{ section.id }}"
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
-           aria-labelledby="ProductInfoHeading-{{ section.id }}"
+          aria-labelledby="ProductInfoHeading-{{ section.id }}"
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
-           <h2 class="visually-hidden">Product information</h2>  
+          <h2 class="visually-hidden">Product information</h2>
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -103,11 +103,13 @@
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
-                    {% comment %} <h2 class="h1">
-                    {% comment %} <h2 class="h1">
-                      {{ product.title | escape }}
-                    </h2> {% endcomment %}
-                    </h2> {% endcomment %}
+                    {% comment %}
+                      <h2 class="h1">
+                      {% comment %} <h2 class="h1">
+                        {{ product.title | escape }}
+                      </h2> {% endcomment %}
+                      </h2>
+                    {% endcomment %}
                   </a>
                 </div>
               {%- when 'price' -%}
@@ -119,6 +121,14 @@
                     price_class: 'price--large'
                   -%}
                 </div>
+
+                {% comment %} custom condition {% endcomment %}
+                {% if product.metafields.custom.condition != blank %}
+                  <p class="product-condition">
+                    <strong>Condition:</strong>
+                    {{ product.metafields.custom.condition.value | default: product.metafields.custom.condition }}
+                  </p>
+                {% endif %}
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
@@ -946,7 +956,7 @@
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1
     },
-   
+
     {
       "type": "message_button",
       "name": "Message Button",
