@@ -125,7 +125,7 @@
                 {% comment %} custom condition {% endcomment %}
                 {% if product.metafields.custom.condition != blank %}
                   <p class="product-condition">
-                    <strong>Condition:</strong>
+                    
                     {{ product.metafields.custom.condition.value | default: product.metafields.custom.condition }}
                   </p>
                 {% endif %}
