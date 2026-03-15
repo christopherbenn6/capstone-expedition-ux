@@ -38,7 +38,11 @@
         "padding_bottom": 36,
         "pagination_color": "#000000",
         "pagination_text_color": "#ffffff",
-        "pagination_border_radius": 0
+        "pagination_border_radius": 0,
+        "filter-background-color": "#ff0000",
+        "filter-border-color": "",
+        "filter-border-thickness": 2,
+        "filter-text-color": ""
       }
     }
   },
