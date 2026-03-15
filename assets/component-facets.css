@@ -39,6 +39,10 @@
   padding-left: 2.5rem;
 }
 
+.facet-filters .button {
+  color: white;
+}
+
 @media screen and (min-width: 990px) {
   .facet-filters {
     padding-left: 3rem;
@@ -50,6 +54,8 @@
   font-size: 1.4rem;
   margin: 0 2rem 0 0;
 }
+
+.button
 
 .facet-filters__summary {
   display: flex;
