@@ -209,11 +209,6 @@
   border: 0;
 }
 
-.facets__disclosure[open] .facets__summary,
-.facets__summary:hover {
-  color: rgb(var(--color-foreground));
-}
-
 .facets__disclosure[open] .facets__display,
 .facets__disclosure-vertical[open] .facets__display-vertical {
   animation: animateMenuOpen var(--duration-default) ease;
@@ -369,12 +364,6 @@
   padding: 0.4rem;
 }
 
-/* Active state */
-.facets-layout-grid--image .facets__label.active {
-  outline-color: rgb(var(--color-foreground));
-  outline-width: 0.1rem;
-}
-
 /* Hover state */
 .facets-layout-grid--image .facets__label:hover {
   outline-color: rgba(var(--color-foreground), 0.4);
@@ -390,7 +379,6 @@
 
 /* Focused state */
 .facets-layout-grid--image .facets__label.active:has(:focus-visible) {
-  outline-color: rgb(var(--color-foreground));
   outline-width: 0.1rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.5),
     0 0 0.7rem 0.1rem rgba(var(--color-foreground), 0.25);
@@ -414,7 +402,6 @@
   /* 100% * square root of 2, this is not a magic number, it is math! */
   width: 141.4%;
   height: 0.1rem;
-  background-color: rgb(var(--color-foreground));
   transform: rotate(-45deg);
   transform-origin: left;
 }
@@ -571,7 +558,6 @@ button.facets__button {
 }
 
 span.active-facets__button-inner {
-  color: rgb(var(--color-foreground));
   box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
   border-radius: 2.6rem;
   font-size: 1rem;
