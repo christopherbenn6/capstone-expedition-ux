@@ -40,7 +40,7 @@
 }
 
 .facet-filters .button {
-  color: white !important;
+  color: white !important !important;
 }
 
 @media screen and (min-width: 990px) {
