@@ -295,11 +295,11 @@
       {% comment %} search icon and rendering hamburger icon {% endcomment %}
       {% comment %} for mobile {% endcomment %}
 
-      {% comment %} for desktop {% endcomment %}
-      <form class="nx-search" action="{{ collections['games'].url }}" method="get" role="search">
-              <a href="{{ routes.search_url }}" class="header__icon nx-search-icon link focus-inset" aria-label="Search">
+      <a href="{{ routes.search_url }}" class="header__icon nx-search-icon link focus-inset" aria-label="Search">
         <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
       </a>
+      {% comment %} for desktop {% endcomment %}
+      <form class="nx-search" action="{{ collections['games'].url }}" method="get" role="search">
         <input
           class="nx-search__input"
           type="search"
