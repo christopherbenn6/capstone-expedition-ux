@@ -216,6 +216,11 @@
           filter_type: section.settings.filter_type,
           paginate: paginate
         %}
+        {% for filter in collection.filters %}
+  <p>{{ filter.label }} — {{ filter.type }} — {{ filter.values | size }} values</p>
+{% else %}
+  <p>No filters generated</p>
+{% endfor %}
       </aside>
     {%- endif -%}
 
