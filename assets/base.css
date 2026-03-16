@@ -3624,6 +3624,10 @@ h1 span{
   white-space: nowrap;
 }
 
+.header__heading-link {
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1080px) {
   .site-title-extended {
     display: none;
