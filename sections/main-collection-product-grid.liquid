@@ -52,7 +52,6 @@
 
     assign products = collection.products
     assign filtered_products = "" | split: ", " 
-
     for product in products  
       assign search_query = '' 
 
@@ -68,7 +67,6 @@
         assign filtered_products = filtered_products | concat: product_array 
       endif
     endfor
-
   %}  
 
   {% comment %} Gets Full Page URL {% endcomment %}
@@ -265,6 +263,7 @@
           class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
         >
           <div class="loading-overlay gradient"></div>
+          {% paginate collection.products by section.settings.products_per_page %}
           <ul
             id="product-grid"
             data-id="{{ section.id }}"
@@ -276,7 +275,6 @@
           >
             {% assign skip_card_product_styles = false %}
 
-            {% paginate filtered_products by 16 %}
             {%- for product in filtered_products offset: offset limit: section.settings.products_per_page -%}  
               {% assign lazy_load = false %}
               {%- if forloop.index > 2 -%}
@@ -305,8 +303,8 @@
               {%- assign skip_card_product_styles = true -%}
 
             {%- endfor -%}
+            </ul>
           {% endpaginate %}
-          </ul>
           {% comment %} Pagination {% endcomment %}
           <div class="games-pagination"
           style="
