@@ -3617,6 +3617,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: 'jersey-20';
+h5,
+header,
+header a {
+  font-family: 'jersey-20' !important;
 }
