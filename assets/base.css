@@ -3602,6 +3602,6 @@ header a {
   font-family: 'jersey-20' !important;
 }
 
-h1 {
+h1 span{
   font-size: clamp(2rem, 1.5rem + 2vw, 3rem) !important;
 }
