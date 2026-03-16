@@ -29,7 +29,7 @@
   {%- endif -%}
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1366px) {
       header-drawer {
         display: none;
       }
@@ -143,7 +143,7 @@
         }
       }
 
-      @media screen and (min-width: 1080px) {
+      @media screen and (min-width: 1366px) {
         .header {
           display: flex;
           align-items: center;
@@ -369,7 +369,7 @@
 
       this.setHeaderHeight();
 
-      window.matchMedia('(max-width: 1080px)').addEventListener('change', this.setHeaderHeight.bind(this));
+      window.matchMedia('(max-width: 1366px)').addEventListener('change', this.setHeaderHeight.bind(this));
 
       if (this.headerIsAlwaysSticky) {
         this.header.classList.add('shopify-section-header-sticky');
