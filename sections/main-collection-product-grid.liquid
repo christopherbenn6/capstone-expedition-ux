@@ -52,7 +52,7 @@
 
     assign products = collection.products
     assign filtered_products = "" | split: ", " 
-    paginate filtered_products by 16
+
     for product in products  
       assign search_query = '' 
 
@@ -68,7 +68,7 @@
         assign filtered_products = filtered_products | concat: product_array 
       endif
     endfor
-    endpaginate
+
   %}  
 
   {% comment %} Gets Full Page URL {% endcomment %}
