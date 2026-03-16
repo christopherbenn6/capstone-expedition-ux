@@ -3617,6 +3617,7 @@ h1 span{
 .site-title-extended {
   display: block;
   margin: -0.5rem;
+  white-space: nowrap;
 }
 
 @media (max-width: 1080px) {
