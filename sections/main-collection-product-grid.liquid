@@ -401,8 +401,9 @@
   {% if section.settings.image_shape == 'arch' %}
     {{ 'mask-arch.svg' | inline_asset_content }}
   {%- endif -%}
+  {% endpaginate %}
 </div>
-{% endpaginate %}
+
 
 {% schema %}
 {
