@@ -186,7 +186,7 @@
           "type": "button",
           "settings": {
             "button_label": "Contact Us",
-            "button_link": "shopify://collections/games-1",
+            "button_link": "shopify://collections/games",
             "button_style_secondary": false
           }
         }
