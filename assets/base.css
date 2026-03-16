@@ -3597,6 +3597,7 @@ h5,
 .header__site-title,
 header a {
   font-family: 'jersey-20' !important;
+  color: #FFD000;
 }
 
 .header__heading-link{
