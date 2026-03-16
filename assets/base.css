@@ -3611,5 +3611,5 @@ header a {
 }
 
 h1 {
-  font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+  font-size: clamp(2rem, 1.5rem + 2vw, 3rem) !important;
 }
