@@ -276,8 +276,8 @@
           >
             {% assign skip_card_product_styles = false %}
 
-            {% paginate filtered_products by 250 %}
-            {%- for product in filtered_products offset: offset limit: section.settings.products_per_page -%}  
+            {% paginate filtered_products by 16 %}
+            {%- for product in filtered_products -%}  
               {% assign lazy_load = false %}
               {%- if forloop.index > 2 -%}
                 {%- assign lazy_load = true -%}
