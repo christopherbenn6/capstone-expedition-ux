@@ -29,7 +29,11 @@
   {%- endif -%}
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
-
+    @media screen and (min-width: 990px) {
+      header-drawer {
+        display: none;
+      }
+    }
   {%- endif -%}
 
   .menu-drawer-container {
@@ -291,11 +295,11 @@
       {% comment %} search icon and rendering hamburger icon {% endcomment %}
       {% comment %} for mobile {% endcomment %}
 
-      <a href="{{ routes.search_url }}" class="header__icon nx-search-icon link focus-inset" aria-label="Search">
-        <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
-      </a>
       {% comment %} for desktop {% endcomment %}
       <form class="nx-search" action="{{ collections['games'].url }}" method="get" role="search">
+              <a href="{{ routes.search_url }}" class="header__icon nx-search-icon link focus-inset" aria-label="Search">
+        <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
+      </a>
         <input
           class="nx-search__input"
           type="search"
