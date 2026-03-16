@@ -3615,11 +3615,12 @@ h1 span{
 }
 
 .site-title-extended {
-  display: none;
+  display: block;
+  margin: -0.5rem;
 }
 
 @media (max-width: 1080px) {
   .site-title-extended {
-    display: block;
+    display: none;
   }
 }
