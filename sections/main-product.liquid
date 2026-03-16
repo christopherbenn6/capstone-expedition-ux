@@ -136,6 +136,14 @@
                     {{ product.metafields.custom.tags.value | default: product.metafields.custom.tags }}
                   </p>
                 {% endif %}
+
+                 {% if product.metafields.custom.shelf_life != blank %}
+                  <p class="product-shelf_life">
+                    <strong>Platform:</strong>
+                    {{ product.metafields.custom.shelf_life.value | default: product.metafields.custom.shelf_life }}
+                  </p>
+                {% endif %}
+
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
