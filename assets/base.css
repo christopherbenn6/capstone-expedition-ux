@@ -293,10 +293,6 @@ h5,
   }
 }
 
-h2,
-.h2 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
-}
 
 h3,
 .h3 {
