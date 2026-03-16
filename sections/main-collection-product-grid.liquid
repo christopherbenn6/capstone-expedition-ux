@@ -159,6 +159,7 @@
   %}
 
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
+  {% paginate collection.products by section.settings.products_per_page %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
       <form class="facets-vertical-form" id="FacetSortForm">
@@ -262,7 +263,6 @@
           class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
         >
           <div class="loading-overlay gradient"></div>
-          {% paginate collection.products by section.settings.products_per_page %}
           <ul
             id="product-grid"
             data-id="{{ section.id }}"
@@ -324,7 +324,6 @@
 
   </nav>
 {% endif %}
-          {% endpaginate %}
           {% comment %} Pagination {% endcomment %}
           <div class="games-pagination"
           style="
@@ -403,6 +402,7 @@
     {{ 'mask-arch.svg' | inline_asset_content }}
   {%- endif -%}
 </div>
+{% endpaginate %}
 
 {% schema %}
 {
