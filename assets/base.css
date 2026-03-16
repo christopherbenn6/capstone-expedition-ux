@@ -3618,7 +3618,7 @@ h2,
 h3,
 h4,
 h5,
-header,
+.header__site-title,
 header a {
   font-family: 'jersey-20' !important;
 }
