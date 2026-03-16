@@ -122,11 +122,18 @@
                   -%}
                 </div>
 
-                {% comment %} custom condition {% endcomment %}
+                {% comment %} custom condition and custom tags{% endcomment %}
                 {% if product.metafields.custom.condition != blank %}
                   <p class="product-condition">
                     <strong>Condition:</strong>
                     {{ product.metafields.custom.condition.value | default: product.metafields.custom.condition }}
+                  </p>
+                {% endif %}
+
+                {% if product.metafields.custom.tags != blank %}
+                  <p class="product-tags">
+                    <strong>Platform:</strong>
+                    {{ product.metafields.custom.tags.value | default: product.metafields.custom.tags }}
                   </p>
                 {% endif %}
                 {%- if product.quantity_price_breaks_configured? -%}
