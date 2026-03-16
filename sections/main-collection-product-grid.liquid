@@ -275,7 +275,7 @@
           >
             {% assign skip_card_product_styles = false %}
 
-            {%- for product in collection.products -%}  
+            {%- for product in collection.products offset: offset limit: section.settings.products_per_page -%}  
               {% assign lazy_load = false %}
               {%- if forloop.index > 2 -%}
                 {%- assign lazy_load = true -%}
@@ -304,6 +304,27 @@
 
             {%- endfor -%}
             </ul>
+            {% if paginate.pages > 1 %}
+  <nav class="pagination">
+
+    {% if paginate.previous %}
+      <a href="{{ paginate.previous.url }}">← Previous</a>
+    {% endif %}
+
+    {% for part in paginate.parts %}
+      {% if part.is_link %}
+        <a href="{{ part.url }}">{{ part.title }}</a>
+      {% else %}
+        <span>{{ part.title }}</span>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginate.next %}
+      <a href="{{ paginate.next.url }}">Next →</a>
+    {% endif %}
+
+  </nav>
+{% endif %}
           {% endpaginate %}
           {% comment %} Pagination {% endcomment %}
           <div class="games-pagination"
