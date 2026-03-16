@@ -3605,3 +3605,18 @@ details-disclosure>details {
 .eapps-facebook-feed-posts-load-more-wrapper {
   display: none;
 }
+
+@font-face {
+    font-family: 'jersey-20';
+    src: url('jersey20-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'jersey-20';
+}
