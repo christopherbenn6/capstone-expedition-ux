@@ -48,6 +48,15 @@
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
 
+  {% assign num = 1 %}
+  {% paginate collection.products by 250 %}
+    {% for product in collection.products %}
+      {% assign num = num | plus: 1 %}
+    {% endfor %}
+  {% endpaginate %}
+
+  <p>{{  num }}</p>
+
   {% liquid 
 
     assign products = collection.products
@@ -86,7 +95,7 @@
   {% comment %} Sets Pagination Links, and Variables {% endcomment %}
   {% liquid
     assign total_pages = filtered_products.size | plus: section.settings.products_per_page | minus: 1 | divided_by: section.settings.products_per_page
-
+    
     # Current page
     assign current_page_number = 1 | plus: 0
     if pageUrl contains 'page='
