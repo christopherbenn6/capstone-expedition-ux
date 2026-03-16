@@ -3604,6 +3604,6 @@ header a {
 }
 
 h1 span{
-  font-size: clamp(2rem, 1.5rem + 2vw, 3rem) !important;
+  font-size: clamp(2rem, 1rem + 4vw, 4rem) !important;
   line-height: 1.5;
 }
