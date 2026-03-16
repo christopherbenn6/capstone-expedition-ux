@@ -86,15 +86,6 @@
   -%}
 
   {% comment %} Sets Pagination Links, and Variables {% endcomment %}
-  {% paginate array by page_size %}
-    {% for item in array %}
-      
-    {% endfor %}
-  {% endpaginate %}
-  
-  The `paginate` tag allows the user to paginate to the 25,000th item in the array and no further. To reach items further in
-  the array the array should be filtered further before paginating. See
-  [Pagination Limits](/themes/best-practices/performance/platform#pagination-limits) for more information.
   {% liquid
     assign total_pages = filtered_products.size | plus: section.settings.products_per_page | minus: 1 | divided_by: section.settings.products_per_page
 
