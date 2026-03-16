@@ -553,7 +553,7 @@
 /* desktop custom css goes here*/
 .footer {
   background-color:#26B3FF;
-  padding:66px 16px;
+  padding:66px 16px !important;
 }
 
     .footer__content-top  {
