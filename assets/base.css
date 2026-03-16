@@ -3607,3 +3607,11 @@ h1 span{
   font-size: clamp(3.2rem, 1rem + 4vw, 4.8rem) !important;
   line-height: 1.5;
 }
+
+header a {
+  font-size: 3.2rem
+}
+
+@media (max-width: 1050px) {
+
+}
