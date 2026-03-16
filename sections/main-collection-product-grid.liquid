@@ -48,26 +48,7 @@
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
 
-  {% liquid 
 
-    assign products = collection.products
-    assign filtered_products = "" | split: ", " 
-    for product in products  
-      assign search_query = '' 
-
-      if canonical_url contains 'q=' 
-        assign search_query = canonical_url | split: 'q=' | last | split: '&' | first 
-        assign search_query = search_query | downcase
-      endif
-      assign product_title = product.title | downcase 
-      assign product_description = product.description | strip_html | downcase
-      
-      if search_query == blank or product_title contains search_query or product_description contains search_query
-        assign product_array = product | reverse | reverse
-        assign filtered_products = filtered_products | concat: product_array 
-      endif
-    endfor
-  %}  
 
   {% comment %} Gets Full Page URL {% endcomment %}
   {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
