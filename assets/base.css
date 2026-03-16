@@ -3625,3 +3625,7 @@ header a {
     display: none;
   }
 }
+
+body {
+  background-color: #010F20 !important;
+}
