@@ -593,21 +593,13 @@ margin:3.2rem 0;
   align-items: center;
   text-align: center;
 }
-.footer-block {
-    flex: 1 1 22rem;
-    min-width: 22rem;
-  }
 
-    
-   .footer-block__brand-info {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    gap: 1.2rem;
-  }
+.footer-follow-us .footer__list-social {
+  justify-content: center !important;
+  margin-top: 0.8rem;
+}
 
-  .footer-block__heading {
-    font-size: 3.2rem !important;
-    overflow-wrap: normal;
-  }
+.footer-block__brand-info img {
+  margin-bottom: 0.5rem;
+}
 }
