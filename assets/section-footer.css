@@ -543,8 +543,9 @@
   padding: unset;
 }
 
-.list-social__link>svg {
-  width:2.4rem
+.list-social__link .svg-wrapper {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 /* icons placement */
