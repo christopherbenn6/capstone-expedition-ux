@@ -165,7 +165,7 @@
                             {{ settings.brand_headline | split: ' ' | first | upcase }}
                           </span>
                           <span class="footer-title-desktop">
-                            {{ settings.brand_headline }}
+                            {{ settings.footer_brand_title_desktop }}
                           </span>
                         </h2>
                       {%- endif -%}
@@ -482,6 +482,12 @@
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
     },
+    {
+    "type": "text",
+    "id": "footer_brand_title_desktop",
+    "label": "Footer desktop brand title",
+    "default": "Nexwave Video Games"
+  },
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__1.content",
