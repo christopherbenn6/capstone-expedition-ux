@@ -593,4 +593,8 @@ margin:3.2rem 0;
     grid-template-columns: 220px 1fr 220px;
     align-items: flex-start;
   }
+
+  .footer-block__brand {
+    grid-column: 1/-1;
+  }
 }
