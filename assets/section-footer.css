@@ -569,6 +569,10 @@
   font-size: 3.2rem !important;
 }
 
+.footer-block.grid__item {
+margin:3.2rem 0;
+}
+
 
 .list-menu__item--link {
   font-size: 1.6rem;
