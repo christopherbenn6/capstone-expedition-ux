@@ -587,7 +587,7 @@ margin:3.2rem 0;
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
 
-  .footer-block__wrapper {
+  .footer-block__brand-info {
   display: flex;
   flex-direction: column;
   align-items: center;
