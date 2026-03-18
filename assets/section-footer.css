@@ -592,6 +592,7 @@ margin:3.2rem 0;
     flex-direction: column !important;
     flex-wrap: nowrap !important;
     gap: 2.4rem !important;
+    align-items:center;
   }
 
 .footer-follow-us .footer__list-social {
