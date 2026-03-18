@@ -536,7 +536,7 @@
   display:flex;
   justify-content:left !important;
   gap:1.6rem;
-  
+  margin:auto;
 }
 
 .footer-follow-us .list-social__link {
