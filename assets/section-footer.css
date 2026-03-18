@@ -589,6 +589,7 @@ margin:3.2rem 0;
 
    .footer__blocks-wrapper {
     display: flex;
+    align-items:center;
     flex-wrap: wrap;
     gap: 3.2rem;
     align-items: flex-start;
