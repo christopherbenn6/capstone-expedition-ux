@@ -526,11 +526,11 @@
 }
 
 /* Social icons go to next line */
-.footer-block__brand-info .footer__list-social {
+/* .footer-block__brand-info .footer__list-social {
   width: 100%;
   margin-top: 0.5rem;
   display: none;
-}
+} */
 
 .footer-follow-us .footer__list-social {
   display:flex;
@@ -541,7 +541,6 @@
 
 .footer-follow-us .list-social__link {
   padding: unset;
-  margin-right: 1rem;
 }
 
 /* icons placement */
