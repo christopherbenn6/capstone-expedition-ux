@@ -584,3 +584,13 @@ margin:3.2rem 0;
 }
 
 /* desktop custom css goes here*/
+
+@media screen and (min-width: 750px) {
+
+  /* brand-info */
+  .footer__blocks-wrapper {
+    display: grid !important;
+    grid-template-columns: 220px 1fr 220px;
+    align-items: flex-start;
+  }
+}
