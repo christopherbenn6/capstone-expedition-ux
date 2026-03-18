@@ -159,13 +159,15 @@
                           }}
                         </div>
                       {%- endif -%}
-                      {%- if settings.brand_headline != blank -%}
+                      {%- if settings.brand_headline != blank
+                        or section.settings.footer_brand_title_desktop != blank
+                      -%}
                         <h2 class="footer-block__heading rte footer-brand-title">
                           <span class="footer-title-mobile">
                             {{ settings.brand_headline | split: ' ' | first | upcase }}
                           </span>
                           <span class="footer-title-desktop">
-                            {{ settings.footer_brand_title_desktop }}
+                            {{ section.settings.footer_brand_title_desktop }}
                           </span>
                         </h2>
                       {%- endif -%}
@@ -483,11 +485,11 @@
       "default": "scheme-1"
     },
     {
-    "type": "text",
-    "id": "footer_brand_title_desktop",
-    "label": "Footer desktop brand title",
-    "default": "Nexwave Video Games"
-  },
+      "type": "text",
+      "id": "footer_brand_title_desktop",
+      "label": "Footer desktop brand title",
+      "default": "Nexwave Video Games"
+    },
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__1.content",
