@@ -3665,6 +3665,14 @@ body {
 .footer-title-desktop {
   display: none;
 }
+@media screen and (min-width: 750px) {
+  .footer-title-mobile {
+    display: none;
+  }
 
+  .footer-title-desktop {
+    display: inline;
+  }
+}
 
 
