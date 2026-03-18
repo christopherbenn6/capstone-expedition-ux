@@ -587,14 +587,5 @@ margin:3.2rem 0;
 
 @media screen and (min-width: 750px) {
 
-  /* brand-info */
-  .footer__blocks-wrapper {
-    display: grid !important;
-    grid-template-columns: 220px 1fr 220px;
-    align-items: flex-start;
-  }
-
-  .footer-block__brand {
-    grid-column: 1/-1;
-  }
+ 
 }
