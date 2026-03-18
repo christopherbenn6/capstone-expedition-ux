@@ -602,7 +602,7 @@ margin:3.2rem 0;
     margin: 0 !important;
   }
 
-  .footer-follow-us{
+  .footer-block--follow-us{
     display:flex;
     justify-content:center;
   }
