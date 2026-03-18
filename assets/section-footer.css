@@ -587,14 +587,17 @@ margin:3.2rem 0;
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
 
-  .footer__blocks-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+   .footer__blocks-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    align-items: flex-start;
   }
 
-   .footer-block__brand-info {
-    align-items: flex-start;
+
+    .footer-block {
+    flex: 1 1 22rem;
+    min-width: 22rem;
   }
    .list-menu {
     display: flex;
