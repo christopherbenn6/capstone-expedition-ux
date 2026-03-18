@@ -595,15 +595,24 @@ margin:3.2rem 0;
     align-items:center;
   }
 
-  .footer-block__brand-info {
-    display:flex;
-    align-items:center;
+  .footer__blocks-wrapper > .footer-block {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    margin: 0 !important;
   }
 
-.footer-follow-us .footer__list-social {
-  justify-content: center !important;
-  margin-top: 0.8rem;
-}
+  .footer-block__brand-info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .footer-block__heading {
+    word-break: normal;
+    overflow-wrap: normal;
+  }
 
 
 }
