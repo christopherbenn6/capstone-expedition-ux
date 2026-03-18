@@ -562,6 +562,10 @@
  .footer-block__heading {
   font-size: 3.2rem !important;
 }
+
+footer-social-link {
+  font-size: 2.4rem;
+}
 .list-menu__item--link {
   font-size: 1.6rem;
   font-weight: 400;
