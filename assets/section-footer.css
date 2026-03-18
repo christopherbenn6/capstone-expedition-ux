@@ -534,7 +534,8 @@
 
 .footer-follow-us.footer__list-social {
   display:flex;
-  justify-content: flex-start;
+  align-items:center;
+  justify-content:left;
   
 }
 
