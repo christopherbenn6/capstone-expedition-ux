@@ -34,9 +34,26 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .facets-wrapper a {
+    color: {{ section.settings.filter-text-color }} !important;
+    padding: 1rem;
+  }
+  .facets-wrapper {
+    background-color: {{ section.settings.filter-background-color }};
+    color: {{ section.settings.filter-text-color }} !important;
+    border: {{ section.settings.filter-border-thickness }}px solid {{ section.settings.filter-border-color }};
+    padding: 1rem;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+
+  {% assign num = 1 %}
+  {% paginate collection.products by 250 %}
+    {% for product in collection.products %}
+      {% assign num = num | plus: 1 %}
+    {% endfor %}
+  {% endpaginate %}
 
   {% liquid 
 
@@ -76,7 +93,7 @@
   {% comment %} Sets Pagination Links, and Variables {% endcomment %}
   {% liquid
     assign total_pages = filtered_products.size | plus: section.settings.products_per_page | minus: 1 | divided_by: section.settings.products_per_page
-
+    
     # Current page
     assign current_page_number = 1 | plus: 0
     if pageUrl contains 'page='
@@ -299,42 +316,69 @@
             border-radius:{{ section.settings.pagination_border_radius }};
             background-color:{{ section.settings.pagination_color }};
             text-align:center;
-            max-width:400px;
-            padding:1rem;
+            padding:1rem 0;
             margin:1rem auto;
           ">
             {% if show_prev_button %}
               <a style="
                 color:{{section.settings.pagination_text_color}};
                 text-decoration:none;
-                padding:1rem;" 
-              href="https://{{ prev_url }}">&larr; Previous</a>
+                padding: 0.5rem 1rem;
+                border-right: 1px solid white;
+                margin: 0;" 
+              href="https://{{ prev_url }}">&larr; <span class="hidden-600">Previous</span></a>
             {% endif %}
             {% assign total_pages_minus_one = total_pages | minus: 1 %}
             {% comment %} Make an array of each page number (with overlap) {% endcomment %}
-            {% assign all_page_numbers = "1, 2, " | append: next_page | append: ", " | append: current_page_number | append: ", " | append: prev_page | append: ", " | append: total_pages_minus_one | append: ", " | append: total_pages | split: ", "  %}
-            {% assign unique_numbers = "" | split: ", " %}
+            {% assign all_page_numbers = "1," 
+              | append: next_page | append: "," 
+              | append: current_page_number | append: "," 
+              | append: prev_page | append: "," 
+              | append: total_pages | split: ","  %}
+
+            {% assign unique_numbers = "" | split: "," %}
             {% for page_number in all_page_numbers %}
               {% assign page_number_as_number = page_number | plus: 0 %}
-              {% unless unique_numbers contains page_number
+              {% capture padded %}{{ page_number | prepend: "00000" | slice: -5, 5 }}{% endcapture %}
+              {% unless unique_numbers contains padded
                   or page_number_as_number <= 0 
                   or page_number_as_number > total_pages %}
-                {% assign temp = page_number | reverse | reverse %}
+                {% assign temp = padded | split: "," %}
                 {% assign unique_numbers = unique_numbers | concat: temp %}
+                {% assign unique_numbers = unique_numbers | sort %}
               {% endunless %}
             {% endfor %}
+
             {% comment %} Unique Numbers = ex. 1, 2, 4, 5, 6, 10, 11 {% endcomment %}
+            {% assign last_number = 1 %}
             {% for number in unique_numbers %}
               {% comment %} Put Link Here {% endcomment %}
+               {% assign difference = number | minus: last_number %}
+                {% if difference > 1 %}
+                    <span class="pagination-gap" style="
+                    color:{{section.settings.pagination_text_color}};
+                    text-decoration:none;
+                    padding: 0.5rem 1rem;
+                    border-right: 1px solid white;
+                    margin: 0;">...</span>
+                {% endif %}
+                <a style="
+                  color:{{section.settings.pagination_text_color}};
+                  text-decoration:none;
+                  padding: 0.5rem 1rem;
+                  border-right: 1px solid white;
+                  margin: 0;"  
+                  href="https://{{ url_empty_page_number }}{{ number | plus: 0 }}">{{ number | plus: 0 }}</a>
+                {% assign last_number = number %}
             {% endfor %}
             {% if show_next_button %}
               <a style="
                 color:{{section.settings.pagination_text_color}};
                 text-decoration:none;
-                padding:1rem;" 
-              href="https://{{ next_url }}">Next &rarr;</a>
+                padding: 0.5rem 1rem;
+                margin: 0;" 
+              href="https://{{ next_url }}"><span class="hidden-600">Next</span> &rarr;</a>
             {% endif %}
-            <p>{{ unique_numbers }}</p>
           </div>
         </div>
       {%- endif -%}
@@ -575,6 +619,34 @@
       "max": 100,
       "unit": "%",
       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Filter Styling"
+    },
+    {
+      "type": "color",
+      "id": "filter-background-color",
+      "label": "Filter Background Color",
+    },
+    {
+      "type": "color",
+      "id": "filter-border-color",
+      "label": "Filter Border Color"
+    },
+    {
+      "type": "range",
+      "id": "filter-border-thickness",
+      "label": "Filter Border Thickness",
+      "min": 0,
+      "max": 10,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "color",
+      "id": "filter-text-color",
+      "label": "Filter Text Color",
     }
   ]
 }

@@ -39,6 +39,14 @@
   padding-left: 2.5rem;
 }
 
+.facet-filters .button {
+  color: white !important !important;
+}
+
+.facets__heading {
+  color: yellow;
+}
+
 @media screen and (min-width: 990px) {
   .facet-filters {
     padding-left: 3rem;
@@ -47,10 +55,11 @@
 
 .facet-filters__label {
   display: block;
-  color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
   margin: 0 2rem 0 0;
 }
+
+.button
 
 .facet-filters__summary {
   display: flex;
@@ -179,7 +188,6 @@
 
 .facets__heading {
   display: block;
-  color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
   margin: -1.5rem 2rem 0 0;
 }
@@ -193,7 +201,6 @@
 }
 
 .facets__summary {
-  color: rgba(var(--color-foreground), 0.75);
   font-size: 1.4rem;
   padding: 0 1.75rem 0 0;
   margin-bottom: 1.5rem;
@@ -208,11 +215,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-}
-
-.facets__disclosure[open] .facets__summary,
-.facets__summary:hover {
-  color: rgb(var(--color-foreground));
 }
 
 .facets__disclosure[open] .facets__display,
@@ -370,12 +372,6 @@
   padding: 0.4rem;
 }
 
-/* Active state */
-.facets-layout-grid--image .facets__label.active {
-  outline-color: rgb(var(--color-foreground));
-  outline-width: 0.1rem;
-}
-
 /* Hover state */
 .facets-layout-grid--image .facets__label:hover {
   outline-color: rgba(var(--color-foreground), 0.4);
@@ -391,7 +387,6 @@
 
 /* Focused state */
 .facets-layout-grid--image .facets__label.active:has(:focus-visible) {
-  outline-color: rgb(var(--color-foreground));
   outline-width: 0.1rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.5),
     0 0 0.7rem 0.1rem rgba(var(--color-foreground), 0.25);
@@ -415,7 +410,6 @@
   /* 100% * square root of 2, this is not a magic number, it is math! */
   width: 141.4%;
   height: 0.1rem;
-  background-color: rgb(var(--color-foreground));
   transform: rotate(-45deg);
   transform-origin: left;
 }
@@ -450,28 +444,10 @@
   word-break: break-word;
 }
 
-/* Hover, active, and focus states */
-.facets__label:hover,
-.facets__label.active,
-.facets__label:has(:focus-visible) {
-  color: rgba(var(--color-foreground), 1);
-}
 
 /* Disabled state */
 .facets-layout .facets__label.disabled {
   pointer-events: none;
-}
-
-.facets-layout:not(.facets-layout-list--swatch, .facets-layout-grid--image) .facets__label.disabled {
-  opacity: 0.4;
-}
-
-.facets-layout-grid--image .facets__label.disabled .facets__image-wrapper {
-  opacity: 0.2;
-}
-
-:is(.facets-layout-list--swatch, .facets-layout-grid--image) .facets__label.disabled .facet-checkbox__text {
-  opacity: 0.4;
 }
 
 /* End disabled state */
@@ -590,7 +566,6 @@ button.facets__button {
 }
 
 span.active-facets__button-inner {
-  color: rgb(var(--color-foreground));
   box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
   border-radius: 2.6rem;
   font-size: 1rem;
