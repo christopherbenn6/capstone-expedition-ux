@@ -122,7 +122,7 @@
                   -%}
                 </div>
 
-                {% comment %} custom condition and custom tags{% endcomment %}
+                {% comment %} custom condition {% endcomment %}
                 {% if product.metafields.custom.condition != blank %}
                   <p class="product-condition">
                     <strong>Condition:</strong>
@@ -130,6 +130,7 @@
                   </p>
                 {% endif %}
 
+                {% comment %} custom tags{% endcomment %}
                 {% if product.metafields.custom.tags != blank %}
                   <p class="product-tags">
                     <strong>Platform:</strong>
