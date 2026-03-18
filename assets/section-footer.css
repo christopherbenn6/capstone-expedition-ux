@@ -599,9 +599,15 @@ margin:3.2rem 0;
     flex: 1 1 22rem;
     min-width: 22rem;
   }
-   .list-menu {
+   .footer-block__brand-info {
     display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  .footer-block__heading {
+    font-size: 3.2rem !important;
+    overflow-wrap: normal;
   }
 }
