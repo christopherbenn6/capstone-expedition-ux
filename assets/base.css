@@ -3661,3 +3661,13 @@ body {
   margin:1.6rem auto;
 }
 
+.footer-title-mobile {
+  display: inline;
+}
+
+.footer-title-desktop {
+  display: none;
+}
+
+
+
