@@ -592,4 +592,8 @@ margin:3.2rem 0;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
+
+   .footer-block__brand-info {
+    align-items: flex-start;
+  }
 }
