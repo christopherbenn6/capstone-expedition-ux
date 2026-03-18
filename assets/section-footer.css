@@ -593,6 +593,7 @@ margin:3.2rem 0;
     flex-wrap: nowrap !important;
     gap: 2.4rem !important;
     align-items:center;
+    justify-content:center;
   }
 
   .footer__blocks-wrapper > .footer-block {
