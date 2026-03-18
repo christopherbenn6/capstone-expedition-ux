@@ -105,14 +105,14 @@
               >
                 {%- unless block.type == 'follow_us' -%}
                   {%- if block.settings.heading != blank -%}
-                    <h3 class="footer-social-link inline-richtext">{{- block.settings.heading -}}</h3>
+                    <h3 class="footer-block__heading footer-social-link inline-richtext">{{- block.settings.heading -}}</h3>
                   {%- endif -%}
                 {%- endunless -%}
                 {%- case block.type -%}
                   {%- when 'follow_us' -%}
                     <div class="footer-follow-us">
                       {%- if block.settings.heading != blank -%}
-                        <h3 class="footer-social-link inline-richtext">{{ block.settings.heading }}</h3>
+                        <h3 class="footer-block__heading footer-social-link inline-richtext">{{ block.settings.heading }}</h3>
                       {%- endif -%}
 
                       {%- if block.settings.show_social and has_social_icons -%}
