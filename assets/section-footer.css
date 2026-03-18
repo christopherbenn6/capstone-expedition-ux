@@ -550,17 +550,21 @@
   }
 }
 
-/* desktop custom css goes here*/
 .footer {
   background-color:#26B3FF;
   padding:66px 16px !important;
 }
 
-    .footer__content-top  {
+.footer__content-top  {
       padding:0; !important;
-    }
+}
 
+ .footer-block__heading {
+  font-size: 2rem !important;
+}
 .list-menu__item--link {
   font-size: 1rem;
   font-weight: 400;
 }
+
+/* desktop custom css goes here*/
