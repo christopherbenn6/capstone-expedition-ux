@@ -573,6 +573,10 @@
 margin:3.2rem 0;
 }
 
+.copyright__content {
+  font-size: 1.6rem !important;
+}
+
 
 .list-menu__item--link {
   font-size: 1.6rem;
