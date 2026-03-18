@@ -595,6 +595,11 @@ margin:3.2rem 0;
     align-items:center;
   }
 
+  .footer-block__brand-info {
+    display:flex;
+    align-items:center;
+  }
+
 .footer-follow-us .footer__list-social {
   justify-content: center !important;
   margin-top: 0.8rem;
