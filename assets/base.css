@@ -3656,3 +3656,6 @@ body {
   font-weight: 400;
 }
 
+.footer-block__heading {
+  font-size: 2rem !important;
+}
