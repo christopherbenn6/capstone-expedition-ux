@@ -559,3 +559,8 @@
     .footer__content-top  {
       padding:0; !important;
     }
+
+.list-menu__item--link {
+  font-size: 1rem;
+  font-weight: 400;
+}
