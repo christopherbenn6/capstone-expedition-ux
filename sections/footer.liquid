@@ -162,7 +162,7 @@
                       {%- if settings.brand_headline != blank -%}
                         <h2 class="footer-block__heading rte footer-brand-title">
                           <span class="footer-title-mobile">
-                            {{ settings.brand_headline | split: ' ' | first }}
+                            {{ settings.brand_headline | split: ' ' | first | upcase }}
                           </span>
                           <span class="footer-title-desktop">
                             {{ settings.brand_headline }}
