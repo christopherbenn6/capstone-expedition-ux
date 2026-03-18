@@ -607,6 +607,7 @@ margin:3.2rem 0;
     flex-wrap: nowrap;
     align-items: center;
     gap: 1.2rem;
+    justify-content:center;
   }
 
   .footer-block__heading {
