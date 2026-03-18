@@ -596,4 +596,9 @@ margin:3.2rem 0;
    .footer-block__brand-info {
     align-items: flex-start;
   }
+   .list-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
 }
