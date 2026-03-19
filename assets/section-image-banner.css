@@ -524,5 +524,6 @@
 /* custom css */
 .arrow-button {
   color:#FFD000;
+  border-bottom:border-top: 1px solid white;
 
 }
