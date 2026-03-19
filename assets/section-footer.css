@@ -604,6 +604,10 @@
     gap: 1.2rem;
     justify-content: center;
   }
+   .footer-follow-us .footer-social-link.inline-richtext {
+    display:none;
+  }
+
 
   .footer-block__details-content {
     display: flex;
