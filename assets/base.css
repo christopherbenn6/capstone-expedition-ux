@@ -3609,8 +3609,8 @@ main h5 {
   color: #FFD000 !important;
 }
 
-h2 {
-  font-size: clamp(3.2rem, 2.03632rem + 3.6364vw, 6.4rem) !important;
+h1 {
+  font-size: clamp(3.2rem, 1.2727rem + 3.6364vw, 6.4rem);
 }
 
 .banner__heading {
