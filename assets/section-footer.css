@@ -633,4 +633,11 @@
     grid-row: 1;
   }
 
+   .footer-block--brand .footer-block__brand-info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+  }
+
 }
