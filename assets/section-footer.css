@@ -629,7 +629,7 @@
   }
   .footer__blocks-wrapper > .footer-block.grid__item {
     width: auto !important;
-    margin: 0 !important;
+    /* margin: 0 !important; */
   }
 
   .footer-block--brand {
