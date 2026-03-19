@@ -3610,7 +3610,7 @@ main h5 {
 }
 
 h2 {
-  font-size: clamp(3.2rem, 2.03632rem + 3.6364vw, 6.4rem);
+  font-size: clamp(3.2rem, 2.03632rem + 3.6364vw, 6.4rem) !important;
 }
 
 .banner__heading {
