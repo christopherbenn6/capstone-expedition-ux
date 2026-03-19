@@ -618,6 +618,6 @@
 
 @media screen and (min-width: 960px) {
   .footer {
-    padding:4rem 5rem 2rem   !important;
+    padding:4rem !important;
   }
 }
