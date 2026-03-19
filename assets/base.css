@@ -3655,6 +3655,7 @@ main h5 {
   src: url('GemunuLibre-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 5%;
 }
 
 body {
