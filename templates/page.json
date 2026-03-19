@@ -14,7 +14,7 @@
       "settings": {
         "padding_top": 68,
         "padding_bottom": 0,
-        "enable_page_heading": true
+        "enable_page_heading": false
       }
     },
     "image_with_text_M96Hez": {
@@ -44,7 +44,7 @@
         "image": "shopify://shop_images/gameboys.avif",
         "height": "adapt",
         "desktop_image_width": "small",
-        "layout": "text_first",
+        "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
