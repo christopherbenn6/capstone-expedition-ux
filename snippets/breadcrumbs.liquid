@@ -1,8 +1,13 @@
 <style>
-  .empty {
+  .empty,
+  .empty-child {
     border-bottom: 12px dashed #FFD000;
     width:100%;
     margin-left: 4rem;
+  }
+
+  .empty-child {
+    padding-top: 0.4rem;
   }
   .breadcrumbs {
     margin: 0 0 2em;
@@ -89,6 +94,6 @@
         <span class="breadcrumbs__link" aria-current="page">{{ page.title }}</span>
       </li>
     {% endif %}
-  <li class="empty"></li>
+  <li class="empty"><span class="empty-child"></span></li>
   </ol>
 </nav>
