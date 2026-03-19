@@ -12,6 +12,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  h1 {
+    max-width: 
+  }
 {%- endstyle -%}
 
 <div class="page-width section-{{ section.id }}-padding">
@@ -69,7 +73,8 @@
       "default": 0,
       "step": 8,
       "min": 0,
-      "max": 800
+      "max": 800,
+      "unit": "%"
     }
   ]
 }
