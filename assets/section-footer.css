@@ -663,6 +663,9 @@
     line-height: 1.15;
     max-width: 24rem;
   }
+  .footer-block__image-wrapper {
+    max-width: 12.6rem !important;
+  }
 
   /* menu block */
   .footer-block--menu {
