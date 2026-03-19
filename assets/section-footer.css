@@ -627,6 +627,11 @@
     align-items: start;
     column-gap: 6rem;
   }
+  .footer__blocks-wrapper > .footer-block.grid__item {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
 
   .footer-block--brand {
     grid-column: 1;
