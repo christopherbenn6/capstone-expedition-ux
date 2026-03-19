@@ -697,6 +697,10 @@
     padding: 0 !important;
   }
 
+  .copyright__content {
+    text-align: left;
+  }
+
 }
 
 

@@ -33,6 +33,9 @@
   display: flex;
   flex-direction: column;
   order: 1;
+}
+
+.image-with-text__media-item(:first-of-type) {
   margin-bottom: 6.4rem;
 }
 
