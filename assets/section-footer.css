@@ -616,6 +616,8 @@
 
 }
 
-@media screen and (min-width: 990px) {
-  
+@media screen and (min-width: 960px) {
+  .footer {
+    padding:4rem 5rem 2rem   !important;
+  }
 }
