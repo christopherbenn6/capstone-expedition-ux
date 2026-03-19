@@ -684,7 +684,7 @@
     gap: 1.6rem;
   }
     .footer-follow-us .footer-social-link.inline-richtext {
-    margin: 0;
+    display:none;
   
   }
 }
