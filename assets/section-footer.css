@@ -676,7 +676,11 @@
   }
 
   /* follow us */
-  
+  .footer__content-bottom {
+    border-top: none !important;
+    margin-top: 1.6rem !important; /* reduce gap */
+    padding-top: 0 !important;
+  }
  
     .footer-follow-us .footer-social-link.inline-richtext {
     display:none;
