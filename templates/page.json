@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "heading": "About Us",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_ThDtWL": {
@@ -63,7 +63,7 @@
           "type": "heading",
           "settings": {
             "heading": "Our History",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_WBcrqW": {
@@ -97,7 +97,7 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-3",
+        "section_color_scheme": "scheme-4",
         "color_scheme": "scheme-4",
         "padding_top": 36,
         "padding_bottom": 36
