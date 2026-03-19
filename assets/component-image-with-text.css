@@ -30,7 +30,7 @@
 }
 
 .image-with-text__media-item {
-  position: +2
+  position: 1
 }
 
 @media screen and (min-width: 750px) {
