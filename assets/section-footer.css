@@ -575,7 +575,7 @@
 
 /* media query custom css goes here*/
 
-@media screen and (min-width: 750px) and (max-width: 989px) {
+@media screen and (min-width: 750px) and (max-width: 959px) {
 
   .footer__blocks-wrapper {
     display: flex !important;
