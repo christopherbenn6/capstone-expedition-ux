@@ -676,7 +676,7 @@
   .footer-block--follow-us {
     grid-column: 3;
     grid-row: 1;
-    justify-self: start;
+    justify-self: end;
     text-align: left;
   }
   .footer-follow-us {
