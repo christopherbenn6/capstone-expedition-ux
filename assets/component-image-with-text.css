@@ -95,6 +95,7 @@
   align-self: center;
   position: relative;
   z-index: 1;
+  line-height: 1.5;
 }
 
 .image-with-text .grid__item::after {
