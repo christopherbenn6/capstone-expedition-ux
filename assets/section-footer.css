@@ -628,4 +628,9 @@
     column-gap: 6rem;
   }
 
+  .footer-block--brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
 }
