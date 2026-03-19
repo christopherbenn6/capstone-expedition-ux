@@ -3638,13 +3638,6 @@ main h5 {
 }
 
 @font-face {
-    font-family: 'jersey-20';
-    src: url('jersey20-regular-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
   font-family: 'Gemunu Libre';
   src: url('GemunuLibre-Regular.woff2') format('woff2');
   font-weight: 400;
