@@ -3667,10 +3667,10 @@ body {
   margin:1.6rem auto;
 }
 
-
 .footer-title-desktop {
   display: none;
 }
+
 @media screen and (min-width: 750px) {
   .footer-title-mobile {
     display: none;
@@ -3679,4 +3679,8 @@ body {
   .footer-title-desktop {
     display: inline;
   }
+}
+
+body {
+  background-color: #010F20 !important;
 }
