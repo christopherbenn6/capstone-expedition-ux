@@ -623,8 +623,8 @@ margin:3.2rem 0;
     justify-content:center;
   }
 
-  .footer-block--menu {
-    padding:1.6rem auto;
+  .footer-block.footer-block--menu {
+    margin:1.6rem auto;
   }
 
 
