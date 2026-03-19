@@ -623,6 +623,10 @@ margin:3.2rem 0;
     justify-content:center;
   }
 
+      .footer-block__details-content>:first-child .list-menu__item--link{
+        padding-top: unset !important;
+      }
+
  
 
 
