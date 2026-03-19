@@ -659,4 +659,17 @@
     text-align: left;
   }
 
+    .footer-block--menu .footer-block__details-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3.2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-block--menu li {
+    margin: 0;
+  }
+
 }
