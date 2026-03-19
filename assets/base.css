@@ -3609,7 +3609,7 @@ main h5 {
   color: #FFD000 !important;
 }
 
-h1 {
+.main-page-title {
   font-size: clamp(3.2rem, 1.2727rem + 3.6364vw, 6.4rem);
 }
 
