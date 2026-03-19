@@ -17,7 +17,7 @@
     display: inline-block;
   }
 
-  .breadcrumbs__item:not(:last-child):after {
+  .breadcrumbs__item:not(:last-child):not(:nth-last-of-type(2)):after {
     border-width: .10em .10em 0 0;
     content: "/";
     display: inline-block;
