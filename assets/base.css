@@ -3609,9 +3609,12 @@ main h5 {
   color: #FFD000 !important;
 }
 
+.banner__heading {
+  font-size: 12.8rem
+}
 
 .header__heading-link {
-  font-size: clamp(2.4rem, 1rem + 4vw, 4.8rem) !important;
+  font-size: clamp(3.6rem, 0.25456rem + 10.4545vw, 12.8rem);
   line-height: 1.5;
   color: #000 !important;
 }
