@@ -204,8 +204,6 @@
   word-break: break-word;
 }
 
-
-
 .image-with-text__content > * + * {
   margin-top: 2rem;
 }
