@@ -699,6 +699,7 @@
 
   .copyright__content {
     text-align: left;
+    max-width:800px;
   }
 
 }
