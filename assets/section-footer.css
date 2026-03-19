@@ -621,5 +621,11 @@
     padding:4rem !important;
   }
 
-  
+  .footer__blocks-wrapper {
+    display: grid !important;
+    grid-template-columns: 260px 1fr 180px;
+    align-items: start;
+    column-gap: 6rem;
+  }
+
 }
