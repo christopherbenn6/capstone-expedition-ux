@@ -697,7 +697,7 @@
     padding: 0 !important;
   }
 
-  .copyright__content {
+  .footer__copyright .copyright__content {
     text-align: left !important;
     max-width:800px;
   }
