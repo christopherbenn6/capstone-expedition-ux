@@ -689,5 +689,15 @@
   
   }
 
+  /* copyright below */
+  .footer__content-bottom {
+    margin-top: 3.2rem;
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
+}
+
 
 }
