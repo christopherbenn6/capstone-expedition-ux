@@ -3612,6 +3612,7 @@ main h5 {
 .banner__heading {
   font-size: clamp(3.6rem, 0.25456rem + 10.4545vw, 12.8rem);
   line-height: 0.9;
+  color: white !important;
 }
 
 .header__heading-link {
