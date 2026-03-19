@@ -574,7 +574,7 @@ margin:3.2rem 0;
   font-weight: 400;
 }
 
-/* desktop custom css goes here*/
+/* media query custom css goes here*/
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
 
