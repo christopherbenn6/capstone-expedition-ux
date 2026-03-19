@@ -672,4 +672,13 @@
     margin: 0;
   }
 
+  /* follow us */
+  .footer-block--follow-us {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+    text-align: left;
+  }
+
+
 }
