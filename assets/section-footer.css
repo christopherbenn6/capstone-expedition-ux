@@ -517,6 +517,16 @@
 
 /* --- This is our custom stylings --- */
 
+.footer-block__image-wrapper {
+  max-width: 3.7rem !important;
+}
+
+.footer-block__image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+
 .footer-block__brand-info {
   display: flex;
   flex-wrap: wrap;
