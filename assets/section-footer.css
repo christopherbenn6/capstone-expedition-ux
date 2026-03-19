@@ -376,9 +376,9 @@
     font-size: 1.4rem;
   }
 
-  .footer-block__details-content> :first-child .list-menu__item--link {
+  /* .footer-block__details-content> :first-child .list-menu__item--link {
     padding-top: 0;
-  }
+  } */
 }
 
 .footer-block-image {
@@ -517,7 +517,6 @@
 
 /* --- This is our custom stylings --- */
 
-/* Logo & Sitetitle side by side */
 .footer-block__brand-info {
   display: flex;
   flex-wrap: wrap;
@@ -525,37 +524,94 @@
   gap: 0.75rem;
 }
 
-/* Social icons go to next line */
-.footer-block__brand-info .footer__list-social {
-  width: 100%;
-  margin-top: 0.5rem;
-  display: none;
-}
-
 .footer-follow-us .footer__list-social {
-  justify-content: flex-start;
-  margin: 0;
+  display: flex;
+  justify-content: left !important;
+  gap: 1.6rem;
+  margin: auto;
 }
 
 .footer-follow-us .list-social__link {
   padding: unset;
-  margin-right: 1rem;
 }
 
-/* icons placement */
-/* mobile */
+.list-social__link .svg-wrapper {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
 @media screen and (max-width: 749px) {
   .footer-block__brand-info .footer__list-social {
     justify-content: flex-start;
   }
 }
 
-/* desktop custom css goes here*/
 .footer {
-  background-color:#26B3FF;
-  padding:66px 16px !important;
+  background-color: #26B3FF;
+  padding: 3.2rem 1.6rem !important;
 }
 
-    .footer__content-top  {
-      padding:0; !important;
-    }
+.footer__content-top {
+  padding: 0 !important;
+}
+
+.footer-block__heading {
+  font-size: 3.2rem !important;
+}
+
+.footer-block.grid__item {
+  margin: 3.2rem 0;
+}
+
+.copyright__content {
+  font-size: 1.6rem !important;
+}
+
+
+.list-menu__item--link {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* media query custom css goes here*/
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+
+  .footer__blocks-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 2.4rem !important;
+    align-items: center;
+  }
+
+  .footer__blocks-wrapper>.footer-block {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    margin: 0 !important;
+  }
+
+  .footer-block--follow-us {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-block__brand-info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .footer-block__details-content {
+    display: flex;
+    flex-direction: wrap;
+    flex-direction: row;
+    gap: 1.6rem;
+    justify-content: center;
+    margin: 1.6rem auto;
+  }
+
+}

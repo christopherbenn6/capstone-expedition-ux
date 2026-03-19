@@ -105,14 +105,14 @@
               >
                 {%- unless block.type == 'follow_us' -%}
                   {%- if block.settings.heading != blank -%}
-                    <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                    <h3 class="footer-social-link inline-richtext">{{- block.settings.heading -}}</h3>
                   {%- endif -%}
                 {%- endunless -%}
                 {%- case block.type -%}
                   {%- when 'follow_us' -%}
                     <div class="footer-follow-us">
                       {%- if block.settings.heading != blank -%}
-                        <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
+                        <h3 class="footer-social-link inline-richtext">{{ block.settings.heading }}</h3>
                       {%- endif -%}
 
                       {%- if block.settings.show_social and has_social_icons -%}
@@ -159,8 +159,17 @@
                           }}
                         </div>
                       {%- endif -%}
-                      {%- if settings.brand_headline != blank -%}
-                        <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
+                      {%- if settings.brand_headline != blank
+                        or section.settings.footer_brand_title_desktop != blank
+                      -%}
+                        <h2 class="footer-block__heading rte footer-brand-title">
+                          <span class="footer-title-mobile">
+                            {{ settings.brand_headline | split: ' ' | first | upcase }}
+                          </span>
+                          <span class="footer-title-desktop">
+                            {{ section.settings.footer_brand_title_desktop }}
+                          </span>
+                        </h2>
                       {%- endif -%}
                       {%- if settings.brand_description != blank -%}
                         <div class="rte">{{ settings.brand_description }}</div>
@@ -337,10 +346,8 @@
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
-          .
-        </small>
-        <small class="copyright__content">All rights reserved</small>
+          >&copy; {{ 'now' | date: '%Y' }} Nexwave Video Games. All rights reserved</small
+        >
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
@@ -358,7 +365,6 @@
     </div>
   </div>
 </footer>
-
 
 {% schema %}
 {
@@ -477,6 +483,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "footer_brand_title_desktop",
+      "label": "Footer desktop brand title",
+      "default": "Nexwave Video Games"
     },
     {
       "type": "header",
