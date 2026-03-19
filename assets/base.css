@@ -3602,7 +3602,7 @@ header a {
 }
 
 main h1,
-main h2,
+main h2:not(.banner__heading),
 main h3,
 main h4,
 main h5 {
@@ -3612,7 +3612,7 @@ main h5 {
 .banner__heading {
   font-size: clamp(3.6rem, 0.25456rem + 10.4545vw, 12.8rem);
   line-height: 0.9;
-  color: white !important;
+  color: white;
 }
 
 .header__heading-link {
