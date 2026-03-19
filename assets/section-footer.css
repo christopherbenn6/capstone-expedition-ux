@@ -679,6 +679,11 @@
     justify-self: start;
     text-align: left;
   }
+  .footer-follow-us {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
 
 
 }
