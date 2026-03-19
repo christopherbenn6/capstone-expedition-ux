@@ -629,7 +629,6 @@
   }
   .footer__blocks-wrapper > .footer-block.grid__item {
     width: auto !important;
-    max-width: none !important;
     margin: 0 !important;
   }
 
