@@ -674,9 +674,9 @@
   /* follow us */
   
  
-    .footer-follow-us .footer-social-link.inline-richtext {
+    /* .footer-follow-us .footer-social-link.inline-richtext {
     display:none;
-  }
+  } */
 
   .footer-follow-us .footer__list-social {
     display: flex;
