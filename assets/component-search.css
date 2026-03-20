@@ -12,7 +12,6 @@
   .search-filters__filter-clear-all {
     position: absolute;
     left: calc(((100vw - 1600px) / 2) + 300px);
-    left: 250px;
   }
 }
 
