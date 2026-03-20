@@ -18,7 +18,7 @@
   justify-content: space-between;
 }
 
-.search-filters__filter-option-title svg {
+.search-filters__filter-option-title span {
   order: 5;
 }
 
