@@ -1,6 +1,5 @@
 .search-filters__field-input {
   border-radius: 0;
-  bor
 }
 
 .search-filters__field:after,
@@ -8,6 +7,10 @@
 .search-filters__search-input:focus {
   border: none;
   border-radius: 0 !important;
+}
+
+.search-filters__filter-wrapper {
+  background-color: #001F45;
 }
 
 .search__input.field__input {
