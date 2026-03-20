@@ -29,6 +29,9 @@
     left: calc(50px + 25vw);
     width: 780px;
   }
+  fdt-layout-grid {
+    position: relative;
+  }
 }
 
 .search-filters__field-input {
