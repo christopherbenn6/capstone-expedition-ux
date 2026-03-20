@@ -64,7 +64,7 @@
           "type": "heading",
           "settings": {
             "heading": "Our History",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "text_WBcrqW": {
@@ -124,8 +124,8 @@
         "show_background_color": false,
         "background_color": "#001f45",
         "border_radius": 0,
-        "padding": 16,
-        "margin": 64,
+        "padding": 64,
+        "margin": 0,
         "address_text": "Our store is conveniently located in downtown Edmonton, making it easy to visit by car or public transit."
       }
     }
