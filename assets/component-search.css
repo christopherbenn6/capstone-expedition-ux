@@ -11,7 +11,7 @@
   }
   .search-filters__filter-clear-all {
     position: absolute;
-    top: -10px;
+    top: -15px;
     left: -100px;
   }
 }
