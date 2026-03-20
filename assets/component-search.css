@@ -5,6 +5,10 @@
   color: #000;
 }
 
+.search-filters__search-button {
+  border-left: 2px solid #878787;
+}
+
 .search-filters__sort-button {
   border: none !important;
 }
