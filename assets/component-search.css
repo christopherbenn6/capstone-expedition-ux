@@ -5,7 +5,8 @@
 
 .search-filters__field:after,
 .search-filters__field:after,
-.search-filters__field:hover {
+.search-filters__field:hover,
+.search-filters__field:focus {
   border: none;
   border-radius: 0;
 }
