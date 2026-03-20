@@ -4,7 +4,8 @@
   color: #000;
 }
 
-.search-filters__sort-value {
+.search-filters__sort-value,
+.search-filters__toolbar-item svg {
   color: #000;
 }
 
