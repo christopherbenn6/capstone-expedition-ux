@@ -136,7 +136,11 @@
         "button_Keg3N8"
       ],
       "name": "3 Facebook Posts",
-      "settings": {}
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     },
     "featured_collection_6eKab8": {
       "type": "featured-collection",
