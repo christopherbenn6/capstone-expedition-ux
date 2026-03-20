@@ -14,7 +14,8 @@
       "settings": {
         "padding_top": 16,
         "padding_bottom": 0,
-        "enable_page_heading": false
+        "enable_page_heading": false,
+        "heading_container": 1500
       }
     },
     "image_with_text_M96Hez": {
@@ -120,11 +121,11 @@
         "friday_hours": "11 AM - 7 PM",
         "saturday_hours": "10 AM - 7 PM",
         "sunday_hours": "12 PM - 5 PM",
-        "show_background_color": true,
+        "show_background_color": false,
         "background_color": "#001f45",
         "border_radius": 0,
-        "padding": 64,
-        "margin": 32,
+        "padding": 16,
+        "margin": 64,
         "address_text": "Our store is conveniently located in downtown Edmonton, making it easy to visit by car or public transit."
       }
     }
