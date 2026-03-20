@@ -16,6 +16,12 @@
   }
 }
 
+@media screen and (min-width: 1150px) {
+  fdt-global-search{
+    left: calc(340px + 5vw);
+  }
+}
+
 .search-filters__field-input {
   border-radius: 0;
 }
