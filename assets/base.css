@@ -3690,3 +3690,7 @@ body {
 body {
   background-color: #010F20 !important;
 }
+
+.button .button-primary{
+margin:1.6rem 0;
+}
