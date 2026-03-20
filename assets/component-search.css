@@ -1,6 +1,7 @@
 .search-filters__toolbar-item {
   background-color: #EBEBEB;
   border: 2px solid #878787;
+  color: #000;
 }
 
 @media screen and (min-width: 770px) {
