@@ -24,6 +24,7 @@
 
 .search-filters__filter-option-content-inner {
   border-left: 1px solid white;
+  margin-top: 1rem;
 }
 
 .search__input.field__input {
