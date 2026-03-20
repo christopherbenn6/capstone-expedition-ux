@@ -3,8 +3,8 @@
   bor
 }
 
-.search-filters__field-input::after,
-.search-filters__field-input::before {
+.search-filters__field:after,
+.search-filters__field:after {
   border: none;
   border-radius: 0;
 }
