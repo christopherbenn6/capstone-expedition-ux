@@ -3,7 +3,7 @@ fdt-global-search {
   width: calc(100vw - 800px);
   position: absolute;
   top: 130px;
-  left: 500px
+  left: 30vw
 }
 
 .search-filters__field-input {
