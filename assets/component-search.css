@@ -29,8 +29,8 @@
     left: calc(50px + 25vw);
     width: 780px;
   }
-  fdt-layout-grid {
-    position: relative;
+  search-filters__header {
+    max-width: 1600px;
   }
 }
 
