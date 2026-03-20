@@ -2,12 +2,16 @@
 
 @media screen and (min-width: 770px) {
   fdt-global-search {
-  display: block;
-  width: calc(100vw - 800px);
-  position: absolute;
-  top: 130px;
-  left: 30vw
+    display: block;
+    width: calc(100vw - 800px);
+    position: absolute;
+    top: 130px;
+    left: 300px
+  }
 }
+
+@media screen and (min-width: 1000px) {
+
 }
 
 .search-filters__field-input {
