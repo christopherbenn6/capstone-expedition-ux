@@ -13,6 +13,10 @@
   border: none !important;
 }
 
+.search-filters__sort-button label {
+  padding-left: 8px;
+}
+
 .search-filters__sorting {
   display: block;
   
