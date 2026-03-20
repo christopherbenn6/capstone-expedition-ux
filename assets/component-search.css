@@ -5,7 +5,7 @@
 }
 
 .search-filters__sort-button {
-  border: none;
+  border: none !important;
 }
 
 .search-filters__sort-value,
