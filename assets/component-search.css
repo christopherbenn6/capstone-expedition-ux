@@ -1,5 +1,3 @@
-
-
 @media screen and (min-width: 770px) {
   fdt-global-search {
     display: block;
@@ -7,6 +5,14 @@
     position: absolute;
     top: 115px;
     left: 300px;
+  }
+  fdt-layout-grid {
+    position: relative
+  }
+  .search-filters__filter-clear-all {
+    position: absolute;
+    top: 10px;
+    left: 200px;
   }
 }
 
