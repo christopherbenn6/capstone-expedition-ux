@@ -1,5 +1,6 @@
 .search-filters__field-input {
   border-radius: 0;
+  border: none;
 }
 
 .search__input.field__input {
