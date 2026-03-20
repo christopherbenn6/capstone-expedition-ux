@@ -9,7 +9,8 @@
 .search-filters__field:focus,
 .search-filters__field,
 .search-filters__search:after,
-.search-filters__search:before {
+.search-filters__search:before,
+.search-filters__search:focus {
   border: none;
   border-radius: 0 !important;
 }
