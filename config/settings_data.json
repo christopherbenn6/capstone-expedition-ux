@@ -130,6 +130,17 @@
         "type": "shopify://apps/powerful-form-builder/blocks/app-embed/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
         "disabled": false,
         "settings": {}
+      },
+      "6810584612362904079": {
+        "type": "shopify://apps/findter-custom-filter-search/blocks/search-filters-core/bf706e6d-709f-4687-a2e2-1fbe1b007cc7",
+        "disabled": false,
+        "settings": {
+          "search_input_selector": "[name=q]",
+          "link_no_results": "shopify://collections/all",
+          "collection_grid_selector": "",
+          "search_result_selector": "",
+          "custom_css": ""
+        }
       }
     },
     "color_schemes": {
