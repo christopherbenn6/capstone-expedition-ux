@@ -6,12 +6,13 @@
     top: 115px;
     left: 300px;
   }
-  fdt-layout-grid {
+  .search-filters__grid search-filters__bar-top {
     position: relative
   }
   .search-filters__filter-clear-all {
     position: absolute;
-    left: calc(((100vw - 1600px) / 2) + 300px);
+    top: -10px;
+    left: -100px;
   }
 }
 
