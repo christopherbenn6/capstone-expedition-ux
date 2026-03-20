@@ -13,6 +13,7 @@
 @media screen and (min-width: 1025px) {
   fdt-global-search{
     left: 340px;
+    width: calc(100vw - 700px);
   }
 }
 
