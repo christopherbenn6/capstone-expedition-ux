@@ -1,4 +1,4 @@
-<section class="page-width gradient color-{{ section.settings.section_color_scheme }} facebook-posts-section">
+<section class="page-width section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} facebook-posts-section">
   {%- for block in section.blocks -%}
     {% case block.type %}
       {%- when 'heading' -%}
