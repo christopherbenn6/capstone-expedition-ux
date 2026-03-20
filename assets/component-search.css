@@ -1,5 +1,10 @@
 .search-filters__field-input {
   border-radius: 0;
+  bor
+}
+
+.search-filters__field-input::after {
+  border: none;
 }
 
 .search__input.field__input {
