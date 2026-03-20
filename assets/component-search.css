@@ -8,6 +8,10 @@
   border: none !important;
 }
 
+.search-filters__sorting {
+  display: block;
+}
+
 .search-filters__sort-value,
 .search-filters__toolbar-item svg {
   color: #000;
