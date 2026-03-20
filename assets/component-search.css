@@ -5,12 +5,7 @@
 
 .search-filters__field:after,
 .search-filters__field:before,
-.search-filters__field:hover,
-.search-filters__search-input:focus,
-.search-filters__field,
-.search-filters__search:after,
-.search-filters__search:before,
-.search-filters__search:focus {
+.search-filters__search-input:focus {
   border: none;
   border-radius: 0 !important;
 }
