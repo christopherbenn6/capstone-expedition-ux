@@ -3,8 +3,8 @@
   bor
 }
 
-.search-filters__field:after:focus,
-.search-filters__field:before:focus,
+.search-filters__field:after,
+.search-filters__field:before,
 .search-filters__field:hover,
 .search-filters__field:focus,
 .search-filters__field,
