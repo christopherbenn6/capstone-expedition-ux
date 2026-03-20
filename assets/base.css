@@ -3613,7 +3613,7 @@ main h5 {
 
 p {
   color: white;
-  font-size: clamp(1rem, 0.9091rem + 0.4545vw, 1.25rem);
+  font-size: clamp(1.6rem, 1.45456 + 0.4545vw, 2rem);
 }
 
 .main-page-title {
