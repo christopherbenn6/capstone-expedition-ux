@@ -6,6 +6,7 @@
 .search-filters__field-input::after,
 .search-filters__field-input::before {
   border: none;
+  border-radius: 0;
 }
 
 .search__input.field__input {
