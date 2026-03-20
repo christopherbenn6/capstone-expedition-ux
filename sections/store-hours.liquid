@@ -9,15 +9,21 @@
 {% endif %}
 
 {% style %}
+  .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+.hours-table td {
+      color: white;
+      padding: 1rem;
+  }
+
+  
   @media screen and (min-width: 900px) {
   .about-page-grid section {
       padding: {{ section.settings.padding }}px;
       margin: {{ section.settings.margin }}px;
-  }
-
-  .hours-table {
-      width: 100%;
-      border-collapse: collapse;
   }
 
   .about-page-grid {
@@ -55,12 +61,6 @@
       flex-direction: column;
   }
 }
-
-.hours-table td {
-      color: white;
-      padding: 1rem;
-  }
-
 {% endstyle %}
 
 <div class="page-width about-page-grid">
