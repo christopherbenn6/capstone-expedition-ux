@@ -22,6 +22,10 @@
   order: 5;
 }
 
+.search-filters__filter-option-content-inner {
+  border-left: 1px solid white;
+}
+
 .search__input.field__input {
   padding-right: 9.8rem;
 }
