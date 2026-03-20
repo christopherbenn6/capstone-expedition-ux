@@ -4,10 +4,12 @@
 }
 
 .search-filters__field:after,
-.search-filters__field:after,
+.search-filters__field:before,
 .search-filters__field:hover,
 .search-filters__field:focus,
-.search-filters__field {
+.search-filters__field,
+.search-filters__search:after,
+.search-filters__search:before {
   border: none;
   border-radius: 0 !important;
 }
