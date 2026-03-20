@@ -3,7 +3,7 @@
 @media screen and (min-width: 770px) {
   fdt-global-search {
     display: block;
-    width: calc(100vw - 800px);
+    width: calc(100vw - 600px);
     position: absolute;
     top: 130px;
     left: 300px;
@@ -20,7 +20,7 @@
 @media screen and (min-width: 1150px) {
   fdt-global-search{
     left: calc(50px + 25vw);
-    width: calc(100vw - 600px);
+    width: calc(100vw - 900px);
   }
 }
 
