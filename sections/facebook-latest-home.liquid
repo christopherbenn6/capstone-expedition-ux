@@ -1,4 +1,4 @@
-<section class="page-width">
+<section class="page-width gradient color-{{ section.settings.section_color_scheme }}">
   {%- for block in section.blocks -%}
     {% case block.type %}
       {%- when 'heading' -%}
@@ -29,6 +29,15 @@
   {
     "name": "3 Facebook Posts",
     "max_blocks": 50,
+    "settings": [
+  {
+    "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-4"
+  }
+],
+    
     "blocks": [
       {
         "type": "heading",
