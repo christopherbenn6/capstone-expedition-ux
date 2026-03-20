@@ -6,7 +6,8 @@
 .search-filters__field:after,
 .search-filters__field:after,
 .search-filters__field:hover,
-.search-filters__field:focus {
+.search-filters__field:focus,
+.search-filters__field {
   border: none;
   border-radius: 0 !important;
 }
