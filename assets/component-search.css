@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 1150px) {
   fdt-global-search{
-    left: 25vw;
+    left: calc(100px + 25vw);
   }
 }
 
