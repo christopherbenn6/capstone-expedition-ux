@@ -4,7 +4,8 @@
 }
 
 .search-filters__field:after,
-.search-filters__field:after {
+.search-filters__field:after,
+.search-filters__field:hover {
   border: none;
   border-radius: 0;
 }
