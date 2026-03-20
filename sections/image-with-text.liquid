@@ -105,9 +105,7 @@
               {%- endcase -%}
             {%- endfor -%}
           </div>
-        </div>
-
-        <!-- button goes here -->
+          <!-- button goes here -->
         {%- for block in section.blocks -%}
           {%- if block.type == 'button' and block.settings.button_label != blank -%}
             <div class="image-with-text__button-below">
@@ -125,6 +123,9 @@
             </div>
           {%- endif -%}
         {%- endfor -%}
+        </div>
+
+        
       </div>
     </div>
   </div>
