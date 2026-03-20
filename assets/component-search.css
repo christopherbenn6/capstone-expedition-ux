@@ -1,3 +1,7 @@
+.search-filters__field-input {
+  border-radius: 0;
+}
+
 .search__input.field__input {
   padding-right: 9.8rem;
 }
