@@ -1,9 +1,13 @@
-fdt-global-search {
+
+
+@media screen and (min-width: 770px) {
+  fdt-global-search {
   display: block;
   width: calc(100vw - 800px);
   position: absolute;
   top: 130px;
   left: 30vw
+}
 }
 
 .search-filters__field-input {
