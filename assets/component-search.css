@@ -11,6 +11,7 @@
 
 .search-filters__filter-wrapper {
   background-color: #001F45;
+  padding: 1rem;
 }
 
 .search__input.field__input {
