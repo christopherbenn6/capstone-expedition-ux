@@ -10,6 +10,7 @@
 
 .search-filters__sorting {
   display: block;
+  content: '/';
 }
 
 .search-filters__sort-value,
