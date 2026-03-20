@@ -614,8 +614,9 @@
     gap: 1.2rem;
     justify-content: center;
   }
-   .footer-follow-us .footer-social-link.inline-richtext {
-    display:none;
+
+  .footer-follow-us .footer-social-link.inline-richtext {
+    display: none;
   }
 
 
@@ -632,7 +633,7 @@
 
 @media screen and (min-width: 960px) {
   .footer {
-    padding:4rem !important;
+    padding: 4rem !important;
   }
 
   .footer__blocks-wrapper {
@@ -641,7 +642,8 @@
     align-items: start;
     column-gap: 6rem;
   }
-  .footer__blocks-wrapper > .footer-block.grid__item {
+
+  .footer__blocks-wrapper>.footer-block.grid__item {
     width: auto !important;
     /* margin: 0 !important; */
   }
@@ -651,18 +653,20 @@
     grid-row: 1;
   }
 
-   .footer-block--brand .footer-block__brand-info {
+  .footer-block--brand .footer-block__brand-info {
     display: flex;
     align-items: center;
     gap: 1.2rem;
     flex-wrap: nowrap;
   }
-   .footer-block--brand .footer-block__heading {
+
+  .footer-block--brand .footer-block__heading {
     margin: 0;
-    font-size:4.2rem !important;
+    font-size: 4.2rem !important;
     line-height: 1.15;
     max-width: 24rem;
   }
+
   .footer-block__image-wrapper {
     max-width: 12.6rem !important;
   }
@@ -675,7 +679,7 @@
     text-align: left;
   }
 
-    .footer-block--menu .footer-block__details-content {
+  .footer-block--menu .footer-block__details-content {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -691,12 +695,13 @@
   /* follow us */
   .footer__content-bottom {
     border-top: none !important;
-    margin-top: 1.6rem !important; /* reduce gap */
+    margin-top: 1.6rem !important;
+    /* reduce gap */
     padding-top: 0 !important;
   }
- 
-    .footer-follow-us .footer-social-link.inline-richtext {
-    display:none;
+
+  .footer-follow-us .footer-social-link.inline-richtext {
+    display: none;
   }
 
   .footer-follow-us .footer__list-social {
@@ -712,7 +717,7 @@
 
   .footer__copyright .copyright__content {
     text-align: left !important;
-    max-width:800px;
+    max-width: 800px;
   }
 
 }
