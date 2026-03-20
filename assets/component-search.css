@@ -1,4 +1,5 @@
 fdt-global-search {
+  display: block;
   width: calc(100% - 500px);
 }
 
