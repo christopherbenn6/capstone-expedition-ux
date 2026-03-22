@@ -100,7 +100,7 @@
   order: 5;
 }
 
-..template-search__header {
+body:not(:has(#fdt-grid-container)) .template-search__header {
   display: block;
 }
 
