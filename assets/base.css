@@ -3713,16 +3713,3 @@ body {
   font-size: 1.6rem;
  
 }
-
-/* using different colors */
-.card__condition:contains("Loose") {
-  color: red;
-}
-
-.card__condition:contains("completeInBox") {
-  color: #cfcfcf;
-}
-
-.card__condition:contains("New") {
-  color: yellow;
-}
