@@ -113,6 +113,10 @@
   margin-top: 10rem;
 }
 
+.search-filters__header {
+  display: none;
+}
+
 .search__button {
   right: var(--inputs-border-width);
   top: var(--inputs-border-width);
