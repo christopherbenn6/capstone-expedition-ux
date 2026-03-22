@@ -83,7 +83,16 @@
       "id": "manual_settings",
       "default": false
     },
-    
+    {
+      "type": "header",
+      "content": "Manual Settings"
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "manual_heading",
+      "visible_if": "{{ section.settings.manual_settings }}"
+    }
   ]
 }
 {% endschema %}
