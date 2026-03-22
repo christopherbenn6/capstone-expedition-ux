@@ -81,7 +81,7 @@
   }
   .template-search__header {
     max-width: 1600px;
-    margin: 0 auto !important;
+    margin: auto !important;
     position: relative;
   }
 }
