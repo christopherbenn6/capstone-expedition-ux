@@ -48,6 +48,7 @@ fdt-active-filters,
 
 .search-filters__sorting {
   display: flex;
+  height: 41px
 }
 
 @media screen and (min-width: 770px) {
