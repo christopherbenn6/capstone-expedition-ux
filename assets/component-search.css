@@ -88,6 +88,7 @@
 
 .search-filters__filter-wrapper {
   background-color: #001F45;
+  border: 2px solid #878787;
   padding: 1rem;
 }
 
