@@ -76,7 +76,7 @@
 
 @media screen and (min-width: 1600px) {
   .template-search__search {
-    left: calc(((100vw - 1600px) / 2) + 460px);
+    left: 460px;
     width: 780px;
   }
   .template-search__header {
