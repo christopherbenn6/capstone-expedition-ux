@@ -79,7 +79,7 @@
     left: calc(((100vw - 1600px) / 2) + 460px);
     width: 780px;
   }
-  search-filters__header {
+  .search-filters__header {
     max-width: 1600px;
     margin: 0 auto !important;
     position: relative;
