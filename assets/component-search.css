@@ -110,7 +110,7 @@
 }
 
 .search-filters__layout:has(.search-filters__filter-active-tag-wrapper) .search-filters__filter-tree-option-list {
-  margin-top: 3.2rem;
+  margin-top: 10rem;
 }
 
 .search__button {
