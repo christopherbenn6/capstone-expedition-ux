@@ -28,7 +28,7 @@
 }
 
 @media screen and (min-width: 770px) {
-  fdt-global-search {
+  .search__input {
     display: block;
     width: calc(100vw - 600px);
     position: absolute;
@@ -57,14 +57,14 @@
 }
 
 @media screen and (min-width: 1150px) {
-  fdt-global-search{
+  .search__input {
     left: calc(50px + 25vw);
     width: calc(100vw - 800px);
   }
 }
 
 @media screen and (min-width: 1600px) {
-  fdt-global-search{
+  .search__input {
     left: calc(((100vw - 1600px) / 2) + 460px);
     width: 780px;
   }
