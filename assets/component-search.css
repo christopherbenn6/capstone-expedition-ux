@@ -54,6 +54,7 @@ fdt-active-filters,
 .search-filters__filter-active-tag-list filter-tag-item {
   background-color: unset;
   border-left: 2px solid #fff;
+  border-radius: 0;
 }
 
 @media screen and (min-width: 770px) {
