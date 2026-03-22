@@ -74,7 +74,7 @@ fdt-active-filters,
   line-height: 1.25;
 }
 
-fdt-search-product-results {
+.search-filters__product-list {
   padding: 0;
 }
 
