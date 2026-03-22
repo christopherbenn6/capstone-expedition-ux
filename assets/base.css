@@ -3714,13 +3714,13 @@ body {
  
 }
 .card__condition.condition--loose {
-  color: red !important;
+  color: #FF3B4A !important;
 }
 
 .card__condition.condition--new {
-  color: yellow !important;
+  color: #FFD000 !important;
 }
 
 .card__condition.condition--cib {
-  color: #cfcfcf !important;
+  color: #48D46B !important;
 }
