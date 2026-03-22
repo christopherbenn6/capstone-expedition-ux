@@ -112,6 +112,7 @@ body:not(:has(#fdt-grid-container)) .template-search__header {
 
 .template-search__header {
   padding: 0;
+  position: relative;
 }
 
 .search-filters__filter-option-content-inner {
