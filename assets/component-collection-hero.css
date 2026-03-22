@@ -101,3 +101,14 @@
 
 /* custom */
 
+.collection-hero__title {
+  margin: 0;
+}
+
+.collection-hero__text-wrapper {
+  padding: 0 !important;
+}
+
+.collection-hero {
+  min-height: auto !important;
+}
