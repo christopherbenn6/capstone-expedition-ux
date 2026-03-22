@@ -41,6 +41,10 @@ form {
   margin-bottom: 2rem;
 }
 
+fdt-active-filters {
+  background: unset;
+}
+
 @media screen and (min-width: 770px) {
   .template-search__search {
     display: block;
