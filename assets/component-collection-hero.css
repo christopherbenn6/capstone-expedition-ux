@@ -96,3 +96,11 @@
     min-height: 20rem;
   }
 }
+
+
+
+/* custom */
+
+.collection-hero__title {
+  margin: 0;
+}
