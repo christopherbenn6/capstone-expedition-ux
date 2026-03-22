@@ -40,6 +40,7 @@
     position: absolute;
     top: -25px;
     left: 300px;
+    margin-bottom: 0rem;
   }
   .search-filters__bar-top {
     position: relative
