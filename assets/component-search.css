@@ -41,7 +41,8 @@ form {
   margin-bottom: 2rem;
 }
 
-fdt-active-filters {
+fdt-active-filters,
+.search-filters__filter-active-tag-wrapper {
   background: unset;
 }
 
