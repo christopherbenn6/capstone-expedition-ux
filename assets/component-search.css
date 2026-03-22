@@ -100,6 +100,10 @@
   order: 5;
 }
 
+..template-search__header {
+  display: block;
+}
+
 .search-filters__filter-option-content-inner {
   border-left: 1px solid white;
   margin-top: 1rem;
