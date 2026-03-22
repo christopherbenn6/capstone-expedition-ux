@@ -54,9 +54,9 @@ fdt-active-filters,
 @media screen and (min-width: 770px) {
   .template-search__search {
     display: block;
-    width: calc(100vw - 600px);
+    width: calc(100vw - 650px);
     position: absolute;
-    top: -30px;
+    top: -31px;
     left: 300px;
     margin-bottom: 0rem;
   }
