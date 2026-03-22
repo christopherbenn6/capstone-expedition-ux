@@ -37,6 +37,10 @@
   padding-bottom: 2rem
 }
 
+#fdt-container {
+  margin-top: 2rem
+}
+
 @media screen and (min-width: 770px) {
   .template-search__search {
     display: block;
