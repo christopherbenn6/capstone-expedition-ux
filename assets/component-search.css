@@ -46,6 +46,10 @@ fdt-active-filters,
   background: unset;
 }
 
+.search-filters__sorting {
+  display: flex;
+}
+
 @media screen and (min-width: 770px) {
   .template-search__search {
     display: block;
