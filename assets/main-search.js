@@ -42,8 +42,4 @@ class MainSearch extends SearchForm {
   }
 }
 
-let activeFilters = document.querySelector('.search-filters__filter-active-tag');
-let activeFiltersHTML = activeFilters.innerHTML;
-let newLocation = document.querySelector('.search-filters__filter-wrapper')
-newLocation.innerHTML += activeFiltersHTML;
 customElements.define('main-search', MainSearch);
