@@ -3693,8 +3693,13 @@ body {
   background-color: #010F20 !important;
 }
 
-.card__heading a {
+.card__heading a,
+.price {
   color: #ffffff;
   font-weight: 600;
   font-size: 2rem;
+}
+
+.price {
+  margin: 4px 0;
 }
