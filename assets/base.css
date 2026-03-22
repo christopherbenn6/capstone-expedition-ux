@@ -3713,3 +3713,14 @@ body {
   font-size: 1.6rem;
  
 }
+.card__condition.condition--loose {
+  color: red !important;
+}
+
+.card__condition.condition--new {
+  color: yellow !important;
+}
+
+.card__condition.condition--cib {
+  color: #cfcfcf !important;
+}

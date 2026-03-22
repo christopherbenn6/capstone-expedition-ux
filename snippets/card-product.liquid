@@ -177,14 +177,27 @@
             {% endcomment %}
 
             {% comment %}  metafields are real product metafields so .value is the safer way to output them. {% endcomment %}
-             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+            {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
 
             <p class="card__system-tag">
               {{ card_product.metafields.custom.tags.value }}
             </p>
 
-            <p class="card__condition">
-              {{ card_product.metafields.custom.condition.value }}
+            {% assign condition = card_product.metafields.custom.condition.value %}
+
+            <p
+              class="
+                card__condition
+                {% if condition == 'Loose' %}
+                  condition--loose
+                {% elsif condition == 'New' %}
+                  condition--new
+                {% elsif condition == 'completeInBox' %}
+                  condition--cib
+                {% endif %}
+              "
+            >
+              {{ condition }}
             </p>
 
             {% comment %} <span class="caption-large light">{{ block.settings.description | escape }}</span> {% endcomment %}
