@@ -51,6 +51,11 @@ fdt-active-filters,
   height: 41px
 }
 
+filter-tag-item {
+  background-color: none;
+  border-left: 2px solid #fff;
+}
+
 @media screen and (min-width: 770px) {
   .template-search__search {
     display: block;
