@@ -146,10 +146,6 @@ body:not(:has(#fdt-grid-container)) .template-search__header {
   padding-right: 9.8rem;
 }
 
-.search-filters__layout:has(.search-filters__filter-active-tag-wrapper) .search-filters__filter-tree-option-list {
-  margin-top: 10rem;
-}
-
 .search-filters__header {
   display: none;
 }
