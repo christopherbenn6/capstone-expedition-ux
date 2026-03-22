@@ -59,20 +59,15 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_xiYQJK": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
+    "breadcrumbs_MyrWmh": {
+      "type": "breadcrumbs",
+      "name": "Breadcrumbs",
+      "settings": {}
     }
   },
   "order": [
+    "breadcrumbs_MyrWmh",
     "rich_text_GDgjnh",
-    "main",
-    "custom_liquid_xiYQJK"
+    "main"
   ]
 }
