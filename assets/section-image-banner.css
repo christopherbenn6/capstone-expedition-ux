@@ -525,6 +525,6 @@
 .arrow-button {
   color:#FFD000;
   border-bottom: 1px solid white;
-  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 3rem) !important;
 
 }
