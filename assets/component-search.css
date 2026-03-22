@@ -55,7 +55,7 @@ fdt-active-filters,
   content: '',
   width: 100%;
   height: 100%;
-  background-image: url(../assets/placeholder.jpg);
+  background: url(../assets/placeholder.jpg) center / cover;
 }
 
 .search-filters__filter-active-tag-list filter-tag-item {
