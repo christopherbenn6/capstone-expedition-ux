@@ -104,6 +104,14 @@ body:not(:has(#fdt-grid-container)) .template-search__header {
   display: block;
 }
 
+.template-search__header {
+  padding: 0;
+}
+
+.template-search__header h1, {
+  display: none !important;
+}
+
 .search-filters__filter-option-content-inner {
   border-left: 1px solid white;
   margin-top: 1rem;
