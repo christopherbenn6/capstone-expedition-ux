@@ -51,8 +51,8 @@ fdt-active-filters,
   height: 41px
 }
 
-filter-tag-item {
-  background-color: none;
+.search-filters__filter-active-tag-list filter-tag-item {
+  background-color: unset;
   border-left: 2px solid #fff;
 }
 
