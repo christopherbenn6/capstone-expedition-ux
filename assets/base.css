@@ -3693,3 +3693,6 @@ body {
   background-color: #010F20 !important;
 }
 
+.grid {
+  gap:0.5rem;
+}
