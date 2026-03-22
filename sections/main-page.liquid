@@ -23,7 +23,11 @@
 {% render 'breadcrumbs' %}
   {% if section.settings.enable_page_heading %}
     <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {{ page.title | escape }}
+      {% if section.settings.manual_settings %}
+        {{ section.settings.manual_heading }}
+      {% else %}
+        {{ page.title | escape }}
+      {% endif %}
     </h1>
   {% endif %}
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
