@@ -3703,3 +3703,8 @@ body {
 .price {
   margin: 4px 0;
 }
+
+.card__system-tag {
+  color: #fffff;
+  font-size: 1.6rem;
+}
