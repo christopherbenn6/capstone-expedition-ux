@@ -3693,4 +3693,8 @@ body {
   background-color: #010F20 !important;
 }
 
-
+.card__heading a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2rem;
+}
