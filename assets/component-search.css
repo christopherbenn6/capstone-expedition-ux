@@ -1,11 +1,11 @@
 .search-filters__toolbar-item,
-.search-filters__search-input {
+.search__input {
   background-color: #EBEBEB;
   border: 2px solid #878787;
   color: #000;
 }
 
-.search-filters__search-button {
+.search__input {
   border-left: 2px solid #878787;
 }
 
