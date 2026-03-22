@@ -55,6 +55,7 @@ fdt-active-filters,
   background-color: unset;
   border-left: 2px solid #fff;
   border-radius: 0;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 770px) {
