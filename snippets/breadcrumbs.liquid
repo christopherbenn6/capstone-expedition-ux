@@ -71,18 +71,18 @@
         <a class="breadcrumbs__link" href="{{ routes.collections_url }}/games">Games</a>
       </li>
 
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link" aria-current="page">{{ product.title }}</span>
+      </li>
+
     {% elsif template contains 'search' and search %}
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="{{ routes.search_url }}">Games</a>
       </li>
 
-      <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link" aria-current="page">{{ product.title }}</span>
-      </li>
-
     {% elsif template contains 'blog' and blog %}
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link" aria-current="page">Blog</span>
+        <span class="breadcrumbs__link" aria-current="page">{{ blog.title }}</span>
       </li>
 
     {% elsif template contains 'article' and article and blog %}
@@ -90,12 +90,12 @@
         <a class="breadcrumbs__link" href="{{ blog.url }}">{{ blog.title }}</a>
       </li>
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link" aria-current="page">Article</span>
+        <span class="breadcrumbs__link" aria-current="page">{{ article.title }}</span>
       </li>
 
     {% elsif template contains 'page' and page %}
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link" aria-current="page">Page</span>
+        <span class="breadcrumbs__link" aria-current="page">{{ page.title }}</span>
       </li>
     {% endif %}
     <li class="empty-holder">
