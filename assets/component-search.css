@@ -109,7 +109,7 @@ body:not(:has(#fdt-grid-container)) .template-search__header {
 }
 
 .template-search__header h1, {
-  display: none !important;
+  display: none;
 }
 
 .search-filters__filter-option-content-inner {
