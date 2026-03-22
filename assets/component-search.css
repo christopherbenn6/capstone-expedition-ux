@@ -38,7 +38,7 @@
     display: block;
     width: calc(100vw - 600px);
     position: absolute;
-    top: -20px;
+    top: -25px;
     left: 300px;
   }
   .search-filters__bar-top {
