@@ -70,7 +70,7 @@ fdt-active-filters,
   }
   .search-filters__filter-clear-all {
     position: absolute;
-    top: -40px;
+    top: -30px;
     left: -135px;
     text-decoration: none;
     border: 2px solid #FF3B4A;
