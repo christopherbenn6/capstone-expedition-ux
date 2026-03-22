@@ -33,6 +33,10 @@
   padding-bottom: 0 !important;
 }
 
+.template-search__search {
+  padding-bottom: 2rem
+}
+
 @media screen and (min-width: 770px) {
   .template-search__search {
     display: block;
