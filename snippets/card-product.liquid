@@ -168,11 +168,23 @@
 
             {% comment %} using shopify filter to clean the product description for using it in the product card. {% endcomment %}
 
-            {%- if card_product.description != blank -%}
-              <p class="card__description">
-                {{ card_product.description | strip_html | truncate: 60 }}
-              </p>
-            {%- endif -%}
+            {% comment %}
+              {%- if card_product.description != blank -%}
+                <p class="card__description">
+                  {{ card_product.description | strip_html | truncate: 60 }}
+                </p>
+              {%- endif -%}
+            {% endcomment %}
+
+            {% comment %}  metafields are real product metafields so .value is the safer way to output them. {% endcomment %}
+
+            <p class="card__system-tag">
+              {{ card_product.metafields.custom.tags.value }}
+            </p>
+
+            <p class="card__condition">
+              {{ card_product.metafields.custom.condition.value }}
+            </p>
 
             {% comment %} <span class="caption-large light">{{ block.settings.description | escape }}</span> {% endcomment %}
 
