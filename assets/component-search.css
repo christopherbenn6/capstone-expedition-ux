@@ -70,7 +70,8 @@ form {
   padding-bottom: 0;
 }
 
-.fdt-range-slider {
+.fdt-range-slider,
+.fdt-range-input {
   display: none;
 }
 
