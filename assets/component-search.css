@@ -195,8 +195,7 @@ fdt-active-filters,
 
 /* For when No Results */
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__grid search-filters__bar-top,
-#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .template-search__header p,
-#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__filter-tree-column {
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .template-search__header p {
   display: none !important;
 }
 /* End No Results */
