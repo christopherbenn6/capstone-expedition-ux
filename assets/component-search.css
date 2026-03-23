@@ -111,6 +111,10 @@ form {
   padding-top: 10rem;
 }
 
+.fdt-offcanvas-controls .search-filters__inner {
+  width: unset;
+}
+
 .fdt-range-value-input input {
   border-radius: 0;
   background-color: #EBEBEB;
