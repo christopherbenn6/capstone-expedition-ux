@@ -197,7 +197,7 @@ fdt-active-filters,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__grid search-filters__bar-top,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) #shopify-section-template--26657964720493__main,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__product-count,
-#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__disclosure {
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__grid search-filters__bar-top {
   display: none !important;
 }
 /* End No Results */
