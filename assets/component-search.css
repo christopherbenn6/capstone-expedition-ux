@@ -196,6 +196,10 @@ fdt-active-filters,
   padding: 0.5rem 1.5rem;
 }
 
+.reset__button {
+  background-color: red;
+}
+
 /* For when No Results */
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__grid search-filters__bar-top,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .template-search__header p {
