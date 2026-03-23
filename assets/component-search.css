@@ -278,9 +278,12 @@ fdt-active-filters,
 }
 
 .search-filters__header-title {
-  display: none;
+  display: none; 
 }
 
+.search-filters__header {
+  height: 0;
+}
 
 .search-filters__field-input {
   border-radius: 0;
