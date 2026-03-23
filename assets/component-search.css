@@ -5,6 +5,10 @@
   color: #fff;
 }
 
+#FacetsWrapperMobile {
+  width: 100%;
+}
+
 .search-filters__layout,
 .search-filters__bar-top.search-filters__bar-top {
   display: inline;
