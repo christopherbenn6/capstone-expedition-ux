@@ -117,6 +117,7 @@ form {
 
 .search-filters__close {
   background: unset;
+  position: absolute;
 }
 
 .fdt-offcanvas-controls .search-filters__inner {
