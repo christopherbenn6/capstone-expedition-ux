@@ -77,6 +77,11 @@ form {
   padding-bottom: 0;
 }
 
+.fdt-range-slider,
+.fdt-range-input {
+  display: none;
+}
+
 .fdt-range-value {
   padding-top: 0;
 }
