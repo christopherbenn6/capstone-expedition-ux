@@ -192,7 +192,7 @@ fdt-active-filters,
   font-size: 20px
 }
 
-.search-filters__filter-count {
+.search-filters__open {
   padding: 0 auto;
 }
 
