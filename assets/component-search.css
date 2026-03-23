@@ -116,8 +116,7 @@ form {
 }
 
 .search-filters__close {
-  background: unset;
-  position: absolute;
+  background-color: #001F45;
 }
 
 .fdt-offcanvas-controls .search-filters__inner {
