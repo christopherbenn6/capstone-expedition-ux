@@ -312,6 +312,7 @@ fdt-active-filters,
 
 body:not(:has(#fdt-grid-container)) .template-search__header {
   display: block;
+  height: 0;
 }
 
 .template-search__header {
