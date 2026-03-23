@@ -3,6 +3,13 @@
   display: inline;
 }
 
+@media screen and (min-width: 770px) {
+  .search-filters__layout,
+  .search-filters__bar-top.search-filters__bar-top {
+    display: inline;
+  }
+}
+
 .search-filters__product-title  {
   font-size: clamp(2.0rem, 0.9773rem + 1.3636vw, 2.4rem) !important;
   line-height: 1;
