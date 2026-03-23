@@ -280,7 +280,7 @@ fdt-active-filters,
 .search-filters__field {
   position: absolute;
   top: 0;
-  
+
 }
 
 .search-filters__field-input {
@@ -315,6 +315,7 @@ body:not(:has(#fdt-grid-container)) .template-search__header {
 .template-search__header {
   padding: 0;
   position: relative;
+  display: none;
 }
 
 .search-filters__filter-option-content-inner {
