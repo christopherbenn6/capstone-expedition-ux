@@ -277,6 +277,10 @@ fdt-active-filters,
   }
 }
 
+.search-filters__header-title {
+  display: none;
+}
+
 .search-filters__field {
   position: absolute;
   top: 0;
