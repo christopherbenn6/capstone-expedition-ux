@@ -530,3 +530,8 @@
   font-size: clamp(2.4rem, 1.2rem + 1.5vw, 4.8rem) !important;
 
 }
+
+.banner__content {
+   backdrop-filter: blur(2px) brightness(110%);
+
+}
