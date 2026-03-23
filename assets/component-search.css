@@ -75,6 +75,10 @@ form {
   display: none;
 }
 
+.fdt-range-value {
+  padding-top: 0;
+}
+
 #shopify-section-template--26657964720493__main {
   margin-bottom: 2rem;
 }
