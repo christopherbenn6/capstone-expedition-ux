@@ -192,6 +192,9 @@ fdt-active-filters,
   font-size: 20px
 }
 
+.search-filters__filter-count {
+  padding: 0 auto;
+}
 
 /* For when No Results */
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__grid search-filters__bar-top,
