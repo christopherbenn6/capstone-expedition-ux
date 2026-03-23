@@ -1,5 +1,6 @@
 /* Mobile Filters */
-#FacetsWrapperMobile {
+#FacetsWrapperMobile,
+.fdt-offcanvas-content-header-wrapper {
   background-color: #001F45;
   color: #fff;
 }
