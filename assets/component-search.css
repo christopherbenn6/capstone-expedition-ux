@@ -92,7 +92,7 @@ form {
 
 #fdt-container,
 #shopify-section-template--26657964720493__main {
-  display: none;
+  padding: 0 1.6rem;
 }
 
 @media screen and (max-width: 767px) {
