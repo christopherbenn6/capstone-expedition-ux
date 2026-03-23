@@ -1,4 +1,5 @@
-.search-filters__layout {
+.search-filters__layout,
+.search-filters__bar-top {
   display: inline;
 }
 
