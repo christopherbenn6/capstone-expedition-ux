@@ -193,7 +193,7 @@ fdt-active-filters,
 }
 
 .search-filters__open {
-  padding: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /* For when No Results */
