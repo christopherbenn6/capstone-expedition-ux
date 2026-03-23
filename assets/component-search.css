@@ -194,8 +194,8 @@ fdt-active-filters,
 
 
 /* For when No Results */
-#MainContent:has(.search-filters__product-item-grid-view-layout-content) {
-  background-color: purple;
+#MainContent:has(.search-filters__product-item-grid-view-layout-content) .search-filters__filter-tree-column {
+  display: none;
 }
 /* End No Results */
 
@@ -205,6 +205,7 @@ fdt-active-filters,
   .search-filters__layout {
     margin: 0;
   }
+
   .template-search__search {
     display: block;
     width: calc(100vw - 650px);
