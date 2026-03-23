@@ -111,6 +111,10 @@ form {
   padding-top: 10rem;
 }
 
+.search-filters__close svg {
+  color: #fff;
+}
+
 .fdt-offcanvas-controls .search-filters__inner {
   width: unset;
 }
