@@ -531,11 +531,13 @@
 
 }
 
-.banner__content {
+.overlay {
    background-color: rgba(0,0,0,0.5); 
 }
 
 /* desktop */
 @media screen and (max-width: 749px) {
-   background-color:none !important; 
+   .overlay {
+     background-color: none; 
+   } 
 }
