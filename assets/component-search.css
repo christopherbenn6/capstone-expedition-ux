@@ -215,6 +215,10 @@ fdt-active-filters,
     margin-top: 5rem;
   }
 
+  .search-filters__toolbar-item--sorting {
+    width: 100%;
+  }
+
   .template-search__search {
     display: block;
     width: calc(100vw - 650px);
