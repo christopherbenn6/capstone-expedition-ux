@@ -113,6 +113,7 @@ form {
 
 .search-filters__close svg {
   color: #fff;
+  background-color: unset;
 }
 
 .fdt-offcanvas-controls .search-filters__inner {
