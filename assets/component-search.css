@@ -231,8 +231,8 @@ fdt-active-filters,
 
 @media screen and (min-width: 1025px) {
   .template-search__search {
-    left: 340px;
-    width: calc(100vw - 700px);
+    left: 330px;
+    width: calc(100vw - 750px);
   }
 }
 
