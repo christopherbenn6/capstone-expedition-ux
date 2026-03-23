@@ -105,6 +105,10 @@ form {
   color: #000;
 }
 
+#sort-target {
+  padding-top: 1.6rem;
+}
+
 .search-filters__filter-option {
   padding-bottom: 1rem;
   padding-right: 2rem;
