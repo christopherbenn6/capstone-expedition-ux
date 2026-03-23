@@ -249,6 +249,9 @@ fdt-active-filters,
     left: calc(50px + 25vw);
     width: calc(100vw - 800px);
   }
+  .search-filters__toolbar-item--sorting {
+    width: unset;
+  }
 }
 
 @media screen and (min-width: 1600px) {
