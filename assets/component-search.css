@@ -194,7 +194,8 @@ fdt-active-filters,
 
 
 /* For when No Results */
-#MainContent:has(.search-filters__product-item-grid-view-layout-content) .search-filters__grid search-filters__bar-top {
+#MainContent:has(.search-filters__product-item-grid-view-layout-content) .search-filters__grid search-filters__bar-top,
+#MainContent:has(.search-filters__product-item-grid-view-layout-content) .template-search__header {
   display: none;
 }
 /* End No Results */
