@@ -196,7 +196,7 @@ fdt-active-filters,
   .template-search__search {
     display: block;
     width: calc(100vw - 650px);
-    position: absolute;
+    position: absolute !important;
     top: -31px;
     left: 300px;
     margin-bottom: 0rem;
