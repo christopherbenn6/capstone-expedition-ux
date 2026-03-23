@@ -83,6 +83,10 @@ form {
   padding-top: 0;
 }
 
+.fdt-range-value-input input {
+  border-radius: 0;
+}
+
 #shopify-section-template--26657964720493__main {
   margin-bottom: 2rem;
 }
