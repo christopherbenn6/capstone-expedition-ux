@@ -90,6 +90,10 @@ form {
   padding-top: 0;
 }
 
+.search-filters__layout {
+  padding: 0 1.6rem;
+}
+
 .fdt-range-value-input input {
   border-radius: 0;
   background-color: #EBEBEB;
