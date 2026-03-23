@@ -192,10 +192,7 @@ fdt-active-filters,
   font-size: 20px
 }
 
-#shopify-section-template--26657964720493__main,
-.search-filters__layout {
-  margin: 0;
-}
+
 /* For when No Results */
 #MainContent:has(.search-filters__product-item-grid-view-layout-content) {
   background-color: purple;
@@ -204,6 +201,10 @@ fdt-active-filters,
 
 
 @media screen and (min-width: 770px) {
+  #shopify-section-template--26657964720493__main,
+  .search-filters__layout {
+    margin: 0;
+  }
   .template-search__search {
     display: block;
     width: calc(100vw - 650px);
