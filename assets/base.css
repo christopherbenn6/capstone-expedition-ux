@@ -3725,3 +3725,8 @@ body {
 .card__condition.condition--cib {
   color: #48D46B !important;
 }
+
+/* Styling for games page */
+.search-filters__product-list {
+  font-family: 'jersey-20', sans-serif;
+}
