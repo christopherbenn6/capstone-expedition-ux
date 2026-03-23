@@ -192,7 +192,8 @@ fdt-active-filters,
   font-size: 20px
 }
 
-#shopify-section-template--26657964720493__main {
+#shopify-section-template--26657964720493__main,
+.search-filters__layout {
   margin: 0;
 }
 
