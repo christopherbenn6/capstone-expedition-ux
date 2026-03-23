@@ -193,7 +193,7 @@ fdt-active-filters,
 }
 
 @media screen and (min-width: 770px) {
-  .template-search__search {
+  .search .field {
     display: block;
     width: calc(100vw - 650px);
     position: absolute !important;
@@ -212,21 +212,21 @@ fdt-active-filters,
 }
 
 @media screen and (min-width: 1025px) {
-  .template-search__search {
+  .search .field {
     left: 340px;
     width: calc(100vw - 700px);
   }
 }
 
 @media screen and (min-width: 1150px) {
-  .template-search__search {
+  .search .field {
     left: calc(50px + 25vw);
     width: calc(100vw - 800px);
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .template-search__search {
+  .search .field {
     left: 460px;
     width: 780px;
   }
@@ -274,7 +274,7 @@ body:not(:has(#fdt-grid-container)) .template-search__header {
   margin-top: 1rem;
 }
 
-.template-search__search.field__input {
+.search .field.field__input {
   padding-right: 9.8rem;
 }
 
