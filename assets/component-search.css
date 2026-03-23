@@ -101,6 +101,10 @@ form {
   padding: 0.8rem;
 }
 
+.search-filters__filter-option-item {
+  background-color: #000;
+}
+
 .search-filters__filter-option {
   padding-bottom: 1rem;
   padding-right: 2rem;
