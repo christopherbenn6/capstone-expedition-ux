@@ -3729,4 +3729,5 @@ body {
 /* Styling for games page */
 .search-filters__product-list {
   font-family: 'jersey-20', sans-serif;
+  letter-spacing: 1px;
 }
