@@ -8,9 +8,9 @@
   width: 100%
 }
 
-.content-for-layout {
+/* .content-for-layout {
   padding: 0 1.6rem;
-}
+} */
 
 .search-filters__product-count {
   padding: 0.8rem 0;
@@ -85,6 +85,8 @@ form {
 
 .fdt-range-value-input input {
   border-radius: 0;
+  background-color: #EBEBEB;
+  border: 1px solid #878787;
 }
 
 #shopify-section-template--26657964720493__main {
