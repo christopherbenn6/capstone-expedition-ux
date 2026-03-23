@@ -532,6 +532,6 @@
 }
 
 .banner__content {
-   backdrop-filter: blur(2px) brightness(110%);
+   opacity:1;
 
 }
