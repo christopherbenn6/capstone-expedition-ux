@@ -221,7 +221,7 @@ fdt-active-filters,
 
   .template-search__search {
     display: block;
-    width: calc(100vw - 300px);
+    width: calc(100vw - 400px);
     position: absolute !important;
     top: -31px;
     left: 323px;
