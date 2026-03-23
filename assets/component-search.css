@@ -90,6 +90,10 @@ form {
   padding: 0.8rem;
 }
 
+.search-filters__filter-option {
+  padding-bottom: 0.8rem
+}
+
 #shopify-section-template--26657964720493__main {
   margin-bottom: 2rem;
 }
