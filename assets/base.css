@@ -3613,6 +3613,7 @@ main h5 {
 
 p {
   color: white;
+  font-size: clamp(1.6rem, 1.45456 + 0.4545vw, 2rem);
 }
 
 .main-page-title {
@@ -3690,4 +3691,37 @@ body {
 
 body {
   background-color: #010F20 !important;
+}
+
+.card__heading a,
+.price {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2rem !important;
+}
+
+.price {
+  margin: 4px 0;
+}
+
+.card__system-tag {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.card__condition {
+  font-size: 1.6rem;
+
+}
+
+.card__condition.condition--loose {
+  color: #FF3B4A !important;
+}
+
+.card__condition.condition--new {
+  color: #FFD000 !important;
+}
+
+.card__condition.condition--cib {
+  color: #48D46B !important;
 }
