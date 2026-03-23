@@ -321,7 +321,7 @@ body:not(:has(#fdt-grid-container)) .template-search__header {
 }
 
 .search-filters__header {
-  display: none;
+  /* display: none; */
 }
 
 .search__button {
