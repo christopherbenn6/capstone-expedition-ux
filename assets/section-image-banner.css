@@ -536,8 +536,8 @@
 }
 
 /* desktop */
-@media screen and (max-width: 750px) {
+@media screen and (mix-width: 720px) {
    .overlay {
-     background-color: none !important; 
+     background-color: unset !important; 
    } 
 }
