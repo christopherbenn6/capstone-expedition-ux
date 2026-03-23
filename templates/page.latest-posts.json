@@ -12,8 +12,9 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 68,
-        "padding_bottom": 0
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "enable_page_heading": true
       }
     },
     "facebook_latest_page_MVeUPd": {

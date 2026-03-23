@@ -519,3 +519,13 @@
     width: 100%;
   }
 }
+
+
+/* custom css */
+.arrow-button {
+  color:#FFD000;
+  border-bottom: 1px solid white;
+  font-family:jersey-20;
+  font-size: clamp(2.4rem, 1.2rem + 1.5vw, 4.8rem) !important;
+
+}

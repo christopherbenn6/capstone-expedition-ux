@@ -1,37 +1,48 @@
 <style>
+  .empty {
+    border-bottom: 8px dashed #FFD000;
+  }
+
+  .empty-holder {
+    width:100%;
+    margin-left: 4rem;
+  }
+
   .breadcrumbs {
-    margin: 0 0 2em;
+    margin: clamp(1.6rem, -0.14544rem + 5.4545vw, 6.4rem) 0;
   }
 
   .breadcrumbs__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    align-items: center;
+    display: flex;
   }
 
   .breadcrumbs__item {
     display: inline-block;
+    white-space: nowrap;
   }
 
-  .breadcrumbs__item:not(:last-child):after {
-    border-style: solid;
+  .breadcrumbs__item:not(:last-child):not(:nth-last-of-type(2)):after {
     border-width: .10em .10em 0 0;
-    content: '';
+    content: "/";
     display: inline-block;
-    height: .20em;
-    margin: 0 .20em;
+    height: .50em;
+    margin: 0 .30em;
     position: relative;
-    transform: rotate(45deg);
-    vertical-align: middle;
-    width: .20em;
+    width: .50em;
+    color: white;
   }
 
   .breadcrumbs__link {
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1.6rem, 0.8182rem + 0.9091vw, 2.4rem);
   }
 
   .breadcrumbs__link[aria-current="page"] {
-    color: inherit;
     font-weight: normal;
     text-decoration: none;
   }
@@ -39,6 +50,7 @@
   .breadcrumbs__link[aria-current="page"]:hover,
   .breadcrumbs__link[aria-current="page"]:focus {
     text-decoration: underline;
+    cursor: pointer;
   }
 </style>
 
@@ -63,6 +75,11 @@
         <span class="breadcrumbs__link" aria-current="page">{{ product.title }}</span>
       </li>
 
+    {% elsif template contains 'search' and search %}
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="{{ routes.search_url }}">Games</a>
+      </li>
+
     {% elsif template contains 'blog' and blog %}
       <li class="breadcrumbs__item">
         <span class="breadcrumbs__link" aria-current="page">{{ blog.title }}</span>
@@ -81,5 +98,9 @@
         <span class="breadcrumbs__link" aria-current="page">{{ page.title }}</span>
       </li>
     {% endif %}
+    <li class="empty-holder">
+      <div class="empty"></div>
+      <div class="empty"></div>
+    </li>
   </ol>
 </nav>

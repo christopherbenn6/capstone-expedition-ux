@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/finalizing-logo.png",
-    "logo_width": 80,
+    "logo": "shopify://shop_images/finalizing-logo-1.png",
+    "logo_width": 50,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -43,7 +43,7 @@
     "card_style": "standard",
     "card_image_padding": 0,
     "card_text_alignment": "left",
-    "card_color_scheme": "scheme-2",
+    "card_color_scheme": "scheme-1",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
     "card_corner_radius": 0,
@@ -80,7 +80,7 @@
     "text_boxes_shadow_horizontal_offset": 0,
     "text_boxes_shadow_vertical_offset": 4,
     "text_boxes_shadow_blur": 5,
-    "media_border_thickness": 1,
+    "media_border_thickness": 0,
     "media_border_opacity": 5,
     "media_radius": 0,
     "media_shadow_opacity": 0,
@@ -105,8 +105,8 @@
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "NEXWAVE",
-    "brand_image": "shopify://shop_images/black_square.png",
-    "brand_image_width": 50,
+    "brand_image": "shopify://shop_images/refined-logo.png",
+    "brand_image_width": 120,
     "social_facebook_link": "https://www.facebook.com/NexWaveVideoGames/",
     "social_instagram_link": "https://www.instagram.com/nexwave_yeg?igsh=cDkwemN2cGoxNm03",
     "social_youtube_link": "",
@@ -130,6 +130,17 @@
         "type": "shopify://apps/powerful-form-builder/blocks/app-embed/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
         "disabled": false,
         "settings": {}
+      },
+      "6810584612362904079": {
+        "type": "shopify://apps/findter-custom-filter-search/blocks/search-filters-core/bf706e6d-709f-4687-a2e2-1fbe1b007cc7",
+        "disabled": false,
+        "settings": {
+          "search_input_selector": "[name=q]",
+          "link_no_results": "shopify://collections/all",
+          "collection_grid_selector": "",
+          "search_result_selector": "",
+          "custom_css": ""
+        }
       }
     },
     "color_schemes": {
@@ -146,7 +157,7 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#f3f3f3",
+          "background": "#000000",
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
@@ -157,7 +168,7 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#242833",
+          "background": "#010f20",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
@@ -168,7 +179,7 @@
       },
       "scheme-4": {
         "settings": {
-          "background": "#121212",
+          "background": "#001f45",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
@@ -179,12 +190,23 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#334fb4",
+          "background": "#457b9d",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-98688a23-5370-467a-86f1-4d0c3d7902ee": {
+        "settings": {
+          "background": "#26b3ff",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#121212",
+          "button_label": "#000000",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       }

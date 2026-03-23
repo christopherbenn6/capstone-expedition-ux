@@ -11,10 +11,13 @@
   "sections": {
     "main": {
       "type": "main-page",
-      // "disabled": true,
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "enable_page_heading": true,
+        "heading_container": 795,
+        "manual_settings": false,
+        "manual_heading": "Contact Us"
       }
     },
     "form": {

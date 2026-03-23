@@ -34,9 +34,26 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .facets-wrapper a {
+    color: {{ section.settings.filter-text-color }} !important;
+    padding: 1rem;
+  }
+  .facets-wrapper {
+    background-color: {{ section.settings.filter-background-color }};
+    color: {{ section.settings.filter-text-color }} !important;
+    border: {{ section.settings.filter-border-thickness }}px solid {{ section.settings.filter-border-color }};
+    padding: 1rem;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+
+  {% assign num = 1 %}
+  {% paginate collection.products by 250 %}
+    {% for product in collection.products %}
+      {% assign num = num | plus: 1 %}
+    {% endfor %}
+  {% endpaginate %}
 
   {% liquid 
 
@@ -76,7 +93,7 @@
   {% comment %} Sets Pagination Links, and Variables {% endcomment %}
   {% liquid
     assign total_pages = filtered_products.size | plus: section.settings.products_per_page | minus: 1 | divided_by: section.settings.products_per_page
-
+    
     # Current page
     assign current_page_number = 1 | plus: 0
     if pageUrl contains 'page='
@@ -602,6 +619,34 @@
       "max": 100,
       "unit": "%",
       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Filter Styling"
+    },
+    {
+      "type": "color",
+      "id": "filter-background-color",
+      "label": "Filter Background Color",
+    },
+    {
+      "type": "color",
+      "id": "filter-border-color",
+      "label": "Filter Border Color"
+    },
+    {
+      "type": "range",
+      "id": "filter-border-thickness",
+      "label": "Filter Border Thickness",
+      "min": 0,
+      "max": 10,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "color",
+      "id": "filter-text-color",
+      "label": "Filter Text Color",
     }
   ]
 }

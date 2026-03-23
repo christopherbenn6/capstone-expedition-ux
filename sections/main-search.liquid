@@ -15,6 +15,26 @@
 <script src="{{ 'main-search.js' | asset_url }}" defer="defer"></script>
 
 <style>
+  .search-filters__layout,
+  .search-filters__filter-option-title,
+  .search-filters__filter-option-title svg,
+  .search-filters__sort-button { 
+    color: white;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  input[type='checkbox'].search-filters__filter-option-item-button--checklist, 
+  .search-filters__filter-option-item-button--checklist, 
+  input[type='checkbox'].search-filters__filter-option-item-button--box, 
+  .search-filters__filter-option-item-button--box,
+  .search-filters__sort-button {
+    border: 1px solid white;
+    border-radius: 0;
+  }
+
   .template-search__header {
     margin-bottom: 3rem;
   }
