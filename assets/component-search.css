@@ -206,8 +206,7 @@ fdt-active-filters,
 
 
 @media screen and (min-width: 770px) {
-  #shopify-section-template--26657964720493__main,
-  .search-filters__layout {
+  #shopify-section-template--26657964720493__main {
     margin: 0;
   }
 
