@@ -196,6 +196,12 @@ fdt-active-filters,
 .search-filters__layout {
   margin: 0;
 }
+/* For when No Results */
+#MainContent:has(.search-filters__product-item-grid-view-layout-content) {
+  background-color: purple;
+}
+/* End No Results */
+
 
 @media screen and (min-width: 770px) {
   .template-search__search {
