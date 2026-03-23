@@ -101,7 +101,10 @@ form {
   }
   .fdt-range-value-input {
     display: block;
-      }
+  }
+  .fdt-range-value .fdt-range-value-input {
+    display: block;
+  }
 }
 
 .fdt-range-value-input input {
