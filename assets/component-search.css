@@ -146,6 +146,13 @@ fdt-active-filters,
   padding: 0;
 }
 
+.search-filters__filter-clear-all {
+  text-decoration: none;
+  border: 2px solid #FF3B4A;
+  padding: 0.25rem 1rem;
+  font-size: 20px
+}
+
 @media screen and (min-width: 770px) {
   .template-search__search {
     display: block;
@@ -162,10 +169,6 @@ fdt-active-filters,
     position: absolute;
     top: -30px;
     left: -135px;
-    text-decoration: none;
-    border: 2px solid #FF3B4A;
-    padding: 0.25rem 1rem;
-    font-size: 20px
   }
 }
 
