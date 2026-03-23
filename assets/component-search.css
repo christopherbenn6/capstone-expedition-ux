@@ -8,6 +8,10 @@
   width: 100%
 }
 
+.content-for-layout {
+  padding: 0 1.6rem;
+}
+
 @media screen and (min-width: 770px) {
   .search-filters__layout {
     display: grid;
