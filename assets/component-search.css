@@ -101,8 +101,8 @@ form {
   padding: 0.8rem;
 }
 
-.search-filters__filter-option-item-full-fill {
-  background-color: #000;
+#sort-target-option {
+  color: #000;
 }
 
 .search-filters__filter-option {
