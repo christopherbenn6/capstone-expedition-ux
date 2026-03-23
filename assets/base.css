@@ -3236,7 +3236,7 @@ details-disclosure>details {
 
 @media (prefers-reduced-motion: no-preference) {
 
-  .animate--ambient>img,
+  /* .animate--ambient>img, */
   .animate--ambient>.svg-wrapper {
     animation: animateAmbient 30s linear infinite;
   }
