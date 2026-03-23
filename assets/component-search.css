@@ -1,3 +1,109 @@
+.search-filters__toolbar-item,
+.search-filters__search-input {
+  background-color: #EBEBEB;
+  border: 2px solid #878787;
+  color: #000;
+}
+
+.search-filters__search-button {
+  border-left: 2px solid #878787;
+}
+
+.search-filters__sort-button {
+  border: none !important;
+}
+
+.search-filters__sort-label {
+  padding-left: 12px;
+}
+
+.search-filters__sorting {
+  display: block;
+  
+}
+
+.search-filters__sort-value,
+.search-filters__toolbar-item svg {
+  color: #000;
+}
+
+@media screen and (min-width: 770px) {
+  fdt-global-search {
+    display: block;
+    width: calc(100vw - 600px);
+    position: absolute;
+    top: 115px;
+    left: 300px;
+  }
+  .search-filters__bar-top {
+    position: relative
+  }
+  .search-filters__filter-clear-all {
+    position: absolute;
+    top: -15px;
+    left: -135px;
+    text-decoration: none;
+    border: 2px solid #FF3B4A;
+    padding: 0.25rem 1rem;
+    font-size: 20px
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  fdt-global-search{
+    left: 340px;
+    width: calc(100vw - 700px);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  fdt-global-search{
+    left: calc(50px + 25vw);
+    width: calc(100vw - 800px);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  fdt-global-search{
+    left: calc(((100vw - 1600px) / 2) + 460px);
+    width: 780px;
+  }
+  search-filters__header {
+    max-width: 1600px;
+    margin: 0 auto !important;
+    position: relative;
+  }
+}
+
+.search-filters__field-input {
+  border-radius: 0;
+}
+
+.search-filters__field:after,
+.search-filters__field:before,
+.search-filters__search-input:focus {
+  border: none;
+  border-radius: 0 !important;
+}
+
+.search-filters__filter-wrapper {
+  background-color: #001F45;
+  padding: 1rem;
+}
+
+.search-filters__filter-option-title {
+  justify-content: space-between;
+}
+
+.search-filters__filter-option-title span {
+  order: 5;
+}
+
+.search-filters__filter-option-content-inner {
+  border-left: 1px solid white;
+  margin-top: 1rem;
+}
+
 .search__input.field__input {
   padding-right: 9.8rem;
 }

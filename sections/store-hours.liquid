@@ -9,15 +9,55 @@
 {% endif %}
 
 {% style %}
+    h2, h3 {
+        margin: 0;
+    }
+
+    .about-page-grid {
+        margin: 6.4rem 0 0;
+    }
+
+    .map-background {
+        padding: 6.4rem 1.6rem;
+        margin: 6.4rem 0;
+        background-color: #001F45;
+    }
+
+    .address-background {
+        margin: 6.4rem 0;
+    }
+
+    address {
+        color: white;
+        margin-left: 1.6rem;
+        max-width: 18ch;
+        font-size: 1.6rem;
+    }
+
+    .right-address h3 {
+        min-width: 8ch;
+    }
+
+    .right-address {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 3.2rem;
+    }
+
     .hours-table {
         width: 100%;
         border-collapse: collapse;
-        border: 1px solid #878787;
+        border: 2px solid #878787;
+        text-align: center;
     }
 
     .hours-table td {
         color: white;
         padding: 1rem;
+    }
+
+    .hours-table tr:nth-of-type(even) {
+        background-color: #457B9D;
     }
 
 
@@ -64,8 +104,8 @@
   }
 {% endstyle %}
 
-<div class="page-width about-page-grid">
-  <section class="hours-background">
+<div class="about-page-grid">
+  <section class="page-width hours-background">
     {% if section.settings.show_hours_heading %}
       <h2>{{ section.settings.hours_heading }}</h2>
     {% endif %}
@@ -115,7 +155,7 @@
       <iframe
         class="maps-embed"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.2874571240977!2d-113.50208182370365!3d53.57048615792967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a023a6accd07ff%3A0x73960089c48325ff!2sNexWave%20Video%20Games!5e0!3m2!1sen!2sca!4v1771879778573!5m2!1sen!2sca"
-        width="600"
+        width="100%"
         height="450"
         style="border:0;"
         allowfullscreen=""
@@ -124,12 +164,13 @@
       ></iframe>
     </div>
   </section>
-  <section class="address-background">
+  <section class="page-width address-background">
     <div class="left-address">
       <h2>Address</h2>
       <p>{{ section.settings.address_text }}</p>
     </div>
     <div class="right-address">
+      <h3>Find Us:</h3>
       <address>10402 118 Ave NW, Edmonton, AB T5G 2N1</address>
     </div>
   </section>
