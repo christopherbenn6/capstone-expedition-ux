@@ -135,7 +135,8 @@ fdt-active-filters,
   text-decoration: underline;
 }
 
-.search-filters__filter-tree-header {
+.search-filters__filter-tree-header,
+.fdt-offcanvas-content-header {
   color: rgb(255, 208, 0);
   font-size: 32px;
   padding: 0;
