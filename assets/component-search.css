@@ -1,3 +1,7 @@
+.search-filters__product-title  {
+  font-size: clamp(1.25rem, 0.6136rem + 3.1818vw, 3rem);
+}
+
 .search-filters__toolbar-item,
 .search__input {
   background-color: #EBEBEB;
