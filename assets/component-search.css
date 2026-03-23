@@ -3,7 +3,8 @@
   display: inline;
 }
 
-.search-filters__open-wrapper {
+.search-filters__open-wrapper,
+search-filters__disclosure {
   width: 100%
 }
 
