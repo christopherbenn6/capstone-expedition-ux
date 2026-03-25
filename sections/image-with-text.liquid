@@ -60,7 +60,6 @@
           </div>
         </div>
 
-        
         <div class="image-with-text__text-item grid__item">
           <div
             id="ImageWithText--{{ section.id }}"
@@ -105,29 +104,26 @@
               {%- endcase -%}
             {%- endfor -%}
           </div>
-        
         </div>
-
-        
       </div>
-        <!-- button goes here -->
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'button' and block.settings.button_label != blank -%}
-            <div class="image-with-text__button-below">
-              <a
-                {% if block.settings.button_link == blank %}
-                  role="link" aria-disabled="true"
-                {% else %}
-                  href="{{ block.settings.button_link }}"
-                {% endif %}
-                class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                {{ block.shopify_attributes }}
-              >
-                {{ block.settings.button_label | escape }}
-              </a>
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
+      <!-- button goes here -->
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'button' and block.settings.button_label != blank -%}
+          <div class="image-with-text__button-below">
+            <a
+              {% if block.settings.button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ block.settings.button_link }}"
+              {% endif %}
+              class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.button_label | escape }}
+            </a>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
     </div>
   </div>
 </div>
@@ -463,6 +459,18 @@
           ],
           "default": "body",
           "label": "t:sections.image-with-text.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "desktop_text",
+      "name": "Desktop-only text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Desktop-only paragraph"
         }
       ]
     },
