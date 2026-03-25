@@ -523,6 +523,10 @@
   }
 }
 
+* {
+  outline: 1px solid red;
+}
+
 
 /* custom css */
 h2 {
