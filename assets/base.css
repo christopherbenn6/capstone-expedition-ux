@@ -3686,7 +3686,7 @@ body {
    text-align:left; 
 }
 
-.view-all-games-button {
+.button.button--primary {
     font-size: 3.2rem !important;
     font-weight: 700;
   }
