@@ -572,7 +572,7 @@ h2 {
     display: flex;
      
     align-items: center;
-    gap: 6rem;
+    justify-content:space-between;
   }
    .image-with-text__text-item,
   .image-with-text__media-item {
