@@ -527,11 +527,6 @@
   outline: 1px solid red;
 }
 
-.banner__media img {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-}
 
 
 /* custom css */
