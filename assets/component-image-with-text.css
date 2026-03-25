@@ -289,10 +289,12 @@
   margin: 1.6rem 0 !important;
   background-color: #FFD000;
 }
+
+@media screen and (min-width: 750px) {
 .button {
    font-weight:bold;
   font-size: 3.2rem !important;
   padding:0 4rem;
   }
-
+}
 
