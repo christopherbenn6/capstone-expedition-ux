@@ -85,7 +85,7 @@
                   <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
-                  {% comment %}
+                  
                     {%- when 'button' -%}
                     {%- if block.settings.button_label != blank -%}
                       <a
@@ -100,7 +100,7 @@
                         {{ block.settings.button_label | escape }}
                       </a>
                     {%- endif -%}
-                  {% endcomment %}
+                  
 
 
                 {% comment %} adding a block for desktop {% endcomment %}
