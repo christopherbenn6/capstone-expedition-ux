@@ -523,6 +523,9 @@
 
 
 /* custom css */
+h2 {
+    font-size: clamp(3.2rem, 2.56rem + 3.2vw, 6.4rem);
+  }
 .arrow-button {
   color: #FFD000;
   border-bottom: 1px solid white;
@@ -561,7 +564,5 @@
 }
 
 @media screen and (min-width:720px) {
-  h2 {
-    font-size: clamp(3.2rem, 2.56rem + 3.2vw, 6.4rem);
-  }
+  
 }
