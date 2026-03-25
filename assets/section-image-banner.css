@@ -519,7 +519,7 @@
   .arrow-button {
     width: 100%;
     max-width: 40rem;
-  box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
