@@ -531,8 +531,6 @@
 
 }
 
-@media screen and (max-width: 720px){
-
 .banner {
   position: relative;
 }
@@ -558,5 +556,4 @@
 .banner__box {
   position: relative;
   z-index: 2;
-}
 }
