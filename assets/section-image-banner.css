@@ -532,8 +532,22 @@
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.35);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.48) 38%,
+    rgba(0, 0, 0, 0.18) 72%,
+    rgba(0, 0, 0, 0) 100%
+  );
   display: inline-block;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+}
+
+.overlay .banner__box {
+  background: transparent;
+  min-width: unset;
+  max-width: 52rem;
+  width: auto;
 }
 
 @media screen and (min-width: 720px) {
