@@ -304,5 +304,12 @@
 .button { 
   padding:0 4rem;
   }
+
+  .image-with-text__grid {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+  }
 }
 
