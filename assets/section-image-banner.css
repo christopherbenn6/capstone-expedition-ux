@@ -579,9 +579,6 @@ h2 {
 
 
 @media screen and (min-width: 750px) {
-  .image-with-text {
-    padding: 6rem 8rem;
-  }
 
   .image-with-text__grid {
     display: flex;
