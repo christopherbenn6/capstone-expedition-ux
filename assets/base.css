@@ -3730,9 +3730,8 @@ body {
 
 .card__condition {
   font-size: 1.6rem;
-
+ 
 }
-
 .card__condition.condition--loose {
   color: #FF3B4A !important;
 }

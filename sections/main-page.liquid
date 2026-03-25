@@ -23,7 +23,11 @@
 {% render 'breadcrumbs' %}
   {% if section.settings.enable_page_heading %}
     <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {{ page.title | escape }}
+      {% if section.settings.manual_settings %}
+        {{ section.settings.manual_heading }}
+      {% else %}
+        {{ page.title | escape }}
+      {% endif %}
     </h1>
   {% endif %}
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -76,6 +80,22 @@
       "min": 0,
       "max": 1500,
       "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable Manual Settings",
+      "id": "manual_settings",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Manual Settings"
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "manual_heading",
+      "visible_if": "{{ section.settings.manual_settings }}"
     }
   ]
 }
