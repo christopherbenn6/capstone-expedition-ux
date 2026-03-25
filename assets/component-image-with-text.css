@@ -315,6 +315,15 @@
   .image-with-text__content .image-with-text__text {
     margin-bottom: 0;
   }
+}
 
+@media screen and (max-width: 749px) {
+  .image-with-text__button-mobile {
+    display: block;
+    margin-top: 2rem;
+  }
 
+  .image-with-text__button-desktop {
+    display: none;
+  }
 }
