@@ -528,11 +528,7 @@
 
 /* custom css */
 
-.page-width {
-  max-width: 1080px;  
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+
 h2 {
   font-size: clamp(3.2rem, 2.56rem + 3.2vw, 6.4rem) !important;
 }
