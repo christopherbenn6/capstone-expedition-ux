@@ -524,8 +524,8 @@
 
 /* custom css */
 h2 {
-    font-size: clamp(3.2rem, 2.56rem + 3.2vw, 6.4rem) !important;
-  }
+  font-size: clamp(32px, 25.6px + 3.2vw, 64px) !important;
+}
 .arrow-button {
   color: #FFD000;
   border-bottom: 1px solid white;
