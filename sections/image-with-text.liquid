@@ -116,7 +116,7 @@
       <!-- button goes here -->
       {%- for block in section.blocks -%}
         {%- if block.type == 'button' and block.settings.button_label != blank -%}
-          <div class="image-with-text__button-below">
+          <div class="image-with-text__button-mobile">
             <a
               {% if block.settings.button_link == blank %}
                 role="link" aria-disabled="true"
