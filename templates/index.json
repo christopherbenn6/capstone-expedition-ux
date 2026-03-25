@@ -44,7 +44,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/hero-banner-sm.avif",
+        "image": "shopify://shop_images/banner-sm_f1a982f1-fd36-48b5-99d9-048f1c3e4f20.avif",
+        "image_2": "shopify://shop_images/banner-lg.avif",
         "image_overlay_opacity": 40,
         "image_height": "medium",
         "image_behavior": "ambient",
