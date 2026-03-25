@@ -552,6 +552,6 @@
 
 @media screen and (min-width: 720px) {
   .overlay {
-    background-color: rgba(0, 0, 0, 0.35);
+    max-width: 62rem;
   }
 }
