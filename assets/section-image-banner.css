@@ -580,7 +580,7 @@ h2 {
   .image-with-text__grid {
     display: flex;
      gap:6rem;
-    align-items: center;
+    align-items: start;
     justify-content:space-between;
   }
 
