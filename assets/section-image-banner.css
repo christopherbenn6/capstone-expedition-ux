@@ -542,9 +542,13 @@
   z-index: 1;
   pointer-events: none;
   background: linear-gradient(
-    60deg,
+    90deg,
     rgba(0, 0, 0, 0.72) 0%,
-    rgba(0, 0, 0, 0.58) 22%
+    rgba(0, 0, 0, 0.58) 22%,
+    rgba(0, 0, 0, 0.38) 42%,
+    rgba(0, 0, 0, 0.18) 62%,
+    rgba(0, 0, 0, 0.06) 78%,
+    rgba(0, 0, 0, 0) 100%
   );
 }
 
