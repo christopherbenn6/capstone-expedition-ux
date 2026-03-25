@@ -85,9 +85,11 @@
                   <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
                   </div>
-                  
-                    {%- when 'button' -%}
-                    {%- if block.settings.button_label != blank -%}
+
+                  {% comment %} desktop {% endcomment %}
+                {%- when 'button' -%}
+                  {%- if block.settings.button_label != blank -%}
+                    <div class="image-with-text__button-desktop">
                       <a
                         {% if block.settings.button_link == blank %}
                           role="link" aria-disabled="true"
@@ -99,11 +101,10 @@
                       >
                         {{ block.settings.button_label | escape }}
                       </a>
-                    {%- endif -%}
-                  
+                    </div>
+                  {%- endif -%}
 
-
-                {% comment %} adding a block for desktop {% endcomment %}
+                  {% comment %} adding a block for desktop {% endcomment %}
                 {%- when 'desktop_text' -%}
                   <div class="desktop-only-paragraph rte" {{ block.shopify_attributes }}>
                     {{ block.settings.text }}
