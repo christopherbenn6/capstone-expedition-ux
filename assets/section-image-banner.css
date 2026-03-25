@@ -532,12 +532,12 @@
 }
 
 .overlay {
-   background-color: rgba(0,0,0,0.5); 
+  background-color: rgba(0, 0, 0, 0.35);
+  display: inline-block;
 }
 
-/* desktop */
-@media screen and (mix-width: 720px) {
-   .overlay {
-     background-color: unset !important; 
-   } 
+@media screen and (min-width: 720px) {
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
 }
