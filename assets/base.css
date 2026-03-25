@@ -3687,6 +3687,7 @@ body {
 }
 
 .button .button--primary {
+  src: url('GemunuLibre-Bold.woff') format('woff');
     font-size: 3.2rem !important;
     font-weight: 700;
   }
