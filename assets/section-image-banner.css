@@ -593,9 +593,6 @@ h2 {
     order: 2;
   }
 
-
-
-
   .image-with-text__text-item {
     flex: 0 0 42%;
   }
@@ -610,6 +607,11 @@ h2 {
 
   .image-with-text__media {
     width: 100%;
+  }
+
+   .desktop-only-paragraph {
+    display: block;
+    margin-top: 1.5rem;
   }
 
 }
