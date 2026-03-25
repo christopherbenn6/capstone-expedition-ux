@@ -3236,7 +3236,7 @@ details-disclosure>details {
 
 @media (prefers-reduced-motion: no-preference) {
 
-  .animate--ambient>img,
+  /* .animate--ambient>img, */
   .animate--ambient>.svg-wrapper {
     animation: animateAmbient 30s linear infinite;
   }
@@ -3664,6 +3664,16 @@ p {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gemunu Libre';
+  src: url('GemunuLibre-Bold.woff2') format('woff2'),
+    url('GemunuLibre-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body {
   font-family: 'Gemunu Libre', sans-serif;
   font-weight: 400;
@@ -3680,6 +3690,14 @@ body {
 }
 
 @media screen and (min-width: 750px) {
+
+  /* latest games button */
+  .center {
+    text-align: left;
+  }
+
+
+  /* footer */
   .footer-title-mobile {
     display: none;
   }
@@ -3725,4 +3743,14 @@ body {
 
 .card__condition.condition--cib {
   color: #48D46B !important;
+}
+
+
+
+
+
+/* Styling for games page */
+.search-filters__product-list {
+  font-family: 'jersey-20', sans-serif;
+  letter-spacing: 2px;
 }
