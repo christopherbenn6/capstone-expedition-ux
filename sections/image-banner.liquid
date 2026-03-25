@@ -117,63 +117,61 @@
   {%- endif -%}
 
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="overlay">
-      <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'heading' -%}
-              <h2
-                class="banner__heading inline-richtext {{ block.settings.heading_size }}"
-                {{ block.shopify_attributes }}
-              >
-                {{ block.settings.heading }}
-              </h2>
-            {%- when 'text' -%}
-              <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                <p>{{ block.settings.text }}</p>
-              </div>
-            {%- when 'buttons' -%}
-              <div
-                class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
-                {{ block.shopify_attributes }}
-              >
-                {%- if block.settings.button_label_1 != blank -%}
-                  <a
-                    {% if block.settings.button_link_1 == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.button_link_1 }}"
-                    {% endif %}
-                    class="arrow-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
-                  >
-                    {{- block.settings.button_label_1 | escape -}}
-                    {% comment %}
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                      </svg>
-                    {% endcomment %}
-
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.6667 0H13.3333V1.33333H14.6667V2.66667H16V4H17.3333V5.33333H18.6667V6.66667H20V8H21.3333V9.33333H22.6667V10.6667H24V13.3333H22.6667V14.6667H21.3333V16H20V17.3333H18.6667V18.6667H17.3333V20H16V21.3333H14.6667V22.6667H13.3333V24H10.6667V17.3333H0V6.66667H10.6667V0ZM13.3333 5.33333V9.33333H2.66667V14.6667H13.3333V18.6667H14.6667V17.3333H16V16H17.3333V14.6667H18.6667V13.3333H20V10.6667H18.6667V9.33333H17.3333V8H16V6.66667H14.6667V5.33333H13.3333Z" fill="#FFD000"/>
+    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            <h2
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.heading }}
+            </h2>
+          {%- when 'text' -%}
+            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          {%- when 'buttons' -%}
+            <div
+              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              {%- if block.settings.button_label_1 != blank -%}
+                <a
+                  {% if block.settings.button_link_1 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link_1 }}"
+                  {% endif %}
+                  class="arrow-button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- block.settings.button_label_1 | escape -}}
+                  {% comment %}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
-                  </a>
-                {%- endif -%}
-                {%- if block.settings.button_label_2 != blank -%}
-                  <a
-                    {% if block.settings.button_link_2 == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.button_link_2 }}"
-                    {% endif %}
-                    class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
-                  >
-                    {{- block.settings.button_label_2 | escape -}}
-                  </a>
-                {%- endif -%}
-              </div>
-          {%- endcase -%}
-        {%- endfor -%}
-      </div>
+                  {% endcomment %}
+
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.6667 0H13.3333V1.33333H14.6667V2.66667H16V4H17.3333V5.33333H18.6667V6.66667H20V8H21.3333V9.33333H22.6667V10.6667H24V13.3333H22.6667V14.6667H21.3333V16H20V17.3333H18.6667V18.6667H17.3333V20H16V21.3333H14.6667V22.6667H13.3333V24H10.6667V17.3333H0V6.66667H10.6667V0ZM13.3333 5.33333V9.33333H2.66667V14.6667H13.3333V18.6667H14.6667V17.3333H16V16H17.3333V14.6667H18.6667V13.3333H20V10.6667H18.6667V9.33333H17.3333V8H16V6.66667H14.6667V5.33333H13.3333Z" fill="#FFD000"/>
+                  </svg>
+                </a>
+              {%- endif -%}
+              {%- if block.settings.button_label_2 != blank -%}
+                <a
+                  {% if block.settings.button_link_2 == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link_2 }}"
+                  {% endif %}
+                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- block.settings.button_label_2 | escape -}}
+                </a>
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
   </div>
 </div>
