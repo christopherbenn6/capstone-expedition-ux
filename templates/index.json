@@ -45,7 +45,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/20260309_144034.jpg",
-        "image_overlay_opacity": 70,
+        "image_overlay_opacity": 60,
         "image_height": "medium",
         "image_behavior": "ambient",
         "desktop_content_position": "middle-left",
@@ -74,6 +74,12 @@
             "text_style": "body"
           }
         },
+        "desktop_text_QnxGNN": {
+          "type": "desktop_text",
+          "settings": {
+            "text": "<p>Our store offers video games and consoles of both the classic and modern generations. We have a great selection of modern and easy to find titles, however, our store specializes in the retro and out of print market, guaranteeing more options than the other stores in the city.</p>"
+          }
+        },
         "button_gKGRnd": {
           "type": "button",
           "settings": {
@@ -86,6 +92,7 @@
       "block_order": [
         "heading_nKdB3A",
         "text_D6UM8V",
+        "desktop_text_QnxGNN",
         "button_gKGRnd"
       ],
       "name": "t:sections.image-with-text.presets.name",
