@@ -211,7 +211,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20260309_144030.avif",
+        "image": "shopify://shop_images/contact-lg.avif",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
