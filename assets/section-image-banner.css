@@ -531,3 +531,29 @@
 
 }
 
+.banner {
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.58) 22%,
+    rgba(0, 0, 0, 0.38) 42%,
+    rgba(0, 0, 0, 0.18) 62%,
+    rgba(0, 0, 0, 0.06) 78%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.banner__content,
+.banner__box {
+  position: relative;
+  z-index: 2;
+}
