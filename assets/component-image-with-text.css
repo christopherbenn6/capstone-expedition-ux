@@ -307,7 +307,7 @@
 
   .image-with-text__grid {
     display: flex !important;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 6rem;
   }
