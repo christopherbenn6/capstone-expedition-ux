@@ -579,7 +579,7 @@ h2 {
 
 
 @media screen and (min-width: 750px) {
-
+  
   .image-with-text__grid {
     display: flex;
      gap:6rem;
