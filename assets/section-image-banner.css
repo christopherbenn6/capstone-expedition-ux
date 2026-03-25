@@ -527,6 +527,12 @@
   outline: 1px solid red;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /* custom css */
 h2 {
