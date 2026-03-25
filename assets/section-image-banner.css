@@ -570,7 +570,7 @@ h2 {
 
   .image-with-text__grid {
     display: flex;
-    flex-direction:row-reverse;    
+     
     align-items: center;
     gap: 6rem;
   }
