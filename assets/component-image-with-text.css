@@ -274,8 +274,9 @@
   }
 
   .button {
+  src: url('GemunuLibre-Bold.woff') format('woff') !important;
     font-size: 3.2rem !important;
-    padding:0 4rem
+    padding:0 4rem;
   }
 }
 
