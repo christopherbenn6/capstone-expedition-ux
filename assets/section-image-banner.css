@@ -578,5 +578,13 @@ h2 {
   .image-with-text__media-item {
     flex: 1;
   }
+   /* text left, image right */
+  .image-with-text__text-item {
+    order: 1;
+  }
+
+  .image-with-text__media-item {
+    order: 2;
+  }
 
 }
