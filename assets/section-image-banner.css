@@ -570,14 +570,11 @@ h2 {
 
   .image-with-text__grid {
     display: flex;
-     
+     gap:6rem;
     align-items: center;
     justify-content:space-between;
   }
-   .image-with-text__text-item,
-  .image-with-text__media-item {
-    flex: 1;
-  }
+
    /* text left, image right */
   .image-with-text__text-item {
     order: 1;
@@ -585,6 +582,25 @@ h2 {
 
   .image-with-text__media-item {
     order: 2;
+  }
+
+
+
+
+  .image-with-text__text-item {
+    flex: 0 0 42%;
+  }
+
+  .image-with-text__media-item {
+    flex: 0 0 48%;
+  }
+
+  .image-with-text__content {
+    padding: 0;
+  }
+
+  .image-with-text__media {
+    width: 100%;
   }
 
 }
