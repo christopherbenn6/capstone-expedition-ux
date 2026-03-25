@@ -272,17 +272,17 @@
   .multirow__inner {
     row-gap: var(--grid-desktop-vertical-spacing);
   }
-
-  .button {
-  src: url('GemunuLibre-Bold.woff') format('woff') !important;
-    font-size: 3.2rem !important;
-    padding:0 4rem;
-  }
 }
 
+/* custom css */
 .button {
   margin: 1.6rem 0 !important;
   background-color: #FFD000;
 }
+.button {
+  src: url('GemunuLibre-Bold.woff') format('woff') !important;
+    font-size: 3.2rem !important;
+    padding:0 4rem;
+  }
 
 
