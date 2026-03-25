@@ -312,5 +312,9 @@
     gap: 6rem;
   }
 
-}
+  .image-with-text__content .image-with-text__text {
+    margin-bottom: 0;
+  }
 
+
+}
