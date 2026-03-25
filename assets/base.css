@@ -3680,6 +3680,12 @@ body {
 }
 
 @media screen and (min-width: 750px) {
+
+  /* latest games button */
+  .center {
+   text-align:left; 
+}
+  /* footer */
   .footer-title-mobile {
     display: none;
   }
@@ -3725,6 +3731,8 @@ body {
 .card__condition.condition--cib {
   color: #48D46B !important;
 }
+
+
 
 /* Styling for games page */
 .search-filters__product-list {
