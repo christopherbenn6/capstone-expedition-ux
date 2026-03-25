@@ -285,7 +285,7 @@
 
 
 /* custom css */
-.image-with-text__content .button {
+.button {
   font-size: clamp(1.6rem, 1.28rem + 1.6vw, 3.2rem) !important;
   margin: 1.6rem 0 !important;
   background-color: #FFD000;
