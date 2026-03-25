@@ -567,4 +567,11 @@ h2 {
   .image-with-text {
     padding: 6rem 8rem;
   }
+
+  .image-with-text__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 6rem;
+  }
 }
