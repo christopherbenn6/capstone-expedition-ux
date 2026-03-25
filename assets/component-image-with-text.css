@@ -275,12 +275,12 @@
 }
 
 @font-face {
-  font-family: 'Gemunu Libre';
-  src: url('GemunuLibre-Bold.woff2') format('woff2'),
-    url('GemunuLibre-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Gemunu Libre';
+    src: url('GemunuLibre-Bold.woff2') format('woff2'),
+        url('GemunuLibre-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -289,11 +289,12 @@
   font-size: clamp(1.6rem, 1.28rem + 1.6vw, 3.2rem) !important;
   margin: 1.6rem 0 !important;
   background-color: #FFD000;
-  font-weight: bold;
+   font-weight:bold;
 }
 
 @media screen and (min-width: 750px) {
-  .button {
-    padding: 0 4rem;
+.button { 
+  padding:0 4rem;
   }
 }
+
