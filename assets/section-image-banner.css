@@ -518,6 +518,8 @@
 @media screen and (max-width: 400px) {
   .arrow-button {
     width: 100%;
+    max-width: 40rem;
+  box-sizing: border-box;
   }
 }
 
