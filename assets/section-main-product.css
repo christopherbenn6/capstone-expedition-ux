@@ -6,8 +6,8 @@
 
 .product-form__input--pill input[type=radio]+label {
   border-radius: 0 !important;
-  color: white;
-  background-color: #FF3B4A;
+  color: white !important;
+  background-color: #FF3B4A !important;
 } 
 
 /* End Custom Changes */
