@@ -275,12 +275,8 @@ details[open].menu-opening > .menu-drawer__submenu {
     .nx-search-form__btn {
     width: 3.2rem;
     height: 3.2rem;
-    border: 1px solid #999;
+    border: 1px solid #878787;
     border-left: 0;
-    background: #f3e7e7;
-    display: grid;
-    place-items: center;
-    flex-shrink: 0;
     cursor: pointer;
   }
 }
