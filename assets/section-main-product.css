@@ -14,12 +14,12 @@
 #ProductInfo-template--26657964654957__main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: flex-start;
 }
 
 #ProductInfo-template--26657964654957__main .product__title, 
 #ProductInfo-template--26657964654957__main .product__description {
   grid-column: 1 / -1;  
+  align-self: flex-start;
 }
 
 #price-template--26657964654957__main {
