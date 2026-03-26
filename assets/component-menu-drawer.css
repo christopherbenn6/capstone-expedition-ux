@@ -266,7 +266,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   .nx-search-form__input {
-    flex: 1;
     height: 3.2rem;
     margin:auto;
     border: 1px solid #878787;
