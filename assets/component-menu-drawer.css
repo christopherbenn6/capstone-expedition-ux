@@ -308,5 +308,11 @@ details[open].menu-opening > .menu-drawer__submenu {
   .header__inline-menu {
     display: block !important;
   }
+
+    .section-header .page-width {
+    max-width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
         
 }
