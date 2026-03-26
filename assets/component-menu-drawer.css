@@ -250,8 +250,11 @@ details[open].menu-opening > .menu-drawer__submenu {
     align-items: center;
     border: 0 !important;
     background: transparent !important;
-    height: auto !important;
-    overflow: visible !important;
+    /* height: auto !important;
+    overflow: visible !important; */
+    border-radius: 4px;
+      overflow: hidden;
+      height: 32px;
   }
 
   .nx-search__input {
