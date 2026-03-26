@@ -67,6 +67,10 @@ h1 {
   display: none;
 }
 
+#ProductInfo-template--26657964654957__main > div:nth-of-type(3) {
+  margin: 0 !important;
+}
+
 /* End Custom Changes */
 
 product-info {
