@@ -73,7 +73,7 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-  <div>
+  <div class="contains">
     <div class="page-width">
       {% render 'breadcrumbs' %}
     </div>

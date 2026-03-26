@@ -5,7 +5,8 @@
    padding: 1.6rem;
 }
 
-.bg-color > .page-width {
+.bg-color > .page-width,
+.contains {
    margin: 0 auto;
    padding: 0;
 }
