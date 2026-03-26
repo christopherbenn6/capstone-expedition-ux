@@ -280,5 +280,6 @@ details[open].menu-opening > .menu-drawer__submenu {
     cursor: pointer;
     display: grid;
     place-items: center;
+    flex-shrink: 0;
   }
 }
