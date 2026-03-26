@@ -561,9 +561,6 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) {
-  .product.grid {
-    column-gap: 4.8rem;
-  }
   .grid__item.product__media-item--full {
     width: 100%;
   }
