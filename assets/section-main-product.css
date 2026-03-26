@@ -31,6 +31,7 @@
 
 h1 {
   font-size: clamp(3.2rem, 2.036rem + 3.6364vw, 6.4rem);
+  line-height: 1;
 }
 
 #price-template--26657964654957__main {
