@@ -15,6 +15,10 @@
   display: flex;
 }
 
+#ProductInfo-template--26657964654957__main h2 {
+  width: 100%;
+}
+
 /* End Custom Changes */
 
 product-info {
