@@ -19,12 +19,12 @@
 #ProductInfo-template--26657964654957__main .product__title, 
 #ProductInfo-template--26657964654957__main .product__description {
   grid-column: 1 / -1;  
-  margin: 0;
 }
 
 #price-template--26657964654957__main {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  margin: 0 !important;
 }
 
 #variant-selects-template--26657964654957__main {
