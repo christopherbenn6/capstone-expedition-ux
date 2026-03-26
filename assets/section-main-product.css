@@ -58,7 +58,7 @@ h1 {
   opacity: 0;
 }
 
-.product--no-media {
+.product--no-media > {
   text-align: left !important;
 }
 
