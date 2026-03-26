@@ -13,7 +13,8 @@
 
 #ProductInfo-template--26657964654957__main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
 }
 
 #ProductInfo-template--26657964654957__main .product__title, 
