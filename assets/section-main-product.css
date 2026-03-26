@@ -596,6 +596,13 @@ a.product__text {
 }
 
 @media screen and (min-width: 990px) {
+  .product__info-wrapper {
+    padding: 0 0 0 5rem;
+  }
+
+  .product__info-wrapper--extra-padding {
+    padding: 0 0 0 8rem;
+  }
   .product--stacked .product__media-item {
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
