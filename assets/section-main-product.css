@@ -5,8 +5,8 @@
 }
 
 .product-form__input--pill input[type=radio]+label {
-  border-radius: 0;
-}
+  border-radius: 0 !important;
+} 
 
 /* End Custom Changes */
 
