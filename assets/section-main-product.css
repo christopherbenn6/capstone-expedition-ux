@@ -1,7 +1,7 @@
 /* Custom Changes */
 
 .product {
-  margin-bottom: 6.4rem;
+  margin-bottom: 6.4rem !important;
 }
 
 #variant-selects-template--26657964654957__main fieldset:first-of-type {
