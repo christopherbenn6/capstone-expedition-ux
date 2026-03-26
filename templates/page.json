@@ -15,7 +15,9 @@
         "padding_top": 16,
         "padding_bottom": 0,
         "enable_page_heading": false,
-        "heading_container": 1500
+        "heading_container": 1500,
+        "manual_settings": false,
+        "manual_heading": ""
       }
     },
     "image_with_text_M96Hez": {
@@ -70,7 +72,7 @@
         "text_WBcrqW": {
           "type": "text",
           "settings": {
-            "text": "<p>Our business started in the late 90s when we began collecting video games. Eventually we decided to open a flea market which succeeded beyond our expectations, selling out every week for over one and a half years. </p><p>Nexwave originated as a phone company that had a small inventory of video games, until we bought the business and re-branded it completely into a used game store in 2001.</p><p>To this day we have had consistent sales and now offer the ability to trade in your collection for cash. This helps keep the store fresh with new titles as well as clearing out your space if needed.<br/><br/><br/><br/><br/></p>",
+            "text": "<p>Our business started in the late 90s when we began collecting video games. Eventually we decided to open a flea market which succeeded beyond our expectations, selling out every week for over one and a half years. </p><p>Nexwave originated as a phone company that had a small inventory of video games, until we bought the business and re-branded it completely into a used game store in 2001.</p><p>To this day we have had consistent sales and now offer the ability to trade in your collection for cash. This helps keep the store fresh with new titles as well as clearing out your space if needed.</p>",
             "text_style": "body"
           }
         },
