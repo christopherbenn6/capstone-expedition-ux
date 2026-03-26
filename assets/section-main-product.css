@@ -15,7 +15,8 @@
   display: flex;
 }
 
-#ProductInfo-template--26657964654957__main h2 {
+#ProductInfo-template--26657964654957__main h2, 
+#ProductInfo-template--26657964654957__main .product__description {
   width: 100%;
 }
 
