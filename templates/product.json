@@ -12,8 +12,21 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -27,16 +40,9 @@
             "text_style": "subtitle"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
@@ -55,12 +61,9 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "message_button_c7gzye": {
           "type": "message_button",
+          "disabled": true,
           "settings": {
             "label": "Message Me When Stock is Available",
             "link": "shopify://pages/contact"
@@ -115,14 +118,14 @@
         }
       },
       "block_order": [
+        "title",
+        "price",
+        "description",
         "vendor",
         "caption",
-        "price",
-        "title",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "message_button_c7gzye",
         "collapsible-row-0",
         "collapsible-row-1",
