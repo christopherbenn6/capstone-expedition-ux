@@ -245,7 +245,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 /* custom css */
 
 @media screen and (max-width: 749px) {
-    /* .nx-search {
+    .nx-search {
     display: flex;
       align-items: center;
     border: 0 !important;
@@ -254,7 +254,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     border-radius: 4px;
       overflow: hidden;
       height: 32px;
-  } */
+  }
 
   .nx-search__input {
     display: none !important;
