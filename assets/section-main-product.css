@@ -4,7 +4,7 @@
   display: none;
 }
 
-#MediaGallery-template--26657964654957__main {
+#MediaGallery-template--26657964654957__main.product-no-media {
   background: url(../assets/placeholder.jpg) center / contain;
   width: 100%;
   min-height: 300px;
