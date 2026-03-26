@@ -270,6 +270,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     height: 3.2rem;
     margin:auto;
     border: 1px solid #878787;
+    background-color:#EBEBEB;
     padding:1.6rem;
   }
     .nx-search-form__btn {
