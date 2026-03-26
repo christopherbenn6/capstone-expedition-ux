@@ -257,5 +257,11 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   /* search  */
-  
+  .nx-search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem 0;
+    gap: 0;
+  }
 }
