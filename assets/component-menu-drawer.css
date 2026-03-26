@@ -246,8 +246,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 @media screen and (max-width: 749px) {
     .nx-search {
-    display: flex !important;
-    align-items: center;
+    display: none;
+      align-items: center;
     border: 0 !important;
     background: transparent !important;
     /* height: auto !important;
