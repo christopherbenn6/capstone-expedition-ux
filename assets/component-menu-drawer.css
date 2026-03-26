@@ -245,6 +245,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 /* custom css */
 @media screen and (max-width: 989px) {
   .menu-drawer {
-    background-color: #3a1818;
+    background-color: #202020;
   }
 }
