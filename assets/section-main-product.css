@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+#MainProduct-template--26657964654957__main .breadcrumbs {
+  margin: 0 auto;
+}
+
 .product {
   margin-bottom: 6.4rem !important;
   background-color: #001F45;
