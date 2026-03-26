@@ -3614,7 +3614,7 @@ main h5 {
 p {
   color: white;
   font-size: clamp(1.6rem, 1.45456 + 0.4545vw, 2rem);
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 .main-page-title {
