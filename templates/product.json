@@ -16,6 +16,13 @@
           "type": "title",
           "settings": {}
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -38,14 +45,6 @@
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
@@ -119,11 +118,11 @@
       },
       "block_order": [
         "title",
+        "variant_picker",
         "price",
         "description",
         "vendor",
         "caption",
-        "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "message_button_c7gzye",
