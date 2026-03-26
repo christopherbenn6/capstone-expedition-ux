@@ -248,7 +248,9 @@ details[open].menu-opening > .menu-drawer__submenu {
   .nx-search__input {
     display: none !important;
   }
-  
+  .nx-search-icon {
+    display: flex !important;
+  }
 }
 
 @media screen and (max-width: 990px) {
