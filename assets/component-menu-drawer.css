@@ -257,6 +257,16 @@ details[open].menu-opening > .menu-drawer__submenu {
   .nx-search__input {
     display: none !important;
   }
+
+  .nx-search__btn {
+    border: 0 !important;
+    border-left: 0 !important;
+    background: transparent !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
 }
 
 @media screen and (max-width: 990px) {
