@@ -3614,6 +3614,7 @@ main h5 {
 p {
   color: white;
   font-size: clamp(1.6rem, 1.45456 + 0.4545vw, 2rem);
+  line-height: 1.5;
 }
 
 .main-page-title {
