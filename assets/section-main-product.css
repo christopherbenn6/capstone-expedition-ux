@@ -58,6 +58,10 @@ h1 {
   opacity: 0;
 }
 
+.product--no-media {
+  text-align: right !important;
+}
+
 /* End Custom Changes */
 
 product-info {
