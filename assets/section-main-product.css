@@ -12,8 +12,7 @@
 }
 
 @media screen and (min-width: 750px) {
-  .bg-color > .page-width,
-.contains {
+  .page-width {
    margin: 0 auto;
    padding: 0;
 }
