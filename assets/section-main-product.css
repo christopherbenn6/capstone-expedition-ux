@@ -4,7 +4,7 @@
   display: none;
 }
 
-label[for="template--26657964654957__main-2-0"] {
+.product-form__input--pill input[type=radio]+label {
   border-radius: 0;
 }
 
