@@ -23,7 +23,7 @@
 
 .form__label {
   height: 0;
-  overflow: none;
+  opacity: 0;
 }
 
 /* End Custom Changes */
