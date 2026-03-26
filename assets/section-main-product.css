@@ -5,7 +5,7 @@
 }
 
 #MediaGallery-template--26657964654957__main {
-  background: url(../assets/placeholder.jpg) center / cover;
+  background: url(../assets/placeholder.jpg) center / contain;
   width: 100%;
   min-height: 300px;
   height: 100%;

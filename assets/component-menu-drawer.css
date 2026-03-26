@@ -301,8 +301,12 @@ details[open].menu-opening > .menu-drawer__submenu {
       display: flex;
       align-items: center;
     }
-    .header__icons .nx-search-icon {
+    .header__icon{
     display: none !important;
+  }
+
+  .header__inline-menu {
+    display: block !important;
   }
         
 }
