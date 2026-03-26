@@ -21,6 +21,10 @@
   grid-column: 1 / -1;  
 }
 
+#price-template--26657964654957__main {
+  grid-column: 1 / 2;
+}
+
 .form__label {
   height: 0;
   opacity: 0;
