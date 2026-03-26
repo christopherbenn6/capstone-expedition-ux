@@ -98,6 +98,7 @@
   position: relative;
   z-index: 1;
   line-height: 1.5;
+  padding-top:1.6rem;
 }
 
 .image-with-text .grid__item::after {
