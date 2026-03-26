@@ -287,7 +287,7 @@
 
 /* custom css */
 .button {
-  font-size: clamp(1.6rem, 1.0182rem + 2.9091vw, 3.2rem);
+  font-size: clamp(1.6rem, 1.0182rem + 2.9091vw, 3.2rem) !important;
   margin: 1.6rem 0 !important;
   background-color: #FFD000;
    font-weight:bold;
