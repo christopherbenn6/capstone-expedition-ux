@@ -264,4 +264,12 @@ details[open].menu-opening > .menu-drawer__submenu {
     padding: 1.2rem 0;
     gap: 0;
   }
+
+  .nx-search-form__input {
+    flex: 1;
+    height: 3.2rem;
+    margin:auto;
+    border: 1px solid #878787;
+    padding: 0 1.6rem;
+  }
 }
