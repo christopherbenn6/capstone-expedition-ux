@@ -108,7 +108,7 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-3",
         "color_scheme": "scheme-3",
-        "padding_top": 0,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -191,7 +191,7 @@
         "text_TnAmzR": {
           "type": "text",
           "settings": {
-            "text": "<p>If you have any questions or are looking to sell your games, we’d love to hear from you!<br/><br/></p>",
+            "text": "<p>If you have any questions or are looking to sell your games, we’d love to hear from you!</p>",
             "text_style": "body"
           }
         },
