@@ -1,18 +1,12 @@
 /* Custom Changes */
 
-#MainProduct-template--26657964654957__main .page-width {
-  margin: 0;
-  padding: 0;
-}
-
-#MainProduct-template--26657964654957__main .breadcrumbs {
-  margin: 0 auto;
+.bg-color {
+  background-color: #001F45;
+   padding: 1.6rem;
 }
 
 .product {
   margin-bottom: 6.4rem !important;
-  background-color: #001F45;
-   padding: 1.6rem;
 }
 
 #variant-selects-template--26657964654957__main fieldset:first-of-type {
