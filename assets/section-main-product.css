@@ -12,7 +12,7 @@
 } 
 
 #ProductInfo-template--26657964654957__main {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(2, 1fr)
 }
 
