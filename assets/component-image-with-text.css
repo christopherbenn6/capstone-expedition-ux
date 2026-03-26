@@ -292,10 +292,10 @@
    font-weight:bold;
    color:black;
 }
-
+/* 
 .image-with-text__button-desktop {
   display: none;
-}
+} */
 
 .image-with-text__button-mobile {
   margin-top: 2rem;
@@ -324,5 +324,7 @@
     margin-top: 2rem;
   }
 
- 
+  .image-with-text__button-desktop {
+    display: none;
+  }
 }
