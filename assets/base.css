@@ -3628,6 +3628,10 @@ a {
   margin: 0;
 }
 
+h2 {
+  font-size: clamp(1.25rem, 0.7954375rem + 3.6364vw, 2.5rem);
+}
+
 .main-page-title {
   font-size: clamp(3.2rem, 1.2727rem + 3.6364vw, 6.4rem);
 }
