@@ -64,6 +64,16 @@
       margin: 1.6rem 0;
     }
 
+    @media screen and (min-width: 700px) {
+      .about-page-grid section:nth-of-type(odd) {
+        margin-left: 6.4rem;
+    }
+
+    .about-page-grid section:nth-of-type(even) {
+        margin-right: 6.4rem;
+      }
+    }
+
     @media screen and (min-width: 900px) {
     .about-page-grid section {
         padding: {{ section.settings.padding }}px;
