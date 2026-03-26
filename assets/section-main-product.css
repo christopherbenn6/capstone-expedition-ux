@@ -30,6 +30,11 @@
 #variant-selects-template--26657964654957__main {
   grid-column: 2 / -1;
   margin: 0 !important;
+  text-align: right;
+}
+
+#variant-selects-template--26657964654957__main label {
+  font-size: clamp(1.6rem, 1.01824rem + 1.8182vw, 3.2rem);
 }
 
 .form__label {
