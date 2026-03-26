@@ -29,6 +29,7 @@
 
 #variant-selects-template--26657964654957__main {
   grid-column: 2 / -1;
+  margin: 0 !important;
 }
 
 .form__label {
