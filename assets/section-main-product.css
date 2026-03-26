@@ -1,6 +1,8 @@
 /* Custom Changes */
 
-
+#variant-selects-template--26657964654957__main fieldset::first-of-type {
+  display: none;
+}
 
 /* End Custom Changes */
 
