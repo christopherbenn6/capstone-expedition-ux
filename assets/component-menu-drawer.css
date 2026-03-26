@@ -247,13 +247,12 @@ details[open].menu-opening > .menu-drawer__submenu {
 @media screen and (max-width: 749px) {
     .nx-search {
     display: flex;
-      align-items: center;
+    align-items: center;
     border: 0 !important;
     background: transparent !important;
-   
     border-radius: 4px;
-      overflow: hidden;
-      height: 32px;
+    overflow: hidden;
+    height: 32px;
   }
 
   .nx-search__input {
@@ -268,6 +267,11 @@ details[open].menu-opening > .menu-drawer__submenu {
     height: auto !important;
     padding: 0 !important;
     box-shadow: none !important;
+  }
+
+  .header__heading-logo {
+    width: 32px !important;
+    height: auto;
   }
 }
 
