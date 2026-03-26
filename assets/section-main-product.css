@@ -4,6 +4,10 @@
   display: none;
 }
 
+#MediaGallery-template--26657964654957__main {
+  background: url(../assets/placeholder.jpg);
+}
+
 .product-form__input--pill input[type=radio]+label {
   border-radius: 0 !important;
   color: #000 !important;
