@@ -3,6 +3,9 @@
 .bg-color {
   background-color: #001F45;
    padding: 1.6rem;
+}
+
+.bg-color > .page-width {
    margin: 0 auto;
 }
 
