@@ -248,11 +248,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   .nx-search__input {
     display: none !important;
   }
-   .header__icons .nx-search-icon {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
+  
 }
 
 @media screen and (max-width: 990px) {
