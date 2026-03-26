@@ -245,7 +245,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 /* custom css */
 
 @media screen and (max-width: 749px) {
-  .nx-search-form__input {
+  .nx-search__input {
     display: none !important;
   }
    .header__icons .nx-search-icon {
