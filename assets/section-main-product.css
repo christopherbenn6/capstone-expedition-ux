@@ -59,6 +59,14 @@ h1 {
   opacity: 0;
 }
 
+.fulcrum-content-env--quality {
+  display: none;
+}
+
+.fulcrum-content-env hr {
+  display: none;
+}
+
 /* End Custom Changes */
 
 product-info {
