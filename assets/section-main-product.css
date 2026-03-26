@@ -18,7 +18,7 @@
 
 #ProductInfo-template--26657964654957__main h2, 
 #ProductInfo-template--26657964654957__main .product__description {
-  grid-column: 0 / -1;  
+  grid-column: 1 / -1;  
 }
 
 /* End Custom Changes */
