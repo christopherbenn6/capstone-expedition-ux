@@ -245,11 +245,17 @@ details[open].menu-opening > .menu-drawer__submenu {
 /* custom css */
 
 @media screen and (max-width: 749px) {
+    .nx-search {
+    display: flex !important;
+    align-items: center;
+    border: 0 !important;
+    background: transparent !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
   .nx-search__input {
     display: none !important;
-  }
-  .nx-search-icon {
-    display: flex !important;
   }
 }
 
