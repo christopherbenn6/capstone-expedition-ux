@@ -1,5 +1,10 @@
 /* Custom Changes */
 
+#MainProduct-template--26657964654957__main .page-width {
+  margin: 0;
+  padding: 0;
+}
+
 .product {
   margin-bottom: 6.4rem !important;
   background-color: #001F45;
