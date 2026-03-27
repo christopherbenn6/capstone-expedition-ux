@@ -3780,7 +3780,7 @@ body {
 }
 
 /* form labels */
-g-containerglobo-form-app {
+.globo-form-app.boxed-layout {
   border-radius: 0 !important;
 }
 
