@@ -3788,6 +3788,7 @@ body {
 
 .globo-form-input input {
   font-family: 'Gemunu Libre' !important;
+  letter-spacing: 5% !important;
 }
 
 .gfb__footer button {
