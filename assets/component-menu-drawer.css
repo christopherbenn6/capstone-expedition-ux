@@ -355,7 +355,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .header__title-group {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
   line-height: 1;
 }
 
