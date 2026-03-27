@@ -359,7 +359,14 @@ details[open].menu-opening > .menu-drawer__submenu {
       align-items: center;
       gap: 0.2rem;
       line-height: 1;
-     }
+    }
+
+    .header__site-title,
+    .site-title-extended {
+      margin: 0;
+      padding: 0;
+    }
+
     .header {
       display: flex;
       align-items: center;
