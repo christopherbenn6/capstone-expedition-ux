@@ -1,4 +1,4 @@
-<section class="page-width">
+<section class="page-width social-media">
 {% for block in section.blocks %}
 {% if block.type == 'latest_socials_heading' %}
         <h2>{{ block.settings.heading }}</h2>
@@ -8,10 +8,22 @@
 {% render 'social-icons', class: 'latest-posts-social-links' %}
 </section>
 
+{% style %}
+    .social-media {
+        text-align: 
+    }
+{% endstyle %}
+
+
+
 {% schema %}
 {
     "name": "Social Media",
     "settings": [
+        {
+            "type": "header",
+            "content": "Color Scheme"
+        },
         {
             "type": "color_scheme",
             "id": "color_scheme",
@@ -29,18 +41,18 @@
             "options": [
                 {
                     "label": "Left",
-                    "value": "Left"
+                    "value": "left"
                 },
                 {
                     "label": "Center",
-                    "value": "Center"
+                    "value": "center"
                 },
                 {
                     "label": "Right",
-                    "value": "Right"
+                    "value": "right"
                 }
             ],
-            "default": "Center"
+            "default": "center"
         },
         {
             "type": "range",
