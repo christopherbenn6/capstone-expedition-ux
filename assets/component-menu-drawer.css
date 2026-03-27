@@ -399,6 +399,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     .header__heading {
       display: flex;
       align-items: center;
+      gap:1rem
     }
     .header__icon{
      display: none !important;
