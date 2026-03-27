@@ -3778,3 +3778,8 @@ body {
   font-family: 'jersey-20', sans-serif;
   letter-spacing: 2px;
 }
+
+/* form labels */
+.globo-form-control label {
+  font-size: 20rem;
+}
