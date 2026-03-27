@@ -229,7 +229,8 @@ fdt-active-filters,
     margin-top: 5rem;
   }
 
-  .search-filters__toolbar-item--sorting {
+  .search-filters__toolbar-item--sorting,
+  .search-filters__sorting {
     width: 100%;
   }
 
