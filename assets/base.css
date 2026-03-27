@@ -3801,10 +3801,12 @@ body {
 
 .globo-form-input .gfb__dropzone--placeholder--description {
   font-size: 1.6rem !important;
+  margin-bottom: 0.8rem !important;
 }
 
 .globo-form-input .gfb__dropzone button {
   letter-spacing: 5% !important;
+  font-size: 2rem !important;
 }
 
 .gfb__footer button {
