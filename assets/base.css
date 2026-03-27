@@ -3786,7 +3786,8 @@ body {
   margin: 1.6rem 0 0.8rem !important;
 }
 
-.globo-form-input input {
+.globo-form-input input,
+.globo-form-input textarea {
   font-family: 'Gemunu Libre' !important;
   letter-spacing: 5% !important;
 }
