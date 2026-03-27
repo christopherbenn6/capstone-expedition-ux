@@ -253,8 +253,9 @@ details[open].menu-opening > .menu-drawer__submenu {
     justify-content: center;
     flex-shrink: 0;
   }
-
-  
+  .header__site-title {
+    text-transform: uppercase;
+  }
 
   .nx-search {
     display: flex;
