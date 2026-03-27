@@ -277,6 +277,9 @@ details[open].menu-opening > .menu-drawer__submenu {
     align-items: center !important;
     justify-content: center !important;
   }
+  .header__heading-logo-wrapper img{
+    width:50px;
+  }
   .header__site-title {
     text-transform: uppercase;
   }
