@@ -3684,6 +3684,16 @@ h4 {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gemunu Libre';
+  src: url('GemunuLibre-Bold.woff2') format('woff2'),
+    url('GemunuLibre-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body {
   font-family: 'Gemunu Libre', sans-serif;
   font-weight: 400;
@@ -3750,6 +3760,16 @@ body {
 .card__condition.condition--cib {
   color: #48D46B !important;
 }
+
+@font-face {
+    font-family: 'Gemunu Libre';
+    src: url('GemunuLibre-Bold.woff2') format('woff2'),
+        url('GemunuLibre-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 
