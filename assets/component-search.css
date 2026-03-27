@@ -62,6 +62,7 @@
 
 .search-filters__sort-button {
   border: none !important;
+  width: 100%
 }
 
 .search-filters__sort-label {
