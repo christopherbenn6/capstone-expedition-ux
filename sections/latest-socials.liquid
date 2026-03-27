@@ -10,7 +10,7 @@
 
 {% style %}
     .social-media {
-        text-align: 
+        text-align: {{ section.settings.text_align }};
     }
 {% endstyle %}
 
@@ -36,7 +36,7 @@
         },
         {
             "type": "select",
-            "id": "text-align",
+            "id": "text_align",
             "label": "Text Alignment",
             "options": [
                 {
