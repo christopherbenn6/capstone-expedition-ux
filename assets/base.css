@@ -3701,6 +3701,7 @@ body {
 
 .button {
   font-family: 'Gemunu Libre', sans-serif;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 750px) {
