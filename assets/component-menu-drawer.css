@@ -293,11 +293,15 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 }
 
+@media screen and (min-width: 990px) {
+  .site-title-extended {
+    display: inline !important;
+  }
+}
+
 @media screen and (max-width: 990px) {
 
-  .site-title-extended {
-    display: inline;
-  }
+  
   .menu-drawer__navigation {
   padding: 3rem 1.6rem;
    }
