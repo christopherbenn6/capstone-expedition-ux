@@ -3609,7 +3609,7 @@ main h5 {
 
 p {
   color: white;
-  font-size: clamp(1.6rem, 1.45456 + 0.4545vw, 2rem);
+  font-size: clamp(1.6rem, 1.45456rem + 0.4545vw, 2rem);
 }
 
 h1,
