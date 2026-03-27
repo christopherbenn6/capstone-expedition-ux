@@ -244,7 +244,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 /* custom css */
 
-@media screen and (max-width: 749px) {
+/* @media screen and (max-width: 749px) {
     .nx-search {
     display: flex;
     align-items: center;
@@ -350,4 +350,4 @@ details[open].menu-opening > .menu-drawer__submenu {
         column-gap:4rem !important;
       }
         
-}
+} */
