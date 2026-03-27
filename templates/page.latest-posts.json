@@ -62,7 +62,11 @@
         "latest_socials_heading_k48yHg"
       ],
       "name": "Social Media Icon Links",
-      "settings": {}
+      "settings": {
+        "text_align": "center",
+        "padding": 20,
+        "margin": 32
+      }
     }
   },
   "order": [

@@ -3787,7 +3787,8 @@ body {
 }
 
 .globo-form-input input,
-.globo-form-input textarea {
+.globo-form-input textarea,
+.globo-form-input .gfb__dropzone {
   font-family: 'Gemunu Libre' !important;
   letter-spacing: 5% !important;
   border: 2px solid #878787 !important;
