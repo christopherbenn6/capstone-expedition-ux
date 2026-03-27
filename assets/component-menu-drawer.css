@@ -251,7 +251,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .header__title-group {
   display: flex;
   align-items: center;
-  gap:1.6rem
+  gap:1.4rem;
 }
 .header__site-title,
 .site-title-extended {
