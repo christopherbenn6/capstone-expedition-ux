@@ -319,7 +319,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 }
 
-@media screen and (min-width: 750px) and (min-width: 989px) {
+@media screen and (min-width: 750px) and (max-width: 989px) {
   .menu-drawer__navigation {
    padding: 3rem 1.6rem;
   }
