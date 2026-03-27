@@ -3780,7 +3780,7 @@ body {
 }
 
 /* form labels */
-form {
+g-container {
   border-radius: 0 !important !important;
 }
 

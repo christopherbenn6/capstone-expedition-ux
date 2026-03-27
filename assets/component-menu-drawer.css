@@ -305,7 +305,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (min-width: 990px) {
 
   
   .menu-drawer__navigation {
