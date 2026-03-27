@@ -3799,6 +3799,10 @@ body {
   font-size: 3rem !important;
 }
 
+.globo-form-input .gfb__dropzone--placeholder--description {
+  font-size: 2rem !important;
+}
+
 .globo-form-input .gfb__dropzone button {
   letter-spacing: 5% !important;
 }
