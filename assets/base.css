@@ -2421,7 +2421,7 @@ input[type='checkbox'] {
 
 .header__heading-link .h2 {
   line-height: 1;
-  /* color: rgba(var(--color-foreground), 0.75); */
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__heading-logo {
@@ -3790,6 +3790,8 @@ body {
 .globo-form-input textarea {
   font-family: 'Gemunu Libre' !important;
   letter-spacing: 5% !important;
+  border: 2px solid #878787 !important;
+  border-radius: 0 !important;
 }
 
 .gfb__footer button {
