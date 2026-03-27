@@ -3781,6 +3781,7 @@ body {
 
 /* form labels */
 .globo-form-control label {
+  font-family: 'jersey-20', sans-serif !important;
   font-size: clamp(2rem, 1.56368rem + 1.3636vw, 3.2rem) !important;
   margin: 1.6rem 0 0.8rem !important;
 }
