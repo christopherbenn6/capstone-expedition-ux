@@ -5,7 +5,8 @@
   color: #fff;
 }
 
-.fdt-range-slider {
+.fdt-range-slider,
+.fdt-range-input {
   display: none;
 }
 
