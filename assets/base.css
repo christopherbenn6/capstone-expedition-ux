@@ -3800,7 +3800,7 @@ body {
 }
 
 .globo-form-input .gfb__dropzone--placeholder--description {
-  font-size: 1.6rem !important;
+  font-size: clamp(1.2rem, 1.05456rem + 0.4545vw, 1.6rem) !important;
   margin-bottom: 0.8rem !important;
 }
 
