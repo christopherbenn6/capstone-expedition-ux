@@ -256,8 +256,8 @@ details[open].menu-opening > .menu-drawer__submenu {
   .header__site-title {
     text-transform: uppercase;
   }
-  .header .site-title-extended {
-    display: none;
+  .site-title-extended {
+    display: none !important;
   }
 
   .nx-search {
