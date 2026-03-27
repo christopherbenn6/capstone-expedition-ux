@@ -254,13 +254,8 @@ details[open].menu-opening > .menu-drawer__submenu {
     flex-shrink: 0;
   }
 
-  .header__heading-logo {
-    width: 32px !important;
-    max-width: 32px !important;
-    height: auto !important;
-    display: block;
-  }
   
+
   .nx-search {
     display: flex;
     align-items: center;
