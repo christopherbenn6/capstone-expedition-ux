@@ -428,9 +428,9 @@ table:not([class]) th {
   text-align: left;
 }
 
-.center {
+/* .center {
   text-align: center;
-}
+} */
 
 .right {
   text-align: right;
