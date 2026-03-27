@@ -305,12 +305,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 }
 
-@media screen and (min-width: 990px) {
-  .site-title-extended {
-    display: inline !important;
-  }
-}
-
 @media screen and (max-width: 990px) {
 
   
@@ -387,5 +381,9 @@ details[open].menu-opening > .menu-drawer__submenu {
    .header--middle-left {
     column-gap:4rem !important;
     }
+
+   .site-title-extended {
+    display: inline !important;
+  }
         
 }
