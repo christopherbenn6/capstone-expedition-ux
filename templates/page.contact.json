@@ -56,7 +56,7 @@
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"globo-formbuilder\" data-id=\"MTM0NjA0\"></div>",
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "padding_top": 40,
         "padding_bottom": 52
       }
