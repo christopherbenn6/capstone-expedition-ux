@@ -3786,6 +3786,10 @@ body {
   margin: 1.6rem 0 0.8rem !important;
 }
 
+.globo-form-input input {
+  font-family: font-family: 'Gemunu Libre' !important;
+}
+
 .gfb__footer button {
   font-family: font-family: 'Gemunu Libre' !important;
   font-weight: 900 !important;
