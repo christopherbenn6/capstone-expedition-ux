@@ -358,6 +358,9 @@ details[open].menu-opening > .menu-drawer__submenu {
   gap: 1.2rem;
   line-height: 1;
 }
+.header__heading-link .h2 {
+  color:#000000 !important;
+}
 
 .header__site-title,
 .site-title-extended {
