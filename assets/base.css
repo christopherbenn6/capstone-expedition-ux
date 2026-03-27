@@ -3795,6 +3795,10 @@ body {
   border-radius: 0 !important;
 }
 
+.globo-form-input .gfb__dropzone {
+  letter-spacing: 5% !important;
+}
+
 .gfb__footer button {
   font-family: font-family: 'Gemunu Libre' !important;
   font-weight: 900 !important;
