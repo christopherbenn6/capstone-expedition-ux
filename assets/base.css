@@ -2429,11 +2429,11 @@ input[type='checkbox'] {
   max-width: 100%;
 }
 
-.header__heading-logo-wrapper {
+/* .header__heading-logo-wrapper {
   width: 100%;
   display: inline-block;
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
-}
+} */
 
 @media screen and (max-width: 989px) {
 
