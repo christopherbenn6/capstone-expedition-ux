@@ -325,9 +325,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   .menu-drawer {
    background-color: #202020;
   }
-.header__heading-logo-wrapper img{
-    width:50px;
-  }
   .menu-drawer__menu-item {
    color: #ffffff;
    font-size: 2.4rem;
