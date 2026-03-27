@@ -275,16 +275,6 @@
   }
 }
 
-@font-face {
-    font-family: 'Gemunu Libre';
-    src: url('GemunuLibre-Regular.woff2') format('woff2'),
-        url('GemunuLibre-Regular.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-
 /* custom css */
 .button {
   font-size: clamp(1.6rem, 1.0182rem + 2.9091vw, 3.2rem) !important;
