@@ -3795,7 +3795,8 @@ body {
   border-radius: 0 !important;
 }
 
-.globo-form-input gfb__dropzone--placeholder--title {
+.globo-form-input gfb__dropzone--placeholder--title,
+.globo-form-input gfb__dropzone--placeholder--description {
   font-size: clamp(1.6rem, 1.45456 + 0.4545vw, 2rem) !important;
 }
 
