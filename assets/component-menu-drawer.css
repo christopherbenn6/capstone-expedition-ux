@@ -381,7 +381,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     .header__heading-logo-wrapper {
      display: flex;
      align-items: center;
-     justify-content: center;
+     
      width: 50px;
      height: auto;
      flex-shrink: 0;
