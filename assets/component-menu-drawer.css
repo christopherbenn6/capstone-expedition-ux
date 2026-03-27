@@ -251,6 +251,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .header__title-group {
   display: flex;
   align-items: center;
+  gap:1.6rem
 }
 .header__site-title,
 .site-title-extended {
@@ -399,7 +400,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     .header__heading {
       display: flex;
       align-items: center;
-      gap:1.6rem
+      
     }
     .header__icon{
      display: none !important;
