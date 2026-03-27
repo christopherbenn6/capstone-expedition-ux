@@ -3756,18 +3756,6 @@ body {
   color: #48D46B !important;
 }
 
-@font-face {
-    font-family: 'Gemunu Libre';
-    src: url('GemunuLibre-Bold.woff2') format('woff2'),
-        url('GemunuLibre-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-
 /* Styling for games page */
 .search-filters__product-list {
   font-family: 'jersey-20', sans-serif;
