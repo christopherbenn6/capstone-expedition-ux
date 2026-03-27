@@ -245,7 +245,23 @@ details[open].menu-opening > .menu-drawer__submenu {
 /* custom css */
 
 @media screen and (max-width: 749px) {
-    .nx-search {
+
+  .header__heading-logo-wrapper {
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .header__heading-logo {
+    width: 32px !important;
+    max-width: 32px !important;
+    height: auto !important;
+    display: block;
+  }
+  
+  .nx-search {
     display: flex;
     align-items: center;
     border: 0 !important;
