@@ -230,7 +230,8 @@ fdt-active-filters,
   }
 
   .search-filters__toolbar-item--sorting,
-  .search-filters__sorting {
+  .search-filters__sorting,
+  .search-filters__sort-button {
     width: 100%;
   }
 
