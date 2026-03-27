@@ -3781,7 +3781,7 @@ body {
 
 /* form labels */
 form {
-  border-radius: 0 !important;
+  border-radius: 0 !important !important;
 }
 
 .globo-form-control label {
