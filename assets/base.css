@@ -3574,10 +3574,6 @@ details-disclosure>details {
   }
 }
 
-.latest-posts-social-links {
-  justify-content: flex-start !important;
-}
-
 .eapps-facebook-feed-posts-load-more-wrapper {
   display: none;
 }
