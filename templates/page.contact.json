@@ -20,6 +20,37 @@
         "manual_heading": "Contact Us"
       }
     },
+    "rich_text_FdK7hf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cRahUG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h1"
+          }
+        },
+        "text_AETymX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you are planning to sell your collection, be sure to message us and we can give you our best offer!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cRahUG",
+        "text_AETymX"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "custom_liquid_DwEYzJ": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -33,6 +64,7 @@
   },
   "order": [
     "main",
+    "rich_text_FdK7hf",
     "custom_liquid_DwEYzJ"
   ]
 }
