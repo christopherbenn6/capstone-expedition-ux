@@ -3783,7 +3783,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .globo-form-app.boxed-layout .g-container {
-        padding: 1.6rem;
+        padding: 1.6rem !important;
     }
 }
 
