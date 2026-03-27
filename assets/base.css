@@ -3780,8 +3780,8 @@ body {
 }
 
 /* form labels */
-g-container {
-  border-radius: 0 !important !important;
+g-containerglobo-form-app {
+  border-radius: 0 !important;
 }
 
 .globo-form-control label {
