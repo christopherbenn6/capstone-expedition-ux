@@ -244,7 +244,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 /* custom css */
 
-/* @media screen and (max-width: 749px) {
+@media screen and (max-width: 749px) {
     .nx-search {
     display: flex;
     align-items: center;
@@ -291,7 +291,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   border-bottom: 1px solid #ffffff;
   }
 
-  
+  /* search  */
   .nx-search-form {
   display: flex;
   align-items: stretch;
@@ -317,10 +317,10 @@ details[open].menu-opening > .menu-drawer__submenu {
     align-items: center;
     flex-shrink: 0;
   }
-} */
+}
 
 /* desktop */
-   /* @media screen and (min-width: 990px) {
+   @media screen and (min-width: 990px) {
     .header {
       display: flex;
       align-items: center;
@@ -350,4 +350,4 @@ details[open].menu-opening > .menu-drawer__submenu {
     column-gap:4rem !important;
     }
         
-} */
+}
