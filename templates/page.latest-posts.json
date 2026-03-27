@@ -14,7 +14,33 @@
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
-        "enable_page_heading": true
+        "enable_page_heading": true,
+        "heading_container": 1500,
+        "manual_settings": false,
+        "manual_heading": ""
+      }
+    },
+    "rich_text_iYBBJK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_HHnbPE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We post all of our new additions to the store on our socials!<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_HHnbPE"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 64
       }
     },
     "facebook_latest_page_MVeUPd": {
@@ -41,6 +67,7 @@
   },
   "order": [
     "main",
+    "rich_text_iYBBJK",
     "facebook_latest_page_MVeUPd",
     "latest_socials_cdTyJq"
   ]
