@@ -285,7 +285,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     height: auto;
   }
   .header {
-    padding:0 1.6rem !important;
+    padding:1rem 1.6rem !important;
   }
 }
 
