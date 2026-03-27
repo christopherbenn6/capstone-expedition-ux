@@ -244,6 +244,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 /* custom css */
 
+@media screen and (max-width: 749px) {
    .header__title-group {
     display: flex;
     align-items: center;
@@ -256,20 +257,19 @@ details[open].menu-opening > .menu-drawer__submenu {
     letter-spacing: 0;
   }
 
-    .header__site-title {
-    text-transform: uppercase;
-  }
-  .site-title-extended {
-    display: none !important;
-  }
 
-@media screen and (max-width: 749px) {
   .header__heading-logo-wrapper {
     width: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+  }
+  .header__site-title {
+    text-transform: uppercase;
+  }
+  .site-title-extended {
+    display: none !important;
   }
 
   .nx-search {
