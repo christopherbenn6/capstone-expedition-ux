@@ -3796,7 +3796,7 @@ body {
 }
 
 .globo-form-input .gfb__dropzone .gfb__dropzone--placeholder--title {
-  font-size: 3rem !important;
+  font-size: clamp(2.4rem, 2.10912rem + 0.9091vw, 3.2rem) !important;
 }
 
 .globo-form-input .gfb__dropzone--placeholder--description {
