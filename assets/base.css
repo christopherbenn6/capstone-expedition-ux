@@ -3782,4 +3782,5 @@ body {
 /* form labels */
 .globo-form-control label {
   font-size: clamp(2rem, 1.56368rem + 1.3636vw, 3.2rem) !important;
+  margin-bottom: 1.6rem;
 }
