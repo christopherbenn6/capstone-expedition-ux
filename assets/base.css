@@ -3785,6 +3785,10 @@ body {
   font-size: clamp(2rem, 1.56368rem + 1.3636vw, 3.2rem) !important;
   margin: 1.6rem 0 0.8rem !important;
 }
+.globo-form-control {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 .globo-form-input input,
 .globo-form-input textarea,
