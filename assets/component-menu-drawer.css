@@ -284,6 +284,9 @@ details[open].menu-opening > .menu-drawer__submenu {
     width: 37px !important;
     height: auto;
   }
+  .header {
+    padding: 0 !important;
+  }
 }
 
 @media screen and (max-width: 990px) {
