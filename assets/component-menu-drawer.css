@@ -244,6 +244,10 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 /* custom css */
 
+.header__heading-link .h2 {
+  color:#000000 !important;
+}
+
 .header__title-group {
   display: flex;
   align-items: center;
@@ -363,9 +367,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 
 
-.header__heading-link .h2 {
-  color:#000000 !important;
-}
 
 
 
