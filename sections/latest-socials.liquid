@@ -11,6 +11,58 @@
 {% schema %}
 {
     "name": "Social Media",
+    "settings": [
+        {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "default": "scheme-1"
+        },
+        {
+            "type": "header",
+            "content": "Layout"
+        },
+        {
+            "type": "select",
+            "id": "text-align",
+            "label": "Text Alignment",
+            "options": [
+                {
+                    "label": "Left",
+                    "value": "Left"
+                },
+                {
+                    "label": "Center",
+                    "value": "Center"
+                },
+                {
+                    "label": "Right",
+                    "value": "Right"
+                }
+            ],
+            "default": "Center"
+        },
+        {
+            "type": "range",
+            "id": "padding",
+            "label": "Padding",
+            "min": 0,
+            "max": 200,
+            "default": 20,
+            "step": 2,
+            "unit": "px"
+        },
+        {
+            "type": "range",
+            "id": "margin",
+            "label": "Margin",
+            "min": 0,
+            "max": 200,
+            "default": 20,
+            "step": 2,
+            "unit": "px"
+        }
+    ],
     "blocks": [
         {
             "type": "@app"
