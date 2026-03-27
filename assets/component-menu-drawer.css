@@ -244,6 +244,16 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 /* custom css */
 
+.header__title-group {
+  display: flex;
+  align-items: center;
+}
+.header__site-title,
+.site-title-extended {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 749px) {
    .header__title-group {
     display: flex;
@@ -352,20 +362,12 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 
-.header__title-group {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
+
 .header__heading-link .h2 {
   color:#000000 !important;
 }
 
-.header__site-title,
-.site-title-extended {
-  margin: 0;
-  padding: 0;
-}
+
 
 .header__site-title {
   text-transform: none;
