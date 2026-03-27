@@ -393,6 +393,11 @@ details[open].menu-opening > .menu-drawer__submenu {
      height: auto !important;
     }
 
+    .header__heading-link {
+     display: flex;
+     align-items: center;
+    }
+
     .header {
       display: flex;
       align-items: center;
