@@ -387,6 +387,12 @@ details[open].menu-opening > .menu-drawer__submenu {
      flex-shrink: 0;
     }
 
+    .header__heading-logo {
+     display: block;
+     width: 50px !important;
+     height: auto !important;
+    }
+
     .header {
       display: flex;
       align-items: center;
