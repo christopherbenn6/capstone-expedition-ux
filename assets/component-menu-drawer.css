@@ -275,7 +275,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     /* width: 32px; */
     display: flex !important;
     align-items: center !important;
-    justify-content: center;
+    justify-content: center !important;
   }
   .header__site-title {
     text-transform: uppercase;
