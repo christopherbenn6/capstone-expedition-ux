@@ -3780,6 +3780,10 @@ body {
 }
 
 /* form labels */
+.g-container {
+  border-radius: 0 !important;
+}
+
 .globo-form-control label {
   font-family: 'jersey-20', sans-serif !important;
   font-size: clamp(2rem, 1.56368rem + 1.3636vw, 3.2rem) !important;
