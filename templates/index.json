@@ -97,7 +97,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/who-we-are-sm.avif",
+        "image": "shopify://shop_images/20260309_144219_1.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -191,7 +191,7 @@
         "text_TnAmzR": {
           "type": "text",
           "settings": {
-            "text": "<p>If you have any questions or are looking to sell your games, we’d love to hear from you!<br/><br/></p>",
+            "text": "<p>If you have any questions or are looking to sell your games, we’d love to hear from you!</p>",
             "text_style": "body"
           }
         },
@@ -211,7 +211,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20260309_144030.avif",
+        "image": "shopify://shop_images/contact-lg.avif",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",

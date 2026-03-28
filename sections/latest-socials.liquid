@@ -1,16 +1,110 @@
 <section class="page-width">
-{% for block in section.blocks %}
-{% if block.type == 'latest_socials_heading' %}
-        <h2>{{ block.settings.heading }}</h2>
-  {% endif %}
-{% endfor %}
+    <div class="social-media">
+        {% for block in section.blocks %}
+        {% if block.type == 'latest_socials_heading' %}
+                <h2>{{ block.settings.heading }}</h2>
+        {% endif %}
+        {% endfor %}
 
-{% render 'social-icons', class: 'latest-posts-social-links' %}
+        {% render 'social-icons', class: 'latest-posts-social-links' %}
+    </div>
 </section>
+
+{% style %}
+    .social-media {
+        text-align: {{ section.settings.text_align }};
+        background-color: #001F45;
+        padding: {{ section.settings.padding }}px !important;
+        margin: {{ section.settings.margin }}px 0 !important;
+    }
+
+    .social-media ul {
+        margin: 1.6rem auto 0 auto;
+        justify-content: {{ section.settings.text_align }};
+    }
+
+    .latest-posts-social-links {
+        justify-content: space-between;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .latest-posts-social-links > li {
+        margin: 0 auto;
+    }
+
+    .latest-posts-social-links .list-social__link svg,
+    .list-social__link .svg-wrapper {
+        width: clamp(3.2rem, 2.036rem + 3.6364vw, 6.4rem) !important;
+        height: clamp(3.2rem, 2.036rem + 3.6364vw, 6.4rem) !important;
+        padding: 0;
+    }
+
+    .latest-posts-social-links .list-social__link {
+        color: white !important;
+        fill: white !important;
+        width: clamp(3.2rem, 2.036rem + 3.6364vw, 6.4rem) !important;
+        height: clamp(3.2rem, 2.036rem + 3.6364vw, 6.4rem) !important;
+        padding: 0;
+    }
+
+    .latest-posts-social-links .list-social__link path {
+        color: white !important;
+        fill: white !important;
+    }
+{% endstyle %}
+
+
 
 {% schema %}
 {
     "name": "Social Media",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Layout"
+        },
+        {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text Alignment",
+            "options": [
+                {
+                    "label": "Left",
+                    "value": "left"
+                },
+                {
+                    "label": "Center",
+                    "value": "center"
+                },
+                {
+                    "label": "Right",
+                    "value": "right"
+                }
+            ],
+            "default": "center"
+        },
+        {
+            "type": "range",
+            "id": "padding",
+            "label": "Padding",
+            "min": 0,
+            "max": 200,
+            "default": 20,
+            "step": 2,
+            "unit": "px"
+        },
+        {
+            "type": "range",
+            "id": "margin",
+            "label": "Margin",
+            "min": 0,
+            "max": 200,
+            "default": 20,
+            "step": 2,
+            "unit": "px"
+        }
+    ],
     "blocks": [
         {
             "type": "@app"

@@ -9,10 +9,6 @@
 {% endif %}
 
 {% style %}
-    h2, h3 {
-        margin: 0;
-    }
-
     .about-page-grid {
         margin: 6.4rem 0 0;
     }
@@ -34,7 +30,7 @@
         font-size: 1.6rem;
     }
 
-    .right-address h3 {
+    .right-address h4 {
         min-width: 8ch;
     }
 
@@ -59,18 +55,34 @@
     .hours-table tr:nth-of-type(even) {
         background-color: #457B9D;
     }
-
-
-    @media screen and (min-width: 900px) {
-    .about-page-grid section {
-        padding: {{ section.settings.padding }}px;
-        margin: {{ section.settings.margin }}px;
+    
+    .hours-table tr:nth-of-type(odd) {
+        background-color: #010F20;
     }
 
-    .about-page-grid {
+    p {
+      margin: 1.6rem 0;
+    }
+
+    @media screen and (min-width: 900px) {
+      .about-page-grid section {
+        padding: {{ section.settings.padding }}px;
+        margin: {{ section.settings.margin }}px;
+      }
+
+      .about-page-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px
+        gap: 20px;
+        margin-bottom: 12.8rem;
+      }
+
+    .about-page-grid section:nth-of-type(odd) {
+        margin-left: 6.4rem;
+    }
+
+    .about-page-grid section:nth-of-type(even) {
+        margin-right: 6.4rem;
     }
 
     .about-page-grid section {
@@ -101,13 +113,35 @@
         display: flex;
         flex-direction: column;
     }
+
+    address {
+        color: white;
+        margin-left: 1.6rem;
+        max-width: 400ch;
+        padding-top: 1.3rem;
+    }
+
+    .hours-background,
+    .address-background {
+      background-color: #001F45;
+    }
   }
+
+  @media screen and (min-width: 1600px) {
+      .about-page-grid section:nth-of-type(odd) {
+        margin-left: 19.2rem;
+    }
+
+    .about-page-grid section:nth-of-type(even) {
+        margin-right: 19.2rem;
+      }
+    }
 {% endstyle %}
 
 <div class="about-page-grid">
   <section class="page-width hours-background">
     {% if section.settings.show_hours_heading %}
-      <h2>{{ section.settings.hours_heading }}</h2>
+      <h3>{{ section.settings.hours_heading }}</h3>
     {% endif %}
     {% if section.settings.show_hours_content %}
       <p>{{ section.settings.hours_content }}</p>
@@ -146,7 +180,7 @@
     </table>
   </section>
   <section class="map-background">
-    <h2>Map</h2>
+    <h3>Map</h3>
     <p>
       Located in downtown Edmonton with easy access to public transit and nearby parking. Use the map for quick
       directions to our store.
@@ -166,11 +200,11 @@
   </section>
   <section class="page-width address-background">
     <div class="left-address">
-      <h2>Address</h2>
+      <h3>Address</h3>
       <p>{{ section.settings.address_text }}</p>
     </div>
     <div class="right-address">
-      <h3>Find Us:</h3>
+      <h4>Find Us:</h4>
       <address>10402 118 Ave NW, Edmonton, AB T5G 2N1</address>
     </div>
   </section>

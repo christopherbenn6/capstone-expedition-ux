@@ -12,9 +12,28 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "vendor": {
           "type": "text",
-          // "disabled": true,
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -26,21 +45,6 @@
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
@@ -56,12 +60,9 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "message_button_c7gzye": {
           "type": "message_button",
+          "disabled": true,
           "settings": {
             "label": "Message Me When Stock is Available",
             "link": "shopify://pages/contact"
@@ -116,14 +117,14 @@
         }
       },
       "block_order": [
-        "vendor",
-        "caption",
-        "price",
         "title",
         "variant_picker",
+        "price",
+        "description",
+        "vendor",
+        "caption",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "message_button_c7gzye",
         "collapsible-row-0",
         "collapsible-row-1",
@@ -132,12 +133,12 @@
         "share"
       ],
       "settings": {
-        "enable_sticky_info": true,
-        "color_scheme": "",
-        "media_size": "large",
+        "enable_sticky_info": false,
+        "color_scheme": "scheme-3",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "columns",
         "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
