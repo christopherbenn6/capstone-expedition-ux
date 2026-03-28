@@ -746,7 +746,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   .nx-search__input {
-    display: block !important;
+    /* display: block !important; */
     width: 18rem;
     height: 3.4rem;
     border: 0 !important;
