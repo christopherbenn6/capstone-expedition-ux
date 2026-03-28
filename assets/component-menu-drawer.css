@@ -319,9 +319,18 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 @media screen and (min-width: 750px) and (max-width: 1299px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding: 1rem 2rem !important;
+  }
+
   .header__heading {
     display: flex;
     align-items: center;
+    flex: 0 0 auto;
     min-width: 0;
   }
 
@@ -329,7 +338,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     display: flex !important;
     align-items: center !important;
     gap: 1rem;
-    min-width: 0;
+    text-decoration: none;
   }
 
   .header__heading-logo-wrapper {
@@ -340,7 +349,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   .header__heading-logo {
-    width: 45px !important;
+    width: 50px !important;
     height: auto !important;
     display: block;
   }
@@ -348,18 +357,77 @@ details[open].menu-opening > .menu-drawer__submenu {
   .header__title-group {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.4rem;
     min-width: 0;
   }
 
   .header__site-title {
     margin: 0;
-    line-height: 1;
     white-space: nowrap;
+    font-size: 2rem;
+    line-height: 1;
   }
 
   .site-title-extended {
+    display: inline !important;
+    white-space: nowrap;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .header__inline-menu {
     display: none !important;
+  }
+
+  header-drawer {
+    display: block !important;
+  }
+
+  .header__icons {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .nx-search {
+    display: flex;
+    align-items: center;
+    height: 3.2rem;
+  }
+
+  .nx-search__input {
+    display: block !important;
+    width: 18rem;
+    height: 3.2rem;
+  }
+
+  .nx-search__btn {
+    height: 3.2rem;
+    width: 4rem;
+    padding: 0;
+  }
+
+  .nx-search-icon {
+    display: none !important;
+  }
+
+  .header__icon--menu {
+    display: flex !important;
+    width: 4.4rem;
+    height: 4.4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__icon--menu span {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    gap: 0 !important;
   }
 }
 
