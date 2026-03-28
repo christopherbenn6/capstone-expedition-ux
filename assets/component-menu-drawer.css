@@ -396,7 +396,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     flex-shrink: 0;
   }
 
-  .nx-search {
+  /* .nx-search {
     display: flex;
     align-items: center;
     height: 3.2rem;
@@ -416,7 +416,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
   .nx-search-icon {
     display: none !important;
-  }
+  } */
 
   .header__icon--menu {
     display: flex !important;
