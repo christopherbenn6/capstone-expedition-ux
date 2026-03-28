@@ -776,7 +776,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     justify-content: center;
     padding: 0;
   } */
-/* 
+
     .nx-search__btn {
         border: 0;
         border-left: 1px solid #000000;
@@ -786,7 +786,7 @@ details[open].menu-opening > .menu-drawer__submenu {
         cursor: pointer;
         display: grid;
         place-items: center;
-    } */
+    }
 
   .list-menu--inline {
     display: flex;
