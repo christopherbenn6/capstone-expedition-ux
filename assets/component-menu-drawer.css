@@ -778,3 +778,6 @@ details[open].menu-opening > .menu-drawer__submenu {
     color: #000000;
   }
 }
+* {
+  outline: 1px solid red !important;
+}
