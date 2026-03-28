@@ -408,6 +408,9 @@ details[open].menu-opening > .menu-drawer__submenu {
   /* .header__icon span {
     display:none;
   } */
+   .site-title-extended {
+    display: none !important;
+  }
 }
 
 
