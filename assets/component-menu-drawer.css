@@ -693,7 +693,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     padding: 0 1rem;
   }
 
-  .nx-search-form__btn {
+  /* .nx-search-form__btn {
     width: 4rem;
     height: 3.6rem;
     border: 1px solid #a0a0a0;
@@ -703,7 +703,17 @@ details[open].menu-opening > .menu-drawer__submenu {
     align-items: center;
     justify-content: center;
     padding: 0;
-  }
+  } */
+  .nx-search__btn {
+      border: 0;
+      border-left: 1px solid #000000;
+      background:#ffffff;
+      width: 34px;
+      height: 33px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+    } 
 
   
   .nx-search {
