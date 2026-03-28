@@ -31,10 +31,10 @@
   {%- endif -%}
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
-    @media screen and (min-width: 990px) {
-      header-drawer {
-        display: none !important;
-      }
+    @media screen and (min-width: 1366px) {
+      {% comment %} header-drawer {
+        display: none;
+      } {% endcomment %}
     }
   {%- endif -%}
 
