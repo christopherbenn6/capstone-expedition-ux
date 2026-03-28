@@ -379,7 +379,7 @@ details[open].menu-opening > .menu-drawer__submenu {
    border-bottom: 1px solid #ffffff;
   }
 
-  /* search  */
+ 
   .nx-search-form {
    display: flex;
    align-items: stretch;
@@ -406,9 +406,9 @@ details[open].menu-opening > .menu-drawer__submenu {
     flex-shrink: 0;
   }
 
-  /* .header__icon span {
+  .header__icon span {
     display:none;
-  } */
+  }
 
 } */
 
