@@ -784,7 +784,7 @@ details[open].menu-opening > .menu-drawer__submenu {
         width: 34px;
         height: 33px;
         cursor: pointer;
-        display: grid;
+        display: flex;
         place-items: center;
     }
 
