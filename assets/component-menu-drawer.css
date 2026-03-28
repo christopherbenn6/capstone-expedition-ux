@@ -675,8 +675,8 @@ details[open].menu-opening > .menu-drawer__submenu {
     background: transparent !important;
   }
 
-  drawer search */
-  /* .nx-search-form {
+  /* drawer search */
+  .nx-search-form {
     display: flex;
     align-items: stretch;
     width: 100%;
