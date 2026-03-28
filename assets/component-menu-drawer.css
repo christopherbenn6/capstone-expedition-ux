@@ -675,7 +675,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     background: transparent !important;
   }
 
-  /* drawer search */
+  drawer search */
   /* .nx-search-form {
     display: flex;
     align-items: stretch;
@@ -703,10 +703,10 @@ details[open].menu-opening > .menu-drawer__submenu {
     align-items: center;
     justify-content: center;
     padding: 0;
-  } */
+  }
 
   
-  /* .nx-search {
+  .nx-search {
     display: flex !important;
     align-items: center;
     border:1px solid #ffffff;
@@ -720,7 +720,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     border: 0 !important;
     background-color:#ffffff !important;
     padding: 0 1rem;
-  } */
+  }
 }
 
 /* desktop navigation */
