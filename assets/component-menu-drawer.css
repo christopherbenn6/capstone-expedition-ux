@@ -676,24 +676,24 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   /* drawer search */
-  /* .nx-search-form {
+  .nx-search-form {
     display: flex;
     align-items: stretch;
     width: 100%;
     margin-bottom: 1.6rem;
     gap: 0;
-  } */
+  }
 
-  /* .nx-search-form__input {
+  .nx-search-form__input {
     flex: 1;
     height: 3.6rem;
     border: 1px solid #a0a0a0;
     background-color: #ffffff;
     color: #000000;
     padding: 0 1rem;
-  } */
+  }
 
-  /* .nx-search-form__btn {
+  .nx-search-form__btn {
     width: 4rem;
     height: 3.6rem;
     border: 1px solid #a0a0a0;
@@ -703,7 +703,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     align-items: center;
     justify-content: center;
     padding: 0;
-  } */
+  }
 
   
   .nx-search {
