@@ -360,7 +360,9 @@ details[open].menu-opening > .menu-drawer__submenu {
     flex-shrink: 0;
   }
 
- 
+  .header__icon span {
+    display:none;
+  }
 }
 
 
