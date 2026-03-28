@@ -367,7 +367,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 
 /* desktop */
-   @media screen and (min-width: 1300px) {
+   @media screen and (min-width: 990px) {
     .header__heading-logo-wrapper {
      display: flex;
      align-items: center;
@@ -434,16 +434,3 @@ details[open].menu-opening > .menu-drawer__submenu {
         
 }
 
-@media screen and (max-width: 1299px) {
-  .header__inline-menu {
-    display: none !important;
-  }
-
-  header-drawer {
-    display: block !important;
-  }
-
-  .header__icon--menu {
-    display: flex !important;
-  }
-}
