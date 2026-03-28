@@ -373,12 +373,8 @@
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
-
-  /* .footer-block__details-content> :first-child .list-menu__item--link {
-    padding-top: 0;
-  } */
 }
 
 .footer-block-image {
@@ -683,7 +679,8 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 6.4rem;
+    gap: 3.2rem;
+    justify-content: space-between;
     /* margin: 0;
     padding: 0; */
   }
@@ -721,5 +718,3 @@
   }
 
 }
-
-

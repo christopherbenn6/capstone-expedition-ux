@@ -528,11 +528,6 @@
 
 /* custom css */
 
-.page-width {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
 
 h2 {
   font-size: clamp(3.2rem, 2.56rem + 3.2vw, 6.4rem) !important;
@@ -541,7 +536,7 @@ h2 {
 .arrow-button {
   color: #FFD000;
   border-bottom: 1px solid white;
-  font-family:jersey-20;
+  font-family: jersey-20;
   font-size: clamp(2.4rem, 1.2rem + 1.5vw, 4.8rem) !important;
 
 }
@@ -579,6 +574,9 @@ h2 {
 
 
 @media screen and (min-width: 750px) {
+  p {
+    font-size: clamp(1.6rem, 1.52rem + 0.4vw, 2rem);
+  }
 
   .image-with-text__grid {
     display: flex;
@@ -596,13 +594,13 @@ h2 {
     order: 2;
   }
 
-  .image-with-text__text-item {
+  /* .image-with-text__text-item {
     flex: 0 0 42%;
   }
 
   .image-with-text__media-item {
     flex: 0 0 48%;
-  }
+  } */
 
   .image-with-text__content {
     padding: 0;

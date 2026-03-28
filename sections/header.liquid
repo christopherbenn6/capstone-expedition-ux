@@ -1,12 +1,14 @@
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
-{% comment %} <link
-  rel="stylesheet"
-  href="{{ 'component-cart-notification.css' | asset_url }}"
-  media="print"
-  onload="this.media='all'"
-> {% endcomment %}
+{% comment %}
+  <link
+    rel="stylesheet"
+    href="{{ 'component-cart-notification.css' | asset_url }}"
+    media="print"
+    onload="this.media='all'"
+  >
+{% endcomment %}
 
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -47,7 +49,6 @@
   }
 
   .list-menu--inline {
-    display: inline-flex;
     flex-wrap: wrap;
   }
 
@@ -73,10 +74,10 @@
         display: flex;
         /* justify-self: start; */
         align-items:center;
-        gap:2rem;
+        gap:0.8rem;
     }
 
-    
+
     .header__heading-logo-wrapper {
     width:unset;
   }
@@ -86,6 +87,7 @@
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
     }
+
   }
 </style>
 
@@ -106,51 +108,13 @@
       justify-content: flex-end;
     }
 
-    .nx-search {
-      display: none;
-      align-items: center;
-      border: 1px solid #999;
-      border-radius: 4px;
-      overflow: hidden;
-      height: 32px;
-    }
-
-    .nx-search__input {
-      border: 0;
-      padding: 0 10px;
-      width: 220px;
-      height: 32px;
-      outline: none;
-    }
-
-    .nx-search__btn {
-      border: 0;
-      border-left: 1px solid #999;
-      background:rgb(231, 231, 231);
-      width: 40px;
-      height: 32px;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
-    }
-    /* .nx-search-icon {
-      display:flex;
-    } */
-
       @media screen and (min-width: 750px) {
         .section-header {
           margin-bottom: {{ section.settings.margin_bottom }}px;
         }
       }
 
-      @media screen and (min-width: 1366px) {
-        .header {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          padding-top: {{ section.settings.padding_top }}px;
-          padding-bottom: {{ section.settings.padding_bottom }}px;
-        }
+
         .header__icons {
         display: flex;
         align-items: center;
@@ -236,7 +200,12 @@
                 preload: true
             }}
           </div>
-          <span class="h2 header__site-title">{{ shop.name }}</span><span class="site-title-extended">Video Games</span>
+
+          <div class="header__title-group">
+            <span class="h2 header__site-title">{{ shop.name }}</span>
+            <span class="site-title-extended">Video Games</span>
+          </div>
+          {% comment %} <span class="h2 header__site-title">{{ shop.name }}</span><span class="site-title-extended">Video Games</span> {% endcomment %}
         {%- else -%}
           <span class="h2 header__site-title">{{ shop.name }}</span><span class="site-title-extended">Video Games</span>
         {%- endif -%}
@@ -291,7 +260,6 @@
     {%- endif -%}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
-
       {% comment %} search icon and rendering hamburger icon {% endcomment %}
       {% comment %} for mobile {% endcomment %}
 
@@ -689,8 +657,7 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
-    },
-    
+    }
   ],
   "blocks": [
     {
