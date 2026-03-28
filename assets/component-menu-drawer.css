@@ -289,8 +289,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   .nx-search {
     display: flex;
     align-items: center;
-    border: 1px solid #000000 !important;
-    border-radius:5px;
+    border: 0 !important;
     background: transparent !important;
     border-radius: 4px;
     overflow: hidden;
