@@ -408,9 +408,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   /* .header__icon span {
     display:none;
   } */
-   .site-title-extended {
-    display: none !important;
-  }
+
 }
 
 
@@ -468,9 +466,9 @@ details[open].menu-opening > .menu-drawer__submenu {
     column-gap:4rem !important;
     }
 
-   .site-title-extended {
+   /* .site-title-extended {
     display: inline !important;
-  }
+  } */
 
     header-drawer {
     display: none !important;
