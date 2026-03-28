@@ -251,6 +251,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: flex;
   align-items: center;
   gap:1.4rem;
+  font-size:
 }
 .header__site-title,
 .site-title-extended {
@@ -319,6 +320,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 @media screen and (min-width: 750px) and (max-width: 1299px) {
+  .banner__heading {
+    font-size: 4rem !important;
+  }
   .header {
     display: flex;
     align-items: center;
