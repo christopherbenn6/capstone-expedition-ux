@@ -434,3 +434,40 @@ details[open].menu-opening > .menu-drawer__submenu {
         
 }
 
+@media screen and (max-width: 1299px) {
+  .header__icons {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-left: auto;
+  }
+
+  .nx-search-icon,
+  .header__icon--menu {
+    width: 4.4rem;
+    height: 4.4rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  .header__icon--menu span {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    gap: 0 !important;
+  }
+
+  .header__icon--menu .svg-wrapper,
+  .header__icon--menu svg,
+  .nx-search-icon .svg-wrapper,
+  .nx-search-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: block;
+  }
+}
