@@ -720,7 +720,7 @@
           "label": "Columns"
         },
         "show_view_all": {
-          "label": "\"View all\" button",
+          "label": "\"View all Games\" button",
           "info": "Visible if blog has more posts than shown"
         },
         "show_image": {

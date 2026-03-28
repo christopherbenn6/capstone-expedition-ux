@@ -44,8 +44,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/hero-banner-sm.avif",
-        "image_overlay_opacity": 40,
+        "image": "shopify://shop_images/20260309_144034.jpg",
+        "image_overlay_opacity": 60,
         "image_height": "medium",
         "image_behavior": "ambient",
         "desktop_content_position": "middle-left",
@@ -70,8 +70,14 @@
         "text_D6UM8V": {
           "type": "text",
           "settings": {
-            "text": "<p>Nexwave Video Games is a retro game store that began in the late 1990s, formed from a passion for collecting video games. We started initially by selling games in local flea markets until 2001 where we grew into an established business, and are now residing in Edmonton.<br/><br/></p>",
+            "text": "<p>Nexwave Video Games is a retro game store that began in the late 1990s, formed from a passion for collecting video games. We started initially by selling games in local flea markets until 2001 where we grew into an established business, and are now residing in Edmonton.<br/></p>",
             "text_style": "body"
+          }
+        },
+        "desktop_text_QnxGNN": {
+          "type": "desktop_text",
+          "settings": {
+            "text": "<p>Our store offers video games and consoles of both the classic and modern generations. We have a great selection of modern and easy to find titles, however, our store specializes in the retro and out of print market, guaranteeing more options than the other stores in the city.</p>"
           }
         },
         "button_gKGRnd": {
@@ -86,6 +92,7 @@
       "block_order": [
         "heading_nKdB3A",
         "text_D6UM8V",
+        "desktop_text_QnxGNN",
         "button_gKGRnd"
       ],
       "name": "t:sections.image-with-text.presets.name",
@@ -192,7 +199,7 @@
           "type": "button",
           "settings": {
             "button_label": "Contact Us",
-            "button_link": "shopify://collections/games",
+            "button_link": "shopify://pages/contact",
             "button_style_secondary": false
           }
         }
