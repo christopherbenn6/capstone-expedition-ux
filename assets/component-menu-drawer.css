@@ -487,6 +487,55 @@ details[open].menu-opening > .menu-drawer__submenu {
   .header__icon--menu {
     display: none !important;
   }
+
+
+/* navigation */
+  .nx-search-icon,
+  .header__icon--menu {
+    display: none !important;
+  }
+
+  .nx-search {
+    display: flex !important;
+    align-items: center;
+    border:1px solid #ffffff;
+    border-radius:5px;
+  }
+
+  .nx-search__input {
+    display: block !important;
+    width: 18rem;
+    height: 3.4rem;
+    border: 0 !important;
+    background-color:#ffffff !important;
+    padding: 0 1rem;
+  }
+
+  .nx-search__btn {
+    border: 0;
+    border-left: 1px solid #000000;
+    background: #ffffff;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    display: flex;
+    place-items: center;
+  }
+
+  .list-menu--inline {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: nowrap;
+  }
+
+  .list-menu--inline .list-menu__item--link {
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000000;
+  }
         
 }
 
@@ -612,60 +661,3 @@ details[open].menu-opening > .menu-drawer__submenu {
   
 }
 
-/* desktop navigation */
-@media screen and (min-width: 1300px) {
-  .header__inline-menu {
-    display: block !important;
-  }
-
-  header-drawer {
-    display: none !important;
-  }
-
-  .nx-search-icon,
-  .header__icon--menu {
-    display: none !important;
-  }
-
-  .nx-search {
-    display: flex !important;
-    align-items: center;
-    border:1px solid #ffffff;
-    border-radius:5px;
-  }
-
-  .nx-search__input {
-    display: block !important;
-    width: 18rem;
-    height: 3.4rem;
-    border: 0 !important;
-    background-color:#ffffff !important;
-    padding: 0 1rem;
-  }
-
-  .nx-search__btn {
-    border: 0;
-    border-left: 1px solid #000000;
-    background: #ffffff;
-    width: 34px;
-    height: 34px;
-    cursor: pointer;
-    display: flex;
-    place-items: center;
-  }
-
-  .list-menu--inline {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: nowrap;
-  }
-
-  .list-menu--inline .list-menu__item--link {
-    padding: 0;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #000000;
-  }
-}
