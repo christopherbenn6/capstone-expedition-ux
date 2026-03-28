@@ -372,7 +372,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 
   .site-title-extended {
     display: inline !important;
-    white-space: nowrap;
     font-size: 2rem;
     line-height: 1;
   }
