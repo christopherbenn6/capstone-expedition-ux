@@ -706,7 +706,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   } */
 
   
-  .nx-search {
+  /* .nx-search {
     display: flex !important;
     align-items: center;
     border:1px solid #ffffff;
@@ -720,7 +720,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     border: 0 !important;
     background-color:#ffffff !important;
     padding: 0 1rem;
-  }
+  } */
 }
 
 /* desktop navigation */
