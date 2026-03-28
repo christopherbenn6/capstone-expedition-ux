@@ -724,8 +724,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   .nx-search {
     display: flex !important;
     align-items: center;
-    height: 3.6rem;
-    margin-left: auto;
   }
 
   .nx-search__input {
