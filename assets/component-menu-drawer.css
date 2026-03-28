@@ -644,10 +644,6 @@ details[open].menu-opening > .menu-drawer__submenu {
     color: #ffffff;
   }
 
-  .menu-drawer__inner-container {
-    background-color: #202020 !important;
-  }
-
   .menu-drawer__navigation {
     padding:3rem 1.6rem !important;
   }
