@@ -3672,11 +3672,11 @@ h4 {
   white-space: nowrap;
 }
 
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
   .site-title-extended {
     display: none;
   }
-}
+} */
 
 @font-face {
   font-family: 'Gemunu Libre';
