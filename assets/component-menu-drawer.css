@@ -662,7 +662,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     font-weight: 700;
     line-height: 1.2;
     padding: 1.6rem 0 !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid #ffffff;
     background: transparent !important;
   }
 
@@ -672,7 +672,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   .menu-drawer__close-button:hover,
   .menu-drawer__close-button:focus {
     color: #ffffff !important;
-    
   }
 
   .nx-search-form {
