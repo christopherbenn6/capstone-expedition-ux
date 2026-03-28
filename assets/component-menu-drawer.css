@@ -721,6 +721,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     background-color:#ffffff !important;
     padding: 0 1rem;
   }
+  
 }
 
 /* desktop navigation */
@@ -765,6 +766,17 @@ details[open].menu-opening > .menu-drawer__submenu {
     justify-content: center;
     padding: 0;
   } */
+
+  .nx-search__btn {
+      border: 0;
+      border-left: 1px solid #000000;
+      background:#ffffff;
+      width: 34px;
+      height: 33px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+    } 
 
   .list-menu--inline {
     display: flex;
