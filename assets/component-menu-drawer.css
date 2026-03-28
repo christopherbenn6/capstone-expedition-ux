@@ -706,7 +706,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   } */
   .nx-search__btn {
       border: 0;
-      border-left: 1px solid #000000;
       background:#ffffff;
       width: 34px;
       height: 33px;
