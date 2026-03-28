@@ -359,6 +359,10 @@ details[open].menu-opening > .menu-drawer__submenu {
     align-items: center;
     flex-shrink: 0;
   }
+
+  .header__icon span {
+    display:none;
+  }
 }
 
 
