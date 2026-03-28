@@ -553,7 +553,7 @@ details[open].menu-opening > .menu-drawer__submenu {
         
 }
 
-/* @media screen and (max-width: 1299px) {
+@media screen and (max-width: 1299px) {
   .header__icons {
     display: flex;
     align-items: center;
@@ -589,5 +589,5 @@ details[open].menu-opening > .menu-drawer__submenu {
     height: 2.4rem;
     display: block;
   }
-} */
+}
 
