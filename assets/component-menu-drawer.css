@@ -733,7 +733,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     width: 18rem;
     height: 3.4rem;
     border: 0 !important;
-    background-color: #ebebeb;
+    background-color:#ffffff !important;
     padding: 0 1rem;
   }
 
