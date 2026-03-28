@@ -301,7 +301,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     display: none !important;
   }
 
-  /* .nx-search__btn {
+  .nx-search__btn {
     border: 0 !important;
     border-left: 0 !important;
     background: transparent !important;
@@ -309,7 +309,7 @@ details[open].menu-opening > .menu-drawer__submenu {
     height: auto !important;
     padding: 0 !important;
     box-shadow: none !important;
-  } */
+  }
 
   .header__heading-logo {
     width: 45px !important;
@@ -409,7 +409,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   .nx-search__btn {
-    height: 4rem;
+    height: 3.2rem;
     width: 4rem;
     padding: 0;
   }
