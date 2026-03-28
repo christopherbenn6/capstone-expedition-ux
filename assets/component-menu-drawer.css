@@ -719,7 +719,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   .nx-search {
     display: flex !important;
     align-items: center;
-    border:1px solid #ffffff;
+    /* border:1px solid #ffffff; */
     border-radius:5px;
   }
 
