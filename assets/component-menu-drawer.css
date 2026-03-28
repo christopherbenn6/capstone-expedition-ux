@@ -307,7 +307,6 @@ details[open].menu-opening > .menu-drawer__submenu {
     width: auto !important;
     height: auto !important;
     padding: 0 !important;
-    box-shadow: none !important;
   }
 
   .header__heading-logo {
@@ -408,7 +407,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   .nx-search__btn {
-    height: 3.2rem;
+    height: 2rem;
     width: 4rem;
     padding: 0;
   }
