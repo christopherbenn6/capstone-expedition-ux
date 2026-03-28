@@ -414,7 +414,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 
 /* desktop */
-   @media screen and (min-width: 990px) {
+   @media screen and (min-width: 1300px) {
     .header__heading-logo-wrapper {
      display: flex;
      align-items: center;
