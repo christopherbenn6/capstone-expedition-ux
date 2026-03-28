@@ -672,10 +672,9 @@ details[open].menu-opening > .menu-drawer__submenu {
   .menu-drawer__close-button:hover,
   .menu-drawer__close-button:focus {
     color: #ffffff !important;
-    background: transparent !important;
+    
   }
 
-  /* drawer search */
   .nx-search-form {
     display: flex;
     align-items: stretch;
@@ -693,38 +692,25 @@ details[open].menu-opening > .menu-drawer__submenu {
     padding: 0 1rem;
   }
 
-  /* .nx-search-form__btn {
-    width: 4rem;
-    height: 3.6rem;
-    border: 1px solid #a0a0a0;
-    border-left: 0;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  } */
   .nx-search__btn {
-      border: 0;
-      border-left: 1px solid #000000;
-      background:#ffffff;
-      width: 34px;
-      height: 34px;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
-    } 
+    border: 0;
+    border-left: 1px solid #000000;
+    background:#ffffff;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+  } 
 
   
   .nx-search {
     display: flex !important;
     align-items: center;
-    /* border:1px solid #ffffff; */
     border-radius:5px;
   }
 
   .nx-search__input {
-    /* display: block !important; */
     width: 18rem;
     height: 3.4rem;
     border: 0 !important;
@@ -765,28 +751,16 @@ details[open].menu-opening > .menu-drawer__submenu {
     padding: 0 1rem;
   }
 
-  /* .nx-search__btn {
-    width: 4rem;
-    height: 3.6rem;
-    border: 1px solid #878787;
-    border-left: 0;
-    background-color: #ebebeb;
+  .nx-search__btn {
+    border: 0;
+    border-left: 1px solid #000000;
+    background: #ffffff;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  } */
-
-    .nx-search__btn {
-        border: 0;
-        border-left: 1px solid #000000;
-        background: #ffffff;
-        width: 34px;
-        height: 34px;
-        cursor: pointer;
-        display: flex;
-        place-items: center;
-    }
+    place-items: center;
+  }
 
   .list-menu--inline {
     display: flex;
