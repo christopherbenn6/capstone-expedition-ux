@@ -227,7 +227,8 @@ fdt-active-filters,
   width: 100%;
 }
 
-#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) fdt-layout-grid {
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) fdt-layout-grid,
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) fdt-search-filters {
   display: flex !important;
   justify-content: center;
 }
