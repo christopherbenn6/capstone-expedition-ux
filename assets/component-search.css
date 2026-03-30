@@ -222,6 +222,10 @@ fdt-active-filters,
   justify-content: flex-start;
 }
 
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .template-search__search {
+  position: static;
+}
+
 .search-filters__heading-no-result {
   margin-top: 3.2rem;
 }
