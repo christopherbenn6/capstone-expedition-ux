@@ -5,6 +5,10 @@
   color: #fff;
 }
 
+.template-search__header p[role="status"] {
+  display: none;
+}
+
 .fdt-range-slider,
 .fdt-range-input {
   display: none;
