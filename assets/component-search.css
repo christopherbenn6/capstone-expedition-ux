@@ -212,9 +212,13 @@ fdt-active-filters,
 /* For when No Results */
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__grid search-filters__bar-top,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .template-search__header p,
-#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__product-count,
-#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__product-list {
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__product-count {
   display: none !important;
+}
+
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__product-list {
+  padding-top: 4.8rem;
+  text-align: left;
 }
 
 .search-filters__heading-no-result {
