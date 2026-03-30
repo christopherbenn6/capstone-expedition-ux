@@ -5,7 +5,8 @@
   color: #fff;
 }
 
-.template-search__header p[role="status"] {
+.template-search__header p[role="status"],
+.search-filters__bar-top {
   display: none;
 }
 
