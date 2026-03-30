@@ -200,7 +200,7 @@ fdt-active-filters,
 }
 
 .search-filters__no-search-result-wrapper--desktop {
-  display: inline-block;
+  display: flex;
 }
 
 .search-filters__product-list {
