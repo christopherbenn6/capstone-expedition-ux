@@ -638,9 +638,13 @@
     align-items: start;
     column-gap: 3rem;
   }
-  .footer__blocks-wrapper .footer-block--follow-us,
+  .footer__blocks-wrapper .footer-block--follow-us
+   {
+    margin: 6rem 0 !important;
+  }
+
   .footer__blocks-wrapper .footer-block--menu {
-    margin: 6rem !important;
+    margin: 5rem 0 !important;
   }
 
   .footer__blocks-wrapper>.footer-block.grid__item {
