@@ -199,6 +199,10 @@ fdt-active-filters,
   line-height: 1.25;
 }
 
+.search-filters__no-search-result-wrapper--desktop {
+  display: inline-block;
+}
+
 .search-filters__product-list {
   margin-bottom: 4.8rem;
 }
