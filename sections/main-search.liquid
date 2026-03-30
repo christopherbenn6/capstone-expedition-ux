@@ -139,6 +139,7 @@
                 type="reset"
                 class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
                 aria-label="{{ 'general.search.reset' | t }}"
+                href="{{ routes.search_url }}"
               >
                 <span class="svg-wrapper">
                   {{- 'icon-reset.svg' | inline_asset_content -}}
