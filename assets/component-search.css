@@ -228,8 +228,8 @@ fdt-active-filters,
 }
 
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) fdt-layout-grid {
-  display: block;
-  text-align: center;
+  display: flex !important;
+  justify-content: center;
 }
 
 .search-filters__heading-no-result {
