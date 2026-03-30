@@ -634,7 +634,7 @@
 
   .footer__blocks-wrapper {
     display: grid !important;
-    grid-template-columns: 360px 1fr 280px;
+    grid-template-columns: 360px 1fr 180px;
     align-items: start;
     column-gap: 3rem;
   }
