@@ -200,7 +200,13 @@ fdt-active-filters,
 }
 
 .search-filters__product-list {
-  padding: 0 !important;
+  margin-bottom: 4.8rem;
+}
+
+@media screen and (min-width: 770px) {
+  .search-filters__product-list {
+    padding: 0 !important;
+  }
 }
 
 .search-filters__filter-clear-all {
