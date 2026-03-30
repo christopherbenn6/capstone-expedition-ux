@@ -636,7 +636,7 @@
     display: grid !important;
     grid-template-columns: 360px 1fr 280px;
     align-items: start;
-    column-gap: 6rem;
+    column-gap: 3rem;
   }
 
   .footer__blocks-wrapper>.footer-block.grid__item {
