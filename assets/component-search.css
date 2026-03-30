@@ -227,6 +227,10 @@ fdt-active-filters,
   width: 100%;
 }
 
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__right {
+  grid-column: 1 / -1;
+}
+
 .search-filters__heading-no-result {
   margin-top: 3.2rem;
 }
