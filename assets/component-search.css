@@ -215,7 +215,7 @@ fdt-active-filters,
 }
 
 /* For when No Results */
-#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__grid search-filters__bar-top,
+#MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__grid,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .template-search__header p,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__product-count,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) fdt-filter-tree {
