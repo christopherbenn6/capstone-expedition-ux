@@ -224,7 +224,7 @@ fdt-active-filters,
 
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .search-filters__product-list {
   padding-top: 4.8rem;
-  justify-content: flex-start;
+  display: block;
 }
 
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .template-search__search {
