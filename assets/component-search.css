@@ -234,12 +234,12 @@ fdt-active-filters,
 
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) fdt-layout-grid,
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) fdt-search-filters {
-  display: flex;
+  display: flex !important;
   justify-content: center;
 }
 
 .search-filters__no-search-result {
-  display: block !important;
+  display: block;
 }
 
 .search-filters__heading-no-result {
