@@ -127,18 +127,9 @@
     }
   }
 
-  @media screen and (min-width: 1600px) {
-      .about-page-grid section:nth-of-type(odd) {
-        margin-left: 19.2rem;
-    }
-
-    .about-page-grid section:nth-of-type(even) {
-        margin-right: 19.2rem;
-      }
-    }
 {% endstyle %}
 
-<div class="about-page-grid">
+<div class="about-page-grid page-width">
   <section class="page-width hours-background">
     {% if section.settings.show_hours_heading %}
       <h3>{{ section.settings.hours_heading }}</h3>
