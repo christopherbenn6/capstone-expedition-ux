@@ -223,7 +223,7 @@ fdt-active-filters,
 }
 
 #MainContent:not(:has(.search-filters__product-item-grid-view-layout-content)) .template-search__search {
-  position: static;
+  position: static !important;
 }
 
 .search-filters__heading-no-result {
