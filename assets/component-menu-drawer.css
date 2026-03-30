@@ -494,7 +494,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     display: flex !important;
     align-items: center;
     border:1px solid #ffffff;
-    border-radius:5px;
+    /* border-radius:5px; */
   }
 
   .nx-search__input {
