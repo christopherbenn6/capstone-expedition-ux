@@ -638,8 +638,8 @@
     align-items: start;
     column-gap: 3rem;
   }
-  .footer-block grid__item .footer-block--follow-us,
-  .footer-block grid__item .footer-block--menu {
+  .footer__blocks-wrapper .footer-block grid__item.footer-block--follow-us,
+  .footer__blocks-wrapper .footer-block grid__item.footer-block--menu {
     margin: 6rem !important;
   }
 
