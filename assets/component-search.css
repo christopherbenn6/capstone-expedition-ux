@@ -240,7 +240,7 @@ fdt-active-filters,
 }
 
 .search-filters__no-search-result {
-  display: block;
+  display: block !important;
 }
 
 .search-filters__heading-no-result {
