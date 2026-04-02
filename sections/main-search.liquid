@@ -371,7 +371,7 @@
     {% comment %} Filter By Header {% endcomment %}
     let filterBy = document.querySelector('.search-filters__filter-tree-header');
     if(filterBy != null) {
-      {% comment %} filterBy.innerHTML = `Filters` {% endcomment %}
+      filterBy.innerText = `Filters`
     }
   });
   observer.observe(document.body, {
