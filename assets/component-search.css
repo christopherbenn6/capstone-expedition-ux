@@ -216,6 +216,10 @@ fdt-active-filters,
   margin: 0;
 }
 
+.fdt-offcanvas-content-button-primary {
+  background-color: rgb(255, 208, 0);
+}
+
 #Show-all-products {
   border-radius: 0;
   background-color: rgb(255, 208, 0);
