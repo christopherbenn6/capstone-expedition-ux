@@ -149,7 +149,7 @@ form {
 }
 
 .fdt-range-value-input span {
-  width: 100%;
+  display: block;
 }
 
 #sort-target-option {
