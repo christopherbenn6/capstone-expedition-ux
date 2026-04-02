@@ -1,7 +1,7 @@
 /* Custom Changes */
 
 #variant-selects-template--26657964654957__main label:hover  {
-  background-color: #26B3FF !important;
+  border:1px solid  #26B3FF !important;
 }
 
 #variant-selects-template--26657964654957__main label {
