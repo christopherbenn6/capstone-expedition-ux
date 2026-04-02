@@ -213,6 +213,7 @@ fdt-active-filters,
 
 .fdt-offcanvas-content-footer {
   background-color: #001F45;
+  margin: 0;
 }
 
 #Show-all-products {
