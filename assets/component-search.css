@@ -203,6 +203,10 @@ fdt-active-filters,
   display: flex;
 }
 
+.search-filters__no-search-result-wrapper--mobile {
+  display: none;
+}
+
 .search-filters__product-list {
   margin-bottom: 4.8rem;
 }
