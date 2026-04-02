@@ -13,7 +13,7 @@
   background-color: #26B3FF !important;
 }
 #variant-selects-template--26657964654957__main input[checked] + label {
-  transform: scale(1.1);
+  transform: scale(1.15);
   transition: all 1s ease;
 }
 
