@@ -4,7 +4,7 @@
 
 }
 #variant-selects-template--26657964654957__main input[data-product-url] + label {
-  background-color: blue;
+  background-color: blue !important;
 }
 
 .bg-color {
