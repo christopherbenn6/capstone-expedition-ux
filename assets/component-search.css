@@ -210,6 +210,7 @@ fdt-active-filters,
 #Show-all-products {
   border-radius: 0;
   background-color: rgb(255, 208, 0);
+  color: #000;
 }
 
 .search-filters__product-list {
