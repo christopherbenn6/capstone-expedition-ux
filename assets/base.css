@@ -3800,7 +3800,7 @@ body {
 }
 
 .globo-form-input input:-webkit-autofill {
-  color: #000 !important !important;
+  color: #000 !important;
 }
 
 .globo-form-input .gfb__dropzone .gfb__dropzone--placeholder--title {
