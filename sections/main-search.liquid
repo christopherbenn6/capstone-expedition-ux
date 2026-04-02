@@ -359,9 +359,13 @@
 {%- endif -%}
 
 <script defer>
+  let changeButtonContent = true;
   const observer = new MutationObserver(() => {
-      let button = document.querySelector('#Show-all-products');
-    console.log(button);
+    let button = document.querySelector('#Show-all-products');
+    if(button != null && changeButtonContent) {
+      button.href = `/search`;
+      changeButtonContent = false;
+    }
   });
   observer.observe(document.body, {
     childList: true,
