@@ -201,7 +201,6 @@ fdt-active-filters,
 
 .search-filters__no-search-result-wrapper--desktop {
   display: flex;
-  margin-top: 4.8rem;
 }
 
 .search-filters__no-search-result-wrapper--mobile {
