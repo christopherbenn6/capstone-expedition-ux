@@ -3799,8 +3799,8 @@ body {
   color: #000;
 }
 
-.globo-form-input input:-webkit-autofill {
-  color: #000 !important;
+.globo-formbuilder .globo-form-control input:-webkit-autofill, .globo-formbuilder .globo-form-control select:-webkit-autofill {
+  -webkit-text-fill-color: #000 !important;
 }
 
 .globo-form-input .gfb__dropzone .gfb__dropzone--placeholder--title {
