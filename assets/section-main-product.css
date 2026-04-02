@@ -6,6 +6,7 @@
 
 #variant-selects-template--26657964654957__main label {
   transition: all 0.3s ease;
+  margin-left: 1.6rem;
 }
 
 #variant-selects-template--26657964654957__main input:not([checked]) + label {
@@ -13,7 +14,7 @@
 }
 #variant-selects-template--26657964654957__main input[checked] + label {
   transform: scale(1.1);
-  margin: 0 1.6rem;
+  
 }
 
 
