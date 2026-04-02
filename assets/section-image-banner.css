@@ -545,7 +545,9 @@ h2 {
   position:relative;
   z-index:1;
   width:100%;
-  margin-top: -10px;
+  margin-top: -18px;
+  margin-bottom: -18px;
+  height:36px;
 
   
 }
