@@ -12,6 +12,10 @@
   background-color: #26B3FF !important;
 }
 
+#variant-selects-template--26657964654957__main input[checked] + label:hover {
+  background-color:rgb(31, 145, 206) !important;
+}
+
 .bg-color {
   background-color: #001F45;
   padding: 1.6rem;
