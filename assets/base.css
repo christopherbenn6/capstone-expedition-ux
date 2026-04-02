@@ -3799,7 +3799,7 @@ body {
   color: #000;
 }
 
-.globo-form-input input:-internal-autofill-previewed {
+.globo-form-input input:-webkit-autofill {
   color: #000 !important;
 }
 
