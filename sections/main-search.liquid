@@ -359,8 +359,10 @@
 {%- endif -%}
 
 <script defer>
-  let button = document.querySelector('#Show-all-products');
-  console.log(button);
+  const observer = new MutationObserver(() => {
+      let button = document.querySelector('#Show-all-products');
+    console.log(button);
+  });
 </script>
 
 {% schema %}
