@@ -112,6 +112,12 @@ form {
 }
 
 @media screen and (max-width: 767px) {
+  .fdt-overflow-hidden-offcanvas {
+    overflow: unset;
+    height: unset;
+    position: unset;
+    width: unset;
+  }
   .fdt-range-value {
     flex-direction: row;
   }
