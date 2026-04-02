@@ -5,7 +5,10 @@
 }
 
 #variant-selects-template--26657964654957__main label {
-  transition: all 0.3s ease;
+  transition: {
+    transform 1s ease
+
+  };
   margin-left: 1.6rem;
 }
 
