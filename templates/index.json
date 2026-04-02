@@ -97,7 +97,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20260309_144219_1.jpg",
+        "image": "shopify://shop_images/who-we-are.avif",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
