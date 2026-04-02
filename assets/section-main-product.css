@@ -3,7 +3,7 @@
 #variant-selects-template--26657964654957__main label:hover  {
 
 }
-#variant-selects-template--26657964654957__main input[data-product-url=""] + label {
+#variant-selects-template--26657964654957__main input[checked] + label {
   background-color: blue !important;
 }
 
