@@ -1,10 +1,10 @@
 /* Custom Changes */
 
 #variant-selects-template--26657964654957__main label:hover  {
-
+  background-color: #26B3FF !important;
 }
 #variant-selects-template--26657964654957__main input[checked] + label {
-  background-color: blue !important;
+  background-color: #26B3FF !important;
 }
 
 .bg-color {
