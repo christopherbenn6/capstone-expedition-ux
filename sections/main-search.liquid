@@ -358,13 +358,23 @@
   {{ 'mask-arch.svg' | inline_asset_content }}
 {%- endif -%}
 
+{% comment %} The app we're using injects the filter content, so to change some things we do so after render {% endcomment %}
 <script defer>
   let changeButtonContent = true;
   const observer = new MutationObserver(() => {
+    {% comment %} Button Changes {% endcomment %}
     let button = document.querySelector('#Show-all-products');
     if(button != null && changeButtonContent) {
       button.href = `/search`;
       changeButtonContent = false;
+    }
+    {% comment %} Filter By Header {% endcomment %}
+    let filterBy = document.querySelector('.search-filters__filter-tree-header');
+    if(filterBy != null) {
+      filterBy.innerHTML = `Filters<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7959 0.25V2.13672H4.24023L7.58984 7.05273L11.207 12.3594L11.2441 12.4141L11.249 12.4805L11.8916 20.3242L14.9287 21.8506V12.3291L14.9785 12.2627L23.6982 0.625977L23.8486 0.424805L24.0488 0.576172L25.1504 1.41016L25.3496 1.55957L25.2002 1.75879L16.8086 12.958V24.9062L16.4463 24.7236L10.1621 21.5654L10.0293 21.498L10.0254 21.3496L9.75195 12.5869L0.799805 0.650391L0.5 0.25H19.7959Z" fill="#FFD000" stroke="#FFD000" stroke-width="0.5"/>
+</svg>
+`
     }
   });
   observer.observe(document.body, {
