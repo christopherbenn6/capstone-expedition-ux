@@ -148,6 +148,10 @@ form {
   padding: 0.8rem;
 }
 
+.fdt-range-value-input span {
+  width: 100%;
+}
+
 #sort-target-option {
   color: #000;
 }
