@@ -363,6 +363,10 @@
       let button = document.querySelector('#Show-all-products');
     console.log(button);
   });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
 </script>
 
 {% schema %}
