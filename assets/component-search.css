@@ -221,6 +221,7 @@ fdt-active-filters,
   border-radius: 0;
   color: #000;
   width: 100%;
+  border-top: 1px solid #fff;
 }
 
 #Show-all-products {
