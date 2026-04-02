@@ -543,7 +543,7 @@ h2 {
 
 .nx-divider {
   position:relative;
-  z-index:3;
+  z-index:0;
   width:100%;
   margin-top: -18px;
   margin-bottom: -18px;  
