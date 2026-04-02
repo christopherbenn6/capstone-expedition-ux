@@ -541,15 +541,19 @@ h2 {
 
 }
 
-.nx-divider__img {
+.nx-divider {
   position:relative;
   z-index:1;
   width:100%;
   margin-top: -18px;
-  margin-bottom: -18px;
-  height:36px;
+  margin-bottom: -18px;  
+}
 
-  
+.nx-divider__img {
+  display: block;
+  width: 100%;
+  height: 36px;
+  object-fit: cover;
 }
 
 
