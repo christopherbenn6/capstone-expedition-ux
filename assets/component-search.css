@@ -48,6 +48,14 @@
     display: grid;
   }
 
+  /* Disables noscroll after changing screen size while modal is open */
+  .fdt-overflow-hidden-offcanvas {
+    overflow: unset !important;
+    height: unset !important;
+    position: unset !important;
+    width: unset !important;
+  }
+
   .search-filters__bar-top.search-filters__bar-top {
     display: flex;
   }
@@ -242,6 +250,7 @@ fdt-active-filters,
   .search-filters__product-list {
     padding: 0 !important;
   }
+
   .fdt-overflow-hidden-offcanvas {
     overflow: unset !important;
     height: unset !important;
