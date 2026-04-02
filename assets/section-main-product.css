@@ -1,7 +1,7 @@
 /* Custom Changes */
 
 #variant-selects-template--26657964654957__main label:hover  {
-  border:1px solid  #26B3FF !important;
+  background-color: rgb(21, 136, 197) !important;
 }
 
 #variant-selects-template--26657964654957__main label {
