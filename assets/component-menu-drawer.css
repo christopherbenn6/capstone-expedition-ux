@@ -282,9 +282,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   .site-title-extended {
     display: none !important;
   }
-  .header__icon--menu svg:first-child {
-    display: none;
-  }
+ 
 
   .nx-search {
     display: flex;
