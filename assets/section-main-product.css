@@ -1,5 +1,12 @@
 /* Custom Changes */
 
+#variant-selects-template--26657964654957__main label:hover  {
+
+}
+#variant-selects-template--26657964654957__main input[data-product-url] {
+  color: blue;
+}
+
 .bg-color {
   background-color: #001F45;
   padding: 1.6rem;
