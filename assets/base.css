@@ -3827,6 +3827,6 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   letter-spacing: 5% !important;
 }
 
- .header__icon--menu svg:first-child {
+details[open] .header__icon--menu svg:first-child {
     display: none;
   }
