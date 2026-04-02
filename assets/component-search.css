@@ -207,6 +207,10 @@ fdt-active-filters,
   display: none;
 }
 
+.search-filters__filter-option-item-label-box {
+  border-radius: 0;
+}
+
 #Show-all-products {
   border-radius: 0;
   background-color: rgb(255, 208, 0);
