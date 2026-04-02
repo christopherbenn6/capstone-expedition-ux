@@ -112,12 +112,6 @@ form {
 }
 
 @media screen and (max-width: 767px) {
-  .fdt-overflow-hidden-offcanvas {
-    overflow: unset !important;
-    height: unset !important;
-    position: unset !important;
-    width: unset !important;
-  }
   .fdt-range-value {
     flex-direction: row;
   }
@@ -247,6 +241,12 @@ fdt-active-filters,
 @media screen and (min-width: 770px) {
   .search-filters__product-list {
     padding: 0 !important;
+  }
+  .fdt-overflow-hidden-offcanvas {
+    overflow: unset !important;
+    height: unset !important;
+    position: unset !important;
+    width: unset !important;
   }
 }
 
