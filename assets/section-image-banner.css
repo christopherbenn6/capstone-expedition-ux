@@ -556,10 +556,6 @@ h2 {
   object-fit: cover;
 }
 
-
-
-
-
 .banner {
   position: relative;
 }
@@ -591,6 +587,11 @@ h2 {
 
 
 @media screen and (min-width: 750px) {
+
+ .nx-divider {
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
 
  .nx-divider__img {
     height: 60px;
