@@ -10,6 +10,7 @@
 
 #variant-selects-template--26657964654957__main input:not([checked]) + label {
   background-color: #26B3FF !important;
+  transform: scale(1.1);
 }
 
 #variant-selects-template--26657964654957__main input[checked] + label:hover {
