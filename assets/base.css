@@ -3799,6 +3799,10 @@ body {
   color: #000;
 }
 
+.globo-form-input input:-internal-autofill-previewed {
+  color: #000 !important;
+}
+
 .globo-form-input .gfb__dropzone .gfb__dropzone--placeholder--title {
   font-size: clamp(2.4rem, 2.10912rem + 0.9091vw, 3.2rem) !important;
 }
