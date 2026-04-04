@@ -1,6 +1,10 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  .image-with-text__media-item img {
+      border: 2px solid #26B3FF !important;
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -12,6 +16,10 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+
+    .image-with-text__media-item img {
+      border: 5px solid #26B3FF !important;
+  }
   }
 
   #MainContent:has(shopify-section-template--26657964982637__main) {

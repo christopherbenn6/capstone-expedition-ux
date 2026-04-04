@@ -44,8 +44,8 @@
 
   .list-menu {
     list-style: none;
-    {% comment %} padding: 0;
-    margin: 0; {% endcomment %}
+    padding: 0;
+    margin: 0;
   }
 
   .list-menu--inline {
@@ -268,7 +268,7 @@
         <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
       </a>
       {% comment %} for desktop {% endcomment %}
-      <form class="nx-search" action="{{ collections['games'].url }}" method="get" role="search">
+      <form class="nx-search" action="{{ routes.search_url }}" method="get" role="search">
         <input
           class="nx-search__input"
           type="search"

@@ -1,5 +1,26 @@
 /* Custom Changes */
 
+#variant-selects-template--26657964654957__main label:hover  {
+  background-color:rgb(31, 145, 206) !important;
+}
+
+#variant-selects-template--26657964654957__main label {
+  transition: all 0.3s ease;
+  margin-left: 1.6rem;
+}
+
+#variant-selects-template--26657964654957__main input:not([checked]) + label {
+  background-color: #26B3FF !important;
+}
+#variant-selects-template--26657964654957__main input[checked] + label {
+  transform: scale(1.15);
+}
+
+
+#variant-selects-template--26657964654957__main input[checked] + label:hover {
+  background-color: rgb(207, 155, 10) !important;
+}
+
 .bg-color {
   background-color: #001F45;
   padding: 1.6rem;

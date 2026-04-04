@@ -638,8 +638,8 @@
     align-items: start;
     column-gap: 3rem;
   }
-
-  .footer__blocks-wrapper .footer-block--follow-us {
+  .footer__blocks-wrapper .footer-block--follow-us
+   {
     margin: 6rem 0 !important;
   }
 
@@ -688,7 +688,7 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 3rem;
-    justify-content: space-between;
+    justify-content:space-between;
     /* margin: 0;
     padding: 0; */
   }

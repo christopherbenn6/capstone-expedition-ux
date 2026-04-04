@@ -30,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Browse Our Games",
-            "button_link_1": "shopify://collections/games",
+            "button_link_1": "/search",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -97,7 +97,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20260309_144219_1.jpg",
+        "image": "shopify://shop_images/who-we-are_fea6b07e-b2cb-45f4-a883-940a679bbdd7.avif",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",

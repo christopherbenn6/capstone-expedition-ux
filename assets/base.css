@@ -3796,6 +3796,12 @@ body {
   letter-spacing: 5% !important;
   border: 2px solid #878787 !important;
   border-radius: 0 !important;
+  color: #000;
+}
+
+body .globo-formbuilder .globo-form-control input:-webkit-autofill, 
+body .globo-formbuilder .globo-form-control select:-webkit-autofill {
+  -webkit-text-fill-color: #000 !important;
 }
 
 .globo-form-input .gfb__dropzone .gfb__dropzone--placeholder--title {
@@ -3820,3 +3826,4 @@ body {
   border-radius: 0 !important;
   letter-spacing: 5% !important;
 }
+

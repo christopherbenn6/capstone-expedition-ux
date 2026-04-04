@@ -61,6 +61,10 @@
   .search__button .icon {
     height: 1.8rem;
   }
+
+  .reset__button {
+    z-index: 1000;
+  }
 </style>
 
 {%- liquid
@@ -131,15 +135,16 @@
                 <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
               {%- endif -%}
 
-              <button
+              <a
                 type="reset"
                 class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
                 aria-label="{{ 'general.search.reset' | t }}"
+                href="{{ routes.search_url }}"
               >
                 <span class="svg-wrapper">
                   {{- 'icon-reset.svg' | inline_asset_content -}}
                 </span>
-              </button>
+              </a>
               <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
                 <span class="svg-wrapper">
                   {{- 'icon-search.svg' | inline_asset_content -}}
@@ -352,6 +357,23 @@
 {% if section.settings.image_shape == 'arch' %}
   {{ 'mask-arch.svg' | inline_asset_content }}
 {%- endif -%}
+
+{% comment %} The app we're using injects the filter content, so to change some things we do so after render {% endcomment %}
+<script defer>
+  let changeButtonContent = true;
+  const observer = new MutationObserver(() => {
+    {% comment %} Button Changes {% endcomment %}
+    let button = document.querySelector('#Show-all-products');
+    if(button != null && changeButtonContent) {
+      button.href = `/search`;
+      changeButtonContent = false;
+    }
+  });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+</script>
 
 {% schema %}
 {
