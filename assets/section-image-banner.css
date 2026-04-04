@@ -600,7 +600,7 @@ h2 {
  p{
     font-size: clamp(1.6rem, 1.52rem + 0.4vw, 2rem);
   }
-  
+
   .image-with-text__grid {
     display: flex;
     gap: 6rem;
