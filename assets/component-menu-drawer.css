@@ -242,6 +242,7 @@ details[open].menu-opening>.menu-drawer__submenu {
 
 /* custom css */
 
+
 .header__heading-link .h2 {
   color: #000000 !important;
 }
@@ -445,7 +446,7 @@ details[open].menu-opening>.menu-drawer__submenu {
 
   .header__heading-logo {
     display: block;
-    width: 50px !important;
+    width: 60px !important;
     height: auto !important;
   }
 
@@ -501,7 +502,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     display: flex !important;
     align-items: center;
     border: 1px solid #ffffff;
-    border-radius: 5px;
+    /* border-radius:5px; */
   }
 
   .nx-search__input {
@@ -527,7 +528,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   .list-menu--inline {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    /* gap: 1rem; */
     flex-wrap: nowrap;
   }
 
