@@ -428,9 +428,9 @@ table:not([class]) th {
   text-align: left;
 }
 
-.center {
+/* .center {
   text-align: center;
-}
+} */
 
 .right {
   text-align: right;
@@ -1234,9 +1234,9 @@ button.shopify-payment-button__button--unbranded {
   left: var(--buttons-border-width);
   z-index: 1;
   border-radius: var(--buttons-radius);
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
+  /* box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-short) ease; */
 }
 
 .button:not([disabled]):hover::after,
@@ -2410,7 +2410,7 @@ input[type='checkbox'] {
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
   text-decoration: none;
   word-break: break-word;
 }
@@ -2429,11 +2429,11 @@ input[type='checkbox'] {
   max-width: 100%;
 }
 
-.header__heading-logo-wrapper {
+/* .header__heading-logo-wrapper {
   width: 100%;
   display: inline-block;
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
-}
+} */
 
 @media screen and (max-width: 989px) {
 
@@ -2483,7 +2483,7 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
+  /* padding-right: 0.8rem; */
 }
 
 .header__icons .shopify-app-block {
@@ -2496,7 +2496,8 @@ input[type='checkbox'] {
 .header__icon span {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap:1.6rem;
 }
 
 .header__icon {
@@ -3574,10 +3575,6 @@ details-disclosure>details {
   }
 }
 
-.latest-posts-social-links {
-  justify-content: flex-start !important;
-}
-
 .eapps-facebook-feed-posts-load-more-wrapper {
   display: none;
 }
@@ -3613,7 +3610,31 @@ main h5 {
 
 p {
   color: white;
-  font-size: clamp(1.6rem, 1.45456 + 0.4545vw, 2rem);
+  font-size: clamp(1.6rem, 1.45456rem + 0.4545vw, 2rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(3.2rem, 2.03632rem + 3.6364vw, 6.4rem);
+}
+
+h3 {
+  font-size: clamp(2.4rem, 1.5272rem + 2.7273vw, 4.8rem);
+}
+
+h4 {
+  font-size: clamp(2rem, 1.56368rem + 1.3636vw, 3.2rem);
 }
 
 .main-page-title {
@@ -3631,7 +3652,7 @@ p {
 }
 
 .header__heading-link {
-  font-size: clamp(2.4rem, 1rem + 4vw, 4.8rem) !important;
+  font-size: clamp(3.2rem, 1rem + 4vw, 4.8rem) !important;
   line-height: 1.5;
   color: #000 !important;
 }
@@ -3651,11 +3672,11 @@ p {
   white-space: nowrap;
 }
 
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
   .site-title-extended {
     display: none;
   }
-}
+} */
 
 @font-face {
   font-family: 'Gemunu Libre';
@@ -3663,16 +3684,6 @@ p {
   font-weight: 400;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'Gemunu Libre';
-  src: url('GemunuLibre-Bold.woff2') format('woff2'),
-    url('GemunuLibre-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
 
 body {
   font-family: 'Gemunu Libre', sans-serif;
@@ -3689,12 +3700,14 @@ body {
   display: none;
 }
 
+.button {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 750px) {
 
-  /* latest games button */
-  .center {
-   text-align:left; 
-}
+  
 
 
   /* footer */
@@ -3744,20 +3757,66 @@ body {
   color: #48D46B !important;
 }
 
-@font-face {
-    font-family: 'Gemunu Libre';
-    src: url('GemunuLibre-Bold.woff2') format('woff2'),
-        url('GemunuLibre-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-
 /* Styling for games page */
 .search-filters__product-list {
   font-family: 'jersey-20', sans-serif;
   letter-spacing: 2px;
+}
+
+/* form */
+
+@media only screen and (max-width: 768px) {
+    .globo-form-app.boxed-layout .g-container {
+        padding: 1.6rem !important;
+    }
+}
+
+.panels {
+  z-index: 1 !important;
+}
+
+.globo-form-app.boxed-layout {
+  border-radius: 0 !important;
+}
+
+.globo-form-control label {
+  font-family: 'jersey-20', sans-serif !important;
+  font-size: clamp(2rem, 1.56368rem + 1.3636vw, 3.2rem) !important;
+  margin: 1.6rem 0 0.8rem !important;
+}
+.globo-form-control {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.globo-form-input input,
+.globo-form-input textarea,
+.globo-form-input .gfb__dropzone {
+  font-family: 'Gemunu Libre' !important;
+  letter-spacing: 5% !important;
+  border: 2px solid #878787 !important;
+  border-radius: 0 !important;
+}
+
+.globo-form-input .gfb__dropzone .gfb__dropzone--placeholder--title {
+  font-size: clamp(2.4rem, 2.10912rem + 0.9091vw, 3.2rem) !important;
+}
+
+.globo-form-input .gfb__dropzone--placeholder--description {
+  font-size: clamp(1.2rem, 1.05456rem + 0.4545vw, 1.6rem) !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.globo-form-input .gfb__dropzone button {
+  letter-spacing: 5% !important;
+  font-size: 2rem !important;
+  margin-bottom: 1.4rem !important;
+  border-radius: 0 !important;
+}
+
+.gfb__footer button {
+  font-family: 'Gemunu Libre' !important;
+  font-weight: 900 !important;
+  border-radius: 0 !important;
+  letter-spacing: 5% !important;
 }

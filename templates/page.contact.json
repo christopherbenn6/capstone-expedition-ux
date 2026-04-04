@@ -14,22 +14,41 @@
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
-        "enable_page_heading": true,
+        "enable_page_heading": false,
         "heading_container": 795,
         "manual_settings": false,
         "manual_heading": "Contact Us"
       }
     },
-    "form": {
-      "type": "contact-form",
-      "disabled": true,
+    "rich_text_FdK7hf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cRahUG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h1"
+          }
+        },
+        "text_AETymX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you are planning to sell your collection, be sure to message us and we can give you our best offer!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cRahUG",
+        "text_AETymX"
+      ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "heading": "Contact Us",
-        "description": "<p>If you are planning to sell your collection, be sure to message us and we can give you our best offer!</p>",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     },
     "custom_liquid_DwEYzJ": {
@@ -37,15 +56,15 @@
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"globo-formbuilder\" data-id=\"MTM0NjA0\"></div>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "color_scheme": "scheme-3",
+        "padding_top": 0,
+        "padding_bottom": 64
       }
     }
   },
   "order": [
     "main",
-    "form",
+    "rich_text_FdK7hf",
     "custom_liquid_DwEYzJ"
   ]
 }

@@ -287,6 +287,18 @@ details[open].menu-opening>.menu-drawer__submenu {
     display: none !important;
   }
 
+  .icon-close {
+    display: none;
+  }
+
+  .menu-opening .icon-close {
+    display: block;
+  }
+
+  .menu-opening span>svg:first-child {
+    display: none;
+  }
+
   .nx-search {
     display: flex;
     align-items: center;
