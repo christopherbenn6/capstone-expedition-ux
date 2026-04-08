@@ -291,10 +291,6 @@ details[open].menu-opening>.menu-drawer__submenu {
     display: block;
   }
 
-  /* .menu-opening span > svg:first-child {
-    display: none;
-  } */
-
   .menu-opening .header__icon--menu span > svg:first-child {
     display: none;
   }
