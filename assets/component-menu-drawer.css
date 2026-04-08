@@ -291,7 +291,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     display: block;
   }
 
-  .menu-opening .header__icon--menu span > svg:first-child {
+  .menu-opening span > svg:first-child {
     display: none;
   }
 
