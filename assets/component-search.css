@@ -18,7 +18,11 @@
 }
 
 .fdt-pagination-btn svg {
-  align-self: center;
+  
+}
+
+.fdt-next-btn  {
+  display: flex;
 }
 
 /* Mobile Filters */
