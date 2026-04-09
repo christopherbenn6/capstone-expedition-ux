@@ -3819,6 +3819,10 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   font-weight: 900 !important;
   border-radius: 0 !important;
   letter-spacing: 5% !important;
+}
+
+.gfb__footer button:hover {
+  border: rgb(207, 155, 10) solid 1px !important;
   background: rgb(207, 155, 10) !important;
 }
 
