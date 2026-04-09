@@ -3855,10 +3855,8 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 
 /* Search Focus */
 
+.nx-search__input,
+.nx-search__input:focus,
 .nx-search__input:focus-within {
-  transition: none;
-}
-
-.nx-search__input {
-  transition: none;
+  transform: none !important;
 }
