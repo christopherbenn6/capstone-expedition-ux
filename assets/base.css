@@ -3855,6 +3855,6 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 
 /* Search Hover */
 
-.nx-search__input {
-  transform: scale(0);
+.nx-search__input:hover {
+  transform: scale(1);
 }
