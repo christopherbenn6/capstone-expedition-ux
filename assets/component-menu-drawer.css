@@ -282,18 +282,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   .site-title-extended {
     display: none !important;
   }
- 
-  /* .icon-close {
-    display: none;
-  }
 
-  .menu-opening .icon-close {
-    display: block;
-  }
-
-  .menu-opening span > svg:first-child {
-    display: none;
-  } */
 
   .header__icon--menu span > svg:last-child {
     display: none;
