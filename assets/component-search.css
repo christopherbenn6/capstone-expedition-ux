@@ -24,6 +24,7 @@
 .fdt-next-btn  {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .fdt-next-btn svg {
