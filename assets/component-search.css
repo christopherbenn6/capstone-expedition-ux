@@ -168,6 +168,10 @@ form {
   padding-top: 0.8rem;
 }
 
+.search-filters__loading-wrapper {
+  border-radius: 0;
+}
+
 .search-filters__filter-option {
   padding-bottom: 1rem;
   padding-right: 2rem;
