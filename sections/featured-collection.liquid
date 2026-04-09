@@ -115,7 +115,7 @@
 
 {%- for product in collections['all'].products -%}
   
-  {% unless product.collections contains collections['games'] %}
+  {% unless product.metafields.custom.condition == blank  %}
     
     {% assign shown_count = shown_count | plus: 1 %}
 
