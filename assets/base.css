@@ -3831,7 +3831,7 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   background-color: #f1f1f1 !important;
   color: #000 !important;
   border: 2px solid #878787 !important;
-  display: block;
+  display: block !important;
 }
 
 .message.success .content {
@@ -3845,5 +3845,5 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 }
 
 .elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd {
-  margin-top: 1.6rem;
+  margin-top: 3.2rem;
 }
