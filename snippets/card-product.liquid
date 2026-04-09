@@ -29,7 +29,8 @@
   {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
 {%style %}
-  .bg-img-placeholder:after {
+  .bg-img-placeholder:after,
+  .bg-img-placeholder {
     content: '';
     width: 100%;
     display:block;
