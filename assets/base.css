@@ -3827,3 +3827,12 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   letter-spacing: 5% !important;
 }
 
+.message.success {
+  background-color: #f1f1f1 !important;
+  color: #000 !important;
+  border: 2px solid #878787 !important;
+}
+
+.gfb__content-title {
+  font-family: 'Gemunu Libre' !important;
+}
