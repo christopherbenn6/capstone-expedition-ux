@@ -3838,5 +3838,5 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 }
 
 .gfb__content-title {
-  font-family: 'jersey-20' !important;
+  font-family: 'jersey-20', sans-serif !important;
 }
