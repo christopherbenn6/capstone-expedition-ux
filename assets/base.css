@@ -3852,3 +3852,9 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 .elfsight-sapp-2a2d0cd1-cdd7-45d6-81f9-20989df405fd {
   margin-top: 3.2rem;
 }
+
+/* Search Hover */
+
+.nx-search__input:hover {
+  transform: scale(0);
+}
