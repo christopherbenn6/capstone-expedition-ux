@@ -631,7 +631,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   .menu-drawer__menu-item {
     color: #ffffff !important;
     font-size: 2rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1.2;
     padding: 1.6rem 0 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
