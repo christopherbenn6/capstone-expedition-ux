@@ -1,6 +1,7 @@
 /* Pagination */
 .fdt-pagination-container {
   height: 50px;
+  gap: 0;
 }
 
 .fdt-pagination-btn,
