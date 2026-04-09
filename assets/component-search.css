@@ -512,4 +512,7 @@ input::-webkit-search-decoration,
   position: relative;
 }
 
-.search-filters__toolbar-item
+.search-filters__toolbar-item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
