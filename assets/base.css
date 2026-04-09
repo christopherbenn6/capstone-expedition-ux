@@ -693,8 +693,6 @@ summary::-webkit-details-marker {
   box-shadow: none;
 }
 
-
-
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
 .focused {
   outline: var(--focused-base-outline);
