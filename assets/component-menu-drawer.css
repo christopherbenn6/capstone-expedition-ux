@@ -326,7 +326,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   }
 
   button.nx-search-form__btn {
-    box-shadow:none;
+    border-radius: none !important;
   }
 
   .header__heading-logo {
