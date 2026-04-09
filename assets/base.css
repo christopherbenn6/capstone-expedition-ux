@@ -3853,7 +3853,7 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 }
 
 .button:hover {
-  border: #26B3FF solid 4px;
+  background: #26B3FF;
 }
 
 .button:not([disabled]):hover:after, .shopify-challenge__button:hover:after, .customer button:hover:after, .shopify-payment-button__button--unbranded:hover:after {
