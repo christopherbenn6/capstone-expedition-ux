@@ -208,7 +208,7 @@
       <div class="page-width">
         <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <a
-            href="{{ section.settings.collection.url }}"
+            href="{{ routes.search_url }}?q=&type=product"
             class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
             aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
           >
