@@ -1,4 +1,8 @@
 /* Pagination */
+.fdt-pagination-container {
+  height: 50px;
+}
+
 .fdt-pagination-btn,
 .fdt-pagination-ellipsis {
   background-color: #EBEBEB;
