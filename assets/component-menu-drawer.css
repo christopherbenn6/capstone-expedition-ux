@@ -283,7 +283,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     display: none !important;
   }
  
-  .icon-close {
+  /* .icon-close {
     display: none;
   }
 
@@ -293,6 +293,18 @@ details[open].menu-opening>.menu-drawer__submenu {
 
   .menu-opening span > svg:first-child {
     display: none;
+  } */
+
+  .header__icon--menu span > svg:last-child {
+    display: none;
+  }
+
+  .menu-opening .header__icon--menu span > svg:first-child {
+    display: none;
+  }
+
+  .menu-opening .header__icon--menu span > svg:last-child {
+    display: block;
   }
 
   .nx-search {
