@@ -515,4 +515,6 @@ input::-webkit-search-decoration,
 .search-filters__toolbar-item {
   margin: 0 !important;
   padding: 0 !important;
+  -web-margin-before: 0;
+  -web-margin-after: 0;
 }
