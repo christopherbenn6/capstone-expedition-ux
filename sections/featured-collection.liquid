@@ -111,7 +111,7 @@
 
         {%- if 1 > 0 -%}
           {% assign lazy_load = false %}
-            {%- for product in collection.all.products limit: section.settings.products_to_show -%}
+            {%- for product in collection['all'].products limit: section.settings.products_to_show -%}
               {% if lazy_load == false and forloop.index > max_columns_to_show %}
                 {% assign lazy_load = true %}
               {% endif %}
