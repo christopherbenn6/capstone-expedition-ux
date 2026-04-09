@@ -110,7 +110,9 @@
       >
         {% assign skip_card_product_styles = false %}
 
-        {%- if 1 > 0 -%}
+        {%- if enable_csv_import -%}
+
+        {% else %}
           {% assign lazy_load = false %}
             {% assign shown_count = 0 %}
 
