@@ -3835,6 +3835,7 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 
 .message.success .content {
   font-family: 'Gemunu Libre' !important;
+  color: #000 !important;
 }
 
 .gfb__content-title {
