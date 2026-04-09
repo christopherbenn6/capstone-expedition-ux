@@ -143,68 +143,34 @@
                     {%- endif -%}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
-                      {% comment %}
-                        {%- if settings.brand_image != blank -%}
-                          <div
-                            class="footer-block__image-wrapper"
-                            style="max-width: min(100%, {{ settings.brand_image_width }}px);"
-                          >
-                            {{
-                              settings.brand_image
-                              | image_url: width: 1100
-                              | image_tag:
-                                loading: 'lazy',
-                                widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
-                                height: brand_image_width,
-                                width: settings.brand_image_width
-                            }}
-                          </div>
-                        {%- endif -%}
-                        {%- if settings.brand_headline != blank
-                          or section.settings.footer_brand_title_desktop != blank
-                        -%}
-                          <h2 class="footer-block__heading rte footer-brand-title">
-                            <span class="footer-title-mobile">
-                              {{ settings.brand_headline | split: ' ' | first | upcase }}
-                            </span>
-                            <span class="footer-title-desktop">
-                              {{ section.settings.footer_brand_title_desktop }}
-                            </span>
-                          </h2>
-                        {%- endif -%}
-                      {% endcomment %}
-
-                      <a href="{{ routes.root_url }}" class="footer__brand-link">
-                        {%- if settings.brand_image != blank -%}
-                          <div
-                            class="footer-block__image-wrapper"
-                            style="max-width: min(100%, {{ settings.brand_image_width }}px);"
-                          >
-                            {{
-                              settings.brand_image
-                              | image_url: width: 1100
-                              | image_tag:
-                                loading: 'lazy',
-                                widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
-                                height: brand_image_width,
-                                width: settings.brand_image_width
-                            }}
-                          </div>
-                        {%- endif -%}
-
-                        {%- if settings.brand_headline != blank
-                          or section.settings.footer_brand_title_desktop != blank
-                        -%}
-                          <h2 class="footer-block__heading rte footer-brand-title">
-                            <span class="footer-title-mobile">
-                              {{ settings.brand_headline | split: ' ' | first | upcase }}
-                            </span>
-                            <span class="footer-title-desktop">
-                              {{ section.settings.footer_brand_title_desktop }}
-                            </span>
-                          </h2>
-                        {%- endif -%}
-                      </a>
+                      {%- if settings.brand_image != blank -%}
+                        <div
+                          class="footer-block__image-wrapper"
+                          style="max-width: min(100%, {{ settings.brand_image_width }}px);"
+                        >
+                          {{
+                            settings.brand_image
+                            | image_url: width: 1100
+                            | image_tag:
+                              loading: 'lazy',
+                              widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+                              height: brand_image_width,
+                              width: settings.brand_image_width
+                          }}
+                        </div>
+                      {%- endif -%}
+                      {%- if settings.brand_headline != blank
+                        or section.settings.footer_brand_title_desktop != blank
+                      -%}
+                        <h2 class="footer-block__heading rte footer-brand-title">
+                          <span class="footer-title-mobile">
+                            {{ settings.brand_headline | split: ' ' | first | upcase }}
+                          </span>
+                          <span class="footer-title-desktop">
+                            {{ section.settings.footer_brand_title_desktop }}
+                          </span>
+                        </h2>
+                      {%- endif -%}
                       {%- if settings.brand_description != blank -%}
                         <div class="rte">{{ settings.brand_description }}</div>
                       {%- endif -%}
