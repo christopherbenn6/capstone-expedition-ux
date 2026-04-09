@@ -21,7 +21,8 @@
   
 }
 
-.fdt-next-btn  {
+.fdt-next-btn,
+.fdt-prev-btn  {
   display: flex;
   align-items: center;
   justify-content: center;
