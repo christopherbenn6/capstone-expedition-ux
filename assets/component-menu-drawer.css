@@ -306,9 +306,19 @@ details[open].menu-opening>.menu-drawer__submenu {
     height: 32px;
   }
 
-  .nx-search__input {
-    display: none !important;
-  }
+
+  .nx-search-form__btn {
+  border: 0 !important;
+  border-left: 1px solid #000 !important;
+  border-radius: 0 !important;
+  background: #ffffff !important;
+  width: 44px !important;
+  height: 44px !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
 
   .nx-search-form__input {
     box-sizing: border-box;

@@ -117,7 +117,7 @@
               {% assign products_count = "" | split: ", " %}
               {% unless count > section.settings.products_to_show %}
                 {% assign products_count = products_count | concat: product | split: ","  %}
-                <p>{{ product }}</p>
+                <p>{{ product.title }}</p>
               {% endunless %}
               <p>{{ products_count }}</p> 
               {%for product in products_count %}
