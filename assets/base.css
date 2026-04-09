@@ -3848,6 +3848,6 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 
 /* Search Focus */
 
-.nx-search__input {
+form.nx-search {
   border: 2px #878787 solid;
 }
