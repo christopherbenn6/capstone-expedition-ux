@@ -1,6 +1,7 @@
 /* Pagination */
 .fdt-pagination-container {
   gap: 0;
+  margin-bottom: 9.6rem;
 }
 
 .fdt-pagination-btn,
