@@ -155,7 +155,7 @@
 
 {%- endfor -%}
         {%- else -%}
-          {%- for i in (1..section.settings.columns_desktop) -%}
+          {% comment %} {%- for i in (1..section.settings.columns_desktop) -%}
             <li
               class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
               {% if settings.animations_reveal_on_scroll %}
@@ -181,7 +181,7 @@
                 placeholder_image: placeholder_image
               %}
             </li>
-          {%- endfor -%}
+          {%- endfor -%} {% endcomment %}
         {%- endif -%}
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
