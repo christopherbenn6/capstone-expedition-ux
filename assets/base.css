@@ -3839,6 +3839,10 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   color: #000 !important;
 }
 
+.message.success .content p {
+  color: #000 !important;
+}
+
 .gfb__content-title {
   font-family: 'jersey-20', sans-serif !important;
   font-weight: 400;
