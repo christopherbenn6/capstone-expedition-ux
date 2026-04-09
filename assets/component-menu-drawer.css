@@ -331,7 +331,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     border-radius: none !important;
   }
    .nx-search-form__btn {
-  border: 0 !important;
+  /* border: 0 !important;
   border-left: 1px solid #000 !important;
   border-radius: 0 !important;
   background: #ffffff !important;
@@ -340,7 +340,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   padding: 0 !important;
   box-shadow: none !important;
   appearance: none !important;
-  -webkit-appearance: none !important;
+  -webkit-appearance: none !important; */
 }
 
 
