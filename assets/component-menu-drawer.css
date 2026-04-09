@@ -342,6 +342,8 @@ details[open].menu-opening>.menu-drawer__submenu {
   appearance: none !important;
   -webkit-appearance: none !important; */
   border-radius: 0 !important;
+  width: 40px !important;
+  height:38px !important;
 }
 
 
