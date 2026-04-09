@@ -1,3 +1,14 @@
+/* Pagination */
+.fdt-pagination-btn,
+.fdt-pagination-ellipsis {
+  background-color: #EBEBEB;
+  border: 2px solid #878787;
+}
+
+.fdt-pagination-ellipsis {
+
+}
+
 /* Mobile Filters */
 #FacetsWrapperMobile,
 .fdt-offcanvas-content-header-wrapper {
