@@ -118,7 +118,7 @@
               {% unless count > section.settings.products_to_show %}
                 {% assign products_count = products_count | concat: product | split: ","  %}
               {% endunless %}
-
+              <p>{{ products_count }}</p>
               {%for product in products_count %}
                 {% if lazy_load == false and forloop.index > max_columns_to_show %}
                   {% assign lazy_load = true %}
