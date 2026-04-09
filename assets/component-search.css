@@ -236,10 +236,15 @@ p.product-condition {
   color: #000;
   width: 100%;
 }
+
 p.product-condition {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+p.product-condition strong {
+  display: none;
 }
 
 #Show-all-products {
