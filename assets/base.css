@@ -3853,12 +3853,12 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   margin-top: 3.2rem;
 }
 
-/* Search Hover */
+/* Search Focus */
 
 .nx-search__input:focus-within {
-  transition: 0;
+  transition: none;
 }
 
 .nx-search__input {
-  transition: 0;
+  transition: none;
 }
