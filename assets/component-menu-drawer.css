@@ -335,6 +335,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   border-left: 1px solid #000 !important;
   border-radius: 0 !important;
   background: #ffffff !important;
+  width: 44px !important;
   
   padding: 0 !important;
   box-shadow: none !important;
