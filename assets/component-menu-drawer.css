@@ -317,13 +317,25 @@ details[open].menu-opening>.menu-drawer__submenu {
     outline: none;
   }
 
+  .nx-search__btn {
+    border: 0 !important;
+    border-radius: none !important;
+    border-left: 0 !important;
+    background: transparent !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .nx-search-form__btn {
+    border-radius: none !important;
+  }
    .nx-search-form__btn {
   border: 0 !important;
   border-left: 1px solid #000 !important;
   border-radius: 0 !important;
   background: #ffffff !important;
-  width: 44px !important;
-  height: 44px !important;
+  
   padding: 0 !important;
   box-shadow: none !important;
   appearance: none !important;
