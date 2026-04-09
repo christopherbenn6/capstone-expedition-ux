@@ -235,6 +235,7 @@ p.product-condition {
   border-radius: 0;
   text-align: center;
   align-items: center;
+  display: flex;
   color: #000;
   width: 100%;
 }
