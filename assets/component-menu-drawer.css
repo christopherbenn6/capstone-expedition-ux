@@ -325,6 +325,10 @@ details[open].menu-opening>.menu-drawer__submenu {
     padding: 0 !important;
   }
 
+  .nx-search-form__btn {
+    border-radius:none;
+  }
+
   .header__heading-logo {
     width: 45px !important;
     height: auto;
