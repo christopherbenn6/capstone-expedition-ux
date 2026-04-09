@@ -3833,6 +3833,10 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   border: 2px solid #878787 !important;
 }
 
-.gfb__content-title {
+.message.success .content {
   font-family: 'Gemunu Libre' !important;
+}
+
+.gfb__content-title {
+  font-family: 'jersey-20' !important;
 }
