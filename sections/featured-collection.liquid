@@ -115,7 +115,7 @@
 
 {%- for product in collections['all'].products -%}
   
-  {% unless pproduct.collections contains collections['games'] %}
+  {% unless product.collections contains collections['games'] %}
     
     {% assign shown_count = shown_count | plus: 1 %}
 
