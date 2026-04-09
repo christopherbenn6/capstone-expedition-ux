@@ -3849,5 +3849,5 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 /* Search Bar */
 
 form.nx-search {
-  border: 2px #878787 solid !important;
+  border: 2px #878787 solid;
 }
