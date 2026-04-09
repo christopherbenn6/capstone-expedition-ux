@@ -111,7 +111,6 @@
 
         {%- if 1 > 0 -%}
           {% assign lazy_load = false %}
-          {% paginate collection.all.products by section.settings.products_to_show %}
             {%- for product in collection.all.products limit: section.settings.products_to_show -%}
               {% if lazy_load == false and forloop.index > max_columns_to_show %}
                 {% assign lazy_load = true %}
@@ -139,7 +138,6 @@
               </li>
               {%- assign skip_card_product_styles = true -%}
             {%- endfor -%}
-          {% endpaginate %}
         {%- else -%}
           {%- for i in (1..section.settings.columns_desktop) -%}
             <li
