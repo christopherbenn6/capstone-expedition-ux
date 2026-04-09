@@ -605,9 +605,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     display: none;
   }
 
-  .menu-opening .header__icon--menu span > svg:last-child {
-    display: block;
-  }
+  
 
   .menu-drawer {
     width: 100% !important;
