@@ -55,7 +55,8 @@
   display: block;
 }
 
-.product-form__input--pill input[type=radio]+label {
+.product-form__input--pill input[type=radio]+label,
+.product-condition {
   border-radius: 0 !important;
   color: #000 !important;
   background-color: #FFD000 !important;
