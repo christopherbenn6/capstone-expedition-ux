@@ -3854,4 +3854,5 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 
 .button:not([disabled]):hover:after, .shopify-challenge__button:hover:after, .customer button:hover:after, .shopify-payment-button__button--unbranded:hover:after {
   box-shadow: unset;
+  box-sizing: unset;
 }
