@@ -3857,6 +3857,4 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 
 .nx-search__input:focus-within {
   transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  background: white;
 }
