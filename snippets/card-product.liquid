@@ -121,7 +121,7 @@
             </div>
           </div>
         {% else %}
-          <img src="../assets/placeholder.jpg">
+          <img src="{{ "assets/placeholder.jpg" | asset_img_url }}" width="100" height="100">
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
