@@ -241,6 +241,7 @@ p.product-condition {
   justify-content: center;
   align-items: center;
   display: flex;
+  font-size; 3.2rem;
 }
 
 p.product-condition strong {
