@@ -510,8 +510,3 @@ input::-webkit-search-decoration {
 .template-search__results {
   position: relative;
 }
-
-.message.success {
-  background-color: #f1f1f1 !important;
-  color: #000 !important;
-}
