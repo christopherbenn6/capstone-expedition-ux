@@ -310,6 +310,12 @@ details[open].menu-opening>.menu-drawer__submenu {
     display: none !important;
   }
 
+  .nx-search-form__input {
+    box-sizing: border-box;
+    border: 1px solid #a0a0a0;
+    outline: none;
+  }
+
   .nx-search__btn {
     border: 0 !important;
     border-left: 0 !important;
