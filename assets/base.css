@@ -3860,8 +3860,5 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 }
 
 .nx-search__input {
-  position: absolute;
-  right: 0; /* 👈 locks the right side in place */
-  width: 150px;
   transition: width 0.3s ease;
 }
