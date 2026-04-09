@@ -503,10 +503,13 @@ body:not(:has(#fdt-grid-container)) .template-search__header {
 }
 
 /* Remove extra spacing for search inputs in Safari */
-input::-webkit-search-decoration {
+input::-webkit-search-decoration,
+.search-filters__toolbar-item {
   -webkit-appearance: none;
 }
 
 .template-search__results {
   position: relative;
 }
+
+.search-filters__toolbar-item
