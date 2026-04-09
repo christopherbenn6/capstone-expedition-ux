@@ -318,6 +318,7 @@ details[open].menu-opening>.menu-drawer__submenu {
 
   .nx-search__btn {
     border: 0 !important;
+    border-radius: none !important;
     border-left: 0 !important;
     background: transparent !important;
     width: auto !important;
