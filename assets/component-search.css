@@ -23,6 +23,11 @@
 
 .fdt-next-btn  {
   display: flex;
+  align-items: center;
+}
+
+.fdt-next-btn svg {
+
 }
 
 /* Mobile Filters */
