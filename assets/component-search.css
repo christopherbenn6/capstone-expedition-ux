@@ -1,6 +1,5 @@
 /* Pagination */
 .fdt-pagination-container {
-  height: 50px;
   gap: 0;
 }
 
@@ -14,11 +13,7 @@
   width: 50px;
   text-align: center;
   height: 100%;
-  justify-content:center;
-}
-
-.fdt-pagination-ellipsis {
-
+  padding: 0.5rem;
 }
 
 /* Mobile Filters */
