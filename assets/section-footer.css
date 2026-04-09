@@ -517,6 +517,11 @@
   max-width: 3.7rem !important;
 }
 
+.footer__brand-link {
+  display: inline-flex;
+  flex-direction: column;
+}
+
 .footer-block__image-wrapper img {
   width: 100%;
   height: auto;
