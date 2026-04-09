@@ -86,7 +86,8 @@ h1 {
 }
 
 .card__heading a,
-.price {
+.price,
+.product-condition {
   font-size: clamp(2.4rem, 1.5272rem + 2.7273vw, 4.8rem) !important;
 }
 
