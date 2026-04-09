@@ -3849,5 +3849,6 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 /* Button effects */
 
 .button:hover {
-  border: #26B3FF solid 5px ;
+  border: #26B3FF solid 5px;
+  background-color: none;
 }
