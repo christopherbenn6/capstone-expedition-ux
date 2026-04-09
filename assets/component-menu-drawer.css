@@ -330,14 +330,14 @@ details[open].menu-opening>.menu-drawer__submenu {
   .nx-search-form__btn {
     border-radius: none !important;
   }
-   .nx-search-form__btn {
-  border: 0 !important;
-  border-left: 1px solid #000 !important;
-  border-radius: 0 !important;
-  background: #ffffff !important;
-  width: 40px !important;
-  height:36px !important; 
-}
+  .nx-search-form__btn {
+    border: 0 !important;
+    border-left: 1px solid #000 !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    width: 40px !important;
+    height:36px !important; 
+  }
 
 
   .header__heading-logo {
@@ -587,6 +587,15 @@ details[open].menu-opening>.menu-drawer__submenu {
     justify-content: center;
     padding: 0;
     flex-shrink: 0;
+  }
+
+  .nx-search-form__btn {
+    border: 0 !important;
+    border-left: 1px solid #000 !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    width: 40px !important;
+    height:36px !important; 
   }
 
   .header__icon--menu span {
