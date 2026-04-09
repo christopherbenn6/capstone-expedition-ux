@@ -306,8 +306,18 @@ details[open].menu-opening>.menu-drawer__submenu {
     height: 32px;
   }
 
+  .nx-search__input {
+    display: none !important;
+  }
 
-  .nx-search-form__btn {
+ 
+  .nx-search-form__input {
+    box-sizing: border-box;
+    border: 1px solid #a0a0a0;
+    outline: none;
+  }
+
+   .nx-search-form__btn {
   border: 0 !important;
   border-left: 1px solid #000 !important;
   border-radius: 0 !important;
@@ -320,25 +330,6 @@ details[open].menu-opening>.menu-drawer__submenu {
   -webkit-appearance: none !important;
 }
 
-  .nx-search-form__input {
-    box-sizing: border-box;
-    border: 1px solid #a0a0a0;
-    outline: none;
-  }
-
-  .nx-search__btn {
-    border: 0 !important;
-    border-radius: none !important;
-    border-left: 0 !important;
-    background: transparent !important;
-    width: auto !important;
-    height: auto !important;
-    padding: 0 !important;
-  }
-
-  .nx-search-form__btn {
-    border-radius: none !important;
-  }
 
   .header__heading-logo {
     width: 45px !important;
