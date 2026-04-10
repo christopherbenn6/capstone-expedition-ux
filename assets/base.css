@@ -3898,3 +3898,7 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 .nx-search-form button {
   border-left: #878787 2px solid !important;
 }
+
+.button:hover {
+  box-shadow: 10px 5px 5px black;
+}
