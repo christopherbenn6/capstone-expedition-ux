@@ -3733,6 +3733,7 @@ body {
 
 .search-filters__format-currency {
   font-size: clamp(2rem, .9773rem + 1.3636vw, 2.4rem) !important;
+  margin-top: 1.6rem;
 }
 
 .price {
