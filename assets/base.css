@@ -3871,8 +3871,18 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   font-size: 3.2rem;
 }
 
+.menu-drawer__menu-item {
+  font-size: 3.2rem !important; 
+}
+
 /* Search Bar */
 @media screen and (min-width: 1300px) {
+  .nx-search {
+    border: #878787 2px solid !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
   .nx-search {
     border: #878787 2px solid !important;
   }
@@ -3880,8 +3890,4 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   .nx-search button {
     border-left: #878787 2px solid !important;
   }
-}
-
-.menu-drawer__menu-item {
-  font-size: 3.2rem !important; 
 }
