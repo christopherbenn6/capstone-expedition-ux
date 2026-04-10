@@ -3886,6 +3886,7 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
   .nx-search {
     border: #878787 2px solid !important;
     border-radius: 0 !important;
+    height: unset !important;
   }
 
   .nx-search button {
