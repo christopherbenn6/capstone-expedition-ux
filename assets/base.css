@@ -3903,3 +3903,9 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 .nx-search-form button {
   border-left: #878787 2px solid !important;
 }
+
+body.template-search .rich-text__heading {
+  display: block !important;
+  visibility: visible !important;
+ 
+}
