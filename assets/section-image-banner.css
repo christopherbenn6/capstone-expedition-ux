@@ -511,6 +511,10 @@
   margin-top: 10rem;
 }
 
+.arrow-button:hover {
+  text-decoration: underline;
+}
+
 .arrow-button svg {
   max-width: 24px
 }

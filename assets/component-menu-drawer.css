@@ -506,7 +506,7 @@ details[open].menu-opening>.menu-drawer__submenu {
    }
 
    .header-wrapper nav{
-    display: flex;
+    display: flex !important;
     justify-content: space-between !important;
     }
 
