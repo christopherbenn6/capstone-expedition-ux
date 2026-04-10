@@ -50,7 +50,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<script>window.location.replace(\"/products/your-product-handle\");</script>",
+        "custom_liquid": "<script>window.location.replace(\"/search\");</script>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
