@@ -53,7 +53,7 @@
     },
     "custom_liquid_DwEYzJ": {
       "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
+      "name": "Form (Editable In App \"Powerful Form Builder\")",
       "settings": {
         "custom_liquid": "<div class=\"globo-formbuilder\" data-id=\"MTM0NjA0\"></div>",
         "color_scheme": "scheme-3",
