@@ -3873,12 +3873,13 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 
 /* Search Bar */
 @media screen and (min-width: 1300;)
-.nx-search {
-  border: #878787 2px solid !important;
-}
+  .nx-search {
+    border: #878787 2px solid !important;
+  }
 
-.nx-search button {
-  border-left: #878787 2px solid !important;
+  .nx-search button {
+    border-left: #878787 2px solid !important;
+  }
 }
 
 .menu-drawer__menu-item {

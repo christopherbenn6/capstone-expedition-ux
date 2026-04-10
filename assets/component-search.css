@@ -393,7 +393,6 @@ p.product-condition strong {
 
   .search-filters__filter-clear-all {
     position: absolute;
-    top: -30px;
     left: -135px;
   }
 }
@@ -410,7 +409,10 @@ p.product-condition strong {
     left: calc(50px + 25vw);
     width: calc(100vw - 800px);
   }
-
+  .search-filters__filter-clear-all {
+    top: -30px;
+  }
+  
   .search-filters__toolbar-item--sorting {
     width: unset;
   }
