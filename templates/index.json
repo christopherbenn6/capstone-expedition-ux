@@ -83,7 +83,7 @@
         "button_gKGRnd": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
+            "button_label": "More About Us",
             "button_link": "shopify://pages/about",
             "button_style_secondary": false
           }
