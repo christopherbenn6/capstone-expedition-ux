@@ -393,6 +393,7 @@ p.product-condition strong {
 
   .search-filters__filter-clear-all {
     position: absolute;
+    top: -80px;
     left: -135px;
   }
 }
