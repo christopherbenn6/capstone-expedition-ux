@@ -507,7 +507,7 @@ details[open].menu-opening>.menu-drawer__submenu {
    }
 
    .header--middle-left {
-    column-gap:8rem !important;
+    column-gap:4rem !important;
     }
 
     header-drawer {
@@ -567,8 +567,8 @@ details[open].menu-opening>.menu-drawer__submenu {
     color: #000000;
   }
   .list-menu__item {
-    display:flex;
-    justify-content:space-between;
+    display:flex !important;
+    justify-content:space-between !important;
   }
         
 }
