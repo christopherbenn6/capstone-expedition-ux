@@ -45,10 +45,21 @@
         "filter-border-thickness": 2,
         "filter-text-color": "#ffffff"
       }
+    },
+    "custom_liquid_rMWiVt": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script>window.location.replace(\"/products/your-product-handle\");</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "custom_liquid_rMWiVt"
   ]
 }
