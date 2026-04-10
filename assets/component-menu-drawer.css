@@ -507,7 +507,7 @@ details[open].menu-opening>.menu-drawer__submenu {
 
    .header-wrapper .header__inline-menu {
     display: flex;
-    justify-self: space-between !important;
+    justify-self: center !important;
     }
 
     header-drawer {
