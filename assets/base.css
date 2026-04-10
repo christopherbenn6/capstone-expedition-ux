@@ -3728,7 +3728,11 @@ body {
 .price {
   color: #ffffff;
   font-weight: 600;
-  font-size: clamp(2rem, .9773rem + 1.3636vw, 2.4rem) !important;;
+  font-size: clamp(2rem, .9773rem + 1.3636vw, 2.4rem) !important;
+}
+
+.search-filters__format-currency {
+  font-size: clamp(2rem, .9773rem + 1.3636vw, 2.4rem) !important;
 }
 
 .price {
