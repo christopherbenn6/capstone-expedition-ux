@@ -499,7 +499,7 @@
 }
 
 .arrow-button {
-  border-top: 5px solid white;
+  border-top: 3px solid white;
   width: 40rem;
   color: white;
   text-decoration: none;
@@ -535,7 +535,7 @@ h2 {
 
 .arrow-button {
   color: #FFD000;
-  border-bottom: 5px solid white;
+  border-bottom: 3px solid white;
   font-family: jersey-20;
   font-size: clamp(2.4rem, 1.2rem + 1.5vw, 4.8rem) !important;
 
