@@ -19,9 +19,6 @@
   padding: 0.5rem;
 }
 
-.fdt-pagination-btn svg {
-  top: 0;
-}
 
 .fdt-next-btn,
 .fdt-prev-btn  {
@@ -43,6 +40,7 @@
 
 .search-filters__filter-active-tags-count {
   border-radius: 0;
+  top: -4px;
 }
 
 .template-search__header p[role="status"],
