@@ -509,7 +509,7 @@ details[open].menu-opening>.menu-drawer__submenu {
    .header--middle-left {
     display:flex;
     justify-content: space-between !important;
-    column-gap:4rem !important;
+    column-gap:8rem !important;
     }
 
     header-drawer {
