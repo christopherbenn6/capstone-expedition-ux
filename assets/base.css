@@ -3876,11 +3876,6 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 }
 
 /* Search Bar */
-@media screen and (min-width: 1300px) {
-  .nx-search {
-    border: #878787 2px solid !important;
-  }
-}
 
 @media screen and (min-width: 750px) {
   .nx-search {
