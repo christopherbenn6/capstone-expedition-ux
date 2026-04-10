@@ -511,7 +511,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     }
 
     .header--middle-left > * {
-    width: auto; /* or fit-content */
+    width: fit-content;
 }
 
     header-drawer {
