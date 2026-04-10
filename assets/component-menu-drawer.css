@@ -653,7 +653,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     /* font-weight: 700; */
     line-height: 1.2;
     padding: 1.6rem 0 !important;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.7) !important;
+    border-bottom: 3px solid white !important;
     background: transparent !important;
   }
 
@@ -664,6 +664,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   .menu-drawer__close-button:focus {
     color: #ffffff !important;
     background: transparent !important;
+    text-decoration: underline;
   }
 
   /* drawer search */
