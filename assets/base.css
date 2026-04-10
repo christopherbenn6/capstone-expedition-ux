@@ -91,7 +91,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .page-width-desktop {
-  padding: 0;
   margin: 0 auto;
 }
 
