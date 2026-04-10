@@ -508,7 +508,7 @@ details[open].menu-opening>.menu-drawer__submenu {
 
    .header--middle-left {
     display:flex;
-    text-align: center !important;
+    justify-content: space-between !important;
     }
 
     header-drawer {
