@@ -505,9 +505,9 @@ details[open].menu-opening>.menu-drawer__submenu {
     padding-right: 4rem;
    }
 
-   .header-wrapper .header__inline-menu {
-    display: flex !important;
-    justify-self: center !important;
+   .header-wrapper nav{
+    display: flex;
+    justify-content: space-between !important;
     }
 
     header-drawer {
