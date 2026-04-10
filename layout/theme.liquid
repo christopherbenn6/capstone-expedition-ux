@@ -15,11 +15,17 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
+    {% assign title = shop.name %}
+    {% if title == "Nexwave" %}
+      {% assign title = "Nexwave Video Games" %}
+    {% endif %}
+      
+
     <title>
-      {{ page_title }}
+      {{ title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- unless page_title contains title %} &ndash; {{ title }}{% endunless -%}
     </title>
 
     {% if page_description %}
