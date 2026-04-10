@@ -41,6 +41,10 @@
   color: #fff;
 }
 
+.search-filters__filter-active-tags-count {
+  border-radius: 0;
+}
+
 .template-search__header p[role="status"],
 .search-filters__bar-top {
   display: none;
