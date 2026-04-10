@@ -3576,6 +3576,7 @@ details-disclosure>details {
   src: url('jersey20-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap
 }
 
 p {
@@ -3675,6 +3676,7 @@ h4 {
   src: url('GemunuLibre-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap
 }
 
 body {
