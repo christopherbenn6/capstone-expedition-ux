@@ -123,6 +123,7 @@
         "friday_hours": "11 AM - 7 PM",
         "saturday_hours": "10 AM - 7 PM",
         "sunday_hours": "12 PM - 5 PM",
+        "address": "10402 118 Ave NW, Edmonton, AB T5G 2N1",
         "show_background_color": false,
         "background_color": "#001f45",
         "border_radius": 0,
