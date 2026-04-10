@@ -664,7 +664,7 @@ details[open].menu-opening>.menu-drawer__submenu {
   .menu-drawer__close-button:focus {
     color: #ffffff !important;
     background: transparent !important;
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 
   /* drawer search */
