@@ -3729,12 +3729,13 @@ body {
   color: #ffffff;
   font-weight: 600;
   font-size: clamp(2rem, .9773rem + 1.3636vw, 2.4rem) !important;
+  font-family: 'jersey-20', sans-serif;
 }
 
 .search-filters__format-currency {
   font-size: clamp(2rem, .9773rem + 1.3636vw, 2.4rem) !important;
   margin-top: 1.6rem;
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .price {
