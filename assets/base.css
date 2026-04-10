@@ -3874,5 +3874,5 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 }
 
 .menu-drawer__menu-item {
-  font-size: 3.2rem;
+  font-size: 3.2rem !important;
 }
