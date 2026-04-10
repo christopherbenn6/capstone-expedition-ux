@@ -3902,7 +3902,3 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 .button:hover {
   box-shadow: 10px 10px 0px yellow;
 }
-
-.banner_buttons a {
-  border-top: white 5px solid;
-}
