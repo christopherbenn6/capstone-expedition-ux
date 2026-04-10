@@ -506,7 +506,7 @@ details[open].menu-opening>.menu-drawer__submenu {
    }
 
    .header-wrapper .header__inline-menu {
-    display: flex;
+    display: flex !important;
     justify-self: center !important;
     }
 
