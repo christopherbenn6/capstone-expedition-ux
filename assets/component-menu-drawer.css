@@ -566,6 +566,10 @@ details[open].menu-opening>.menu-drawer__submenu {
     font-weight: 700;
     color: #000000;
   }
+  .list-menu__item {
+    display:flex;
+    justify-content:space-between;
+  }
         
 }
 
