@@ -507,7 +507,7 @@ details[open].menu-opening>.menu-drawer__submenu {
 
    .header-wrapper nav{
     display: flex !important;
-    justify-content: space-between !important;
+    margin: 0 auto !important;
     }
 
     header-drawer {
