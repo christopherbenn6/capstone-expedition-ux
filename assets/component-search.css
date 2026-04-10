@@ -19,6 +19,9 @@
   padding: 0.5rem;
 }
 
+.fdt-pagination-btn:hover {
+  text-decoration: underline;
+}
 
 .fdt-next-btn,
 .fdt-prev-btn  {
