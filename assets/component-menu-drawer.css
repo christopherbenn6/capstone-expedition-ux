@@ -510,9 +510,9 @@ details[open].menu-opening>.menu-drawer__submenu {
     justify-content: space-between !important;
     }
 
-    .header--middle-left > * {
+   .header--middle-left > * {
     width: fit-content;
-}
+   }
 
     header-drawer {
     display: none !important;
