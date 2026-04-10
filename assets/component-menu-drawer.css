@@ -611,8 +611,8 @@ details[open].menu-opening>.menu-drawer__submenu {
   .header__icon--menu svg,
   .nx-search-icon .svg-wrapper,
   .nx-search-icon svg {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2rem;
+    height: 2rem;
     display: block;
   }
 
