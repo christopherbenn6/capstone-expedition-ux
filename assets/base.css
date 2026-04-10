@@ -3880,3 +3880,7 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 .nx-search button {
   border-left: #878787 2px solid !important;
 }
+
+.menu-drawer__menu-item {
+  font-size: 3.2rem !important; 
+}
