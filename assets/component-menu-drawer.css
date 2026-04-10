@@ -505,7 +505,7 @@ details[open].menu-opening>.menu-drawer__submenu {
     padding-right: 4rem;
    }
 
-   .header-wrapper .header {
+   .header-wrapper header--middle-left {
     display: flex;
     justify-content: space-between !important;
     }
