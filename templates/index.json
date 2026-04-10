@@ -44,7 +44,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/20260309_144034.jpg",
+        "image": "shopify://shop_images/nexwave-banner.avif",
         "image_overlay_opacity": 60,
         "image_height": "medium",
         "image_behavior": "ambient",
