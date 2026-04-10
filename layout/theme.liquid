@@ -23,8 +23,8 @@
 
     <title>
       {{ title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+      {%- if current_tags %} &#124; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} &#124; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %}  &#124;  {{ page_title  }}{% endunless -%}
     </title>
 
