@@ -3870,5 +3870,9 @@ body .globo-formbuilder .globo-form-control select:-webkit-autofill {
 /* Search Bar */
 
 .nx-search {
-  border: #878787 2px solid !important;
+  border: #878787 2px solid;
+}
+
+.menu-drawer__menu-item {
+  font-size: 3.2rem;
 }
