@@ -508,6 +508,8 @@ details[open].menu-opening>.menu-drawer__submenu {
    .header--middle-left {
     display: flex;
     justify-content: space-between !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     }
 
     header-drawer {
