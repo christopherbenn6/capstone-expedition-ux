@@ -268,6 +268,7 @@ h5,
 .hxxl {
   font-size: clamp(4.8rem, 0.795rem + 3.6364vw, 6.4rem);
   line-height: 1.1;
+  margin: 0;
 }
 
 .hxl {
