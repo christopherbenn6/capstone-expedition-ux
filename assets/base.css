@@ -3632,9 +3632,6 @@ h4 {
   font-size: clamp(2rem, 1.56368rem + 1.3636vw, 3.2rem);
 }
 
-.main-page-title {
-  font-size: clamp(3.2rem, 1.2727rem + 3.6364vw, 6.4rem);
-}
 
 .banner__heading {
   font-size: clamp(3.6rem, 0.25456rem + 10.4545vw, 12.8rem);
