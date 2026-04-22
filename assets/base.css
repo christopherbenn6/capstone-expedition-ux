@@ -3923,3 +3923,7 @@ main#MainContent .rich-text__blocks > h1.rich-text__heading {
 .breadcrumbs__list {
   overflow: hidden !important;
 }
+
+.product__media-icon {
+  display: none !important;
+}
