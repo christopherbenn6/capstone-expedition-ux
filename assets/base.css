@@ -3920,6 +3920,6 @@ main#MainContent .rich-text__blocks > h1.rich-text__heading {
   font-size: 2.4rem !important;
 }
 
-.breadcrumbs__list .breadcrumbs__link:last-of-type {
+.breadcrumbs__list .breadcrumbs__link:last-of-type .breadcrumbs__item {
   overflow: hidden !important;
 }
