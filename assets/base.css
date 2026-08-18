@@ -3929,5 +3929,5 @@ main#MainContent .rich-text__blocks > h1.rich-text__heading {
 }
 
 #fdt-container {
-  background: unset;
+  background: unset !important;
 }
