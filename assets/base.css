@@ -3927,3 +3927,7 @@ main#MainContent .rich-text__blocks > h1.rich-text__heading {
 .product__media-icon {
   display: none !important;
 }
+
+#fdt-container {
+  background-color: unset;
+}
