@@ -51,6 +51,29 @@
         "padding_bottom": 16
       }
     },
+    "rich_text_xMHKeU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qBnEVE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give us a call at +1 780-477-1417</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qBnEVE"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "custom_liquid_DwEYzJ": {
       "type": "custom-liquid",
       "name": "Form (Editable In App \"Powerful Form Builder\")",
@@ -65,6 +88,7 @@
   "order": [
     "main",
     "rich_text_FdK7hf",
+    "rich_text_xMHKeU",
     "custom_liquid_DwEYzJ"
   ]
 }
