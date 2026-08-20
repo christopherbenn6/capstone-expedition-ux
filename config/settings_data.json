@@ -140,7 +140,7 @@
           "search_input_selector": "[name=q]",
           "link_no_results": "shopify://collections/all",
           "collection_grid_selector": "",
-          "search_result_selector": ".search-filters__product-list",
+          "search_result_selector": "search-filters__product-list",
           "custom_css": ""
         }
       }
