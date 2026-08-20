@@ -47,6 +47,7 @@
     },
     "main": {
       "type": "main-search",
+      "disabled": true,
       "name": "Search (Edit In Filter App)",
       "settings": {
         "columns_desktop": 4,
