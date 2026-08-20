@@ -65,27 +65,12 @@
         "padding_bottom": 36
       }
     },
-    "1787190471c932879a": {
-      "type": "apps",
-      "blocks": {
-        "findter_filter_search_grid_container_JcgeX4": {
-          "type": "shopify://apps/findter-filter-search/blocks/grid-container/bf706e6d-709f-4687-a2e2-1fbe1b007cc7",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "findter_filter_search_grid_container_JcgeX4"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
     "17871908283ff35a4a": {
       "type": "apps",
       "blocks": {
         "findter_filter_search_grid_container_9q66iY": {
           "type": "shopify://apps/findter-filter-search/blocks/grid-container/bf706e6d-709f-4687-a2e2-1fbe1b007cc7",
+          "disabled": true,
           "settings": {}
         }
       },
@@ -94,7 +79,7 @@
       ],
       "disabled": true,
       "settings": {
-        "include_margins": true
+        "include_margins": false
       }
     }
   },
@@ -102,7 +87,6 @@
     "breadcrumbs_MyrWmh",
     "rich_text_GDgjnh",
     "main",
-    "1787190471c932879a",
     "17871908283ff35a4a"
   ]
 }
