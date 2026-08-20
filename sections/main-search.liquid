@@ -13,6 +13,15 @@
 {%- endif -%}
 
 <script src="{{ 'main-search.js' | asset_url }}" defer="defer"></script>
+<script>
+  const observer = new MutationObserver(() => {
+    const filter = document.querySelector('#Filter-availability-In Stock-0');
+
+    if (filter) {
+        filter.checked = true;
+    }
+});
+</script>
 
 <style>
   input,
