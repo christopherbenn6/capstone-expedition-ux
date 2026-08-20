@@ -139,8 +139,8 @@
           "theme_compatible": "dawn",
           "search_input_selector": "[name=q]",
           "link_no_results": "shopify://collections/all",
-          "collection_grid_selector": "",
-          "search_result_selector": "",
+          "collection_grid_selector": ".search-filters__product-grid",
+          "search_result_selector": ".search-filters__product-grid",
           "custom_css": ""
         }
       }
