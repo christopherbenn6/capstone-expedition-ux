@@ -17,8 +17,9 @@
   const observer = new MutationObserver(() => {
     const filter = document.querySelector('#Filter-availability-In Stock-0');
 
-    if (filter) {
-        filter.checked = true;
+    if (filter && !filter.checked) {
+      filter.checked = true;
+      filter.dispatchEvent(new Event('change', { bubbles: true }));
     }
   });
 
