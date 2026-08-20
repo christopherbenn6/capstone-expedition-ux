@@ -47,7 +47,6 @@
     },
     "main": {
       "type": "main-search",
-      "disabled": true,
       "name": "Search (Edit In Filter App)",
       "settings": {
         "columns_desktop": 4,
@@ -71,12 +70,14 @@
       "blocks": {
         "findter_filter_search_grid_container_JcgeX4": {
           "type": "shopify://apps/findter-filter-search/blocks/grid-container/bf706e6d-709f-4687-a2e2-1fbe1b007cc7",
+          "disabled": true,
           "settings": {}
         }
       },
       "block_order": [
         "findter_filter_search_grid_container_JcgeX4"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
