@@ -70,14 +70,12 @@
       "blocks": {
         "findter_filter_search_grid_container_9q66iY": {
           "type": "shopify://apps/findter-filter-search/blocks/grid-container/bf706e6d-709f-4687-a2e2-1fbe1b007cc7",
-          "disabled": true,
           "settings": {}
         }
       },
       "block_order": [
         "findter_filter_search_grid_container_9q66iY"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": false
       }

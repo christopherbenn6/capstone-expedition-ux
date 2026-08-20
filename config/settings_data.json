@@ -136,7 +136,7 @@
         "type": "shopify://apps/findter-filter-search/blocks/search-filters-core/bf706e6d-709f-4687-a2e2-1fbe1b007cc7",
         "disabled": false,
         "settings": {
-          "theme_compatible": "unselected",
+          "theme_compatible": "dawn",
           "search_input_selector": "[name=q]",
           "link_no_results": "shopify://collections/all",
           "collection_grid_selector": "",
